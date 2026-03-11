@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPOD Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom scrollbar for the table */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        .tab-active { border-bottom: 2px solid #0ea5e9; color: #0ea5e9; font-weight: 600; }
+        .tab-inactive { color: #64748b; font-weight: 500; }
+        .tab-inactive:hover { color: #334155; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen font-sans text-slate-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="dna" class="text-sky-500 h-8 w-8"></i>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">VPOD <span class="text-slate-400 font-normal">| Visual Physiology Opsin Database</span></span>
+                </div>
+                <div>
+                    <a href="/admin/" class="text-sm font-medium text-slate-500 hover:text-sky-600 transition-colors flex items-center gap-1">
+                        <i data-lucide="lock" class="h-4 w-4"></i> Caretaker Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Header & Search -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8">
+            <h1 class="text-2xl font-bold text-slate-900 mb-2">Explore the Database</h1>
+            <p class="text-slate-500 mb-6">Search and filter published opsin sequences and heterologous expression data.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <div class="relative flex-grow">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i data-lucide="search" class="h-5 w-5 text-slate-400"></i>
+                    </div>
+                    <input type="text" id="searchInput" placeholder="Search by Genus, Species, or Gene Family..." 
+                        class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition-shadow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Tabs -->
+        <div class="flex border-b border-slate-200 mb-6" id="tabs">
+            <button onclick="switchTab('opsins')" id="tab-opsins" class="py-3 px-6 tab-active flex items-center gap-2">
+                <i data-lucide="database" class="h-4 w-4"></i> Opsin Sequences
+            </button>
+            <button onclick="switchTab('heterologous')" id="tab-heterologous" class="py-3 px-6 tab-inactive flex items-center gap-2">
+                <i data-lucide="microscope" class="h-4 w-4"></i> Heterologous Data
+            </button>
+        </div>
+
+        <!-- Data Table Container -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden relative">
+            
+            <!-- Loading Overlay -->
+            <div id="loadingOverlay" class="absolute inset-0 bg-white/80 z-10 flex flex-col justify-center items-center hidden">
+                <i data-lucide="loader-2" class="h-8 w-8 text-sky-500 animate-spin mb-2"></i>
+                <p class="text-slate-500 font-medium">Loading database records...</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-200">
+                    <thead class="bg-slate-50" id="tableHeader">
+                        <!-- Headers injected via JS -->
+                    </thead>
+                    <tbody class="bg-white divide-y divide-slate-200" id="tableBody">
+                        <!-- Rows injected via JS -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Empty State -->
+            <div id="emptyState" class="py-12 text-center hidden">
+                <i data-lucide="search-x" class="h-12 w-12 text-slate-300 mx-auto mb-3"></i>
+                <h3 class="text-lg font-medium text-slate-900">No records found</h3>
+                <p class="text-slate-500 mt-1">Try adjusting your search terms or ensure data has been imported.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        let currentTab = 'opsins';
+        let allData = [];
+        let filteredData = [];
+
+        // Fetch data from the Django API
+        async function fetchData(endpoint) {
+            showLoading(true);
+            try {
+                // In production, this targets your local API: http://127.0.0.1:8000/api/...
+                const response = await fetch(`/api/${endpoint}/`);
+                if (!response.ok) throw new Error('API fetch failed');
+                const data = await response.json();
+                
+                // Handle paginated responses (DRF usually returns { count, next, previous, results })
+                allData = data.results ? data.results : data; 
+                filteredData = [...allData];
+                
+                renderTable();
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                document.getElementById('tableBody').innerHTML = '';
+                document.getElementById('emptyState').classList.remove('hidden');
+                document.querySelector('#emptyState h3').innerText = "Connection Error";
+                document.querySelector('#emptyState p').innerText = "Could not connect to the VPOD API. Is the server running?";
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Tab Switching Logic
+        function switchTab(tab) {
+            currentTab = tab;
+            
+            // Update Tab UI
+            document.getElementById('tab-opsins').className = tab === 'opsins' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
+            document.getElementById('tab-heterologous').className = tab === 'heterologous' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
+            
+            // Clear search and fetch new data
+            document.getElementById('searchInput').value = '';
+            fetchData(tab);
+        }
+
+        // Render Table based on current tab and filtered data
+        function renderTable() {
+            const thead = document.getElementById('tableHeader');
+            const tbody = document.getElementById('tableBody');
+            const emptyState = document.getElementById('emptyState');
+            
+            tbody.innerHTML = '';
+            
+            if (filteredData.length === 0) {
+                thead.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+            
+            emptyState.classList.hidden = true;
+            emptyState.classList.add('hidden');
+
+            if (currentTab === 'opsins') {
+                thead.innerHTML = `
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Opsin ID</th>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Organism</th>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Gene Family</th>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Accession</th>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference (DOI)</th>
+                    </tr>
+                `;
+                
+                filteredData.forEach(item => {
+                    const row = `
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.opsinid}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-slate-900 italic">${item.genus || ''} ${item.species || ''}</div>
+                                <div class="text-xs text-slate-500">${item.phylum || ''}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-sky-100 text-sky-800">
+                                    ${item.gene_family || 'Unknown'}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500 font-mono">${item.accession || '-'}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-sky-600 hover:underline">
+                                ${item.reference ? `<a href="https://doi.org/${item.reference.doi}" target="_blank">${item.reference.doi}</a>` : '-'}
+                            </td>
+                        </tr>
+                    `;
+                    tbody.insertAdjacentHTML('beforeend', row);
+                });
+            } else if (currentTab === 'heterologous') {
+                thead.innerHTML = `
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Organism</th>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">λ max (nm)</th>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Mutations</th>
+                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Cell Culture</th>
+                    </tr>
+                `;
+                
+                filteredData.forEach(item => {
+                    const row = `
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-slate-900 italic">${item.genus || ''} ${item.species || ''}</div>
+                                <div class="text-xs text-slate-500 font-mono">${item.accession || ''}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-bold ${item.lambda_max ? 'text-emerald-600' : 'text-slate-400'}">
+                                    ${item.lambda_max ? item.lambda_max + ' nm' : 'N/A'}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">${item.mutations || '-'}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">${item.cell_culture || '-'}</td>
+                        </tr>
+                    `;
+                    tbody.insertAdjacentHTML('beforeend', row);
+                });
+            }
+        }
+
+        // Search Functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            filteredData = allData.filter(item => {
+                const searchableText = `
+                    ${item.genus || ''} 
+                    ${item.species || ''} 
+                    ${item.gene_family || ''} 
+                    ${item.accession || ''}
+                `.toLowerCase();
+                return searchableText.includes(term);
+            });
+            renderTable();
+        });
+
+        function showLoading(show) {
+            const overlay = document.getElementById('loadingOverlay');
+            if (show) {
+                overlay.classList.remove('hidden');
+            } else {
+                overlay.classList.add('hidden');
+            }
+        }
+
+        // Initial fetch on page load
+        fetchData('opsins');
+    </script>
+</body>
+</html>

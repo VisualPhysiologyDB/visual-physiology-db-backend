@@ -16,7 +16,7 @@ class ReferenceViewSet(ApprovedModelViewSet):
 class OpsinViewSet(ApprovedModelViewSet):
     queryset = Opsin.objects.all()
     serializer_class = OpsinSerializer
-    filterset_fields = ['gene_family', 'genus', 'species'] # Allows querying like /api/opsins/?genus=Apis
+    filterset_fields = ['gene_family', 'genus', 'species', 'accession', 'refid'] # Allows querying like /api/opsins/?genus=Apis
 
 class HeterologousDataViewSet(ApprovedModelViewSet):
     queryset = HeterologousData.objects.all()

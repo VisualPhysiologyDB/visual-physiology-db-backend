@@ -36,3 +36,4 @@ class OpsinAdmin(ApprovalModelAdmin):
 class HeterologousDataAdmin(ApprovalModelAdmin):
     list_display = ('hetid', 'genus', 'species', 'lambda_max', 'status')
     search_fields = ('genus', 'species', 'accession')
+

@@ -26,7 +26,7 @@ class ApprovalModel(models.Model):
 
 class Reference(ApprovalModel):
     refid = models.AutoField(primary_key=True)
-    doi = models.CharField(max_length=255, unique=True, null=True, blank=True)
+    doi = models.CharField(max_length=255, null=True, blank=True)
     year_of_publication = models.IntegerField(null=True, blank=True)
     notes = models.TextField(blank=True, null=True)
 
@@ -37,6 +37,7 @@ class Opsin(ApprovalModel):
     opsinid = models.AutoField(primary_key=True)
     gene_family = models.CharField(max_length=100, blank=True, null=True)
     phylum = models.CharField(max_length=100, blank=True, null=True)
+    #class_phylo = models.CharField(max_length=100, blank=True, null=True)
     genus = models.CharField(max_length=100, blank=True, null=True)
     species = models.CharField(max_length=100, blank=True, null=True)
     accession = models.CharField(max_length=100, blank=True, null=True)
