@@ -37,7 +37,6 @@ class Opsin(ApprovalModel):
     opsinid = models.AutoField(primary_key=True)
     gene_family = models.CharField(max_length=100, blank=True, null=True)
     phylum = models.CharField(max_length=100, blank=True, null=True)
-    #class_phylo = models.CharField(max_length=100, blank=True, null=True)
     genus = models.CharField(max_length=100, blank=True, null=True)
     species = models.CharField(max_length=100, blank=True, null=True)
     accession = models.CharField(max_length=100, blank=True, null=True)
@@ -52,16 +51,18 @@ class Opsin(ApprovalModel):
 
 class HeterologousData(ApprovalModel):
     hetid = models.AutoField(primary_key=True)
-    genus = models.CharField(max_length=100, blank=True, null=True)
-    species = models.CharField(max_length=100, blank=True, null=True)
-    accession = models.CharField(max_length=100, blank=True, null=True)
+    
+    # Direct link to the Opsin model (normalizes taxonomy/accession data)
+    opsin = models.ForeignKey(Opsin, on_delete=models.CASCADE, null=True, blank=True, related_name='heterologous_records')
+    
     mutations = models.CharField(max_length=255, blank=True, null=True)
     lambda_max = models.FloatField(help_text="Wavelength of maximum absorbance")
     error = models.FloatField(blank=True, null=True)
     cell_culture = models.CharField(max_length=100, blank=True, null=True)
     
     # Relational link to the Reference table
-    reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='heterologous_records')
+    reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='heterologous_assays')
 
     def __str__(self):
-        return f"{self.genus} {self.species} - {self.lambda_max}nm"
+        opsin_name = f"{self.opsin.genus} {self.opsin.species}" if self.opsin else "Unknown Opsin"
+        return f"{opsin_name} - {self.lambda_max}nm"
