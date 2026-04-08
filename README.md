@@ -43,15 +43,17 @@ If you changed Python logic (views.py, urls.py, etc.): Skip to Step 4.
 2. Apply Database Changes (If you edited models.py)
 Just like in development, if you change your database structure, you need to apply those changes.
 
-Bash
+```
 python manage.py makemigrations
 python manage.py migrate
+```
 
 3. Update Static Files (If you added CSS/JS/Images)
 If you added new static files, you must tell Django to gather them up and put them in the staticfiles folder for Nginx to serve.
 
-Bash
+```
 python manage.py collectstatic
+```
 
 (Type yes when it asks if you want to overwrite existing files).
 
@@ -60,18 +62,21 @@ To make your new Python code, new HTML templates, or new backend logic go live, 
 
 Run this command:
 
-Bash
+```
 sudo systemctl restart gunicorn
+```
 
 Summary Checklist (The TL;DR)
 
 Whenever you update your code on the server, just remember this sequence:
 
+```
 python manage.py migrate (if database changed)
 
 python manage.py collectstatic (if static files changed)
 
 sudo systemctl restart gunicorn (Always run this!)
+```
 
 As soon as you hit enter on that restart command, the live website at visphys.eemb.ucsb.edu will instantly reflect your new code!
 
