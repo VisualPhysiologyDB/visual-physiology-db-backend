@@ -10,24 +10,20 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import os
 from pathlib import Path
-from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# Load environment variables from .env file - note this file is not pushed to git because it contains our secret key
-load_dotenv(os.path.join(BASE_DIR, '.env'))
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback-secret-for-dev-only')
+SECRET_KEY = 'django-insecure-)+d02#5gpy498iaj6)h5+x4s9pr$7egqqp8=apo(h7+%i4b&e1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG = True
 
 ALLOWED_HOSTS = ['visphys.eemb.ucsb.edu', 'localhost', '127.0.0.1']
 
@@ -141,30 +137,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# --- PRODUCTION SECURITY SETTINGS ---
-#if not DEBUG:
-    # Redirect all HTTP traffic to HTTPS
-    #SECURE_SSL_REDIRECT = True
-    
-    # Ensure cookies are only sent over HTTPS
-    #SESSION_COOKIE_SECURE = True
-    #CSRF_COOKIE_SECURE = True
-    
-    # HTTP Strict Transport Security (HSTS)
-    #SECURE_HSTS_SECONDS = 31536000 # 1 year
-    #SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-    #SECURE_HSTS_PRELOAD = True
-
-# Adding logging as well for production
+# Adding logging for production
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
