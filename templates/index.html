@@ -127,7 +127,7 @@
                 <i data-lucide="database" class="h-4 w-4"></i> Sequences
             </button>
             <button onclick="switchTab('heterologous')" id="tab-heterologous" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
-                <i data-lucide="microscope" class="h-4 w-4"></i> Heterologous Expression
+                <i data-lucide="microscope" class="h-4 w-4"></i> Heterologous + Physiologically Inferred
             </button>
             <button onclick="switchTab('scp')" id="tab-scp" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
                 <i data-lucide="activity" class="h-4 w-4"></i> Single-Cell Photometry (SCP)
@@ -189,43 +189,70 @@
             <div class="p-6">
                 <p class="text-slate-600 mb-4 text-sm">Know of published visual physiology data we missed? Submit it directly to our curators for integration.</p>
                 
+                <div class="flex border-b border-slate-200 mb-4">
+                    <button type="button" onclick="setSubTier('PUBLICATION')" id="tier-pub" class="w-1/2 py-2 text-sm font-semibold border-b-2 border-sky-500 text-sky-600">Publication Suggestion</button>
+                    <button type="button" onclick="setSubTier('DATA')" id="tier-data" class="w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors">Direct Data Entry</button>
+                </div>
+
                 <form id="submissionForm" onsubmit="submitData(event)" class="space-y-4">
-                    <div class="grid grid-cols-2 gap-4">
+                    <input type="hidden" id="subTier" value="PUBLICATION">
+                    
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Reference DOI / URL <span class="text-red-500">*</span></label>
+                        <input type="text" id="subDoi" placeholder="10.1038/..." class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                    </div>
+
+                    <div id="dataEntryFields" class="hidden grid grid-cols-2 gap-4">
                         <div class="col-span-2">
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Data Type</label>
-                            <select id="subType" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-sky-500 focus:border-sky-500" required>
+                            <select id="subType" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-sky-500 focus:border-sky-500">
                                 <option value="Heterologous">Heterologous Expression</option>
                                 <option value="SCP">Single-Cell Photometry (SCP)</option>
-                                <option value="Opsin">Sequence Only</option>
                             </select>
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Genus</label>
-                            <input type="text" id="subGenus" class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                            <input type="text" id="subGenus" class="w-full border border-slate-300 rounded p-2 text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Species</label>
-                            <input type="text" id="subSpecies" class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                            <input type="text" id="subSpecies" class="w-full border border-slate-300 rounded p-2 text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Lambda Max (nm)</label>
                             <input type="number" step="0.1" id="subLmax" class="w-full border border-slate-300 rounded p-2 text-sm">
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Reference DOI</label>
-                            <input type="text" id="subDoi" placeholder="10.1038/..." class="w-full border border-slate-300 rounded p-2 text-sm">
-                        </div>
-                        <div class="col-span-2">
-                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Notes / Mutations</label>
-                            <textarea id="subNotes" class="w-full border border-slate-300 rounded p-2 text-sm h-16" placeholder="Any specific mutations, A1/A2 chromophore, or relevant details..."></textarea>
-                        </div>
+                    </div>
+                    
+                    <div class="col-span-2 mt-4">
+                        <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Notes / Feedback</label>
+                        <textarea id="subNotes" class="w-full border border-slate-300 rounded p-2 text-sm h-16" placeholder="Any specific mutations, A1/A2 chromophore, or relevant details..."></textarea>
                     </div>
                     
                     <div class="pt-2 flex justify-end gap-2">
-                        <button type="button" onclick="toggleContributeModal()" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-800 transition-colors">Cancel</button>
-                        <button type="submit" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded text-sm font-medium transition-colors">Submit to Curators</button>
+                        <button type="button" onclick="toggleContributeModal()" class="px-4 py-2 text-sm font-medium text-slate-600">Cancel</button>
+                        <button type="submit" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded text-sm font-medium">Submit for Review</button>
                     </div>
                 </form>
+
+                <script>
+                // Add this helper function to your JS script
+                function setSubTier(tier) {
+                    document.getElementById('subTier').value = tier;
+                    const isData = tier === 'DATA';
+                    
+                    // Toggle UI Tabs
+                    document.getElementById('tier-pub').className = isData ? 'w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors' : 'w-1/2 py-2 text-sm font-semibold border-b-2 border-sky-500 text-sky-600';
+                    document.getElementById('tier-data').className = isData ? 'w-1/2 py-2 text-sm font-semibold border-b-2 border-sky-500 text-sky-600' : 'w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors';
+                    
+                    // Toggle Fields
+                    document.getElementById('dataEntryFields').style.display = isData ? 'grid' : 'none';
+                    
+                    // Toggle required constraints
+                    document.getElementById('subGenus').required = isData;
+                    document.getElementById('subSpecies').required = isData;
+                }
+                </script>
             </div>
         </div>
     </div>
@@ -438,8 +465,12 @@
                     const errorText = item.error ? `<span class="text-slate-400 font-normal text-xs ml-1">±${item.error}</span>` : '';
                     const accession = item.opsin?.accession || '';
                     const mutations = item.mutations ? item.mutations : 'None'; 
+                    const typeBadge = item.is_inferred 
+                        ? `<span class="px-2 py-1 text-[10px] uppercase tracking-wide font-bold bg-purple-100 text-purple-700 rounded">Inferred (MNM)</span>` 
+                        : `<span class="px-2 py-1 text-[10px] uppercase tracking-wide font-bold bg-sky-100 text-sky-700 rounded">Experimental</span>`;
+
                     const row = `<tr class="hover:bg-sky-50 transition-colors">
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.hetid}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.hetid}</td> <br>${typeBadge}</td>
                         <td class="px-6 py-4 whitespace-nowrap"><div class="text-sm font-medium text-slate-900 italic">${item.opsin?.genus || ''} ${item.opsin?.species || ''}</div><div class="text-xs text-slate-500">${item.opsin?.gene_family || ''}</div></td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600 font-mono" title="${accession}">${truncate(accession, 20)}</td>
                         <td class="px-6 py-4 whitespace-nowrap"><span class="text-sm font-bold ${getColor(item.lambda_max)}">${item.lambda_max ? item.lambda_max : 'N/A'} <span class="text-slate-400 font-normal text-xs">nm</span> ${errorText}</span></td>
@@ -448,6 +479,7 @@
                     </tr>`;
                     tbody.insertAdjacentHTML('beforeend', row);
                 });
+
             } else if (currentTab === 'scp') {
                 thead.innerHTML = `<tr>
                     <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">SCP ID</th>

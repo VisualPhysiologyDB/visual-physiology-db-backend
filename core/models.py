@@ -49,6 +49,10 @@ class HeterologousData(ApprovalModel):
     cell_culture = models.CharField(max_length=100, blank=True, null=True)
     reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='heterologous_assays')
 
+    # NEW FIELDS for MNM integration:
+    is_inferred = models.BooleanField(default=False, help_text="Computationally inferred via MNM pipeline")
+    inference_source = models.CharField(max_length=100, blank=True, null=True, help_text="e.g. OPTICS, MNM")
+
     class Meta:
         constraints = [
             models.CheckConstraint(
@@ -72,29 +76,36 @@ class CuratedSCP(ApprovalModel):
     lambda_max = models.FloatField(help_text="Wavelength of maximum absorbance", null=True, blank=True)
     error = models.FloatField(blank=True, null=True)
     chromophore = models.CharField(max_length=50, blank=True, null=True, help_text="e.g. A1, A2")
+    notes = models.CharField(max_length=100, blank=True, null=True)
     reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='scp_assays')
-
+    
     def __str__(self):
         return f"SCP: {self.genus} {self.species} - {self.lambda_max}nm"
 
-# --- NEW: User Data Submission Inbox ---
+# --- User Data Submission Inbox ---
 class DataSubmission(models.Model):
     """
     A flat holding table for public user submissions. 
     Admins review these and manually create the validated relational records.
     """
     STATUS_CHOICES = (('PENDING', 'Pending Review'), ('APPROVED', 'Integrated'), ('REJECTED', 'Rejected'))
+    SUBMISSION_TYPES = (('PUBLICATION', 'Publication Suggestion'), ('DATA', 'Direct Data Entry'))
     
+    # Task 1: Tracking the two-tiered forms
+    submission_type = models.CharField(max_length=20, choices=SUBMISSION_TYPES, default='DATA')
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
-    data_type = models.CharField(max_length=50, help_text="Opsin, Heterologous, or SCP")
+    
+    # Task 2: Removing Opsin (Sequence-only) from expected data types
+    data_type = models.CharField(max_length=50, blank=True, null=True, help_text="Heterologous or SCP")
+    
     genus = models.CharField(max_length=100, blank=True, null=True)
     species = models.CharField(max_length=100, blank=True, null=True)
     lambda_max = models.FloatField(null=True, blank=True)
     mutations = models.CharField(max_length=255, blank=True, null=True)
-    doi = models.CharField(max_length=255, blank=True, null=True)
+    doi = models.CharField(max_length=255, help_text="Required for Publication Suggestion", default='No DOI')
     notes = models.TextField(blank=True, null=True)
     submitted_at = models.DateTimeField(auto_now_add=True)
     submitter_email = models.EmailField(blank=True, null=True)
 
     def __str__(self):
-        return f"[{self.status}] {self.data_type} Submission - {self.genus} {self.species}"
+        return f"[{self.status}] {self.get_submission_type_display()} - {self.doi or self.genus}"
