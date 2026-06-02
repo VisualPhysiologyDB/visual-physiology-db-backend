@@ -2,9 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class ApprovalModel(models.Model):
-    """
-    Abstract base model that adds an approval workflow to any inherited model.
-    """
     STATUS_CHOICES = (
         ('PENDING', 'Pending Approval'),
         ('APPROVED', 'Approved (Published)'),
@@ -14,15 +11,11 @@ class ApprovalModel(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
-    # Track who submitted the data and who approved it
     submitted_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name="%(class)s_submissions")
     approved_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name="%(class)s_approvals")
 
     class Meta:
         abstract = True
-
-# --- VPOD Specific Models ---
 
 class Reference(ApprovalModel):
     refid = models.AutoField(primary_key=True)
@@ -42,8 +35,6 @@ class Opsin(ApprovalModel):
     accession = models.CharField(max_length=100, blank=True, null=True)
     dna_sequence = models.TextField(blank=True, null=True)
     protein_sequence = models.TextField(blank=True, null=True)
-    
-    # Relational link to the Reference table
     reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='opsins')
 
     def __str__(self):
@@ -51,18 +42,59 @@ class Opsin(ApprovalModel):
 
 class HeterologousData(ApprovalModel):
     hetid = models.AutoField(primary_key=True)
-    
-    # Direct link to the Opsin model (normalizes taxonomy/accession data)
     opsin = models.ForeignKey(Opsin, on_delete=models.CASCADE, null=True, blank=True, related_name='heterologous_records')
-    
     mutations = models.CharField(max_length=255, blank=True, null=True)
     lambda_max = models.FloatField(help_text="Wavelength of maximum absorbance")
     error = models.FloatField(blank=True, null=True)
     cell_culture = models.CharField(max_length=100, blank=True, null=True)
-    
-    # Relational link to the Reference table
     reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='heterologous_assays')
+
+    class Meta:
+        constraints = [
+            models.CheckConstraint(
+                check=models.Q(lambda_max__gte=200) & models.Q(lambda_max__lte=800) | models.Q(lambda_max=0.0),
+                name='valid_lambda_max_range'
+            )
+        ]
 
     def __str__(self):
         opsin_name = f"{self.opsin.genus} {self.opsin.species}" if self.opsin else "Unknown Opsin"
         return f"{opsin_name} - {self.lambda_max}nm"
+
+# --- NEW: Single Cell Photometry (SCP) Model ---
+class CuratedSCP(ApprovalModel):
+    scpid = models.AutoField(primary_key=True)
+    genus = models.CharField(max_length=100, blank=True, null=True)
+    species = models.CharField(max_length=100, blank=True, null=True)
+    phylum = models.CharField(max_length=100, blank=True, null=True)
+    photoreceptor_type = models.CharField(max_length=100, blank=True, null=True, help_text="e.g. Rod, Cone, LWS, SWS")
+    cell_subtype =  models.CharField(max_length=100, blank=True, null=True, help_text="e.g. single, double")
+    lambda_max = models.FloatField(help_text="Wavelength of maximum absorbance", null=True, blank=True)
+    error = models.FloatField(blank=True, null=True)
+    chromophore = models.CharField(max_length=50, blank=True, null=True, help_text="e.g. A1, A2")
+    reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='scp_assays')
+
+    def __str__(self):
+        return f"SCP: {self.genus} {self.species} - {self.lambda_max}nm"
+
+# --- NEW: User Data Submission Inbox ---
+class DataSubmission(models.Model):
+    """
+    A flat holding table for public user submissions. 
+    Admins review these and manually create the validated relational records.
+    """
+    STATUS_CHOICES = (('PENDING', 'Pending Review'), ('APPROVED', 'Integrated'), ('REJECTED', 'Rejected'))
+    
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
+    data_type = models.CharField(max_length=50, help_text="Opsin, Heterologous, or SCP")
+    genus = models.CharField(max_length=100, blank=True, null=True)
+    species = models.CharField(max_length=100, blank=True, null=True)
+    lambda_max = models.FloatField(null=True, blank=True)
+    mutations = models.CharField(max_length=255, blank=True, null=True)
+    doi = models.CharField(max_length=255, blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
+    submitted_at = models.DateTimeField(auto_now_add=True)
+    submitter_email = models.EmailField(blank=True, null=True)
+
+    def __str__(self):
+        return f"[{self.status}] {self.data_type} Submission - {self.genus} {self.species}"

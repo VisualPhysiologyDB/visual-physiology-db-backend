@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,8 @@
     <title>VPOD Explorer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Add Chart.js for the interactive plotting -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        /* Custom scrollbar for the table */
         ::-webkit-scrollbar { width: 8px; height: 8px; }
         ::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
@@ -17,18 +16,8 @@
         .tab-active { border-bottom: 2px solid #0ea5e9; color: #0ea5e9; font-weight: 600; }
         .tab-inactive { color: #64748b; font-weight: 500; }
         .tab-inactive:hover { color: #334155; }
-        
-        /* Spectrum Background for the Chart */
         .spectrum-bg {
-            background: linear-gradient(to right, 
-                #101010 0%, 
-                #440088 15%, 
-                #0000ff 25%, 
-                #00ffff 45%, 
-                #00ff00 55%, 
-                #ffff00 65%, 
-                #ff0000 85%, 
-                #330000 100%);
+            background: linear-gradient(to right, #101010 0%, #440088 15%, #0000ff 25%, #00ffff 45%, #00ff00 55%, #ffff00 65%, #ff0000 85%, #330000 100%);
             opacity: 0.08;
             pointer-events: none;
         }
@@ -36,7 +25,6 @@
 </head>
 <body class="bg-slate-50 min-h-screen font-sans text-slate-800 relative">
 
-    <!-- Navigation Bar -->
     <nav class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
@@ -49,28 +37,24 @@
                         <i data-lucide="send" class="h-4 w-4"></i> Contribute Data
                     </button>
                     <a href="/admin/" class="text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors flex items-center gap-1">
-                        <i data-lucide="lock" class="h-4 w-4"></i> Caretaker Login
+                        <i data-lucide="lock" class="h-4 w-4"></i> Admin Login
                     </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content Area -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        
-        <!-- Header & Top Level Search -->
         <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
                     <h1 class="text-2xl font-bold text-slate-900 mb-1">Explore the Database</h1>
-                    <p class="text-slate-500">Query, visualize, and export opsin sequences and heterologous expression data.</p>
+                    <p class="text-slate-500">Query, visulize, and export sequences, heterologous expression, and SCP data.</p>
                 </div>
                 <div class="mt-4 md:mt-0 flex gap-2">
                     <button onclick="copyTableData()" class="flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-sm font-medium transition-colors">
                         <i data-lucide="copy" class="h-4 w-4"></i> Copy Data
                     </button>
-                    <!-- Updated Export button with QoL styles -->
                     <button onclick="downloadCSV()" class="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-sm font-medium transition-colors shadow-sm">
                         <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
@@ -84,20 +68,15 @@
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <i data-lucide="search" class="h-5 w-5 text-slate-400"></i>
                     </div>
-                    <!-- Quick global search (Filters client-side on input) -->
-                    <input type="text" id="searchInput" placeholder="Global search (any field)..." 
-                        class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition-shadow">
+                    <input type="text" id="searchInput" placeholder="Global search (any field)..." class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition-shadow">
                 </div>
                 
-                <!-- Advanced Filters Toggle -->
                 <div>
                     <button onclick="toggleFilters()" class="text-sky-600 text-sm font-medium flex items-center gap-1 hover:text-sky-700">
-                        <i data-lucide="sliders-horizontal" class="h-4 w-4"></i> 
-                        <span id="filterToggleText">Show Advanced Filters</span>
+                        <i data-lucide="sliders-horizontal" class="h-4 w-4"></i> <span id="filterToggleText">Show Advanced Filters</span>
                     </button>
                 </div>
 
-                <!-- Advanced Filters Panel -->
                 <div id="advancedFilters" class="hidden bg-slate-50 rounded-lg border border-slate-200 mt-2 p-4">
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-4">
                         <div>
@@ -122,8 +101,7 @@
                         </div>
                     </div>
                     
-                    <!-- Lmax filters -->
-                    <div id="lmaxFilters" class="grid grid-cols-2 md:grid-cols-4 gap-4 hidden border-t border-slate-200 pt-4 mt-2">
+                    <div id="lmaxFilters" class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden border-t border-slate-200 pt-4 mt-2">
                         <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Min λmax (nm)</label>
                             <input type="number" id="filterLmaxMin" placeholder="e.g. 400" class="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-sky-500 focus:border-sky-500">
@@ -132,22 +110,30 @@
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Max λmax (nm)</label>
                             <input type="number" id="filterLmaxMax" placeholder="e.g. 600" class="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-sky-500 focus:border-sky-500">
                         </div>
+                        <div class="flex items-end pb-2">
+                            <label class="flex items-center gap-2 text-sm font-medium text-slate-700 cursor-pointer">
+                                <input type="checkbox" id="filterWildtype" class="rounded text-sky-600 focus:ring-sky-500 w-5 h-5">
+                                Wildtype Only <span class="text-xs text-slate-400 font-normal">(Exclude mutations & chimeras)</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Data Tabs -->
-        <div class="flex border-b border-slate-200 mb-6" id="tabs">
-            <button onclick="switchTab('opsins')" id="tab-opsins" class="py-3 px-6 tab-active flex items-center gap-2">
-                <i data-lucide="database" class="h-4 w-4"></i> Opsin Sequences
+        <!-- NEW: Data Tabs include SCP -->
+        <div class="flex border-b border-slate-200 mb-6 overflow-x-auto" id="tabs">
+            <button onclick="switchTab('opsins')" id="tab-opsins" class="py-3 px-6 tab-active flex items-center gap-2 whitespace-nowrap">
+                <i data-lucide="database" class="h-4 w-4"></i> Sequences
             </button>
-            <button onclick="switchTab('heterologous')" id="tab-heterologous" class="py-3 px-6 tab-inactive flex items-center gap-2">
-                <i data-lucide="microscope" class="h-4 w-4"></i> Heterologous Data
+            <button onclick="switchTab('heterologous')" id="tab-heterologous" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
+                <i data-lucide="microscope" class="h-4 w-4"></i> Heterologous Expression
+            </button>
+            <button onclick="switchTab('scp')" id="tab-scp" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
+                <i data-lucide="activity" class="h-4 w-4"></i> Single-Cell Photometry (SCP)
             </button>
         </div>
 
-        <!-- Interactive Plot Area -->
         <div id="plotContainer" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6 relative overflow-hidden">
             <div class="absolute inset-0 spectrum-bg"></div>
             <div class="flex justify-between items-center mb-4 relative z-10">
@@ -162,15 +148,9 @@
             </div>
         </div>
 
-        <!-- Data Table Container -->
         <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden relative">
-            
-            <!-- Upgraded Loading Overlay -->
             <div id="loadingOverlay" class="absolute inset-0 bg-white/90 z-10 flex flex-col justify-center items-center hidden backdrop-blur-sm">
-                <svg class="animate-spin mb-3 h-8 w-8 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
+                <i data-lucide="loader-2" class="h-8 w-8 text-sky-500 animate-spin mb-2"></i>
                 <p class="text-slate-600 font-medium">Loading database records...</p>
             </div>
 
@@ -180,16 +160,11 @@
 
             <div class="overflow-x-auto max-h-[600px]">
                 <table class="min-w-full divide-y divide-slate-200">
-                    <thead class="bg-slate-50 sticky top-0 shadow-sm z-10" id="tableHeader">
-                        <!-- Headers injected via JS -->
-                    </thead>
-                    <tbody class="bg-white divide-y divide-slate-200" id="tableBody">
-                        <!-- Rows injected via JS -->
-                    </tbody>
+                    <thead class="bg-slate-50 sticky top-0 shadow-sm z-10" id="tableHeader"></thead>
+                    <tbody class="bg-white divide-y divide-slate-200" id="tableBody"></tbody>
                 </table>
             </div>
             
-            <!-- Upgraded Empty State -->
             <div id="emptyState" class="py-16 text-center hidden">
                 <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 mb-4">
                     <i data-lucide="search-x" class="h-8 w-8 text-slate-400"></i>
@@ -200,9 +175,9 @@
         </div>
     </main>
 
-    <!-- Contribute Data Modal (Unchanged) -->
+    <!-- NEW: Streamlined Web Form Submission Modal -->
     <div id="contributeModal" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
-        <div class="bg-white rounded-2xl shadow-xl max-w-2xl w-full overflow-hidden relative">
+        <div class="bg-white rounded-2xl shadow-xl max-w-lg w-full overflow-hidden relative">
             <div class="bg-sky-50 border-b border-sky-100 px-6 py-4 flex justify-between items-center">
                 <h2 class="text-lg font-bold text-sky-900 flex items-center gap-2">
                     <i data-lucide="send" class="h-5 w-5 text-sky-600"></i> Suggest Data for VPOD
@@ -212,25 +187,45 @@
                 </button>
             </div>
             <div class="p-6">
-                <p class="text-slate-600 mb-6 text-sm">VPOD relies on community contributions to stay up-to-date! If you know of published opsin data, visual physiology readings, or heterologous expression data that belongs here, let us know.</p>
+                <p class="text-slate-600 mb-4 text-sm">Know of published visual physiology data we missed? Submit it directly to our curators for integration.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="border border-slate-200 rounded-xl p-5 hover:border-sky-300 hover:bg-sky-50 transition-colors cursor-pointer group" onclick="window.open('https://github.com/VisualPhysiologyDB/visual-physiology-opsin-db/issues/new', '_blank')">
-                        <i data-lucide="file-text" class="h-8 w-8 text-slate-400 group-hover:text-sky-500 mb-3"></i>
-                        <h3 class="font-bold text-slate-900 mb-1">Recommend a Paper</h3>
-                        <p class="text-xs text-slate-500 mb-4">Found a publication we missed? Open an issue on our GitHub with the DOI.</p>
-                        <span class="text-xs font-semibold text-sky-600 flex items-center gap-1">Open GitHub Issue <i data-lucide="arrow-right" class="h-3 w-3"></i></span>
+                <form id="submissionForm" onsubmit="submitData(event)" class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2">
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Data Type</label>
+                            <select id="subType" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-sky-500 focus:border-sky-500" required>
+                                <option value="Heterologous">Heterologous Expression</option>
+                                <option value="SCP">Single-Cell Photometry (SCP)</option>
+                                <option value="Opsin">Sequence Only</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Genus</label>
+                            <input type="text" id="subGenus" class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Species</label>
+                            <input type="text" id="subSpecies" class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Lambda Max (nm)</label>
+                            <input type="number" step="0.1" id="subLmax" class="w-full border border-slate-300 rounded p-2 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Reference DOI</label>
+                            <input type="text" id="subDoi" placeholder="10.1038/..." class="w-full border border-slate-300 rounded p-2 text-sm">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Notes / Mutations</label>
+                            <textarea id="subNotes" class="w-full border border-slate-300 rounded p-2 text-sm h-16" placeholder="Any specific mutations, A1/A2 chromophore, or relevant details..."></textarea>
+                        </div>
                     </div>
-                    <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-300 hover:bg-emerald-50 transition-colors cursor-pointer group" onclick="window.location.href='mailto:oakley@ucsb.edu?subject=VPOD Data Submission'">
-                        <i data-lucide="table-2" class="h-8 w-8 text-slate-400 group-hover:text-emerald-500 mb-3"></i>
-                        <h3 class="font-bold text-slate-900 mb-1">Submit Formatted Data</h3>
-                        <p class="text-xs text-slate-500 mb-4">Have bulk data? Email us an Excel/CSV file matching our database columns.</p>
-                        <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1">Email the Caretakers <i data-lucide="arrow-right" class="h-3 w-3"></i></span>
+                    
+                    <div class="pt-2 flex justify-end gap-2">
+                        <button type="button" onclick="toggleContributeModal()" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-800 transition-colors">Cancel</button>
+                        <button type="submit" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded text-sm font-medium transition-colors">Submit to Curators</button>
                     </div>
-                </div>
-            </div>
-            <div class="bg-slate-50 px-6 py-4 border-t border-slate-200 flex justify-end">
-                <button onclick="toggleContributeModal()" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-800 transition-colors">Close</button>
+                </form>
             </div>
         </div>
     </div>
@@ -243,29 +238,57 @@
         let filteredData = [];
         let lmaxChartInstance = null;
 
+        // Truncate helper for long accessions
+        const truncate = (str, n) => (str && str.length > n) ? str.slice(0, n - 1) + '&hellip;' : str;
+
         function toggleContributeModal() {
             document.getElementById('contributeModal').classList.toggle('hidden');
+            document.getElementById('submissionForm').reset();
         }
 
-        // --- Data Fetching ---
+        // Handle the new form submission to the API
+        async function submitData(e) {
+            e.preventDefault();
+            const payload = {
+                data_type: document.getElementById('subType').value,
+                genus: document.getElementById('subGenus').value,
+                species: document.getElementById('subSpecies').value,
+                lambda_max: document.getElementById('subLmax').value || null,
+                doi: document.getElementById('subDoi').value,
+                notes: document.getElementById('subNotes').value
+            };
+
+            try {
+                const response = await fetch('/api/submissions/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                if(response.ok) {
+                    alert('Success! Your data has been submitted to the VPOD curators for review.');
+                    toggleContributeModal();
+                } else {
+                    alert('Submission failed. Please check your data and try again.');
+                }
+            } catch(err) {
+                alert('Connection error submitting data.');
+            }
+        }
+
         async function fetchData(endpoint) {
             showLoading(true);
             try {
-                // We fetch all records so the Chart and instant search works perfectly
                 const response = await fetch(`/api/${endpoint}/`);
                 if (!response.ok) throw new Error('API fetch failed');
                 const data = await response.json();
-                
-                // Account for DRF pagination wrappers
                 allData = data.results ? data.results : data; 
                 applyFilters();
-                
             } catch (error) {
                 console.error("Error fetching data:", error);
                 document.getElementById('tableBody').innerHTML = '';
                 document.getElementById('emptyState').classList.remove('hidden');
                 document.querySelector('#emptyState h3').innerText = "Connection Error";
-                document.querySelector('#emptyState p').innerText = "Could not connect to the VPOD API. Is the server running?";
             } finally {
                 showLoading(false);
             }
@@ -273,21 +296,17 @@
 
         function switchTab(tab) {
             currentTab = tab;
-            
             document.getElementById('tab-opsins').className = tab === 'opsins' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
             document.getElementById('tab-heterologous').className = tab === 'heterologous' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
+            document.getElementById('tab-scp').className = tab === 'scp' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
             
-            if(tab === 'heterologous') {
+            if(tab === 'heterologous' || tab === 'scp') {
                 document.getElementById('lmaxFilters').classList.remove('hidden');
                 document.getElementById('plotContainer').classList.remove('hidden');
             } else {
                 document.getElementById('lmaxFilters').classList.add('hidden');
                 document.getElementById('plotContainer').classList.add('hidden');
             }
-
-            allData = [];
-            filteredData = [];
-            renderTable();
             fetchData(tab);
         }
 
@@ -300,20 +319,19 @@
             } else {
                 panel.classList.add('hidden');
                 text.innerText = "Show Advanced Filters";
-                document.querySelectorAll('#advancedFilters input').forEach(input => input.value = '');
+                document.querySelectorAll('#advancedFilters input[type="text"], #advancedFilters input[type="number"]').forEach(input => input.value = '');
+                document.getElementById('filterWildtype').checked = false;
                 applyFilters();
             }
         }
 
-        // Helper to extract nested properties cleanly based on the current tab model
         function getProp(item, field) {
-            if (currentTab === 'heterologous' && ['genus', 'species', 'phylum', 'gene_family', 'accession'].includes(field)) {
+            if ((currentTab === 'heterologous') && ['genus', 'species', 'phylum', 'gene_family', 'accession'].includes(field)) {
                 return item.opsin ? item.opsin[field] : '';
             }
             return item[field] || '';
         }
 
-        // --- Filtering Engine ---
         function applyFilters() {
             const globalTerm = document.getElementById('searchInput').value.toLowerCase();
             const fPhylum = document.getElementById('filterPhylum').value.toLowerCase();
@@ -323,43 +341,47 @@
             const fAccession = document.getElementById('filterAccession').value.toLowerCase();
             const fLmaxMin = parseFloat(document.getElementById('filterLmaxMin').value);
             const fLmaxMax = parseFloat(document.getElementById('filterLmaxMax').value);
+            const fWildtype = document.getElementById('filterWildtype').checked;
 
             filteredData = allData.filter(item => {
-                // Global Search (Stringifying handles nested opsin objects naturally)
                 const searchableText = JSON.stringify(item).toLowerCase();
                 if (globalTerm && !searchableText.includes(globalTerm)) return false;
-
-                // Specific Fields mapping dynamically to nested data
                 if (fPhylum && !String(getProp(item, 'phylum')).toLowerCase().includes(fPhylum)) return false;
                 if (fFamily && !String(getProp(item, 'gene_family')).toLowerCase().includes(fFamily)) return false;
                 if (fGenus && !String(getProp(item, 'genus')).toLowerCase().includes(fGenus)) return false;
                 if (fSpecies && !String(getProp(item, 'species')).toLowerCase().includes(fSpecies)) return false;
                 if (fAccession && !String(getProp(item, 'accession')).toLowerCase().includes(fAccession)) return false;
 
-                // Lmax bounds
-                if (currentTab === 'heterologous' && item.lambda_max) {
-                    if (!isNaN(fLmaxMin) && item.lambda_max < fLmaxMin) return false;
-                    if (!isNaN(fLmaxMax) && item.lambda_max > fLmaxMax) return false;
+                if (currentTab === 'heterologous' || currentTab === 'scp') {
+                    if (item.lambda_max) {
+                        if (!isNaN(fLmaxMin) && item.lambda_max < fLmaxMin) return false;
+                        if (!isNaN(fLmaxMax) && item.lambda_max > fLmaxMax) return false;
+                    }
+                    
+                    // NEW: Wildtype filter logic (Exclude mutations and chimeras)
+                    if (fWildtype) {
+                        const muts = (item.mutations || '').toLowerCase().trim();
+                        // If it has text that isn't denoting 'none' or 'wildtype', filter it out.
+                        if (muts && muts !== 'none' && muts !== 'wt' && muts !== 'wildtype') return false;
+                        if (muts.includes('chimera')) return false; 
+                    }
                 }
-
                 return true;
             });
 
             document.getElementById('recordCount').innerText = `${filteredData.length} Records Found`;
             renderTable();
-            if(currentTab === 'heterologous') updateChart();
+            if(currentTab === 'heterologous' || currentTab === 'scp') updateChart();
         }
 
         document.querySelectorAll('input').forEach(input => {
             input.addEventListener('input', applyFilters);
         });
 
-        // --- Table Rendering (Upgraded with QoL Features) ---
         function renderTable() {
             const thead = document.getElementById('tableHeader');
             const tbody = document.getElementById('tableBody');
             const emptyState = document.getElementById('emptyState');
-            
             tbody.innerHTML = '';
             
             if (filteredData.length === 0) {
@@ -367,132 +389,110 @@
                 emptyState.classList.remove('hidden');
                 return;
             }
-            
             emptyState.classList.add('hidden');
 
-            // Formatter for nice DOI external link
             const formatDoi = (item) => {
                 return item.reference && item.reference.doi 
                     ? `<a href="https://doi.org/${item.reference.doi}" target="_blank" class="text-sky-600 hover:text-sky-800 hover:underline flex items-center gap-1 inline-flex">
-                        ${item.reference.doi}
-                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                       </a>` 
+                        ${item.reference.doi} <i data-lucide="external-link" class="h-3 w-3"></i></a>` 
                     : '<span class="text-slate-400">No DOI</span>';
             };
 
+            const getColor = (lmax) => {
+                if(!lmax) return 'text-slate-400';
+                if(lmax < 400) return 'text-purple-600';
+                if (lmax < 490) return 'text-blue-600';
+                if (lmax < 550) return 'text-green-600';
+                if (lmax < 590) return 'text-yellow-600';
+                return 'text-red-600';
+            };
+
             if (currentTab === 'opsins') {
-                thead.innerHTML = `
-                    <tr>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Opsin ID</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Organism</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Gene Family</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Accession</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference DOI</th>
-                    </tr>
-                `;
-                
+                thead.innerHTML = `<tr>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Opsin ID</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Organism</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Gene Family</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Accession</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference DOI</th>
+                </tr>`;
                 filteredData.forEach(item => {
-                    const row = `
-                        <tr class="hover:bg-sky-50 transition-colors duration-150">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.opsinid}</td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm font-medium text-slate-900 italic">${item.genus || ''} ${item.species || ''}</div>
-                                <div class="text-xs text-slate-500">${item.phylum || ''}</div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-slate-100 text-slate-700">
-                                    ${item.gene_family || 'Unknown'}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600 font-mono">${item.accession || '-'}</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm">${formatDoi(item)}</td>
-                        </tr>
-                    `;
+                    const row = `<tr class="hover:bg-sky-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.opsinid}</td>
+                        <td class="px-6 py-4 whitespace-nowrap"><div class="text-sm font-medium text-slate-900 italic">${item.genus || ''} ${item.species || ''}</div><div class="text-xs text-slate-500">${item.phylum || ''}</div></td>
+                        <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-slate-100 text-slate-700">${item.gene_family || 'Unknown'}</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600 font-mono" title="${item.accession || ''}">${truncate(item.accession, 20) || '-'}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">${formatDoi(item)}</td>
+                    </tr>`;
                     tbody.insertAdjacentHTML('beforeend', row);
                 });
             } else if (currentTab === 'heterologous') {
-                // Merged the new column layout into the clean style
-                thead.innerHTML = `
-                    <tr>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Het ID</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Organism (Opsin)</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Gene Family</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Lambda Max (nm)</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Mutations</th>
-                        <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference DOI</th>
-                    </tr>
-                `;
-                
+                thead.innerHTML = `<tr>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Het ID</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Organism (Opsin)</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Accession</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Lambda Max (nm)</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Mutations</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference DOI</th>
+                </tr>`;
                 filteredData.forEach(item => {
-                    const genus = item.opsin ? item.opsin.genus : 'Unknown';
-                    const species = item.opsin ? item.opsin.species : '';
-                    const geneFamily = item.opsin && item.opsin.gene_family ? item.opsin.gene_family : '<span class="text-slate-400">N/A</span>';
                     const errorText = item.error ? `<span class="text-slate-400 font-normal text-xs ml-1">±${item.error}</span>` : '';
-
-                    let lmaxColor = 'text-slate-400';
-                    if(item.lambda_max) {
-                        lmaxColor = 'text-slate-900';
-                        if(item.lambda_max < 400) lmaxColor = 'text-purple-600';
-                        else if (item.lambda_max < 490) lmaxColor = 'text-blue-600';
-                        else if (item.lambda_max < 550) lmaxColor = 'text-green-600';
-                        else if (item.lambda_max < 590) lmaxColor = 'text-yellow-600';
-                        else lmaxColor = 'text-red-600';
-                    }
-
-                    const row = `
-                        <tr class="hover:bg-sky-50 transition-colors duration-150">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.hetid}</td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm font-medium text-slate-900 italic">${genus} ${species}</div>
-                                <div class="text-xs text-slate-500 font-mono mt-0.5">${item.opsin?.accession || ''}</div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${geneFamily}</td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <span class="text-sm font-bold ${lmaxColor}">
-                                    ${item.lambda_max ? item.lambda_max : 'N/A'} <span class="text-slate-400 font-normal text-xs">nm</span> ${errorText}
-                                </span>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${item.mutations || '<span class="text-slate-400">None</span>'}</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm">${formatDoi(item)}</td>
-                        </tr>
-                    `;
+                    const accession = item.opsin?.accession || '';
+                    const mutations = item.mutations ? item.mutations : 'None'; 
+                    const row = `<tr class="hover:bg-sky-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.hetid}</td>
+                        <td class="px-6 py-4 whitespace-nowrap"><div class="text-sm font-medium text-slate-900 italic">${item.opsin?.genus || ''} ${item.opsin?.species || ''}</div><div class="text-xs text-slate-500">${item.opsin?.gene_family || ''}</div></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600 font-mono" title="${accession}">${truncate(accession, 20)}</td>
+                        <td class="px-6 py-4 whitespace-nowrap"><span class="text-sm font-bold ${getColor(item.lambda_max)}">${item.lambda_max ? item.lambda_max : 'N/A'} <span class="text-slate-400 font-normal text-xs">nm</span> ${errorText}</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600" title="${mutations}">${truncate(mutations, 20)}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">${formatDoi(item)}</td>
+                    </tr>`;
+                    tbody.insertAdjacentHTML('beforeend', row);
+                });
+            } else if (currentTab === 'scp') {
+                thead.innerHTML = `<tr>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">SCP ID</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Organism</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Receptor Type</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Chromophore</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Lambda Max (nm)</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference DOI</th>
+                </tr>`;
+                filteredData.forEach(item => {
+                    const errorText = item.error ? `<span class="text-slate-400 font-normal text-xs ml-1">±${item.error}</span>` : '';
+                    const row = `<tr class="hover:bg-sky-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.scpid}</td>
+                        <td class="px-6 py-4 whitespace-nowrap"><div class="text-sm font-medium text-slate-900 italic">${item.genus || ''} ${item.species || ''}</div><div class="text-xs text-slate-500">${item.phylum || ''}</div></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600 font-semibold">${item.photoreceptor_type || '<span class="text-slate-400">N/A</span>'}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${item.chromophore || '<span class="text-slate-400">N/A</span>'}</td>
+                        <td class="px-6 py-4 whitespace-nowrap"><span class="text-sm font-bold ${getColor(item.lambda_max)}">${item.lambda_max ? item.lambda_max : 'N/A'} <span class="text-slate-400 font-normal text-xs">nm</span> ${errorText}</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">${formatDoi(item)}</td>
+                    </tr>`;
                     tbody.insertAdjacentHTML('beforeend', row);
                 });
             }
+            lucide.createIcons();
         }
 
-        // --- Chart & Visualization ---
-        function wavelengthToColor(wavelength) {
-            let r, g, b;
-            if (wavelength >= 380 && wavelength < 440) {
-                r = -(wavelength - 440) / (440 - 380); g = 0; b = 1;
-            } else if (wavelength >= 440 && wavelength < 490) {
-                r = 0; g = (wavelength - 440) / (490 - 440); b = 1;
-            } else if (wavelength >= 490 && wavelength < 510) {
-                r = 0; g = 1; b = -(wavelength - 510) / (510 - 490);
-            } else if (wavelength >= 510 && wavelength < 580) {
-                r = (wavelength - 510) / (580 - 510); g = 1; b = 0;
-            } else if (wavelength >= 580 && wavelength < 645) {
-                r = 1; g = -(wavelength - 645) / (645 - 580); b = 0;
-            } else if (wavelength >= 645 && wavelength <= 780) {
-                r = 1; g = 0; b = 0;
-            } else {
-                r = 0; g = 0; b = 0; 
-                if(wavelength < 380 && wavelength > 300) return 'rgba(128, 0, 128, 0.8)'; 
-                if(wavelength > 780) return 'rgba(100, 0, 0, 0.8)'; 
-            }
-            let factor = 1;
-            if (wavelength >= 380 && wavelength < 420) factor = 0.3 + 0.7 * (wavelength - 380) / (420 - 380);
-            else if (wavelength >= 420 && wavelength <= 700) factor = 1.0;
-            else if (wavelength > 700 && wavelength <= 780) factor = 0.3 + 0.7 * (780 - wavelength) / (780 - 700);
+        // --- Chart & Export Utility ---
+        function wavelengthToColor(w) {
+            let r, g, b, factor;
+            if (w >= 380 && w < 440) { r = -(w - 440) / 60; g = 0; b = 1; }
+            else if (w >= 440 && w < 490) { r = 0; g = (w - 440) / 50; b = 1; }
+            else if (w >= 490 && w < 510) { r = 0; g = 1; b = -(w - 510) / 20; }
+            else if (w >= 510 && w < 580) { r = (w - 510) / 70; g = 1; b = 0; }
+            else if (w >= 580 && w < 645) { r = 1; g = -(w - 645) / 65; b = 0; }
+            else if (w >= 645 && w <= 780) { r = 1; g = 0; b = 0; }
+            else { return w < 380 && w > 300 ? 'rgba(128,0,128,0.8)' : 'rgba(100,0,0,0.8)'; }
+            
+            if (w >= 380 && w < 420) factor = 0.3 + 0.7 * (w - 380) / 40;
+            else if (w >= 420 && w <= 700) factor = 1.0;
+            else if (w > 700 && w <= 780) factor = 0.3 + 0.7 * (780 - w) / 80;
             else factor = 0.3;
 
             return `rgba(${Math.round(r * factor * 255)}, ${Math.round(g * factor * 255)}, ${Math.round(b * factor * 255)}, 0.85)`;
         }
 
         function updateChart() {
-            if (currentTab !== 'heterologous') return;
-
             const ctx = document.getElementById('lmaxChart').getContext('2d');
             const validData = filteredData.filter(d => d.lambda_max > 0);
             document.getElementById('plotCount').innerText = `${validData.length} Valid λmax Plotted`;
@@ -502,11 +502,7 @@
                 const binKey = Math.round(item.lambda_max / 10) * 10;
                 bins[binKey] = (bins[binKey] || 0) + 1;
             });
-
             const labels = Object.keys(bins).map(Number).sort((a,b) => a-b);
-            const dataCounts = labels.map(l => bins[l]);
-            const bgColors = labels.map(wavelength => wavelengthToColor(wavelength));
-
             if (lmaxChartInstance) lmaxChartInstance.destroy();
 
             lmaxChartInstance = new Chart(ctx, {
@@ -514,82 +510,40 @@
                 data: {
                     labels: labels,
                     datasets: [{
-                        label: 'Count of Opsins',
-                        data: dataCounts,
-                        backgroundColor: bgColors,
-                        borderWidth: 1,
-                        borderColor: 'rgba(0,0,0,0.1)',
+                        label: 'Count of Entries',
+                        data: labels.map(l => bins[l]),
+                        backgroundColor: labels.map(wavelengthToColor),
                         borderRadius: 4
                     }]
                 },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                title: (items) => `~${items[0].label} nm`,
-                                label: (item) => `${item.raw} records`
-                            }
-                        }
-                    },
-                    scales: {
-                        x: { 
-                            title: { display: true, text: 'Wavelength (nm)' },
-                            grid: { display: false }
-                        },
-                        y: { 
-                            title: { display: true, text: 'Frequency' },
-                            beginAtZero: true,
-                            ticks: { precision: 0 }
-                        }
-                    }
-                }
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { title: { display: true, text: 'Wavelength (nm)' } }, y: { title: { display: true, text: 'Frequency' }, beginAtZero: true } } }
             });
         }
 
-        // --- Export & Copy Functions ---
-        // Dynamically unpacks the new nested structures so the output is perfectly flat
         function formatDataForExport() {
             if(filteredData.length === 0) return '';
-            
             let csvRows = [];
             
             if (currentTab === 'opsins') {
                 const headers = ['opsinid', 'phylum', 'gene_family', 'genus', 'species', 'accession', 'dna_sequence', 'protein_sequence', 'DOI'];
                 csvRows.push(headers.join(','));
-                
-                filteredData.forEach(row => {
-                    const values = headers.map(h => {
-                        if (h === 'DOI') return `"${row.reference?.doi || ''}"`;
-                        let val = row[h] ? String(row[h]) : '';
-                        if(val.includes(',') || val.includes('"') || val.includes('\n')) val = `"${val.replace(/"/g, '""')}"`;
-                        return val;
-                    });
-                    csvRows.push(values.join(','));
-                });
-            } else {
-                // Flattens Heterologous + Linked Opsin properties
+                filteredData.forEach(row => csvRows.push(headers.map(h => h === 'DOI' ? `"${row.reference?.doi || ''}"` : `"${String(row[h]||'').replace(/"/g, '""')}"`).join(',')));
+            } else if (currentTab === 'heterologous') {
                 const headers = ['hetid', 'genus', 'species', 'gene_family', 'accession', 'lambda_max', 'error', 'mutations', 'cell_culture', 'protein_sequence', 'DOI'];
                 csvRows.push(headers.join(','));
-                
-                filteredData.forEach(row => {
-                    const values = headers.map(h => {
-                        if (h === 'DOI') return `"${row.reference?.doi || ''}"`;
-                        // Extract from linked Opsin model
-                        if (['genus', 'species', 'gene_family', 'accession', 'protein_sequence'].includes(h)) {
-                            let val = row.opsin && row.opsin[h] ? String(row.opsin[h]) : '';
-                            if(val.includes(',') || val.includes('"') || val.includes('\n')) val = `"${val.replace(/"/g, '""')}"`;
-                            return val;
-                        }
-                        // Base Heterologous props
-                        let val = row[h] !== null && row[h] !== undefined ? String(row[h]) : '';
-                        if(val.includes(',') || val.includes('"') || val.includes('\n')) val = `"${val.replace(/"/g, '""')}"`;
-                        return val;
-                    });
-                    csvRows.push(values.join(','));
-                });
+                filteredData.forEach(row => csvRows.push(headers.map(h => {
+                    if (h === 'DOI') return `"${row.reference?.doi || ''}"`;
+                    let val = ['genus', 'species', 'gene_family', 'accession', 'protein_sequence'].includes(h) ? row.opsin?.[h] : row[h];
+                    return `"${String(val||'').replace(/"/g, '""')}"`;
+                }).join(',')));
+            } else if (currentTab === 'scp') {
+                const headers = ['scpid', 'genus', 'species', 'phylum', 'photoreceptor_type', 'chromophore', 'lambda_max', 'DOI'];
+                csvRows.push(headers.join(','));
+                filteredData.forEach(row => csvRows.push(headers.map(h => {
+                    if (h === 'DOI') return `"${row.reference?.doi || ''}"`;
+                    let val = row[h];
+                    return `"${String(val||'').replace(/"/g, '""')}"`;
+                }).join(',')));
             }
             return csvRows.join('\n');
         }
@@ -597,43 +551,26 @@
         function downloadCSV() {
             const csvData = formatDataForExport();
             if(!csvData) return alert("No data to export.");
-
             const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
-            const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
-            link.setAttribute("href", url);
-            link.setAttribute("download", `VPOD_${currentTab}_export.csv`);
-            document.body.appendChild(link);
+            link.href = URL.createObjectURL(blob);
+            link.download = `VPOD_${currentTab}_export.csv`;
             link.click();
-            document.body.removeChild(link);
         }
 
         function copyTableData() {
             const csvData = formatDataForExport();
             if(!csvData) return alert("No data to copy.");
-            
-            const tsvData = csvData.replace(/,/g, '\t').replace(/"/g, '');
             const textArea = document.createElement("textarea");
-            textArea.value = tsvData;
+            textArea.value = csvData.replace(/,/g, '\t').replace(/"/g, '');
             document.body.appendChild(textArea);
             textArea.select();
-            try {
-                document.execCommand('copy');
-                alert("Data copied to clipboard! You can paste this directly into Excel.");
-            } catch (err) {
-                console.error('Failed to copy', err);
-                alert("Failed to copy text. Your browser may block clipboard access.");
-            }
+            document.execCommand('copy');
             document.body.removeChild(textArea);
+            alert("Data copied to clipboard!");
         }
 
-        function showLoading(show) {
-            const overlay = document.getElementById('loadingOverlay');
-            if (show) overlay.classList.remove('hidden');
-            else overlay.classList.add('hidden');
-        }
-
-        // Initial trigger
+        function showLoading(show) { document.getElementById('loadingOverlay').classList[show ? 'remove' : 'add']('hidden'); }
         fetchData('opsins');
     </script>
 </body>

@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from django.core.management.base import BaseCommand
-from core.models import Reference, Opsin, HeterologousData
+from core.models import Reference, Opsin, HeterologousData, CuratedSCP
 
 class Command(BaseCommand):
     help = 'Imports VPOD data from CSV files into the database and maps new relations'
@@ -101,5 +101,38 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS(f"Successfully imported and linked Heterologous Data."))
         except Exception as e:
             self.stdout.write(self.style.ERROR(f"Error importing Heterologous Data: {e}"))
+
+        # 4. Import Curated SCP Data and Map to Opsins
+        scp_path = os.path.join(csv_dir, 'curated_scp.csv')
+        self.stdout.write(f"Importing Curated SCP Data from {scp_path}...")
+        if os.path.exists(scp_path):
+            try:
+                df_scp = pd.read_csv(scp_path).fillna('')
+                for _, row in df_scp.iterrows():
+                    # Link to reference
+                    ref_obj = None
+                    if str(row.get('refid', '')).replace('.0','',1).isdigit():
+                        ref_obj = Reference.objects.filter(refid=int(float(row['refid']))).first()
+
+                    CuratedSCP.objects.update_or_create(
+                        scpid=row.get('scpid'),
+                        defaults={
+                            'genus': row.get('Genus', ''),
+                            'species': row.get('Species', ''),
+                            'phylum': row.get('Phylum', ''),
+                            'reference': ref_obj,
+                            'photoreceptor_type': row.get('CellType', row.get('photoreceptor_type', '')),
+                            'cell_subtype': row.get('CellSubType', row.get('photoreceptor_type', '')),
+                            'lambda_max': float(row['LambdaMax']) if str(row.get('LambdaMax', '')).replace('.','',1).isdigit() else None,
+                            'error': float(row['error']) if str(row['error']).replace('.','',1).isdigit() else None,
+                            'chromophore': row.get('Chromophore', ''),
+                            'status': 'APPROVED'
+                        }
+                    )
+                self.stdout.write(self.style.SUCCESS(f"Successfully imported Curated SCP Data."))
+            except Exception as e:
+                self.stdout.write(self.style.ERROR(f"Error importing Curated SCP Data: {e}"))
+        else:
+            self.stdout.write(self.style.WARNING(f"File {scp_path} not found. Skipping SCP import."))
             
         self.stdout.write(self.style.SUCCESS('Data import complete!'))
