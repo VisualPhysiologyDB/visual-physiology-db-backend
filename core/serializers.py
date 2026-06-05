@@ -22,7 +22,7 @@ class HeterologousDataSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = HeterologousData
-        fields = ['hetid', 'opsin', 'opsin_id', 'mutations', 'lambda_max', 'error', 'cell_culture', 'reference', 'reference_id', 'status']
+        fields = ['hetid', 'opsin', 'opsin_id', 'mutations', 'lambda_max', 'error', 'cell_culture', 'reference', 'reference_id', 'status', 'is_inferred']
 
 # --- NEW Serializers ---
 class CuratedSCPSerializer(serializers.ModelSerializer):

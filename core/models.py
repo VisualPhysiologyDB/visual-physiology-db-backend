@@ -98,10 +98,18 @@ class DataSubmission(models.Model):
     # Task 2: Removing Opsin (Sequence-only) from expected data types
     data_type = models.CharField(max_length=50, blank=True, null=True, help_text="Heterologous or SCP")
     
+    phylum = models.CharField(max_length=100, blank=True, null=True)
     genus = models.CharField(max_length=100, blank=True, null=True)
     species = models.CharField(max_length=100, blank=True, null=True)
-    lambda_max = models.FloatField(null=True, blank=True)
+    accession = models.CharField(max_length=100, blank=True, null=True, help_text="If your sequence contains a mutation, format your accession as Acc_x#y (i.e NM_001014890_A292S)")
     mutations = models.CharField(max_length=255, blank=True, null=True)
+    gene_family = models.CharField(max_length=100, blank=True, null=True)
+    dna_sequence = models.TextField(blank=True, null=True)
+    protein_sequence = models.TextField(blank=True, null=True)  
+    lambda_max = models.FloatField(null=True, blank=True)
+    error = models.FloatField(blank=True, null=True)
+    cell_culture = models.CharField(max_length=100, blank=True, null=True)
+  
     doi = models.CharField(max_length=255, help_text="Required for Publication Suggestion", default='No DOI')
     notes = models.TextField(blank=True, null=True)
     submitted_at = models.DateTimeField(auto_now_add=True)
