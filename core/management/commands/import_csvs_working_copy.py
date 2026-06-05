@@ -2,6 +2,7 @@ import os
 import pandas as pd
 from django.core.management.base import BaseCommand
 from core.models import Reference, Opsin, HeterologousData
+from core.source_references import ensure_source_publication_references
 
 class Command(BaseCommand):
     help = 'Imports VPOD data from CSV files into the database and maps new relations'
@@ -29,6 +30,8 @@ class Command(BaseCommand):
                     }
                 )
             self.stdout.write(self.style.SUCCESS(f"Successfully imported References."))
+            source_refs = ensure_source_publication_references()
+            self.stdout.write(f"Ensured source publication References: {', '.join(source_refs.keys())}.")
         except Exception as e:
             self.stdout.write(self.style.ERROR(f"Error importing References: {e}"))
 

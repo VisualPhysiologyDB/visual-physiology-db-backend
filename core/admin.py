@@ -37,9 +37,9 @@ class OpsinAdmin(ApprovalModelAdmin):
 
 @admin.register(HeterologousData)
 class HeterologousDataAdmin(ApprovalModelAdmin):
-    list_display = ('hetid', 'get_opsin_organism', 'lambda_max', 'status')
-    search_fields = ('opsin__genus', 'opsin__species', 'opsin__accession')
-    list_filter = ('status', 'opsin__gene_family')
+    list_display = ('hetid', 'get_opsin_organism', 'lambda_max', 'reference', 'status', 'is_inferred', 'source_dataset')
+    search_fields = ('opsin__genus', 'opsin__species', 'opsin__accession', 'reference__doi', 'source_record_id', 'inference_source')
+    list_filter = ('status', 'is_inferred', 'source_dataset', 'opsin__gene_family')
 
     @admin.display(description='Organism', ordering='opsin__genus')
     def get_opsin_organism(self, obj):
@@ -47,9 +47,9 @@ class HeterologousDataAdmin(ApprovalModelAdmin):
 
 @admin.register(CuratedSCP)
 class CuratedSCPAdmin(ApprovalModelAdmin):
-    list_display = ('scpid', 'get_organism', 'phylum', 'photoreceptor_type', 'lambda_max', 'status')
-    search_fields = ('genus', 'species', 'phylum')
-    list_filter = ('status', 'photoreceptor_type', 'chromophore')
+    list_display = ('scpid', 'get_organism', 'phylum', 'photoreceptor_type', 'lambda_max', 'reference', 'status', 'source_dataset')
+    search_fields = ('genus', 'species', 'phylum', 'reference__doi', 'source_record_id', 'notes')
+    list_filter = ('status', 'source_dataset', 'photoreceptor_type', 'chromophore')
 
     @admin.display(description='Organism', ordering='genus')
     def get_organism(self, obj):

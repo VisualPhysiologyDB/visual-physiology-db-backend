@@ -2,6 +2,7 @@ import os
 import pandas as pd
 from django.core.management.base import BaseCommand
 from core.models import Reference, Opsin, HeterologousData, CuratedSCP
+from core.source_references import CURATED_SCP_SOURCE_DATASET, clean_source_value, ensure_source_publication_references
 
 class Command(BaseCommand):
     help = 'Imports VPOD data from CSV files into the database and maps new relations'
@@ -29,6 +30,8 @@ class Command(BaseCommand):
                     }
                 )
             self.stdout.write(self.style.SUCCESS(f"Successfully imported References."))
+            source_refs = ensure_source_publication_references()
+            self.stdout.write(f"Ensured source publication References: {', '.join(source_refs.keys())}.")
         except Exception as e:
             self.stdout.write(self.style.ERROR(f"Error importing References: {e}"))
 
@@ -114,8 +117,11 @@ class Command(BaseCommand):
                     if str(row.get('refid', '')).replace('.0','',1).isdigit():
                         ref_obj = Reference.objects.filter(refid=int(float(row['refid']))).first()
 
+                    scp_id = clean_source_value(row.get('scpid')) or clean_source_value(row.get('maxid'))
+                    notes = clean_source_value(row.get('Notes')) or None
+
                     CuratedSCP.objects.update_or_create(
-                        scpid=row.get('scpid'),
+                        scpid=scp_id,
                         defaults={
                             'genus': row.get('Genus', ''),
                             'species': row.get('Species', ''),
@@ -126,6 +132,9 @@ class Command(BaseCommand):
                             'lambda_max': float(row['LambdaMax']) if str(row.get('LambdaMax', '')).replace('.','',1).isdigit() else None,
                             'error': float(row['error']) if str(row['error']).replace('.','',1).isdigit() else None,
                             'chromophore': row.get('Chromophore', ''),
+                            'notes': notes,
+                            'source_dataset': CURATED_SCP_SOURCE_DATASET,
+                            'source_record_id': scp_id,
                             'status': 'APPROVED'
                         }
                     )

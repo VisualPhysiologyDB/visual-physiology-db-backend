@@ -33,6 +33,9 @@
                     <span class="font-bold text-xl tracking-tight text-slate-900">VPOD <span class="hidden md:inline text-slate-400 font-normal">| Visual Physiology Opsin Database</span></span>
                 </div>
                 <div class="flex items-center gap-4">
+                    <button onclick="toggleCitationModal()" class="text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors flex items-center gap-1">
+                        <i data-lucide="quote" class="h-4 w-4"></i> How to cite us
+                    </button>
                     <button onclick="toggleContributeModal()" class="text-sm font-semibold text-sky-600 hover:text-sky-700 transition-colors flex items-center gap-1 bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100">
                         <i data-lucide="send" class="h-4 w-4"></i> Contribute Data
                     </button>
@@ -177,12 +180,12 @@
 
     <!-- NEW: Streamlined Web Form Submission Modal -->
     <div id="contributeModal" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
-        <div class="bg-white rounded-2xl shadow-xl max-w-lg w-full overflow-hidden relative">
+        <div class="bg-white rounded-2xl shadow-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative" role="dialog" aria-modal="true" aria-labelledby="contributeTitle">
             <div class="bg-sky-50 border-b border-sky-100 px-6 py-4 flex justify-between items-center">
-                <h2 class="text-lg font-bold text-sky-900 flex items-center gap-2">
+                <h2 id="contributeTitle" class="text-lg font-bold text-sky-900 flex items-center gap-2">
                     <i data-lucide="send" class="h-5 w-5 text-sky-600"></i> Suggest Data for VPOD
                 </h2>
-                <button onclick="toggleContributeModal()" class="text-sky-400 hover:text-sky-600 transition-colors">
+                <button onclick="toggleContributeModal()" class="text-sky-400 hover:text-sky-600 transition-colors" aria-label="Close contribution form">
                     <i data-lucide="x" class="h-5 w-5"></i>
                 </button>
             </div>
@@ -197,34 +200,110 @@
                 <form id="submissionForm" onsubmit="submitData(event)" class="space-y-4">
                     <input type="hidden" id="subTier" value="PUBLICATION">
                     
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Reference DOI / URL <span class="text-red-500">*</span></label>
-                        <input type="text" id="subDoi" placeholder="10.1038/..." class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Reference DOI / URL <span class="text-red-500">*</span></label>
+                            <input type="text" id="subDoi" placeholder="10.1038/..." class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Publication Year</label>
+                            <input type="number" id="subYear" min="1800" max="2100" class="w-full border border-slate-300 rounded p-2 text-sm">
+                        </div>
                     </div>
 
-                    <div id="dataEntryFields" class="hidden grid grid-cols-2 gap-4">
-                        <div class="col-span-2">
+                    <div id="publicationFields">
+                        <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Potential Relevance</label>
+                        <select id="subRelevance" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-sky-500 focus:border-sky-500">
+                            <option value="Heterologous">Heterologous data</option>
+                            <option value="SCP">SCP data</option>
+                            <option value="Both / unclear">Both / unclear</option>
+                        </select>
+                    </div>
+
+                    <div id="dataEntryFields" class="hidden space-y-4">
+                        <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Data Type</label>
-                            <select id="subType" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-sky-500 focus:border-sky-500">
+                            <select id="subType" onchange="setDetailedDataType()" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-sky-500 focus:border-sky-500">
                                 <option value="Heterologous">Heterologous Expression</option>
                                 <option value="SCP">Single-Cell Photometry (SCP)</option>
                             </select>
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Genus</label>
-                            <input type="text" id="subGenus" class="w-full border border-slate-300 rounded p-2 text-sm">
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Phylum</label>
+                                <input type="text" id="subPhylum" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Genus <span class="text-red-500">*</span></label>
+                                <input type="text" id="subGenus" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Species <span class="text-red-500">*</span></label>
+                                <input type="text" id="subSpecies" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Species</label>
-                            <input type="text" id="subSpecies" class="w-full border border-slate-300 rounded p-2 text-sm">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Lambda Max (nm) <span class="text-red-500">*</span></label>
+                                <input type="number" step="0.1" id="subLmax" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Error</label>
+                                <input type="number" step="0.1" id="subError" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Lambda Max (nm)</label>
-                            <input type="number" step="0.1" id="subLmax" class="w-full border border-slate-300 rounded p-2 text-sm">
+
+                        <div id="heterologousFields" class="grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-slate-200 pt-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Gene Family</label>
+                                <input type="text" id="subGeneFamily" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Accession</label>
+                                <input type="text" id="subAccession" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Mutations</label>
+                                <input type="text" id="subMutations" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Cell Culture</label>
+                                <input type="text" id="subCellCulture" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">DNA Sequence</label>
+                                <textarea id="subDna" class="w-full border border-slate-300 rounded p-2 text-sm h-20 font-mono"></textarea>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Protein Sequence</label>
+                                <textarea id="subProtein" class="w-full border border-slate-300 rounded p-2 text-sm h-20 font-mono"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="scpFields" class="hidden grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-slate-200 pt-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Photoreceptor Type</label>
+                                <input type="text" id="subPhotoreceptorType" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Cell Subtype</label>
+                                <input type="text" id="subCellSubtype" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Chromophore</label>
+                                <input type="text" id="subChromophore" class="w-full border border-slate-300 rounded p-2 text-sm">
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-span-2 mt-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Submitter Email</label>
+                        <input type="email" id="subEmail" class="w-full border border-slate-300 rounded p-2 text-sm">
+                    </div>
+
+                    <div>
                         <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Notes / Feedback</label>
                         <textarea id="subNotes" class="w-full border border-slate-300 rounded p-2 text-sm h-16" placeholder="Any specific mutations, A1/A2 chromophore, or relevant details..."></textarea>
                     </div>
@@ -235,24 +314,32 @@
                     </div>
                 </form>
 
-                <script>
-                // Add this helper function to your JS script
-                function setSubTier(tier) {
-                    document.getElementById('subTier').value = tier;
-                    const isData = tier === 'DATA';
-                    
-                    // Toggle UI Tabs
-                    document.getElementById('tier-pub').className = isData ? 'w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors' : 'w-1/2 py-2 text-sm font-semibold border-b-2 border-sky-500 text-sky-600';
-                    document.getElementById('tier-data').className = isData ? 'w-1/2 py-2 text-sm font-semibold border-b-2 border-sky-500 text-sky-600' : 'w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors';
-                    
-                    // Toggle Fields
-                    document.getElementById('dataEntryFields').style.display = isData ? 'grid' : 'none';
-                    
-                    // Toggle required constraints
-                    document.getElementById('subGenus').required = isData;
-                    document.getElementById('subSpecies').required = isData;
-                }
-                </script>
+            </div>
+        </div>
+    </div>
+
+    <div id="citationModal" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl shadow-xl max-w-xl w-full overflow-hidden relative" role="dialog" aria-modal="true" aria-labelledby="citationTitle">
+            <div class="bg-slate-50 border-b border-slate-200 px-6 py-4 flex justify-between items-center">
+                <h2 id="citationTitle" class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <i data-lucide="quote" class="h-5 w-5 text-sky-600"></i> How to cite us
+                </h2>
+                <button onclick="toggleCitationModal()" class="text-slate-400 hover:text-slate-600 transition-colors" aria-label="Close citation dialog">
+                    <i data-lucide="x" class="h-5 w-5"></i>
+                </button>
+            </div>
+            <div class="p-6 space-y-4">
+                <p id="vpodCitationText" class="text-sm leading-6 text-slate-700">
+                    Seth A. Frazer, Mahdi Baghbanzadeh, Ali Rahnavard, Keith A. Crandall, & Todd H Oakley. Discovering genotype-phenotype relationships with machine learning and the Visual Physiology Opsin Database (VPOD). GigaScience, 2024.09.01. https://doi.org/10.1093/gigascience/giae073
+                </p>
+                <div class="flex flex-col sm:flex-row justify-between gap-3">
+                    <a href="https://doi.org/10.1093/gigascience/giae073" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-sky-600 hover:text-sky-700">
+                        <i data-lucide="external-link" class="h-4 w-4"></i> Original publication
+                    </a>
+                    <button id="copyCitationButton" type="button" onclick="copyCitation()" class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded text-sm font-medium">
+                        <i data-lucide="copy" class="h-4 w-4"></i> Copy citation
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -267,23 +354,110 @@
 
         // Truncate helper for long accessions
         const truncate = (str, n) => (str && str.length > n) ? str.slice(0, n - 1) + '&hellip;' : str;
+        const VPOD_CITATION = 'Seth A. Frazer, Mahdi Baghbanzadeh, Ali Rahnavard, Keith A. Crandall, & Todd H Oakley. Discovering genotype-phenotype relationships with machine learning and the Visual Physiology Opsin Database (VPOD). GigaScience, 2024.09.01. https://doi.org/10.1093/gigascience/giae073';
+
+        function toggleCitationModal() {
+            document.getElementById('citationModal').classList.toggle('hidden');
+        }
+
+        async function copyCitation() {
+            const button = document.getElementById('copyCitationButton');
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(VPOD_CITATION);
+                } else {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = VPOD_CITATION;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                }
+                button.innerHTML = '<i data-lucide="check" class="h-4 w-4"></i> Copied';
+                lucide.createIcons();
+                setTimeout(() => {
+                    button.innerHTML = '<i data-lucide="copy" class="h-4 w-4"></i> Copy citation';
+                    lucide.createIcons();
+                }, 1800);
+            } catch(err) {
+                alert('Unable to copy citation.');
+            }
+        }
+
+        function setSubTier(tier) {
+            document.getElementById('subTier').value = tier;
+            const isData = tier === 'DATA';
+            document.getElementById('tier-pub').className = isData ? 'w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors' : 'w-1/2 py-2 text-sm font-semibold border-b-2 border-sky-500 text-sky-600';
+            document.getElementById('tier-data').className = isData ? 'w-1/2 py-2 text-sm font-semibold border-b-2 border-sky-500 text-sky-600' : 'w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors';
+            document.getElementById('publicationFields').classList.toggle('hidden', isData);
+            document.getElementById('dataEntryFields').classList.toggle('hidden', !isData);
+            document.getElementById('subGenus').required = isData;
+            document.getElementById('subSpecies').required = isData;
+            document.getElementById('subLmax').required = isData;
+            setDetailedDataType();
+        }
+
+        function setDetailedDataType() {
+            const isSCP = document.getElementById('subType').value === 'SCP';
+            document.getElementById('heterologousFields').classList.toggle('hidden', isSCP);
+            document.getElementById('scpFields').classList.toggle('hidden', !isSCP);
+        }
+
+        function inputValue(id) {
+            return document.getElementById(id).value.trim();
+        }
+
+        function numericValue(id) {
+            const value = inputValue(id);
+            return value === '' ? null : Number(value);
+        }
 
         function toggleContributeModal() {
-            document.getElementById('contributeModal').classList.toggle('hidden');
-            document.getElementById('submissionForm').reset();
+            const modal = document.getElementById('contributeModal');
+            const opening = modal.classList.contains('hidden');
+            modal.classList.toggle('hidden');
+            if (opening) {
+                document.getElementById('submissionForm').reset();
+                setSubTier('PUBLICATION');
+                setDetailedDataType();
+            }
         }
 
         // Handle the new form submission to the API
         async function submitData(e) {
             e.preventDefault();
+            const tier = document.getElementById('subTier').value;
             const payload = {
-                data_type: document.getElementById('subType').value,
-                genus: document.getElementById('subGenus').value,
-                species: document.getElementById('subSpecies').value,
-                lambda_max: document.getElementById('subLmax').value || null,
-                doi: document.getElementById('subDoi').value,
-                notes: document.getElementById('subNotes').value
+                submission_type: tier,
+                doi: inputValue('subDoi'),
+                year_of_publication: numericValue('subYear'),
+                notes: inputValue('subNotes'),
+                submitter_email: inputValue('subEmail')
             };
+
+            if (tier === 'PUBLICATION') {
+                payload.relevance = document.getElementById('subRelevance').value;
+            } else {
+                payload.data_type = document.getElementById('subType').value;
+                payload.phylum = inputValue('subPhylum');
+                payload.genus = inputValue('subGenus');
+                payload.species = inputValue('subSpecies');
+                payload.lambda_max = numericValue('subLmax');
+                payload.error = numericValue('subError');
+
+                if (payload.data_type === 'Heterologous') {
+                    payload.gene_family = inputValue('subGeneFamily');
+                    payload.accession = inputValue('subAccession');
+                    payload.mutations = inputValue('subMutations');
+                    payload.cell_culture = inputValue('subCellCulture');
+                    payload.dna_sequence = inputValue('subDna');
+                    payload.protein_sequence = inputValue('subProtein');
+                } else {
+                    payload.photoreceptor_type = inputValue('subPhotoreceptorType');
+                    payload.cell_subtype = inputValue('subCellSubtype');
+                    payload.chromophore = inputValue('subChromophore');
+                }
+            }
 
             try {
                 const response = await fetch('/api/submissions/', {
@@ -296,7 +470,12 @@
                     alert('Success! Your data has been submitted to the VPOD curators for review.');
                     toggleContributeModal();
                 } else {
-                    alert('Submission failed. Please check your data and try again.');
+                    const errorBody = await response.text();
+                    let message = errorBody;
+                    try {
+                        message = JSON.stringify(JSON.parse(errorBody));
+                    } catch(err) {}
+                    alert(`Submission failed. ${message}`);
                 }
             } catch(err) {
                 alert('Connection error submitting data.');

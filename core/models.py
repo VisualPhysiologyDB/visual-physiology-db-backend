@@ -52,13 +52,19 @@ class HeterologousData(ApprovalModel):
     # NEW FIELDS for MNM integration:
     is_inferred = models.BooleanField(default=False, help_text="Computationally inferred via MNM pipeline")
     inference_source = models.CharField(max_length=100, blank=True, null=True, help_text="e.g. OPTICS, MNM")
+    source_dataset = models.CharField(max_length=100, blank=True, null=True)
+    source_record_id = models.CharField(max_length=100, blank=True, null=True)
 
     class Meta:
         constraints = [
             models.CheckConstraint(
                 check=models.Q(lambda_max__gte=200) & models.Q(lambda_max__lte=800) | models.Q(lambda_max=0.0),
                 name='valid_lambda_max_range'
-            )
+            ),
+            models.UniqueConstraint(
+                fields=['source_dataset', 'source_record_id'],
+                name='unique_heterologous_source_record'
+            ),
         ]
 
     def __str__(self):
@@ -76,8 +82,18 @@ class CuratedSCP(ApprovalModel):
     lambda_max = models.FloatField(help_text="Wavelength of maximum absorbance", null=True, blank=True)
     error = models.FloatField(blank=True, null=True)
     chromophore = models.CharField(max_length=50, blank=True, null=True, help_text="e.g. A1, A2")
-    notes = models.CharField(max_length=100, blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
     reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='scp_assays')
+    source_dataset = models.CharField(max_length=100, blank=True, null=True)
+    source_record_id = models.CharField(max_length=100, blank=True, null=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=['source_dataset', 'source_record_id'],
+                name='unique_scp_source_record'
+            ),
+        ]
     
     def __str__(self):
         return f"SCP: {self.genus} {self.species} - {self.lambda_max}nm"

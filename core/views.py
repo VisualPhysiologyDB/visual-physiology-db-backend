@@ -1,10 +1,11 @@
 import csv
 from django.db import models
 from django.http import HttpResponse
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, status
 from rest_framework.decorators import action
+from rest_framework.response import Response
 from .models import Reference, Opsin, HeterologousData, CuratedSCP, DataSubmission
-from .serializers import ReferenceSerializer, OpsinSerializer, HeterologousDataSerializer, CuratedSCPSerializer, DataSubmissionSerializer
+from .serializers import ReferenceSerializer, OpsinSerializer, HeterologousDataSerializer, CuratedSCPSerializer, DataSubmissionSerializer, SubmissionCreateSerializer
 
 class SubmissionModelViewSet(viewsets.ModelViewSet):
     # Allow ANY user to submit data, but reading is restricted to APPROVED (unless admin)
@@ -42,7 +43,31 @@ class CuratedSCPViewSet(SubmissionModelViewSet):
     filterset_fields = ['genus', 'species', 'phylum', 'reference__doi']
 
 class DataSubmissionViewSet(viewsets.ModelViewSet):
-    """ Public endpoint for web form submissions """
+    """
+    Public endpoint for web form submissions.
+
+    New submissions are written directly to the real VPOD models in PENDING
+    status. The legacy DataSubmission table remains readable to staff for any
+    older flat inbox records.
+    """
     queryset = DataSubmission.objects.all()
     serializer_class = DataSubmissionSerializer
     permission_classes = [permissions.AllowAny] # Publicly accessible for POST
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_staff:
+            return self.queryset.all()
+        return self.queryset.none()
+
+    def get_serializer_class(self):
+        if self.action == 'create':
+            return SubmissionCreateSerializer
+        return DataSubmissionSerializer
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        submitted_by = request.user if request.user.is_authenticated else None
+        result = serializer.save(submitted_by=submitted_by)
+        return Response(result, status=status.HTTP_201_CREATED)
