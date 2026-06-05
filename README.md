@@ -80,3 +80,15 @@ sudo systemctl restart gunicorn (Always run this!)
 
 As soon as you hit enter on that restart command, the live website at visphys.eemb.ucsb.edu will instantly reflect your new code!
 
+
+IF you wish to whipe the database clean prior to a complete update to how it is imported/formatted, run the following code. 
+
+```
+python manage.py flush --no-input
+```
+
+THEN run the import scripts again.
+
+```
+python manage.py import_csvs .
+```
