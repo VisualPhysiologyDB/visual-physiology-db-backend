@@ -58,7 +58,7 @@ class HeterologousData(ApprovalModel):
     class Meta:
         constraints = [
             models.CheckConstraint(
-                check=models.Q(lambda_max__gte=200) & models.Q(lambda_max__lte=800) | models.Q(lambda_max=0.0),
+                check=models.Q(lambda_max__gte=300) & models.Q(lambda_max__lte=800) | models.Q(lambda_max=0.0),
                 name='valid_lambda_max_range'
             ),
             models.UniqueConstraint(
@@ -89,10 +89,18 @@ class CuratedSCP(ApprovalModel):
 
     class Meta:
         constraints = [
+            models.CheckConstraint(
+                check=models.Q(lambda_max__gte=300) & models.Q(lambda_max__lte=800) | models.Q(lambda_max=0.0),
+                name='valid_lambda_max_range_scp'
+            ),
             models.UniqueConstraint(
                 fields=['source_dataset', 'source_record_id'],
                 name='unique_scp_source_record'
             ),
+            models.UniqueConstraint(
+                fields=["genus", "species", "lambda_max"],
+                name="unique_genus_species_lambdamax",
+            )
         ]
     
     def __str__(self):
