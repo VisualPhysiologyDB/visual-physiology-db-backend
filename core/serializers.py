@@ -119,6 +119,51 @@ class SubmissionCreateSerializer(serializers.Serializer):
         'both/unclear': 'Both / unclear',
     }
 
+    def check_redundancy(self, attrs, data_type):
+        """
+        Scores incoming data against existing database information.
+        Returns a score (0-100+) and a list of triggered redundancy reasons.
+        """
+        score = 0
+        reasons = []
+        
+        genus = (attrs.get('genus') or '').strip().lower()
+        species = (attrs.get('species') or '').strip().lower()
+        lmax = attrs.get('lambda_max')
+        
+        if data_type == 'Heterologous':
+            accession = (attrs.get('accession') or '').strip().lower()
+            
+            # High Flag: Same Accession
+            if accession and Opsin.objects.filter(accession__iexact=accession).exists():
+                score += 50
+                reasons.append(f"Accession '{accession}' already exists.")
+                
+            # Medium Flag: Same Organism
+            if genus and species:
+                opsins = Opsin.objects.filter(genus__iexact=genus, species__iexact=species)
+                if opsins.exists():
+                    score += 30
+                    reasons.append(f"Organism '{genus} {species}' already exists in Opsins.")
+                    
+                    # High Flag: Same Organism AND Same Lmax
+                    if lmax is not None and HeterologousData.objects.filter(opsin__in=opsins, lambda_max=lmax).exists():
+                        score += 30
+                        reasons.append(f"Lambda max {lmax}nm is already recorded for this organism.")
+                        
+        elif data_type == 'SCP':
+            if genus and species:
+                scps = CuratedSCP.objects.filter(genus__iexact=genus, species__iexact=species)
+                if scps.exists():
+                    score += 30
+                    reasons.append(f"Organism '{genus} {species}' already exists in SCP records.")
+                    
+                    if lmax is not None and scps.filter(lambda_max=lmax).exists():
+                        score += 40
+                        reasons.append(f"Lambda max {lmax}nm is already recorded for this SCP organism.")
+                        
+        return score, reasons
+
     def validate(self, attrs):
         submission_type = (attrs.get('submission_type') or '').strip().upper()
         if not submission_type:
@@ -244,6 +289,17 @@ class SubmissionCreateSerializer(serializers.Serializer):
     def create(self, validated_data):
         submitted_by = validated_data.pop('submitted_by', None)
         submission_type = validated_data['submission_type']
+        
+        # Validate Redundancy and Inject Flag in Notes Before saving
+        data_type = validated_data.get('data_type')
+        if submission_type == 'DATA' and data_type in ['Heterologous', 'SCP']:
+            score, reasons = self.check_redundancy(validated_data, data_type)
+            if score >= 60:
+                flag_text = f"\n\n[ADMIN FLAG: HIGH REDUNDANCY SCORE {score}] " + " | ".join(reasons)
+                if validated_data.get('notes'):
+                    validated_data['notes'] += flag_text
+                else:
+                    validated_data['notes'] = flag_text.strip()
 
         if submission_type == 'PUBLICATION':
             relevance = validated_data.get('relevance') or 'Both / unclear'

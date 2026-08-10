@@ -26,6 +26,7 @@ class SubmissionModelViewSet(viewsets.ModelViewSet):
 class ReferenceViewSet(SubmissionModelViewSet):
     queryset = Reference.objects.all()
     serializer_class = ReferenceSerializer
+    filterset_fields = ['doi', 'year_of_publication']
 
 class OpsinViewSet(SubmissionModelViewSet):
     queryset = Opsin.objects.select_related('reference').all()

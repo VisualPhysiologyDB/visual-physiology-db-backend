@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +80,7 @@
                 </div>
 
                 <div id="advancedFilters" class="hidden bg-slate-50 rounded-lg border border-slate-200 mt-2 p-4">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-4">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-4">
                         <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Phylum</label>
                             <input type="text" id="filterPhylum" class="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-sky-500 focus:border-sky-500">
@@ -101,6 +100,10 @@
                         <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Accession</label>
                             <input type="text" id="filterAccession" class="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-sky-500 focus:border-sky-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">DOI</label>
+                            <input type="text" id="filterDoi" placeholder="e.g. 10.1038/..." class="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-sky-500 focus:border-sky-500">
                         </div>
                     </div>
                     
@@ -124,16 +127,18 @@
             </div>
         </div>
 
-        <!-- NEW: Data Tabs include SCP -->
         <div class="flex border-b border-slate-200 mb-6 overflow-x-auto" id="tabs">
             <button onclick="switchTab('opsins')" id="tab-opsins" class="py-3 px-6 tab-active flex items-center gap-2 whitespace-nowrap">
                 <i data-lucide="database" class="h-4 w-4"></i> Sequences
             </button>
             <button onclick="switchTab('heterologous')" id="tab-heterologous" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
-                <i data-lucide="microscope" class="h-4 w-4"></i> Heterologous + Physiologically Inferred
+                <i data-lucide="microscope" class="h-4 w-4"></i> Heterologous + Inferred
             </button>
             <button onclick="switchTab('scp')" id="tab-scp" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
                 <i data-lucide="activity" class="h-4 w-4"></i> Single-Cell Photometry (SCP)
+            </button>
+            <button onclick="switchTab('references')" id="tab-references" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
+                <i data-lucide="book-open" class="h-4 w-4"></i> References
             </button>
         </div>
 
@@ -178,7 +183,6 @@
         </div>
     </main>
 
-    <!-- NEW: Streamlined Web Form Submission Modal -->
     <div id="contributeModal" class="fixed inset-0 bg-slate-900/60 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity">
         <div class="bg-white rounded-2xl shadow-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative" role="dialog" aria-modal="true" aria-labelledby="contributeTitle">
             <div class="bg-sky-50 border-b border-sky-100 px-6 py-4 flex justify-between items-center">
@@ -197,13 +201,17 @@
                     <button type="button" onclick="setSubTier('DATA')" id="tier-data" class="w-1/2 py-2 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors">Direct Data Entry</button>
                 </div>
 
-                <form id="submissionForm" onsubmit="submitData(event)" class="space-y-4">
+                <!-- Removed onsubmit to manage specifically through the buttons -->
+                <form id="submissionForm" class="space-y-4">
                     <input type="hidden" id="subTier" value="PUBLICATION">
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div class="md:col-span-2">
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Reference DOI / URL <span class="text-red-500">*</span></label>
                             <input type="text" id="subDoi" placeholder="10.1038/..." class="w-full border border-slate-300 rounded p-2 text-sm" required>
+                            <p id="doiWarning" class="hidden mt-1 text-xs font-medium text-amber-600 flex items-center gap-1">
+                                <i data-lucide="alert-triangle" class="h-3 w-3"></i> DOI already exists. New data will be appended to this publication.
+                            </p>
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-slate-500 uppercase mb-1">Publication Year</label>
@@ -310,6 +318,7 @@
                     
                     <div class="pt-2 flex justify-end gap-2">
                         <button type="button" onclick="toggleContributeModal()" class="px-4 py-2 text-sm font-medium text-slate-600">Cancel</button>
+                        <button type="button" onclick="submitData(event, true)" id="btnSubmitAnother" class="hidden px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded text-sm font-medium">Submit & Add Another</button>
                         <button type="submit" class="px-4 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded text-sm font-medium">Submit for Review</button>
                     </div>
                 </form>
@@ -329,6 +338,14 @@
                 </button>
             </div>
             <div class="p-6 space-y-4">
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4">
+                    <h3 class="text-sm font-bold text-amber-800 mb-2">Best Practices for Citing VPOD</h3>
+                    <ul class="list-disc pl-5 text-sm text-amber-700 space-y-1">
+                        <li>Users should cite the VPOD and/or OPTICS paper.</li>
+                        <li>Users must cite the specific version of VPOD/OPTICS used (note that the current version is <strong>v1.3</strong>).</li>
+                        <li>If OPTICS was used, users must state the specific model used and whether the results were obtained using the bootstrapping option.</li>
+                    </ul>
+                </div>
                 <p id="vpodCitationText" class="text-sm leading-6 text-slate-700">
                     Seth A. Frazer, Mahdi Baghbanzadeh, Ali Rahnavard, Keith A. Crandall, & Todd H Oakley. Discovering genotype-phenotype relationships with machine learning and the Visual Physiology Opsin Database (VPOD). GigaScience, 2024.09.01. https://doi.org/10.1093/gigascience/giae073
                 </p>
@@ -352,7 +369,6 @@
         let filteredData = [];
         let lmaxChartInstance = null;
 
-        // Truncate helper for long accessions
         const truncate = (str, n) => (str && str.length > n) ? str.slice(0, n - 1) + '&hellip;' : str;
         const VPOD_CITATION = 'Seth A. Frazer, Mahdi Baghbanzadeh, Ali Rahnavard, Keith A. Crandall, & Todd H Oakley. Discovering genotype-phenotype relationships with machine learning and the Visual Physiology Opsin Database (VPOD). GigaScience, 2024.09.01. https://doi.org/10.1093/gigascience/giae073';
 
@@ -394,6 +410,7 @@
             document.getElementById('subGenus').required = isData;
             document.getElementById('subSpecies').required = isData;
             document.getElementById('subLmax').required = isData;
+            document.getElementById('btnSubmitAnother').classList.toggle('hidden', !isData);
             setDetailedDataType();
         }
 
@@ -418,15 +435,40 @@
             modal.classList.toggle('hidden');
             if (opening) {
                 document.getElementById('submissionForm').reset();
+                document.getElementById('doiWarning').classList.add('hidden');
                 setSubTier('PUBLICATION');
                 setDetailedDataType();
             }
         }
 
-        // Handle the new form submission to the API
-        async function submitData(e) {
+        // Live duplicate DOI check
+        document.getElementById('subDoi').addEventListener('blur', async (e) => {
+            const doi = e.target.value.trim();
+            const warningEl = document.getElementById('doiWarning');
+            if (!doi) { warningEl.classList.add('hidden'); return; }
+            try {
+                const res = await fetch(`/api/references/?doi=${encodeURIComponent(doi)}`);
+                const data = await res.json();
+                const count = data.results ? data.results.length : data.length;
+                if (count > 0) warningEl.classList.remove('hidden');
+                else warningEl.classList.add('hidden');
+            } catch (err) {
+                console.error("DOI check failed", err);
+            }
+        });
+
+        // Ensure standard form submit calls our method
+        document.getElementById('submissionForm').addEventListener('submit', function(e) {
+            submitData(e, false);
+        });
+
+        async function submitData(e, addAnother = false) {
             e.preventDefault();
             const tier = document.getElementById('subTier').value;
+            
+            // Check form validity if manually triggering outside 'submit' event
+            if(addAnother && !document.getElementById('submissionForm').reportValidity()) return;
+
             const payload = {
                 submission_type: tier,
                 doi: inputValue('subDoi'),
@@ -467,14 +509,20 @@
                 });
                 
                 if(response.ok) {
-                    alert('Success! Your data has been submitted to the VPOD curators for review.');
-                    toggleContributeModal();
+                    if (addAnother) {
+                        alert('Success! Record submitted. You may now add another entry for this publication.');
+                        const fieldsToClear = ['subGenus', 'subSpecies', 'subLmax', 'subError', 'subGeneFamily', 'subAccession', 'subMutations', 'subCellCulture', 'subDna', 'subProtein', 'subPhotoreceptorType', 'subCellSubtype', 'subChromophore'];
+                        fieldsToClear.forEach(id => { 
+                            if(document.getElementById(id)) document.getElementById(id).value = ''; 
+                        });
+                    } else {
+                        alert('Success! Your data has been submitted to the VPOD curators for review.');
+                        toggleContributeModal();
+                    }
                 } else {
                     const errorBody = await response.text();
                     let message = errorBody;
-                    try {
-                        message = JSON.stringify(JSON.parse(errorBody));
-                    } catch(err) {}
+                    try { message = JSON.stringify(JSON.parse(errorBody)); } catch(err) {}
                     alert(`Submission failed. ${message}`);
                 }
             } catch(err) {
@@ -505,6 +553,7 @@
             document.getElementById('tab-opsins').className = tab === 'opsins' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
             document.getElementById('tab-heterologous').className = tab === 'heterologous' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
             document.getElementById('tab-scp').className = tab === 'scp' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
+            document.getElementById('tab-references').className = tab === 'references' ? 'py-3 px-6 tab-active flex items-center gap-2' : 'py-3 px-6 tab-inactive flex items-center gap-2';
             
             if(tab === 'heterologous' || tab === 'scp') {
                 document.getElementById('lmaxFilters').classList.remove('hidden');
@@ -545,6 +594,7 @@
             const fGenus = document.getElementById('filterGenus').value.toLowerCase();
             const fSpecies = document.getElementById('filterSpecies').value.toLowerCase();
             const fAccession = document.getElementById('filterAccession').value.toLowerCase();
+            const fDoi = document.getElementById('filterDoi') ? document.getElementById('filterDoi').value.toLowerCase() : '';
             const fLmaxMin = parseFloat(document.getElementById('filterLmaxMin').value);
             const fLmaxMax = parseFloat(document.getElementById('filterLmaxMax').value);
             const fWildtype = document.getElementById('filterWildtype').checked;
@@ -557,17 +607,18 @@
                 if (fGenus && !String(getProp(item, 'genus')).toLowerCase().includes(fGenus)) return false;
                 if (fSpecies && !String(getProp(item, 'species')).toLowerCase().includes(fSpecies)) return false;
                 if (fAccession && !String(getProp(item, 'accession')).toLowerCase().includes(fAccession)) return false;
+                
+                const doiText = (item.reference && item.reference.doi) ? item.reference.doi.toLowerCase() : (item.doi ? item.doi.toLowerCase() : '');
+                if (fDoi && !doiText.includes(fDoi)) return false;
 
                 if (currentTab === 'heterologous' || currentTab === 'scp') {
-                    if (item.lambda_max) {
+                    if (item.lambda_max !== null && item.lambda_max !== undefined) {
                         if (!isNaN(fLmaxMin) && item.lambda_max < fLmaxMin) return false;
                         if (!isNaN(fLmaxMax) && item.lambda_max > fLmaxMax) return false;
                     }
                     
-                    // NEW: Wildtype filter logic (Exclude mutations and chimeras)
                     if (fWildtype) {
                         const muts = (item.mutations || '').toLowerCase().trim();
-                        // If it has text that isn't denoting 'none' or 'wildtype', filter it out.
                         if (muts && muts !== 'none' && muts !== 'wt' && muts !== 'wildtype') return false;
                         if (muts.includes('chimera')) return false; 
                     }
@@ -598,14 +649,15 @@
             emptyState.classList.add('hidden');
 
             const formatDoi = (item) => {
-                return item.reference && item.reference.doi 
-                    ? `<a href="https://doi.org/${item.reference.doi}" target="_blank" class="text-sky-600 hover:text-sky-800 hover:underline flex items-center gap-1 inline-flex">
-                        ${item.reference.doi} <i data-lucide="external-link" class="h-3 w-3"></i></a>` 
+                const doi = item.reference ? item.reference.doi : item.doi;
+                return doi 
+                    ? `<a href="https://doi.org/${doi}" target="_blank" class="text-sky-600 hover:text-sky-800 hover:underline flex items-center gap-1 inline-flex">
+                        ${doi} <i data-lucide="external-link" class="h-3 w-3"></i></a>` 
                     : '<span class="text-slate-400">No DOI</span>';
             };
 
             const getColor = (lmax) => {
-                if(!lmax) return 'text-slate-400';
+                if(lmax === null || lmax === undefined) return 'text-slate-400';
                 if(lmax < 400) return 'text-purple-600';
                 if (lmax < 490) return 'text-blue-600';
                 if (lmax < 550) return 'text-green-600';
@@ -641,6 +693,8 @@
                     <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference DOI</th>
                 </tr>`;
                 filteredData.forEach(item => {
+                    const lmaxDisplay = (item.lambda_max !== null && item.lambda_max !== undefined && item.lambda_max !== '') ? item.lambda_max : 'N/A';
+                    const lmaxString = lmaxDisplay !== 'N/A' ? `${lmaxDisplay} <span class="text-slate-400 font-normal text-xs">nm</span>` : 'N/A';
                     const errorText = item.error ? `<span class="text-slate-400 font-normal text-xs ml-1">±${item.error}</span>` : '';
                     const accession = item.opsin?.accession || '';
                     const mutations = item.mutations ? item.mutations : 'None'; 
@@ -652,7 +706,7 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.hetid}</td> <br>${typeBadge}</td>
                         <td class="px-6 py-4 whitespace-nowrap"><div class="text-sm font-medium text-slate-900 italic">${item.opsin?.genus || ''} ${item.opsin?.species || ''}</div><div class="text-xs text-slate-500">${item.opsin?.gene_family || ''}</div></td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600 font-mono" title="${accession}">${truncate(accession, 20)}</td>
-                        <td class="px-6 py-4 whitespace-nowrap"><span class="text-sm font-bold ${getColor(item.lambda_max)}">${item.lambda_max ? item.lambda_max : 'N/A'} <span class="text-slate-400 font-normal text-xs">nm</span> ${errorText}</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap"><span class="text-sm font-bold ${getColor(item.lambda_max)}">${lmaxString} ${errorText}</span></td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600" title="${mutations}">${truncate(mutations, 20)}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">${formatDoi(item)}</td>
                     </tr>`;
@@ -669,14 +723,33 @@
                     <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Reference DOI</th>
                 </tr>`;
                 filteredData.forEach(item => {
+                    const lmaxDisplay = (item.lambda_max !== null && item.lambda_max !== undefined && item.lambda_max !== '') ? item.lambda_max : 'N/A';
+                    const lmaxString = lmaxDisplay !== 'N/A' ? `${lmaxDisplay} <span class="text-slate-400 font-normal text-xs">nm</span>` : 'N/A';
                     const errorText = item.error ? `<span class="text-slate-400 font-normal text-xs ml-1">±${item.error}</span>` : '';
+                    
                     const row = `<tr class="hover:bg-sky-50 transition-colors">
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.scpid}</td>
                         <td class="px-6 py-4 whitespace-nowrap"><div class="text-sm font-medium text-slate-900 italic">${item.genus || ''} ${item.species || ''}</div><div class="text-xs text-slate-500">${item.phylum || ''}</div></td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600 font-semibold">${item.photoreceptor_type || '<span class="text-slate-400">N/A</span>'}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${item.chromophore || '<span class="text-slate-400">N/A</span>'}</td>
-                        <td class="px-6 py-4 whitespace-nowrap"><span class="text-sm font-bold ${getColor(item.lambda_max)}">${item.lambda_max ? item.lambda_max : 'N/A'} <span class="text-slate-400 font-normal text-xs">nm</span> ${errorText}</span></td>
+                        <td class="px-6 py-4 whitespace-nowrap"><span class="text-sm font-bold ${getColor(item.lambda_max)}">${lmaxString} ${errorText}</span></td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">${formatDoi(item)}</td>
+                    </tr>`;
+                    tbody.insertAdjacentHTML('beforeend', row);
+                });
+            } else if (currentTab === 'references') {
+                thead.innerHTML = `<tr>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Ref ID</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">DOI</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Year</th>
+                    <th class="px-6 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Status</th>
+                </tr>`;
+                filteredData.forEach(item => {
+                    const row = `<tr class="hover:bg-sky-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">#${item.refid}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">${item.doi ? `<a href="https://doi.org/${item.doi}" target="_blank" class="text-sky-600 hover:underline">${item.doi}</a>` : 'No DOI'}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-600">${item.year_of_publication || 'N/A'}</td>
+                        <td class="px-6 py-4 whitespace-nowrap"><span class="px-2 py-1 text-[10px] uppercase font-bold rounded ${item.status === 'APPROVED' ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-700'}">${item.status}</span></td>
                     </tr>`;
                     tbody.insertAdjacentHTML('beforeend', row);
                 });
@@ -755,6 +828,10 @@
                     let val = row[h];
                     return `"${String(val||'').replace(/"/g, '""')}"`;
                 }).join(',')));
+            } else if (currentTab === 'references') {
+                const headers = ['refid', 'doi', 'year_of_publication', 'status'];
+                csvRows.push(headers.join(','));
+                filteredData.forEach(row => csvRows.push(headers.map(h => `"${String(row[h]||'').replace(/"/g, '""')}"`).join(',')));
             }
             return csvRows.join('\n');
         }
