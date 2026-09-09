@@ -4,17 +4,6 @@ from django.conf import settings
 from django.db import migrations, models
 from django.db.models import Q
 
-def delete_invalid_lambda_max_rows(apps, schema_editor):
-    YourModel = apps.get_model("core", "CuratedSCP")
-
-    invalid_qs = (
-        YourModel.objects
-        .filter(Q(lambda_max__lt=300) | Q(lambda_max__gt=800))
-        .exclude(lambda_max=0)
-    )
-
-    invalid_qs.delete()
-    
 class Migration(migrations.Migration):
 
     dependencies = [
@@ -23,10 +12,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RunPython(
-            delete_invalid_lambda_max_rows,
-            reverse_code=migrations.RunPython.noop,
-        ),
         migrations.RemoveConstraint(
             model_name="heterologousdata",
             name="valid_lambda_max_range",
