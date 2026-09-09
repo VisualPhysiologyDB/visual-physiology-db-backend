@@ -1,0 +1,1602 @@
+{
+  "applied": false,
+  "groups": [
+    {
+      "primary_id": 386,
+      "genus": "Melanochromis",
+      "species": "vermivorus",
+      "lambda_max": 505.0,
+      "records": [
+        {
+          "scpid": 386,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "386",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1530,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1530",
+          "duplicate_of_before": 386
+        },
+        {
+          "scpid": 3053,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1482",
+          "duplicate_of_before": 386
+        }
+      ]
+    },
+    {
+      "primary_id": 387,
+      "genus": "Melanochromis",
+      "species": "vermivorus",
+      "lambda_max": 418.0,
+      "records": [
+        {
+          "scpid": 387,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "387",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1531,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1531",
+          "duplicate_of_before": 387
+        },
+        {
+          "scpid": 3054,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1483",
+          "duplicate_of_before": 387
+        }
+      ]
+    },
+    {
+      "primary_id": 388,
+      "genus": "Melanochromis",
+      "species": "vermivorus",
+      "lambda_max": 506.0,
+      "records": [
+        {
+          "scpid": 388,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "388",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1535,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1535",
+          "duplicate_of_before": 388
+        },
+        {
+          "scpid": 3058,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1487",
+          "duplicate_of_before": 388
+        }
+      ]
+    },
+    {
+      "primary_id": 389,
+      "genus": "Melanochromis",
+      "species": "vermivorus",
+      "lambda_max": 555.0,
+      "records": [
+        {
+          "scpid": 389,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "389",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1536,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1536",
+          "duplicate_of_before": 389
+        },
+        {
+          "scpid": 3059,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1488",
+          "duplicate_of_before": 389
+        }
+      ]
+    },
+    {
+      "primary_id": 390,
+      "genus": "Melanochromis",
+      "species": "vermivorus",
+      "lambda_max": 485.0,
+      "records": [
+        {
+          "scpid": 390,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "390",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1532,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1532",
+          "duplicate_of_before": 390
+        },
+        {
+          "scpid": 3055,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1484",
+          "duplicate_of_before": 390
+        }
+      ]
+    },
+    {
+      "primary_id": 425,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 505.0,
+      "records": [
+        {
+          "scpid": 425,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "425",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1519,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1519",
+          "duplicate_of_before": 425
+        },
+        {
+          "scpid": 3043,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1472",
+          "duplicate_of_before": 425
+        }
+      ]
+    },
+    {
+      "primary_id": 426,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 378.0,
+      "records": [
+        {
+          "scpid": 426,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "426",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1520,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1520",
+          "duplicate_of_before": 426
+        },
+        {
+          "scpid": 3044,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1473",
+          "duplicate_of_before": 426
+        }
+      ]
+    },
+    {
+      "primary_id": 427,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 482.0,
+      "records": [
+        {
+          "scpid": 427,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "427",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1523,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1523",
+          "duplicate_of_before": 427
+        },
+        {
+          "scpid": 3047,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1476",
+          "duplicate_of_before": 427
+        }
+      ]
+    },
+    {
+      "primary_id": 428,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 535.0,
+      "records": [
+        {
+          "scpid": 428,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "428",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1525,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1525",
+          "duplicate_of_before": 428
+        },
+        {
+          "scpid": 3049,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1478",
+          "duplicate_of_before": 428
+        }
+      ]
+    },
+    {
+      "primary_id": 452,
+      "genus": "Tramitichromis",
+      "species": "intermedius",
+      "lambda_max": 455.0,
+      "records": [
+        {
+          "scpid": 452,
+          "reference_id": 38,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "452",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1538,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1538",
+          "duplicate_of_before": 452
+        },
+        {
+          "scpid": 3061,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1490",
+          "duplicate_of_before": 452
+        }
+      ]
+    },
+    {
+      "primary_id": 1247,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 415.0,
+      "records": [
+        {
+          "scpid": 1247,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1247",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1521,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1521",
+          "duplicate_of_before": 1247
+        },
+        {
+          "scpid": 3045,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1474",
+          "duplicate_of_before": 1247
+        }
+      ]
+    },
+    {
+      "primary_id": 1251,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 506.0,
+      "records": [
+        {
+          "scpid": 1251,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1251",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1524,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1524",
+          "duplicate_of_before": 1251
+        },
+        {
+          "scpid": 3048,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1477",
+          "duplicate_of_before": 1251
+        }
+      ]
+    },
+    {
+      "primary_id": 1253,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 476.0,
+      "records": [
+        {
+          "scpid": 1253,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1253",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1526,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1526",
+          "duplicate_of_before": 1253
+        },
+        {
+          "scpid": 3050,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1479",
+          "duplicate_of_before": 1253
+        }
+      ]
+    },
+    {
+      "primary_id": 1255,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 534.0,
+      "records": [
+        {
+          "scpid": 1255,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1255",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1528,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1528",
+          "duplicate_of_before": 1255
+        },
+        {
+          "scpid": 3051,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1480",
+          "duplicate_of_before": 1255
+        }
+      ]
+    },
+    {
+      "primary_id": 1256,
+      "genus": "Pseudotropheus",
+      "species": "acei",
+      "lambda_max": 566.0,
+      "records": [
+        {
+          "scpid": 1256,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1256",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1529,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1529",
+          "duplicate_of_before": 1256
+        },
+        {
+          "scpid": 3052,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1481",
+          "duplicate_of_before": 1256
+        }
+      ]
+    },
+    {
+      "primary_id": 1260,
+      "genus": "Melanochromis",
+      "species": "vermivorus",
+      "lambda_max": 503.0,
+      "records": [
+        {
+          "scpid": 1260,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1260",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1533,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1533",
+          "duplicate_of_before": 1260
+        },
+        {
+          "scpid": 3056,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1485",
+          "duplicate_of_before": 1260
+        }
+      ]
+    },
+    {
+      "primary_id": 1261,
+      "genus": "Melanochromis",
+      "species": "vermivorus",
+      "lambda_max": 535.0,
+      "records": [
+        {
+          "scpid": 1261,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1261",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1534,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1534",
+          "duplicate_of_before": 1261
+        },
+        {
+          "scpid": 3057,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1486",
+          "duplicate_of_before": 1261
+        }
+      ]
+    },
+    {
+      "primary_id": 1264,
+      "genus": "Tramitichromis",
+      "species": "intermedius",
+      "lambda_max": 506.0,
+      "records": [
+        {
+          "scpid": 1264,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1264",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1537,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1537",
+          "duplicate_of_before": 1264
+        },
+        {
+          "scpid": 3060,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1489",
+          "duplicate_of_before": 1264
+        }
+      ]
+    },
+    {
+      "primary_id": 1266,
+      "genus": "Tramitichromis",
+      "species": "intermedius",
+      "lambda_max": 532.0,
+      "records": [
+        {
+          "scpid": 1266,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1266",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1539,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1539",
+          "duplicate_of_before": 1266
+        },
+        {
+          "scpid": 3062,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1491",
+          "duplicate_of_before": 1266
+        }
+      ]
+    },
+    {
+      "primary_id": 1267,
+      "genus": "Tramitichromis",
+      "species": "intermedius",
+      "lambda_max": 569.0,
+      "records": [
+        {
+          "scpid": 1267,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1267",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1540,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1540",
+          "duplicate_of_before": 1267
+        },
+        {
+          "scpid": 3063,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1492",
+          "duplicate_of_before": 1267
+        }
+      ]
+    },
+    {
+      "primary_id": 1268,
+      "genus": "Tramitichromis",
+      "species": "intermedius",
+      "lambda_max": 534.0,
+      "records": [
+        {
+          "scpid": 1268,
+          "reference_id": 62,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1268",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 1541,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1541",
+          "duplicate_of_before": 1268
+        },
+        {
+          "scpid": 3064,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1493",
+          "duplicate_of_before": 1268
+        }
+      ]
+    },
+    {
+      "primary_id": 1356,
+      "genus": "Rhea ",
+      "species": "americana",
+      "lambda_max": 504.0,
+      "records": [
+        {
+          "scpid": 1356,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1356",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2885,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1314",
+          "duplicate_of_before": 1356
+        }
+      ]
+    },
+    {
+      "primary_id": 1357,
+      "genus": "Gallus ",
+      "species": "gallus domesticus",
+      "lambda_max": 509.0,
+      "records": [
+        {
+          "scpid": 1357,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1357",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2886,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1315",
+          "duplicate_of_before": 1357
+        }
+      ]
+    },
+    {
+      "primary_id": 1358,
+      "genus": "Coturnix ",
+      "species": "japonica",
+      "lambda_max": 505.0,
+      "records": [
+        {
+          "scpid": 1358,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1358",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2887,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1316",
+          "duplicate_of_before": 1358
+        }
+      ]
+    },
+    {
+      "primary_id": 1359,
+      "genus": "Meleagris ",
+      "species": "galoparvo",
+      "lambda_max": 504.0,
+      "records": [
+        {
+          "scpid": 1359,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1359",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2888,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1317",
+          "duplicate_of_before": 1359
+        }
+      ]
+    },
+    {
+      "primary_id": 1360,
+      "genus": "Pavo ",
+      "species": "cristatus",
+      "lambda_max": 504.0,
+      "records": [
+        {
+          "scpid": 1360,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1360",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2889,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1318",
+          "duplicate_of_before": 1360
+        }
+      ]
+    },
+    {
+      "primary_id": 1361,
+      "genus": "Anas ",
+      "species": "platyrhynchos",
+      "lambda_max": 505.0,
+      "records": [
+        {
+          "scpid": 1361,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1361",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2890,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1319",
+          "duplicate_of_before": 1361
+        }
+      ]
+    },
+    {
+      "primary_id": 1368,
+      "genus": "Parvus ",
+      "species": "caeruleus",
+      "lambda_max": 503.0,
+      "records": [
+        {
+          "scpid": 1368,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1368",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2896,
+          "reference_id": 283,
+          "doi": "10.1016/s0042-6989(00)00227-3",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1325",
+          "duplicate_of_before": 1368
+        }
+      ]
+    },
+    {
+      "primary_id": 1375,
+      "genus": "Corvus ",
+      "species": "frugilegus",
+      "lambda_max": 504.0,
+      "records": [
+        {
+          "scpid": 1375,
+          "reference_id": 72,
+          "doi": "10.1016/s1350-9462(01)00009-x",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1375",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2903,
+          "reference_id": 72,
+          "doi": "10.1016/s1350-9462(01)00009-x",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1332",
+          "duplicate_of_before": 1375
+        }
+      ]
+    },
+    {
+      "primary_id": 1416,
+      "genus": "Zoramia ",
+      "species": "Viridiventer",
+      "lambda_max": 441.0,
+      "records": [
+        {
+          "scpid": 1416,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1416",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2944,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1373",
+          "duplicate_of_before": 1416
+        }
+      ]
+    },
+    {
+      "primary_id": 1417,
+      "genus": "Zoramia ",
+      "species": "Viridiventer",
+      "lambda_max": 506.0,
+      "records": [
+        {
+          "scpid": 1417,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1417",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2945,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1374",
+          "duplicate_of_before": 1417
+        }
+      ]
+    },
+    {
+      "primary_id": 1418,
+      "genus": "Zoramia ",
+      "species": "Viridiventer",
+      "lambda_max": 520.0,
+      "records": [
+        {
+          "scpid": 1418,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1418",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2946,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1375",
+          "duplicate_of_before": 1418
+        }
+      ]
+    },
+    {
+      "primary_id": 1419,
+      "genus": "Zoramia ",
+      "species": "Viridiventer",
+      "lambda_max": 502.0,
+      "records": [
+        {
+          "scpid": 1419,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1419",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2947,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1376",
+          "duplicate_of_before": 1419
+        }
+      ]
+    },
+    {
+      "primary_id": 1420,
+      "genus": "Zoramia ",
+      "species": "Leptacanthus",
+      "lambda_max": 442.0,
+      "records": [
+        {
+          "scpid": 1420,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1420",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2948,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1377",
+          "duplicate_of_before": 1420
+        }
+      ]
+    },
+    {
+      "primary_id": 1421,
+      "genus": "Zoramia ",
+      "species": "Leptacanthus",
+      "lambda_max": 501.0,
+      "records": [
+        {
+          "scpid": 1421,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1421",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2949,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1378",
+          "duplicate_of_before": 1421
+        }
+      ]
+    },
+    {
+      "primary_id": 1422,
+      "genus": "Zoramia ",
+      "species": "Leptacanthus",
+      "lambda_max": 512.0,
+      "records": [
+        {
+          "scpid": 1422,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1422",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2950,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1379",
+          "duplicate_of_before": 1422
+        }
+      ]
+    },
+    {
+      "primary_id": 1423,
+      "genus": "Zoramia ",
+      "species": "Leptacanthus",
+      "lambda_max": 521.0,
+      "records": [
+        {
+          "scpid": 1423,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1423",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2951,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1380",
+          "duplicate_of_before": 1423
+        }
+      ]
+    },
+    {
+      "primary_id": 1424,
+      "genus": "Zoramia ",
+      "species": "Leptacanthus",
+      "lambda_max": 504.0,
+      "records": [
+        {
+          "scpid": 1424,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1424",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2952,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1381",
+          "duplicate_of_before": 1424
+        }
+      ]
+    },
+    {
+      "primary_id": 1425,
+      "genus": "Rhabdamia ",
+      "species": "Gracilis",
+      "lambda_max": 420.0,
+      "records": [
+        {
+          "scpid": 1425,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1425",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2953,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1382",
+          "duplicate_of_before": 1425
+        }
+      ]
+    },
+    {
+      "primary_id": 1426,
+      "genus": "Rhabdamia ",
+      "species": "Gracilis",
+      "lambda_max": 485.0,
+      "records": [
+        {
+          "scpid": 1426,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1426",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2954,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1383",
+          "duplicate_of_before": 1426
+        }
+      ]
+    },
+    {
+      "primary_id": 1427,
+      "genus": "Rhabdamia ",
+      "species": "Gracilis",
+      "lambda_max": 500.0,
+      "records": [
+        {
+          "scpid": 1427,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1427",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2955,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1384",
+          "duplicate_of_before": 1427
+        }
+      ]
+    },
+    {
+      "primary_id": 1428,
+      "genus": "Rhabdamia ",
+      "species": "Gracilis",
+      "lambda_max": 520.0,
+      "records": [
+        {
+          "scpid": 1428,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1428",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2956,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1385",
+          "duplicate_of_before": 1428
+        }
+      ]
+    },
+    {
+      "primary_id": 1429,
+      "genus": "Rhabdamia ",
+      "species": "Gracilis",
+      "lambda_max": 497.0,
+      "records": [
+        {
+          "scpid": 1429,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1429",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2957,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1386",
+          "duplicate_of_before": 1429
+        }
+      ]
+    },
+    {
+      "primary_id": 1430,
+      "genus": "Nectamia ",
+      "species": "Savayensis",
+      "lambda_max": 466.0,
+      "records": [
+        {
+          "scpid": 1430,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1430",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2958,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1387",
+          "duplicate_of_before": 1430
+        }
+      ]
+    },
+    {
+      "primary_id": 1431,
+      "genus": "Nectamia ",
+      "species": "Savayensis",
+      "lambda_max": 493.0,
+      "records": [
+        {
+          "scpid": 1431,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1431",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2959,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1388",
+          "duplicate_of_before": 1431
+        }
+      ]
+    },
+    {
+      "primary_id": 1432,
+      "genus": "Nectamia ",
+      "species": "Savayensis",
+      "lambda_max": 507.0,
+      "records": [
+        {
+          "scpid": 1432,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1432",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2960,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1389",
+          "duplicate_of_before": 1432
+        }
+      ]
+    },
+    {
+      "primary_id": 1433,
+      "genus": "Nectamia ",
+      "species": "Savayensis",
+      "lambda_max": 520.0,
+      "records": [
+        {
+          "scpid": 1433,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1433",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2961,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1390",
+          "duplicate_of_before": 1433
+        }
+      ]
+    },
+    {
+      "primary_id": 1434,
+      "genus": "Nectamia ",
+      "species": "Savayensis",
+      "lambda_max": 505.0,
+      "records": [
+        {
+          "scpid": 1434,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1434",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2962,
+          "reference_id": 299,
+          "doi": "10.1111/mec.15102",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1391",
+          "duplicate_of_before": 1434
+        }
+      ]
+    },
+    {
+      "primary_id": 1444,
+      "genus": "Daubentonia",
+      "species": "madagascariensis ",
+      "lambda_max": 406.0,
+      "records": [
+        {
+          "scpid": 1444,
+          "reference_id": 171,
+          "doi": "10.1242/jeb.071415",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1444",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2972,
+          "reference_id": 171,
+          "doi": "10.1242/jeb.071415",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1401",
+          "duplicate_of_before": 1444
+        }
+      ]
+    },
+    {
+      "primary_id": 1445,
+      "genus": "Daubentonia",
+      "species": "madagascariensis ",
+      "lambda_max": 543.0,
+      "records": [
+        {
+          "scpid": 1445,
+          "reference_id": 171,
+          "doi": "10.1242/jeb.071415",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1445",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 2973,
+          "reference_id": 171,
+          "doi": "10.1242/jeb.071415",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1402",
+          "duplicate_of_before": 1445
+        }
+      ]
+    },
+    {
+      "primary_id": 1522,
+      "genus": "Pseudotropheus ",
+      "species": "acei",
+      "lambda_max": 451.0,
+      "records": [
+        {
+          "scpid": 1522,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1522",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 3046,
+          "reference_id": 387,
+          "doi": "10.1016/j.cub.2005.08.010",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1475",
+          "duplicate_of_before": 1522
+        }
+      ]
+    },
+    {
+      "primary_id": 1544,
+      "genus": "Bombus ",
+      "species": "impatiens",
+      "lambda_max": 539.0,
+      "records": [
+        {
+          "scpid": 1544,
+          "reference_id": 395,
+          "doi": "10.1371/journal.pone.0012049",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1544",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 3067,
+          "reference_id": 395,
+          "doi": "10.1371/journal.pone.0012049",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1496",
+          "duplicate_of_before": 1544
+        }
+      ]
+    },
+    {
+      "primary_id": 1545,
+      "genus": "Bombus ",
+      "species": "impatiens",
+      "lambda_max": 424.0,
+      "records": [
+        {
+          "scpid": 1545,
+          "reference_id": 395,
+          "doi": "10.1371/journal.pone.0012049",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1545",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 3068,
+          "reference_id": 395,
+          "doi": "10.1371/journal.pone.0012049",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1497",
+          "duplicate_of_before": 1545
+        }
+      ]
+    },
+    {
+      "primary_id": 1546,
+      "genus": "Bombus ",
+      "species": "impatiens",
+      "lambda_max": 347.0,
+      "records": [
+        {
+          "scpid": 1546,
+          "reference_id": 395,
+          "doi": "10.1371/journal.pone.0012049",
+          "status": "APPROVED",
+          "source_dataset": "curated_scp",
+          "source_record_id": "1546",
+          "duplicate_of_before": null
+        },
+        {
+          "scpid": 3069,
+          "reference_id": 395,
+          "doi": "10.1371/journal.pone.0012049",
+          "status": "APPROVED",
+          "source_dataset": "VPOD_in_vivo_v1.0",
+          "source_record_id": "1498",
+          "duplicate_of_before": 1546
+        }
+      ]
+    }
+  ],
+  "deleted": 0,
+  "newly_linked": 0,
+  "group_count": 54,
+  "retained_duplicate_rows": 75
+}

@@ -1,147 +1,127 @@
-import os
-import pandas as pd
+"""Conservative curated legacy imports: create missing rows, preserve existing edits."""
+import csv
+import json
+from pathlib import Path
+from collections import Counter
 from django.core.management.base import BaseCommand
+from django.core.management.color import no_style
+from django.db import connection
 from core.models import Reference, Opsin, HeterologousData, CuratedSCP
-from core.source_references import CURATED_SCP_SOURCE_DATASET, clean_source_value, ensure_source_publication_references
+from core.bibliography import classify_identifier, normalize_methods
+from core.source_references import CURATED_SCP_SOURCE_DATASET, ensure_source_publication_references
+
+
+def number(value):
+    return float(value) if str(value or '').strip() else None
+
+
+def integer(value):
+    val = number(value)
+    if val is not None and not val.is_integer():
+        raise ValueError('Nonintegral identifier/year')
+    return int(val) if val is not None else None
+
 
 class Command(BaseCommand):
-    help = 'Imports VPOD data from CSV files into the database and maps new relations'
+    help = 'Import curated legacy CSVs without overwriting existing records or moderation decisions.'
 
     def add_arguments(self, parser):
-        parser.add_argument('csv_dir', type=str, help='The path to the folder containing your CSV files')
+        parser.add_argument('csv_dir')
+        parser.add_argument('--references-only', action='store_true')
+        parser.add_argument('--report', default='import-report.json')
 
-    def handle(self, *args, **kwargs):
-        csv_dir = kwargs['csv_dir']
+    def handle(self, *args, **options):
+        root = Path(options['csv_dir'])
+        report = {'policy': 'create-only; references fill missing source provenance once; preserve normalized metadata and status', 'files': {}}
+        names = ['references.csv'] if options['references_only'] else ['references.csv', 'opsins.csv', 'heterologous.csv', 'curated_scp.csv']
+        for name in names:
+            counts, outcomes = Counter(), []
+            path = root / name
+            if not path.exists():
+                report['files'][name] = {'error': 'file not found'}
+                continue
+            with path.open(encoding='utf-8-sig', newline='') as handle:
+                for line, row in enumerate(csv.DictReader(handle), 2):
+                    try:
+                        outcome, detail = self.import_row(name, row)
+                    except (ValueError, TypeError, KeyError) as exc:
+                        outcome, detail = 'unresolved', str(exc)
+                    counts[outcome] += 1
+                    outcomes.append({'line': line, 'outcome': outcome, 'detail': detail})
+            report['files'][name] = {'counts': dict(counts), 'rows': outcomes}
+        # Explicit primary keys must also advance PostgreSQL sequences.
+        with connection.cursor() as cursor:
+            for sql in connection.ops.sequence_reset_sql(no_style(), [Reference, Opsin, HeterologousData, CuratedSCP]):
+                cursor.execute(sql)
+        sources = ensure_source_publication_references()
+        report['source_publications'] = {k: r.pk for k, r in sources.items()}
+        Path(options['report']).write_text(json.dumps(report, indent=2, ensure_ascii=False))
+        self.stdout.write(json.dumps({k: v.get('counts', v) for k, v in report['files'].items()}))
 
-        # 1. Import References
-        ref_path = os.path.join(csv_dir, 'references.csv')
-        self.stdout.write(f"Importing References from {ref_path}...")
-        try:
-            df_refs = pd.read_csv(ref_path).fillna('')
-            for _, row in df_refs.iterrows():
-                # update_or_create ensures any existing null/empty rows get fixed
-                Reference.objects.update_or_create(
-                    refid=row['refid'],
-                    defaults={
-                        'doi': row['DOI'] if row['DOI'] else None,
-                        'year_of_publication': int(row['YOP']) if str(row['YOP']).isdigit() else None,
-                        'notes': row['notes'],
-                        'status': 'APPROVED' # Auto-approve legacy data
-                    }
-                )
-            self.stdout.write(self.style.SUCCESS(f"Successfully imported References."))
-            source_refs = ensure_source_publication_references()
-            self.stdout.write(f"Ensured source publication References: {', '.join(source_refs.keys())}.")
-        except Exception as e:
-            self.stdout.write(self.style.ERROR(f"Error importing References: {e}"))
-
-        # 2. Import Opsins
-        opsin_path = os.path.join(csv_dir, 'opsins.csv')
-        self.stdout.write(f"Importing Opsins from {opsin_path}...")
-        try:
-            df_opsins = pd.read_csv(opsin_path).fillna('')
-            for _, row in df_opsins.iterrows():
-                # Try to link to a reference
-                ref_obj = None
-                if str(row['refid']).replace('.0','',1).isdigit(): # Handle pandas float conversions
-                    ref_obj = Reference.objects.filter(refid=int(float(row['refid']))).first()
-
-                Opsin.objects.update_or_create(
-                    opsinid=row['opsinid'],
-                    defaults={
-                        'gene_family': row['GeneFamily'],
-                        'phylum': row['Phylum'],
-                        'genus': row['Genus'],
-                        'species': row['Species'],
-                        'accession': row['Accession'],
-                        'dna_sequence': row['DNA'],
-                        'protein_sequence': row['Protein'],
-                        'reference': ref_obj,
-                        'status': 'APPROVED'
-                    }
-                )
-            self.stdout.write(self.style.SUCCESS(f"Successfully imported Opsins."))
-        except Exception as e:
-            self.stdout.write(self.style.ERROR(f"Error importing Opsins: {e}"))
-
-        # 3. Import Heterologous Data and Map to Opsins
-        het_path = os.path.join(csv_dir, 'heterologous.csv')
-        self.stdout.write(f"Importing Heterologous Data from {het_path}...")
-        try:
-            df_het = pd.read_csv(het_path).fillna('')
-            for _, row in df_het.iterrows():
-                # Link to reference
-                ref_obj = None
-                if str(row['refid']).replace('.0','',1).isdigit():
-                    ref_obj = Reference.objects.filter(refid=int(float(row['refid']))).first()
-
-                # --- NEW: Link to Opsin object ---
-                opsin_obj = Opsin.objects.filter(
-                    genus=row['Genus'],
-                    species=row['Species'],
-                    accession=row['Accession']
-                ).first()
-
-                # Fallback just in case accession doesn't match perfectly
-                if not opsin_obj:
-                    opsin_obj = Opsin.objects.filter(
-                        genus=row['Genus'],
-                        species=row['Species']
-                    ).first()
-
-                HeterologousData.objects.update_or_create(
-                    hetid=row['hetid'],
-                    defaults={
-                        'opsin': opsin_obj, # Saves to the new relational field!
-                        'reference': ref_obj,
-                        'mutations': row['Mutations'],
-                        'lambda_max': float(row['LambdaMax']) if str(row['LambdaMax']).replace('.','',1).isdigit() else 0.0,
-                        'error': float(row['error']) if str(row['error']).replace('.','',1).isdigit() else None,
-                        'cell_culture': row['CellCulture'],
-                        'status': 'APPROVED'
-                    }
-                )
-            self.stdout.write(self.style.SUCCESS(f"Successfully imported and linked Heterologous Data."))
-        except Exception as e:
-            self.stdout.write(self.style.ERROR(f"Error importing Heterologous Data: {e}"))
-
-        # 4. Import Curated SCP Data and Map to Opsins
-        scp_path = os.path.join(csv_dir, 'curated_scp.csv')
-        self.stdout.write(f"Importing Curated SCP Data from {scp_path}...")
-        if os.path.exists(scp_path):
+    def import_row(self, name, row):
+        if name == 'references.csv':
+            refid = integer(row['refid'])
+            if not refid:
+                raise ValueError('Missing reference ID')
+            invalid_year = None
             try:
-                df_scp = pd.read_csv(scp_path).fillna('')
-                for _, row in df_scp.iterrows():
-                    # Link to reference
-                    ref_obj = None
-                    if str(row.get('refid', '')).replace('.0','',1).isdigit():
-                        ref_obj = Reference.objects.filter(refid=int(float(row['refid']))).first()
-
-                    scp_id = clean_source_value(row.get('scpid')) or clean_source_value(row.get('maxid'))
-                    notes = clean_source_value(row.get('Notes')) or None
-
-                    CuratedSCP.objects.update_or_create(
-                        scpid=scp_id,
-                        defaults={
-                            'genus': row.get('Genus', ''),
-                            'species': row.get('Species', ''),
-                            'phylum': row.get('Phylum', ''),
-                            'reference': ref_obj,
-                            'photoreceptor_type': row.get('CellType', row.get('photoreceptor_type', '')),
-                            'cell_subtype': row.get('CellSubType', row.get('photoreceptor_type', '')),
-                            'lambda_max': float(row['LambdaMax']) if str(row.get('LambdaMax', '')).replace('.','',1).isdigit() else None,
-                            'error': float(row['error']) if str(row['error']).replace('.','',1).isdigit() else None,
-                            'chromophore': row.get('Chromophore', ''),
-                            'notes': notes,
-                            'source_dataset': CURATED_SCP_SOURCE_DATASET,
-                            'source_record_id': scp_id,
-                            'status': 'APPROVED'
-                        }
-                    )
-                self.stdout.write(self.style.SUCCESS(f"Successfully imported Curated SCP Data."))
-            except Exception as e:
-                self.stdout.write(self.style.ERROR(f"Error importing Curated SCP Data: {e}"))
+                year = integer(row.get('YOP'))
+            except ValueError:
+                year = None
+                invalid_year = row.get('YOP')
+            obj, created = Reference.objects.get_or_create(refid=refid, defaults={
+                'doi': row.get('DOI') or None, 'year_of_publication': year,
+                'notes': row.get('notes') or None, 'status': 'APPROVED',
+                'mom_raw': row.get('MOM') or None, 'measurement_methods': normalize_methods(row.get('MOM')),
+                'source_data': row,
+            })
+            if created:
+                return 'imported', {'refid': refid, 'invalid_year_raw': invalid_year}
+            # Populate source provenance only when the ID also agrees with the identifier.
+            supplied, existing = classify_identifier(row.get('DOI')), classify_identifier(obj.doi)
+            same = (obj.doi or '').strip() == (row.get('DOI') or '').strip() or bool(supplied['doi'] and supplied['doi'] == existing['doi'])
+            if not obj.source_data and same:
+                obj.source_data = row
+                if not obj.mom_raw:
+                    obj.mom_raw = row.get('MOM') or None
+                if not obj.measurement_methods:
+                    obj.measurement_methods = normalize_methods(obj.mom_raw)
+                obj.save()
+                return 'updated', {'refid': refid, 'invalid_year_raw': invalid_year}
+            if not obj.source_data and not same:
+                return 'unresolved', {'refid': refid, 'reason': 'Existing identifier differs; preserved database record', 'csv_identifier': row.get('DOI'), 'database_identifier': obj.doi}
+            return 'unchanged', {'refid': refid, 'invalid_year_raw': invalid_year}
+        refid = integer(row.get('refid'))
+        ref = Reference.objects.filter(pk=refid).first() if refid else None
+        details = {'reference_id': refid, 'reference_unresolved': bool(refid and not ref)}
+        if name == 'opsins.csv':
+            model, key = Opsin, {'opsinid': integer(row['opsinid'])}
+            values = {k: row.get(v) or None for k, v in {'gene_family': 'GeneFamily', 'phylum': 'Phylum', 'genus': 'Genus', 'species': 'Species', 'accession': 'Accession', 'dna_sequence': 'DNA', 'protein_sequence': 'Protein'}.items()}
+        elif name == 'heterologous.csv':
+            model, key = HeterologousData, {'hetid': integer(row['hetid'])}
+            candidates = Opsin.objects.filter(genus=row.get('Genus'), species=row.get('Species'), accession=row.get('Accession'))
+            opsin = candidates.first() if candidates.count() == 1 else None
+            details['opsin_unresolved'] = opsin is None
+            values = {'opsin': opsin, 'mutations': row.get('Mutations') or None, 'lambda_max': number(row.get('LambdaMax')), 'error': number(row.get('error')), 'cell_culture': row.get('CellCulture') or None}
+            if values['lambda_max'] is None:
+                raise ValueError('Missing lambda_max; no zero sentinel invented')
         else:
-            self.stdout.write(self.style.WARNING(f"File {scp_path} not found. Skipping SCP import."))
-            
-        self.stdout.write(self.style.SUCCESS('Data import complete!'))
+            record_id = str(integer(row.get('scpid') or row.get('maxid')))
+            model, key = CuratedSCP, {'scpid': int(record_id)}
+            values = {k: row.get(v) or None for k, v in {'genus': 'Genus', 'species': 'Species', 'phylum': 'Phylum', 'photoreceptor_type': 'CellType', 'cell_subtype': 'CellSubType', 'chromophore': 'Chromophore', 'notes': 'Notes'}.items()}
+            values.update(lambda_max=number(row.get('LambdaMax')), error=number(row.get('error')), source_dataset=CURATED_SCP_SOURCE_DATASET, source_record_id=record_id)
+        existing = model.objects.filter(**key).first()
+        if existing:
+            details['id'] = existing.pk
+            return 'unchanged', details
+        values.update(reference=ref, status='APPROVED')
+        obj = model(**key, **values)
+        # Report invalid rows instead of aborting the rest of an import.
+        from django.core.exceptions import ValidationError
+        try:
+            obj.full_clean()
+        except ValidationError as exc:
+            return 'unresolved', {'id': key, 'errors': exc.message_dict}
+        obj.save()
+        details['id'] = obj.pk
+        return 'imported', details

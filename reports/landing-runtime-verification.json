@@ -1,0 +1,19 @@
+{
+  "gunicorn_landing_status": 200,
+  "unexpected_host_status": 400,
+  "script_url": "/static/core/explorer.a173bc11153b.js",
+  "script_status": 200,
+  "served_script_matches_source": true,
+  "script_sha256": "75d468f26da06aaba0a28a489772f3fbf02abb92880cda1994f6258f43aa559e",
+  "api_statuses": {
+    "references": 200,
+    "opsins": 200,
+    "heterologous": 200,
+    "scp": 200,
+    "visual-acuity": 200
+  },
+  "public_certificate": "notBefore=Jun  3 02:25:43 2026 GMT\nnotAfter=Sep  1 02:25:42 2026 GMT\nissuer=C = US, O = Let's Encrypt, CN = YR1",
+  "public_https_verified": "blocked: expired TLS certificate (curl exit 60)",
+  "public_application_status_with_tls_validation_bypassed_for_diagnosis": 200,
+  "public_html_references_current_script": true
+}

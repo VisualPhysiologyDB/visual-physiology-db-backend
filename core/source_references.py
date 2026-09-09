@@ -170,9 +170,6 @@ def ensure_source_publication_reference(source_column, metadata):
     if source_key not in (reference.notes or ""):
         reference.notes = f"{reference.notes or ''}\n\n{notes}".strip()
         changed = True
-    if reference.status != "APPROVED":
-        reference.status = "APPROVED"
-        changed = True
     if changed:
         reference.save()
     return reference

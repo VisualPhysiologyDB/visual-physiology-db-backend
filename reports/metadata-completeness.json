@@ -1,0 +1,41 @@
+{
+  "before": {
+    "records": 602,
+    "doi": 597,
+    "title": 0,
+    "publication_date": 0,
+    "online_date": 0,
+    "print_date": 0,
+    "year_of_publication": 25,
+    "source_url": 0,
+    "raw_citation": 0,
+    "identifier_kind": 0,
+    "mom_raw": 276,
+    "measurement_methods": 263,
+    "syntactic_dois": 514
+  },
+  "after": {
+    "records": 602,
+    "doi": 550,
+    "title": 543,
+    "publication_date": 543,
+    "online_date": 322,
+    "print_date": 472,
+    "year_of_publication": 544,
+    "source_url": 14,
+    "raw_citation": 166,
+    "identifier_kind": 602,
+    "mom_raw": 276,
+    "measurement_methods": 263,
+    "syntactic_dois": 550
+  },
+  "summary": {
+    "processed": 602,
+    "verified_records": 543,
+    "unresolved_records": 59,
+    "conflict_fields": 4,
+    "duplicate_groups": 39,
+    "verified_doi_recoveries": 37
+  },
+  "duplicate_reference_records": 82
+}

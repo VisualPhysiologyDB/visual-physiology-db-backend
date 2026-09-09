@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "heterologous: observed extent, internal gaps, counts and exclusions preserved",
+    "scp: observed extent, internal gaps, counts and exclusions preserved",
+    "Acuity: outer empty bins omitted; bin boundaries, internal gaps, filtered and missing-only states preserved",
+    "Reference years retain their observed extent and intervening zero years"
+  ],
+  "javascript_errors": [],
+  "data": "Browser fixtures only; no database writes",
+  "live_landing_status": 200,
+  "live_assets_match_source": true,
+  "assets": {
+    "core/vpod-data.js": "/static/core/vpod-data.6335bd51522c.js",
+    "core/explorer.js": "/static/core/explorer.2ac17f74c76a.js"
+  },
+  "database_changes": false
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=VPOD literature discovery (private curator inbox only)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=oakley
+Group=www-data
+WorkingDirectory=/home/oakley/visual-physiology-db-backend
+ExecStart=/home/oakley/miniconda3/envs/vpod_env/bin/python manage.py discover_literature --config config/literature.json --apply --if-due
+Environment=PYTHONUNBUFFERED=1
+UMask=0077
+NoNewPrivileges=true
+TimeoutStartSec=20min

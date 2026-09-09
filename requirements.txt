@@ -1,0 +1,8 @@
+# Application versions verified with CPython 3.12.1. Keep research/ML packages separate.
+Django==5.2.17
+djangorestframework==3.18.1
+django-filter==26.1
+python-dotenv==1.2.3
+whitenoise==6.12.0
+pandas==3.0.5
+requests==2.34.2

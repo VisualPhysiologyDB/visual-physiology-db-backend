@@ -1,0 +1,7 @@
+{
+  "checks": [
+    "Review snapshot: issue/text filters, all counts, admin links, keyboard evidence access, mobile width",
+    "MSP: 3796 public table/API/export records and matching chart counts"
+  ],
+  "javascript_errors": []
+}

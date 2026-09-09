@@ -1,0 +1,173 @@
+{
+  "research_repository_commit": "c2912f843b0dc520f7f8631d025d00c8c601fd6b",
+  "files": {
+    "references.csv": {
+      "sha256": "c5275a642eb90981c11967cd1ccb7a2419a139f51cb087987bf71e6b342c88c8",
+      "bytes": 52064,
+      "rows": 597,
+      "columns": [
+        "refid",
+        "DOI",
+        "Opsin (Yes/No)",
+        "MOM",
+        "searchid",
+        "entered",
+        "YOP",
+        "notes",
+        ""
+      ]
+    },
+    "visual_acuity.csv": {
+      "sha256": "ce608a4d9968db315299c6aedc76b08dede5fd9ee0667a7a7477985b03b0ee09",
+      "bytes": 32990,
+      "rows": 549,
+      "columns": [
+        "acuID",
+        "Genus",
+        "Species",
+        "Eye Type",
+        "BL (cm)",
+        "Δϕ (deg)",
+        "Δρ (deg)",
+        "CPD",
+        "Lens Diameter (mm)",
+        "FellerRefID",
+        "refid",
+        "Notes"
+      ]
+    },
+    "litsearch.csv": {
+      "sha256": "b9e29d2033d948ad2d13ce846b91ebe76b9af21d6925d1a70241d56d62d63ef0",
+      "bytes": 3298,
+      "rows": 34,
+      "columns": [
+        "searchid",
+        "Researcher",
+        "Month",
+        "Year",
+        "Engine",
+        "Keywords",
+        "Notes"
+      ]
+    },
+    "opsins.csv": {
+      "sha256": "63f740870db9b51fbec1c081ab5701fb56b3cebf08f0a73359ef866a762f0bb5",
+      "bytes": 3798197,
+      "rows": 2986,
+      "columns": [
+        "opsinid",
+        "GeneFamily",
+        "GeneNames",
+        "Phylum",
+        "Subphylum",
+        "Class",
+        "Genus",
+        "Species",
+        "Database",
+        "Accession",
+        "DNA",
+        "Protein",
+        "refid",
+        ""
+      ]
+    },
+    "heterologous.csv": {
+      "sha256": "7eba3aec10db8190d9b3e5cb66c8a82fac2abf4ecde070749a22eb4db65e75f7",
+      "bytes": 165340,
+      "rows": 1397,
+      "columns": [
+        "hetid",
+        "Genus",
+        "Species",
+        "Accession",
+        "Mutations",
+        "LambdaMax",
+        "error",
+        "CellCulture",
+        "Purification",
+        "Spectrum",
+        "SourceType ",
+        "refid",
+        "Notes",
+        "",
+        "UniqueRefsCount",
+        "UniqueSpCount",
+        "UniqueAncCount",
+        "ChimeraCount",
+        "UniqueMutSpCount"
+      ]
+    },
+    "curated_scp.csv": {
+      "sha256": "3af6fbe10aebd2a36453c8d83ecfb2a0de3d4e87bbd16616fb56d1c0b3c1b839",
+      "bytes": 100138,
+      "rows": 1570,
+      "columns": [
+        "maxid",
+        "Genus",
+        "Species",
+        "Phylum",
+        "Class",
+        "CellType",
+        "CellSubType",
+        "LambdaMax",
+        "error",
+        "Chromophore",
+        "Stage",
+        "opsinid",
+        "refid"
+      ]
+    },
+    "VPOD_in_vivo_1.0_2026-03-13_12-54-05.csv": {
+      "sha256": "e00b0a7712afec5d7ad3d76e8209a6ecaaab41386524888341712250301fd79d",
+      "bytes": 159298,
+      "rows": 3810,
+      "columns": [
+        "comp_db_id",
+        "Full_Species",
+        "Accession",
+        "maxid",
+        "longcore_id",
+        "murwes_id",
+        "caves_id",
+        "porter2005_id",
+        "porter2006_id",
+        "kooi_id",
+        "LambdaMax"
+      ]
+    },
+    "mnm_on_vpod_in_vivo_results_fully_filtered.csv": {
+      "sha256": "979a53e2a1135a03f280f886523ef22907a5f2b6620c02ecf83e3adf6184901a",
+      "bytes": 308111,
+      "rows": 589,
+      "columns": [
+        "mnm_id",
+        "Accession",
+        "Phylum",
+        "Subphylum",
+        "Class",
+        "Genus",
+        "Species",
+        "Full_Species",
+        "%Identity_Nearest_VPOD_Sequence",
+        "prediction_value",
+        "LambdaMax",
+        "abs_diff",
+        "candidate_opsin_count",
+        "comp_db_id",
+        "Protein",
+        "Gene_Description",
+        "Notes"
+      ]
+    },
+    "giae073.pdf": {
+      "sha256": "3ea70795bcb645147acc3942ffdd1799951ff0393e18ed4cefd2da8189352f66",
+      "bytes": 1812519
+    }
+  },
+  "acuity": {
+    "rows": 549,
+    "taxonomy_flagged": 82,
+    "missing_cpd": 3,
+    "unresolved_references": 0
+  }
+}

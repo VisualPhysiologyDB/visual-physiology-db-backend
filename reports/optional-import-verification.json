@@ -1,0 +1,25 @@
+{
+  "import_scp_compendium": {
+    "result": "reported_error; existing command catches the exception and may retain a partial import",
+    "output": "Importing SCP Compendium from VPOD_in_vivo_1.0_2026-03-13_12-54-05.csv...\nError importing SCP Data: CHECK constraint failed: valid_lambda_max_range_scp\n"
+  },
+  "import_mnm_data": {
+    "result": "completed",
+    "output": "Successfully imported 589 MNM records.\n2 MNM records matched compendium rows but no source Reference could be resolved.\n"
+  },
+  "reference_count_after_optional_imports": 602,
+  "compendium_rows_outside_existing_300_800_constraint": [
+    {
+      "line": 2427,
+      "comp_db_id": "2425",
+      "lambda_max": 220.0,
+      "species": "Hemicordulia tau"
+    },
+    {
+      "line": 2454,
+      "comp_db_id": "2452",
+      "lambda_max": 208.0,
+      "species": "Neogonodactylus oerstedii"
+    }
+  ]
+}

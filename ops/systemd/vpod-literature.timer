@@ -1,0 +1,11 @@
+[Unit]
+Description=Check VPOD literature-search schedule each morning
+
+[Timer]
+OnCalendar=*-*-* 02:00:00 America/Los_Angeles
+RandomizedDelaySec=5min
+Persistent=true
+Unit=vpod-literature.service
+
+[Install]
+WantedBy=timers.target

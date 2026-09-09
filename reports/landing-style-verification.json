@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Original typography, phylum subtitle, gene-family badge, monospace accession, DOI icon and table headings restored",
+    "Spectral colors, rounded histogram bars, uncertainty values and experimental/inferred badges restored",
+    "Acuity and reference charts remain nonspectral; contribution selection and mobile header verified"
+  ],
+  "javascript_errors": [],
+  "baseline": "374306a0df1ba556277a2a6c36f68ee62261a4aa:templates/index.html",
+  "screenshots": "/tmp/vpod-style-*.png"
+}

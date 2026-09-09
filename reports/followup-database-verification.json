@@ -1,0 +1,9 @@
+{
+  "stored_scp_rows": 3871,
+  "public_scp_rows": 3796,
+  "retained_duplicate_rows": 75,
+  "all_original_scp_columns_equal": true,
+  "original_database_last_migration": "0004_curatedscp_source_dataset_and_more",
+  "review_last_migration": "0010_scp_reference_scoped_duplicates",
+  "review_acuity_rows": 549
+}

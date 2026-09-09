@@ -29,7 +29,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback-secret-for-dev-only')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['visphys.eemb.ucsb.edu', 'localhost', '127.0.0.1']
+# Preserve the established deployment when an older .env has no host override.
+DEFAULT_ALLOWED_HOSTS = ['visphys.eemb.ucsb.edu', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [host.strip() for host in os.environ.get(
+    'ALLOWED_HOSTS', ','.join(DEFAULT_ALLOWED_HOSTS)
+).split(',') if host.strip()] or DEFAULT_ALLOWED_HOSTS.copy()
 
 
 # Application definition
@@ -85,17 +89,21 @@ WSGI_APPLICATION = 'vpod_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.environ.get('VPOD_SQLITE_PATH', str(BASE_DIR / 'db.sqlite3')),
     },
     'vpod_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vpod_db',
-        'USER': 'postgres',
-        'PASSWORD': 'vpod_password',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+        'NAME': os.environ.get('POSTGRES_DB', 'vpod_db'),
+        'USER': os.environ.get('POSTGRES_USER', 'vpod'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', ''),
+        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+        'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+    },
 }
+# ORM queries use default. An alias alone does not route application traffic.
+if os.environ.get('VPOD_DATABASE', 'sqlite') == 'postgres':
+    DATABASES['default'] = DATABASES['vpod_db'].copy()
+
 
 
 # Password validation
@@ -121,7 +129,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend', 'rest_framework.filters.SearchFilter']
 }
 
 # Internationalization
@@ -143,8 +151,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = os.environ.get('VPOD_STATIC_ROOT', os.path.join(BASE_DIR, 'staticfiles'))
+STATICFILES_DIRS = [BASE_DIR / 'static']
+STORAGES = {
+    'default': {'BACKEND': 'django.core.files.storage.FileSystemStorage'},
+    'staticfiles': {'BACKEND': 'whitenoise.storage.CompressedManifestStaticFilesStorage'},
+}
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -173,7 +185,7 @@ LOGGING = {
         'file': {
             'level': 'ERROR',
             'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'django_errors.log'),
+            'filename': os.environ.get('VPOD_LOG_PATH', os.path.join(BASE_DIR, 'django_errors.log')),
         },
     },
     'loggers': {

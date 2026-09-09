@@ -23,7 +23,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from core.views import ReferenceViewSet, OpsinViewSet, HeterologousDataViewSet, CuratedSCPViewSet, DataSubmissionViewSet
+from core.views import ReferenceViewSet, OpsinViewSet, HeterologousDataViewSet, CuratedSCPViewSet, DataSubmissionViewSet, VisualAcuityViewSet
 from django.views.generic import TemplateView
 
 # Set up the API router
@@ -31,6 +31,7 @@ router = DefaultRouter()
 router.register(r'references', ReferenceViewSet)
 router.register(r'opsins', OpsinViewSet)
 router.register(r'heterologous', HeterologousDataViewSet)
+router.register(r'visual-acuity', VisualAcuityViewSet)
 router.register(r'scp', CuratedSCPViewSet) # New SCP Endpoint
 router.register(r'submissions', DataSubmissionViewSet) # New Submission Inbox
 

@@ -1,72 +1,82 @@
+import math
+import re
+from django.db import transaction, IntegrityError
+from django.core.exceptions import ValidationError as ModelValidationError
 from rest_framework import serializers
-from django.db import transaction
-from .models import Reference, Opsin, HeterologousData, CuratedSCP, DataSubmission
+from .models import Reference, Opsin, HeterologousData, CuratedSCP, DataSubmission, VisualAcuity, SubmissionReceipt, ACUITY_MEASUREMENTS
+from .bibliography import classify_identifier, reference_link
+from .validators import positive_finite
 
 
 def clean_reference_identifier(value):
-    value = (value or '').strip()
-    doi_prefixes = (
-        'https://doi.org/',
-        'http://doi.org/',
-        'https://dx.doi.org/',
-        'http://dx.doi.org/',
-        'doi:',
-    )
-    lowered = value.lower()
-    for prefix in doi_prefixes:
-        if lowered.startswith(prefix):
-            return value[len(prefix):].strip()
-    return value
+    identified = classify_identifier(value)
+    return identified['doi'] or (value or '').strip()
 
-
-def append_note(instance, note):
-    note = (note or '').strip()
-    if not note:
-        return
-    current = instance.notes or ''
-    if note in current:
-        return
-    instance.notes = f"{current}\n\n{note}".strip()
-    instance.save()
-
-
-def first_non_blank(*values):
-    for value in values:
-        if value not in (None, ''):
-            return value
-    return None
 
 class ReferenceSerializer(serializers.ModelSerializer):
+    link = serializers.SerializerMethodField()
+    notes = serializers.SerializerMethodField()
+
+    def get_link(self, obj):
+        return reference_link(obj)
+
+    def get_notes(self, obj):
+        # Defence for old databases before the privacy migration has run.
+        return re.sub(r'^.*Submitter email:.*(?:\n|$)', '', obj.notes or '', flags=re.M | re.I).strip() or None
+
     class Meta:
         model = Reference
-        fields = ['refid', 'doi', 'year_of_publication', 'notes', 'status']
+        fields = ['refid', 'doi', 'link', 'source_url', 'title', 'publication_date', 'online_date', 'print_date', 'year_of_publication', 'measurement_methods', 'mom_raw', 'raw_citation', 'identifier_kind', 'notes', 'status']
+        read_only_fields = fields
 
-class OpsinSerializer(serializers.ModelSerializer):
-    reference = ReferenceSerializer(read_only=True) 
-    reference_id = serializers.PrimaryKeyRelatedField(queryset=Reference.objects.all(), source='reference', write_only=True, required=False, allow_null=True)
+
+class PublicRelationsMixin:
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        # Public nested serializers must not leak pending relational metadata.
+        for field in ('reference', 'opsin'):
+            related = getattr(instance, field, None)
+            if related is not None and related.status != 'APPROVED':
+                data[field] = None
+        return data
+
+
+class OpsinSerializer(PublicRelationsMixin, serializers.ModelSerializer):
+    reference = ReferenceSerializer(read_only=True)
 
     class Meta:
         model = Opsin
-        fields = ['opsinid', 'gene_family', 'phylum', 'genus', 'species', 'accession', 'dna_sequence', 'protein_sequence', 'reference', 'reference_id', 'status']
+        fields = ['opsinid', 'gene_family', 'phylum', 'genus', 'species', 'accession', 'dna_sequence', 'protein_sequence', 'reference', 'status']
+        read_only_fields = fields
 
-class HeterologousDataSerializer(serializers.ModelSerializer):
+
+class HeterologousDataSerializer(PublicRelationsMixin, serializers.ModelSerializer):
     reference = ReferenceSerializer(read_only=True)
     opsin = OpsinSerializer(read_only=True)
-    reference_id = serializers.PrimaryKeyRelatedField(queryset=Reference.objects.all(), source='reference', write_only=True, required=False, allow_null=True)
-    opsin_id = serializers.PrimaryKeyRelatedField(queryset=Opsin.objects.all(), source='opsin', write_only=True, required=False, allow_null=True)
 
     class Meta:
         model = HeterologousData
-        fields = ['hetid', 'opsin', 'opsin_id', 'mutations', 'lambda_max', 'error', 'cell_culture', 'reference', 'reference_id', 'status', 'is_inferred', 'inference_source']
+        fields = ['hetid', 'opsin', 'mutations', 'lambda_max', 'error', 'cell_culture', 'reference', 'status', 'is_inferred', 'inference_source']
+        read_only_fields = fields
 
-# --- NEW Serializers ---
-class CuratedSCPSerializer(serializers.ModelSerializer):
+
+class CuratedSCPSerializer(PublicRelationsMixin, serializers.ModelSerializer):
     reference = ReferenceSerializer(read_only=True)
-    reference_id = serializers.PrimaryKeyRelatedField(queryset=Reference.objects.all(), source='reference', write_only=True, required=False, allow_null=True)
-    
+
     class Meta:
         model = CuratedSCP
-        fields = ['scpid', 'genus', 'species', 'phylum', 'photoreceptor_type', 'cell_subtype', 'lambda_max', 'error', 'chromophore', 'notes', 'reference', 'reference_id', 'status']
+        fields = ['scpid', 'genus', 'species', 'phylum', 'photoreceptor_type', 'cell_subtype', 'lambda_max', 'error', 'chromophore', 'notes', 'reference', 'status']
+        read_only_fields = fields
+
+
+class VisualAcuitySerializer(PublicRelationsMixin, serializers.ModelSerializer):
+    reference = ReferenceSerializer(read_only=True)
+
+    class Meta:
+        model = VisualAcuity
+        fields = ['acuid', 'genus', 'species', 'eye_type', *ACUITY_MEASUREMENTS, 'reference', 'feller_ref_id', 'notes', 'source_dataset', 'source_record_id', 'source_data', 'quality_flags', 'status']
+        read_only_fields = fields
+
 
 class DataSubmissionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -77,13 +87,11 @@ class DataSubmissionSerializer(serializers.ModelSerializer):
 class SubmissionCreateSerializer(serializers.Serializer):
     submission_type = serializers.CharField(required=False, allow_blank=True)
     data_type = serializers.CharField(required=False, allow_blank=True)
-    relevance = serializers.CharField(required=False, allow_blank=True)
-
-    doi = serializers.CharField(required=True, allow_blank=False, max_length=255)
-    year_of_publication = serializers.IntegerField(required=False, allow_null=True)
-    notes = serializers.CharField(required=False, allow_blank=True, allow_null=True)
+    relevance = serializers.CharField(required=False, allow_blank=True, max_length=200)
+    doi = serializers.CharField(required=True, allow_blank=False, max_length=2000)
+    year_of_publication = serializers.IntegerField(required=False, allow_null=True, min_value=1, max_value=9999)
+    notes = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=20000)
     submitter_email = serializers.EmailField(required=False, allow_blank=True, allow_null=True)
-
     phylum = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     genus = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     species = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
@@ -92,274 +100,110 @@ class SubmissionCreateSerializer(serializers.Serializer):
     gene_family = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     dna_sequence = serializers.CharField(required=False, allow_blank=True, allow_null=True)
     protein_sequence = serializers.CharField(required=False, allow_blank=True, allow_null=True)
-
     lambda_max = serializers.FloatField(required=False, allow_null=True)
     error = serializers.FloatField(required=False, allow_null=True)
     cell_culture = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     photoreceptor_type = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     cell_subtype = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     chromophore = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=50)
+    eye_type = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
+    cpd = serializers.FloatField(required=False, allow_null=True, validators=[positive_finite])
+    body_length_cm = serializers.FloatField(required=False, allow_null=True, validators=[positive_finite])
+    interommatidial_angle_deg = serializers.FloatField(required=False, allow_null=True, validators=[positive_finite])
+    acceptance_angle_deg = serializers.FloatField(required=False, allow_null=True, validators=[positive_finite])
+    lens_diameter_mm = serializers.FloatField(required=False, allow_null=True, validators=[positive_finite])
 
-    DATA_TYPE_LABELS = {
-        'heterologous': 'Heterologous',
-        'heterologous expression': 'Heterologous',
-        'scp': 'SCP',
-        'single-cell photometry': 'SCP',
-        'single cell photometry': 'SCP',
-    }
-    RELEVANCE_LABELS = {
-        'heterologous': 'Heterologous',
-        'heterologous expression': 'Heterologous',
-        'scp': 'SCP',
-        'single-cell photometry': 'SCP',
-        'single cell photometry': 'SCP',
-        'both': 'Both / unclear',
-        'both / unclear': 'Both / unclear',
-        'unclear': 'Both / unclear',
-        'both/unclear': 'Both / unclear',
-    }
-
-    def check_redundancy(self, attrs, data_type):
-        """
-        Scores incoming data against existing database information.
-        Returns a score (0-100+) and a list of triggered redundancy reasons.
-        """
-        score = 0
-        reasons = []
-        
-        genus = (attrs.get('genus') or '').strip().lower()
-        species = (attrs.get('species') or '').strip().lower()
-        lmax = attrs.get('lambda_max')
-        
-        if data_type == 'Heterologous':
-            accession = (attrs.get('accession') or '').strip().lower()
-            
-            # High Flag: Same Accession
-            if accession and Opsin.objects.filter(accession__iexact=accession).exists():
-                score += 50
-                reasons.append(f"Accession '{accession}' already exists.")
-                
-            # Medium Flag: Same Organism
-            if genus and species:
-                opsins = Opsin.objects.filter(genus__iexact=genus, species__iexact=species)
-                if opsins.exists():
-                    score += 30
-                    reasons.append(f"Organism '{genus} {species}' already exists in Opsins.")
-                    
-                    # High Flag: Same Organism AND Same Lmax
-                    if lmax is not None and HeterologousData.objects.filter(opsin__in=opsins, lambda_max=lmax).exists():
-                        score += 30
-                        reasons.append(f"Lambda max {lmax}nm is already recorded for this organism.")
-                        
-        elif data_type == 'SCP':
-            if genus and species:
-                scps = CuratedSCP.objects.filter(genus__iexact=genus, species__iexact=species)
-                if scps.exists():
-                    score += 30
-                    reasons.append(f"Organism '{genus} {species}' already exists in SCP records.")
-                    
-                    if lmax is not None and scps.filter(lambda_max=lmax).exists():
-                        score += 40
-                        reasons.append(f"Lambda max {lmax}nm is already recorded for this SCP organism.")
-                        
-        return score, reasons
+    DATA_TYPE_LABELS = {'heterologous': 'Heterologous', 'heterologous expression': 'Heterologous', 'scp': 'SCP', 'single-cell photometry': 'SCP', 'single cell photometry': 'SCP', 'acuity': 'Visual Acuity', 'visual acuity': 'Visual Acuity'}
 
     def validate(self, attrs):
-        submission_type = (attrs.get('submission_type') or '').strip().upper()
+        forbidden = {'status', 'approved_by', 'submitted_by', 'source_dataset', 'source_record_id', 'reference_id', 'duplicate_of', 'duplicate_of_id'} & self.initial_data.keys()
+        if forbidden:
+            raise serializers.ValidationError({k: 'This field cannot be set by a public submitter.' for k in forbidden})
+        submission_type = (attrs.get('submission_type') or '').upper().strip()
         if not submission_type:
-            has_detailed_fields = any(
-                attrs.get(field) not in (None, '')
-                for field in ('lambda_max', 'genus', 'species', 'accession', 'photoreceptor_type')
-            )
-            submission_type = 'DATA' if has_detailed_fields else 'PUBLICATION'
+            submission_type = 'DATA' if any(attrs.get(f) not in (None, '') for f in ('lambda_max', 'genus', 'species', 'accession', 'cpd')) else 'PUBLICATION'
         if submission_type not in {'PUBLICATION', 'DATA'}:
             raise serializers.ValidationError({'submission_type': 'Use PUBLICATION or DATA.'})
         attrs['submission_type'] = submission_type
-
-        attrs['doi'] = clean_reference_identifier(attrs.get('doi'))
-        if not attrs['doi']:
-            raise serializers.ValidationError({'doi': 'A DOI or stable reference URL is required.'})
-
+        identified = classify_identifier(attrs.get('doi'))
+        if not identified['doi'] and not identified['source_url']:
+            raise serializers.ValidationError({'doi': 'Supply a DOI or an http(s) source URL.'})
+        if identified['doi'] and len(identified['doi']) > 255:
+            raise serializers.ValidationError({'doi': 'DOI is too long.'})
+        attrs['doi'] = identified['doi'] or identified['source_url']
         if submission_type == 'PUBLICATION':
-            relevance_key = (attrs.get('relevance') or attrs.get('data_type') or 'unclear').strip().lower()
-            attrs['relevance'] = self.RELEVANCE_LABELS.get(relevance_key, attrs.get('relevance') or attrs.get('data_type') or 'Both / unclear')
+            attrs['relevance'] = attrs.get('relevance') or attrs.get('data_type') or 'Both / unclear'
             return attrs
-
-        data_type_key = (attrs.get('data_type') or '').strip().lower()
-        data_type = self.DATA_TYPE_LABELS.get(data_type_key)
-        if data_type is None:
-            raise serializers.ValidationError({'data_type': 'Use Heterologous or SCP for detailed data submissions.'})
+        data_type = self.DATA_TYPE_LABELS.get((attrs.get('data_type') or '').lower().strip())
+        if not data_type:
+            raise serializers.ValidationError({'data_type': 'Use Heterologous, SCP, or Visual Acuity.'})
         attrs['data_type'] = data_type
-
-        required_fields = ['genus', 'species', 'lambda_max']
-        missing = [field for field in required_fields if attrs.get(field) in (None, '')]
+        required = ['genus', 'species', 'cpd' if data_type == 'Visual Acuity' else 'lambda_max']
+        missing = {f: 'Required for this data type.' for f in required if attrs.get(f) in (None, '')}
         if missing:
-            raise serializers.ValidationError({field: 'This field is required for detailed data submissions.' for field in missing})
-
-        if data_type == 'Heterologous':
-            lambda_max = attrs.get('lambda_max')
-            if lambda_max != 0.0 and not 200 <= lambda_max <= 800:
-                raise serializers.ValidationError({'lambda_max': 'Heterologous lambda_max must be between 200 and 800 nm, or 0.0.'})
-
+            raise serializers.ValidationError(missing)
+        if data_type != 'Visual Acuity':
+            lmax = attrs['lambda_max']
+            if not math.isfinite(lmax) or (lmax != 0 and not 300 <= lmax <= 800):
+                raise serializers.ValidationError({'lambda_max': 'Use 300–800 nm, or the legacy 0 sentinel.'})
+        error = attrs.get('error')
+        if error is not None and (not math.isfinite(error) or error < 0):
+            raise serializers.ValidationError({'error': 'Use a finite nonnegative error.'})
         return attrs
 
-    def submission_notes(self, attrs, extra_label=None):
-        lines = ['Submitted through public VPOD data-submission form.']
-        if extra_label:
-            lines.append(extra_label)
-        if attrs.get('submitter_email'):
-            lines.append(f"Submitter email: {attrs['submitter_email']}")
-        if attrs.get('notes'):
-            lines.append(f"Submission notes: {attrs['notes']}")
-        return "\n".join(lines)
+    def get_or_create_reference(self, attrs, submitted_by):
+        identifier = classify_identifier(attrs['doi'])
+        normalized = identifier['doi'] or identifier['source_url']
+        # Compare canonical DOIs across legacy URL/case variants; prefer approved,
+        # then pending, then rejected, and lowest refid within each status.
+        matches = []
+        for ref in Reference.objects.order_by('refid'):
+            other = classify_identifier(ref.doi)
+            if normalized == (other['doi'] or other['source_url'] or ref.source_url):
+                matches.append(ref)
+        if matches:
+            return min(matches, key=lambda r: ({'APPROVED': 0, 'PENDING': 1, 'REJECTED': 2}[r.status], r.pk))
+        return Reference.objects.create(doi=identifier['doi'], source_url=identifier['source_url'],
+            identifier_kind=identifier['kind'], year_of_publication=attrs.get('year_of_publication'),
+            notes=attrs.get('notes'), status='PENDING', submitted_by=submitted_by)
 
-    def get_or_create_reference(self, attrs, submitted_by, extra_label=None):
-        doi = attrs['doi']
-        reference = Reference.objects.filter(doi__iexact=doi).order_by('refid').first()
-        notes = self.submission_notes(attrs, extra_label)
-
-        if reference is None:
-            return Reference.objects.create(
-                doi=doi,
-                year_of_publication=attrs.get('year_of_publication'),
-                notes=notes,
-                status='PENDING',
-                submitted_by=submitted_by,
-            )
-
-        changed = False
-        if attrs.get('year_of_publication') and not reference.year_of_publication:
-            reference.year_of_publication = attrs['year_of_publication']
-            changed = True
-        if reference.notes is None:
-            reference.notes = ''
-            changed = True
-        if notes not in (reference.notes or ''):
-            reference.notes = f"{reference.notes}\n\n{notes}".strip()
-            changed = True
-        if changed:
-            reference.save()
-        return reference
-
-    def get_or_create_opsin(self, attrs, reference, submitted_by):
-        accession = (attrs.get('accession') or '').strip()
-        protein_sequence = (attrs.get('protein_sequence') or '').strip()
-        opsin = None
-
-        if accession:
-            opsin = Opsin.objects.filter(accession__iexact=accession).order_by('opsinid').first()
-        if opsin is None and protein_sequence:
-            opsin = Opsin.objects.filter(protein_sequence=protein_sequence).order_by('opsinid').first()
-
-        field_values = {
-            'gene_family': attrs.get('gene_family'),
-            'phylum': attrs.get('phylum'),
-            'genus': attrs.get('genus'),
-            'species': attrs.get('species'),
-            'accession': accession or None,
-            'dna_sequence': attrs.get('dna_sequence'),
-            'protein_sequence': protein_sequence or None,
-            'reference': reference,
-        }
-
-        if opsin is None:
-            return Opsin.objects.create(
-                status='PENDING',
-                submitted_by=submitted_by,
-                **field_values,
-            )
-
-        changed = False
-        for field, value in field_values.items():
-            if value in (None, ''):
-                continue
-            if field == 'reference':
-                if opsin.reference_id is None:
-                    opsin.reference = value
-                    changed = True
-                continue
-            if getattr(opsin, field) in (None, ''):
-                setattr(opsin, field, value)
-                changed = True
-        if changed:
-            opsin.save()
-        return opsin
+    def get_or_create_opsin(self, attrs, ref, user):
+        fields = ('gene_family', 'phylum', 'genus', 'species', 'accession', 'dna_sequence', 'protein_sequence')
+        supplied = {f: attrs.get(f) or None for f in fields}
+        # Reuse only a compatible approved record; never fill fields on an existing
+        # published opsin from unreviewed public data.
+        if supplied['accession']:
+            for obj in Opsin.objects.filter(accession__iexact=supplied['accession'], status='APPROVED').order_by('pk'):
+                if all(v is None or getattr(obj, f) == v for f, v in supplied.items()):
+                    return obj
+        return Opsin.objects.create(**supplied, reference=ref, submitted_by=user, status='PENDING')
 
     @transaction.atomic
     def create(self, validated_data):
-        submitted_by = validated_data.pop('submitted_by', None)
-        submission_type = validated_data['submission_type']
-        
-        # Validate Redundancy and Inject Flag in Notes Before saving
-        data_type = validated_data.get('data_type')
-        if submission_type == 'DATA' and data_type in ['Heterologous', 'SCP']:
-            score, reasons = self.check_redundancy(validated_data, data_type)
-            if score >= 60:
-                flag_text = f"\n\n[ADMIN FLAG: HIGH REDUNDANCY SCORE {score}] " + " | ".join(reasons)
-                if validated_data.get('notes'):
-                    validated_data['notes'] += flag_text
-                else:
-                    validated_data['notes'] = flag_text.strip()
-
-        if submission_type == 'PUBLICATION':
-            relevance = validated_data.get('relevance') or 'Both / unclear'
-            reference = self.get_or_create_reference(
-                validated_data,
-                submitted_by,
-                extra_label=f"Potential relevance: {relevance}",
-            )
-            return {
-                'submission_type': submission_type,
-                'status': reference.status,
-                'reference_id': reference.refid,
-                'relevance': relevance,
-            }
-
-        reference = self.get_or_create_reference(
-            validated_data,
-            submitted_by,
-            extra_label=f"Detailed data type: {validated_data['data_type']}",
-        )
-
-        if validated_data['data_type'] == 'Heterologous':
-            opsin = self.get_or_create_opsin(validated_data, reference, submitted_by)
-            heterologous = HeterologousData.objects.create(
-                opsin=opsin,
-                reference=reference,
-                mutations=validated_data.get('mutations'),
-                lambda_max=validated_data['lambda_max'],
-                error=validated_data.get('error'),
-                cell_culture=validated_data.get('cell_culture'),
-                status='PENDING',
-                submitted_by=submitted_by,
-            )
-            return {
-                'submission_type': submission_type,
-                'data_type': validated_data['data_type'],
-                'status': heterologous.status,
-                'reference_id': reference.refid,
-                'opsin_id': opsin.opsinid,
-                'record_id': heterologous.hetid,
-            }
-
-        scp = CuratedSCP.objects.create(
-            reference=reference,
-            genus=validated_data.get('genus'),
-            species=validated_data.get('species'),
-            phylum=validated_data.get('phylum'),
-            photoreceptor_type=validated_data.get('photoreceptor_type'),
-            cell_subtype=validated_data.get('cell_subtype'),
-            lambda_max=validated_data['lambda_max'],
-            error=validated_data.get('error'),
-            chromophore=validated_data.get('chromophore'),
-            notes=validated_data.get('notes'),
-            status='PENDING',
-            submitted_by=submitted_by,
-        )
-        return {
-            'submission_type': submission_type,
-            'data_type': validated_data['data_type'],
-            'status': scp.status,
-            'reference_id': reference.refid,
-            'record_id': scp.scpid,
-        }
+        user = validated_data.pop('submitted_by', None)
+        attrs = validated_data
+        ref = self.get_or_create_reference(attrs, user)
+        result = {'submission_type': attrs['submission_type'], 'reference_id': ref.pk, 'status': 'PENDING'}
+        if attrs['submission_type'] == 'PUBLICATION':
+            result.update(relevance=attrs['relevance'], reference_status=ref.status)
+        else:
+            data_type = attrs['data_type']
+            shared = {'reference': ref, 'submitted_by': user, 'status': 'PENDING'}
+            if data_type == 'Visual Acuity':
+                observation = VisualAcuity.objects.create(**shared, **{f: attrs.get(f) for f in ('genus', 'species', 'eye_type', 'notes', *ACUITY_MEASUREMENTS)})
+            elif data_type == 'Heterologous':
+                opsin = self.get_or_create_opsin(attrs, ref, user)
+                observation = HeterologousData.objects.create(**shared, opsin=opsin, **{f: attrs.get(f) for f in ('lambda_max', 'mutations', 'error', 'cell_culture')})
+                result['opsin_id'] = opsin.pk
+            else:
+                try:
+                    with transaction.atomic():
+                        observation = CuratedSCP.objects.create(**shared, **{f: attrs.get(f) for f in ('genus', 'species', 'phylum', 'photoreceptor_type', 'cell_subtype', 'lambda_max', 'error', 'chromophore', 'notes')})
+                except ModelValidationError as exc:
+                    raise serializers.ValidationError(exc.message_dict) from exc
+                except IntegrityError as exc:
+                    raise serializers.ValidationError({'lambda_max': 'This observation conflicts with an existing record. Check species, wavelength and publication.'}) from exc
+            result.update(data_type=data_type, record_id=observation.pk)
+        receipt = SubmissionReceipt.objects.create(reference=ref, submitter_email=attrs.get('submitter_email'), payload={k: v for k, v in attrs.items() if k != 'submitter_email'}, result=result)
+        result['receipt_id'] = receipt.pk
+        return result

@@ -1,0 +1,51 @@
+{
+  "target": "isolated localhost SQLite copy",
+  "browser": "Playwright Chromium",
+  "checks": [
+    {
+      "check": "real API table and chart: opsins",
+      "result": "passed"
+    },
+    {
+      "check": "real API table and chart: heterologous",
+      "result": "passed"
+    },
+    {
+      "check": "real API table and chart: scp",
+      "result": "passed"
+    },
+    {
+      "check": "real API table and chart: references",
+      "result": "passed"
+    },
+    {
+      "check": "real API table and chart: visual-acuity",
+      "result": "passed"
+    },
+    {
+      "check": "acuity eye type, species, range, missing, search and empty states",
+      "result": "passed"
+    },
+    {
+      "check": "all 549 acuity records export/copy and full source details",
+      "result": "passed"
+    },
+    {
+      "check": "acuity frontend required/positive validation and real pending API submission",
+      "result": "passed"
+    },
+    {
+      "check": "paginated references, zero years, unknowns, safe rendering, full-text keyboard/hover and metadata search/export",
+      "result": "passed"
+    },
+    {
+      "check": "390px viewport contained layout and emulated touch full-text access",
+      "result": "passed"
+    },
+    {
+      "check": "API failure clears stale table/chart/export population",
+      "result": "passed"
+    }
+  ],
+  "javascript_errors": []
+}

@@ -1,0 +1,5586 @@
+{
+  "source_dataset": "visual_acuity_legacy",
+  "sha256": "ce608a4d9968db315299c6aedc76b08dede5fd9ee0667a7a7477985b03b0ee09",
+  "total": 549,
+  "dry_run": false,
+  "rows": [
+    {
+      "source_record_id": "1",
+      "outcome": "imported",
+      "reference_id": 244,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 2
+    },
+    {
+      "source_record_id": "2",
+      "outcome": "imported",
+      "reference_id": 184,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 3
+    },
+    {
+      "source_record_id": "3",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 4
+    },
+    {
+      "source_record_id": "4",
+      "outcome": "imported",
+      "reference_id": 179,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 5
+    },
+    {
+      "source_record_id": "5",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 6
+    },
+    {
+      "source_record_id": "6",
+      "outcome": "imported",
+      "reference_id": 179,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 7
+    },
+    {
+      "source_record_id": "7",
+      "outcome": "imported",
+      "reference_id": 178,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 8
+    },
+    {
+      "source_record_id": "8",
+      "outcome": "imported",
+      "reference_id": 272,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 9
+    },
+    {
+      "source_record_id": "9",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 10
+    },
+    {
+      "source_record_id": "10",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 11
+    },
+    {
+      "source_record_id": "11",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 12
+    },
+    {
+      "source_record_id": "12",
+      "outcome": "imported",
+      "reference_id": 270,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 13
+    },
+    {
+      "source_record_id": "13",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 14
+    },
+    {
+      "source_record_id": "14",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 15
+    },
+    {
+      "source_record_id": "15",
+      "outcome": "imported",
+      "reference_id": 211,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 16
+    },
+    {
+      "source_record_id": "16",
+      "outcome": "imported",
+      "reference_id": 210,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 17
+    },
+    {
+      "source_record_id": "17",
+      "outcome": "imported",
+      "reference_id": 240,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 18
+    },
+    {
+      "source_record_id": "18",
+      "outcome": "imported",
+      "reference_id": 240,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 19
+    },
+    {
+      "source_record_id": "19",
+      "outcome": "imported",
+      "reference_id": 240,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 20
+    },
+    {
+      "source_record_id": "20",
+      "outcome": "imported",
+      "reference_id": 209,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 21
+    },
+    {
+      "source_record_id": "21",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 22
+    },
+    {
+      "source_record_id": "22",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 23
+    },
+    {
+      "source_record_id": "23",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 24
+    },
+    {
+      "source_record_id": "24",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 25
+    },
+    {
+      "source_record_id": "25",
+      "outcome": "imported",
+      "reference_id": 233,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 26
+    },
+    {
+      "source_record_id": "26",
+      "outcome": "imported",
+      "reference_id": 232,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 27
+    },
+    {
+      "source_record_id": "27",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 28
+    },
+    {
+      "source_record_id": "28",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 29
+    },
+    {
+      "source_record_id": "29",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 30
+    },
+    {
+      "source_record_id": "30",
+      "outcome": "imported",
+      "reference_id": 271,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 31
+    },
+    {
+      "source_record_id": "31",
+      "outcome": "imported",
+      "reference_id": 276,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 32
+    },
+    {
+      "source_record_id": "32",
+      "outcome": "imported",
+      "reference_id": 276,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 33
+    },
+    {
+      "source_record_id": "33",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 34
+    },
+    {
+      "source_record_id": "34",
+      "outcome": "imported",
+      "reference_id": 237,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 35
+    },
+    {
+      "source_record_id": "35",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 36
+    },
+    {
+      "source_record_id": "36",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 37
+    },
+    {
+      "source_record_id": "37",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 38
+    },
+    {
+      "source_record_id": "38",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 39
+    },
+    {
+      "source_record_id": "39",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 40
+    },
+    {
+      "source_record_id": "40",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 41
+    },
+    {
+      "source_record_id": "41",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 42
+    },
+    {
+      "source_record_id": "42",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 43
+    },
+    {
+      "source_record_id": "43",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 44
+    },
+    {
+      "source_record_id": "44",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 45
+    },
+    {
+      "source_record_id": "45",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 46
+    },
+    {
+      "source_record_id": "46",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 47
+    },
+    {
+      "source_record_id": "47",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 48
+    },
+    {
+      "source_record_id": "48",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 49
+    },
+    {
+      "source_record_id": "49",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 50
+    },
+    {
+      "source_record_id": "50",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 51
+    },
+    {
+      "source_record_id": "51",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 52
+    },
+    {
+      "source_record_id": "52",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 53
+    },
+    {
+      "source_record_id": "53",
+      "outcome": "imported",
+      "reference_id": 216,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 54
+    },
+    {
+      "source_record_id": "54",
+      "outcome": "imported",
+      "reference_id": 203,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 55
+    },
+    {
+      "source_record_id": "55",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 56
+    },
+    {
+      "source_record_id": "56",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 57
+    },
+    {
+      "source_record_id": "57",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 58
+    },
+    {
+      "source_record_id": "58",
+      "outcome": "imported",
+      "reference_id": 234,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 59
+    },
+    {
+      "source_record_id": "59",
+      "outcome": "imported",
+      "reference_id": 234,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 60
+    },
+    {
+      "source_record_id": "60",
+      "outcome": "imported",
+      "reference_id": 203,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 61
+    },
+    {
+      "source_record_id": "61",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 62
+    },
+    {
+      "source_record_id": "62",
+      "outcome": "imported",
+      "reference_id": 222,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 63
+    },
+    {
+      "source_record_id": "63",
+      "outcome": "imported",
+      "reference_id": 215,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 64
+    },
+    {
+      "source_record_id": "64",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 65
+    },
+    {
+      "source_record_id": "65",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 66
+    },
+    {
+      "source_record_id": "66",
+      "outcome": "imported",
+      "reference_id": 269,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 67
+    },
+    {
+      "source_record_id": "67",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 68
+    },
+    {
+      "source_record_id": "68",
+      "outcome": "imported",
+      "reference_id": 226,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 69
+    },
+    {
+      "source_record_id": "69",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 70
+    },
+    {
+      "source_record_id": "70",
+      "outcome": "imported",
+      "reference_id": 172,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "cpd_missing: excluded from CPD histogram",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 71
+    },
+    {
+      "source_record_id": "71",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 72
+    },
+    {
+      "source_record_id": "72",
+      "outcome": "imported",
+      "reference_id": 208,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 73
+    },
+    {
+      "source_record_id": "73",
+      "outcome": "imported",
+      "reference_id": 196,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 74
+    },
+    {
+      "source_record_id": "74",
+      "outcome": "imported",
+      "reference_id": 196,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 75
+    },
+    {
+      "source_record_id": "75",
+      "outcome": "imported",
+      "reference_id": 196,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 76
+    },
+    {
+      "source_record_id": "76",
+      "outcome": "imported",
+      "reference_id": 196,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 77
+    },
+    {
+      "source_record_id": "77",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 78
+    },
+    {
+      "source_record_id": "78",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 79
+    },
+    {
+      "source_record_id": "79",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 80
+    },
+    {
+      "source_record_id": "80",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 81
+    },
+    {
+      "source_record_id": "81",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 82
+    },
+    {
+      "source_record_id": "82",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 83
+    },
+    {
+      "source_record_id": "83",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 84
+    },
+    {
+      "source_record_id": "84",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 85
+    },
+    {
+      "source_record_id": "85",
+      "outcome": "imported",
+      "reference_id": 190,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 86
+    },
+    {
+      "source_record_id": "86",
+      "outcome": "imported",
+      "reference_id": 212,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 87
+    },
+    {
+      "source_record_id": "87",
+      "outcome": "imported",
+      "reference_id": 213,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 88
+    },
+    {
+      "source_record_id": "88",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 89
+    },
+    {
+      "source_record_id": "89",
+      "outcome": "imported",
+      "reference_id": 188,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 90
+    },
+    {
+      "source_record_id": "90",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 91
+    },
+    {
+      "source_record_id": "91",
+      "outcome": "imported",
+      "reference_id": 260,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 92
+    },
+    {
+      "source_record_id": "92",
+      "outcome": "imported",
+      "reference_id": 172,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "cpd_missing: excluded from CPD histogram",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 93
+    },
+    {
+      "source_record_id": "93",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 94
+    },
+    {
+      "source_record_id": "94",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 95
+    },
+    {
+      "source_record_id": "95",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 96
+    },
+    {
+      "source_record_id": "96",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 97
+    },
+    {
+      "source_record_id": "97",
+      "outcome": "imported",
+      "reference_id": 263,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 98
+    },
+    {
+      "source_record_id": "98",
+      "outcome": "imported",
+      "reference_id": 263,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 99
+    },
+    {
+      "source_record_id": "99",
+      "outcome": "imported",
+      "reference_id": 263,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 100
+    },
+    {
+      "source_record_id": "100",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 101
+    },
+    {
+      "source_record_id": "101",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 102
+    },
+    {
+      "source_record_id": "102",
+      "outcome": "imported",
+      "reference_id": 249,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 103
+    },
+    {
+      "source_record_id": "103",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 104
+    },
+    {
+      "source_record_id": "104",
+      "outcome": "imported",
+      "reference_id": 227,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 105
+    },
+    {
+      "source_record_id": "105",
+      "outcome": "imported",
+      "reference_id": 264,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 106
+    },
+    {
+      "source_record_id": "106",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 107
+    },
+    {
+      "source_record_id": "107",
+      "outcome": "imported",
+      "reference_id": 228,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 108
+    },
+    {
+      "source_record_id": "108",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 109
+    },
+    {
+      "source_record_id": "109",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 110
+    },
+    {
+      "source_record_id": "110",
+      "outcome": "imported",
+      "reference_id": 262,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 111
+    },
+    {
+      "source_record_id": "111",
+      "outcome": "imported",
+      "reference_id": 262,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 112
+    },
+    {
+      "source_record_id": "112",
+      "outcome": "imported",
+      "reference_id": 262,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 113
+    },
+    {
+      "source_record_id": "113",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 114
+    },
+    {
+      "source_record_id": "114",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 115
+    },
+    {
+      "source_record_id": "115",
+      "outcome": "imported",
+      "reference_id": 173,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 116
+    },
+    {
+      "source_record_id": "116",
+      "outcome": "imported",
+      "reference_id": 275,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 117
+    },
+    {
+      "source_record_id": "117",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 118
+    },
+    {
+      "source_record_id": "118",
+      "outcome": "imported",
+      "reference_id": 275,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 119
+    },
+    {
+      "source_record_id": "119",
+      "outcome": "imported",
+      "reference_id": 257,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 120
+    },
+    {
+      "source_record_id": "120",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 121
+    },
+    {
+      "source_record_id": "121",
+      "outcome": "imported",
+      "reference_id": 245,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 122
+    },
+    {
+      "source_record_id": "122",
+      "outcome": "imported",
+      "reference_id": 242,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 123
+    },
+    {
+      "source_record_id": "123",
+      "outcome": "imported",
+      "reference_id": 241,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 124
+    },
+    {
+      "source_record_id": "124",
+      "outcome": "imported",
+      "reference_id": 247,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 125
+    },
+    {
+      "source_record_id": "125",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 126
+    },
+    {
+      "source_record_id": "126",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 127
+    },
+    {
+      "source_record_id": "127",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 128
+    },
+    {
+      "source_record_id": "128",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 129
+    },
+    {
+      "source_record_id": "129",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 130
+    },
+    {
+      "source_record_id": "130",
+      "outcome": "imported",
+      "reference_id": 214,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 131
+    },
+    {
+      "source_record_id": "131",
+      "outcome": "imported",
+      "reference_id": 228,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 132
+    },
+    {
+      "source_record_id": "132",
+      "outcome": "imported",
+      "reference_id": 192,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 133
+    },
+    {
+      "source_record_id": "133",
+      "outcome": "imported",
+      "reference_id": 198,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 134
+    },
+    {
+      "source_record_id": "134",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 135
+    },
+    {
+      "source_record_id": "135",
+      "outcome": "imported",
+      "reference_id": 199,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 136
+    },
+    {
+      "source_record_id": "136",
+      "outcome": "imported",
+      "reference_id": 274,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 137
+    },
+    {
+      "source_record_id": "137",
+      "outcome": "imported",
+      "reference_id": 207,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 138
+    },
+    {
+      "source_record_id": "138",
+      "outcome": "imported",
+      "reference_id": 207,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 139
+    },
+    {
+      "source_record_id": "139",
+      "outcome": "imported",
+      "reference_id": 207,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 140
+    },
+    {
+      "source_record_id": "140",
+      "outcome": "imported",
+      "reference_id": 207,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 141
+    },
+    {
+      "source_record_id": "141",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 142
+    },
+    {
+      "source_record_id": "142",
+      "outcome": "imported",
+      "reference_id": 207,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 143
+    },
+    {
+      "source_record_id": "143",
+      "outcome": "imported",
+      "reference_id": 207,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 144
+    },
+    {
+      "source_record_id": "144",
+      "outcome": "imported",
+      "reference_id": 207,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 145
+    },
+    {
+      "source_record_id": "145",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 146
+    },
+    {
+      "source_record_id": "146",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 147
+    },
+    {
+      "source_record_id": "147",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 148
+    },
+    {
+      "source_record_id": "148",
+      "outcome": "imported",
+      "reference_id": 250,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 149
+    },
+    {
+      "source_record_id": "149",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 150
+    },
+    {
+      "source_record_id": "150",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 151
+    },
+    {
+      "source_record_id": "151",
+      "outcome": "imported",
+      "reference_id": 250,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 152
+    },
+    {
+      "source_record_id": "152",
+      "outcome": "imported",
+      "reference_id": 200,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 153
+    },
+    {
+      "source_record_id": "153",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 154
+    },
+    {
+      "source_record_id": "154",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 155
+    },
+    {
+      "source_record_id": "155",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 156
+    },
+    {
+      "source_record_id": "156",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 157
+    },
+    {
+      "source_record_id": "157",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 158
+    },
+    {
+      "source_record_id": "158",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 159
+    },
+    {
+      "source_record_id": "159",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 160
+    },
+    {
+      "source_record_id": "160",
+      "outcome": "imported",
+      "reference_id": 200,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 161
+    },
+    {
+      "source_record_id": "161",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 162
+    },
+    {
+      "source_record_id": "162",
+      "outcome": "imported",
+      "reference_id": 250,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 163
+    },
+    {
+      "source_record_id": "163",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 164
+    },
+    {
+      "source_record_id": "164",
+      "outcome": "imported",
+      "reference_id": 250,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 165
+    },
+    {
+      "source_record_id": "165",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 166
+    },
+    {
+      "source_record_id": "166",
+      "outcome": "imported",
+      "reference_id": 181,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 167
+    },
+    {
+      "source_record_id": "167",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 168
+    },
+    {
+      "source_record_id": "168",
+      "outcome": "imported",
+      "reference_id": 266,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 169
+    },
+    {
+      "source_record_id": "169",
+      "outcome": "imported",
+      "reference_id": 231,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 170
+    },
+    {
+      "source_record_id": "170",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 171
+    },
+    {
+      "source_record_id": "171",
+      "outcome": "imported",
+      "reference_id": 206,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 172
+    },
+    {
+      "source_record_id": "172",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 173
+    },
+    {
+      "source_record_id": "173",
+      "outcome": "imported",
+      "reference_id": 267,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 174
+    },
+    {
+      "source_record_id": "174",
+      "outcome": "imported",
+      "reference_id": 193,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 175
+    },
+    {
+      "source_record_id": "175",
+      "outcome": "imported",
+      "reference_id": 267,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 176
+    },
+    {
+      "source_record_id": "176",
+      "outcome": "imported",
+      "reference_id": 267,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 177
+    },
+    {
+      "source_record_id": "177",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 178
+    },
+    {
+      "source_record_id": "178",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 179
+    },
+    {
+      "source_record_id": "179",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 180
+    },
+    {
+      "source_record_id": "180",
+      "outcome": "imported",
+      "reference_id": 186,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 181
+    },
+    {
+      "source_record_id": "181",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 182
+    },
+    {
+      "source_record_id": "182",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 183
+    },
+    {
+      "source_record_id": "183",
+      "outcome": "imported",
+      "reference_id": 180,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 184
+    },
+    {
+      "source_record_id": "184",
+      "outcome": "imported",
+      "reference_id": 194,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 185
+    },
+    {
+      "source_record_id": "185",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 186
+    },
+    {
+      "source_record_id": "186",
+      "outcome": "imported",
+      "reference_id": 261,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 187
+    },
+    {
+      "source_record_id": "187",
+      "outcome": "imported",
+      "reference_id": 259,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 188
+    },
+    {
+      "source_record_id": "188",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 189
+    },
+    {
+      "source_record_id": "189",
+      "outcome": "imported",
+      "reference_id": 259,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 190
+    },
+    {
+      "source_record_id": "190",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 191
+    },
+    {
+      "source_record_id": "191",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 192
+    },
+    {
+      "source_record_id": "192",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 193
+    },
+    {
+      "source_record_id": "193",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 194
+    },
+    {
+      "source_record_id": "194",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 195
+    },
+    {
+      "source_record_id": "195",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 196
+    },
+    {
+      "source_record_id": "196",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 197
+    },
+    {
+      "source_record_id": "197",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 198
+    },
+    {
+      "source_record_id": "198",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 199
+    },
+    {
+      "source_record_id": "199",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 200
+    },
+    {
+      "source_record_id": "200",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 201
+    },
+    {
+      "source_record_id": "201",
+      "outcome": "imported",
+      "reference_id": 252,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 202
+    },
+    {
+      "source_record_id": "202",
+      "outcome": "imported",
+      "reference_id": 256,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 203
+    },
+    {
+      "source_record_id": "203",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 204
+    },
+    {
+      "source_record_id": "204",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 205
+    },
+    {
+      "source_record_id": "205",
+      "outcome": "imported",
+      "reference_id": 259,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 206
+    },
+    {
+      "source_record_id": "206",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 207
+    },
+    {
+      "source_record_id": "207",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 208
+    },
+    {
+      "source_record_id": "208",
+      "outcome": "imported",
+      "reference_id": 217,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 209
+    },
+    {
+      "source_record_id": "209",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 210
+    },
+    {
+      "source_record_id": "210",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 211
+    },
+    {
+      "source_record_id": "211",
+      "outcome": "imported",
+      "reference_id": 220,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 212
+    },
+    {
+      "source_record_id": "212",
+      "outcome": "imported",
+      "reference_id": 246,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 213
+    },
+    {
+      "source_record_id": "213",
+      "outcome": "imported",
+      "reference_id": 239,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 214
+    },
+    {
+      "source_record_id": "214",
+      "outcome": "imported",
+      "reference_id": 239,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 215
+    },
+    {
+      "source_record_id": "215",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 216
+    },
+    {
+      "source_record_id": "216",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 217
+    },
+    {
+      "source_record_id": "217",
+      "outcome": "imported",
+      "reference_id": 238,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 218
+    },
+    {
+      "source_record_id": "218",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 219
+    },
+    {
+      "source_record_id": "219",
+      "outcome": "imported",
+      "reference_id": 248,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 220
+    },
+    {
+      "source_record_id": "220",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 221
+    },
+    {
+      "source_record_id": "221",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 222
+    },
+    {
+      "source_record_id": "222",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 223
+    },
+    {
+      "source_record_id": "223",
+      "outcome": "imported",
+      "reference_id": 197,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 224
+    },
+    {
+      "source_record_id": "224",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 225
+    },
+    {
+      "source_record_id": "225",
+      "outcome": "imported",
+      "reference_id": 218,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 226
+    },
+    {
+      "source_record_id": "226",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 227
+    },
+    {
+      "source_record_id": "227",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 228
+    },
+    {
+      "source_record_id": "228",
+      "outcome": "imported",
+      "reference_id": 219,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 229
+    },
+    {
+      "source_record_id": "229",
+      "outcome": "imported",
+      "reference_id": 235,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 230
+    },
+    {
+      "source_record_id": "230",
+      "outcome": "imported",
+      "reference_id": 202,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 231
+    },
+    {
+      "source_record_id": "231",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 232
+    },
+    {
+      "source_record_id": "232",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 233
+    },
+    {
+      "source_record_id": "233",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 234
+    },
+    {
+      "source_record_id": "234",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 235
+    },
+    {
+      "source_record_id": "235",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 236
+    },
+    {
+      "source_record_id": "236",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 237
+    },
+    {
+      "source_record_id": "237",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 238
+    },
+    {
+      "source_record_id": "238",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 239
+    },
+    {
+      "source_record_id": "239",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 240
+    },
+    {
+      "source_record_id": "240",
+      "outcome": "imported",
+      "reference_id": 268,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 241
+    },
+    {
+      "source_record_id": "241",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 242
+    },
+    {
+      "source_record_id": "242",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 243
+    },
+    {
+      "source_record_id": "243",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 244
+    },
+    {
+      "source_record_id": "244",
+      "outcome": "imported",
+      "reference_id": 177,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 245
+    },
+    {
+      "source_record_id": "245",
+      "outcome": "imported",
+      "reference_id": 195,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 246
+    },
+    {
+      "source_record_id": "246",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 247
+    },
+    {
+      "source_record_id": "247",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 248
+    },
+    {
+      "source_record_id": "248",
+      "outcome": "imported",
+      "reference_id": 258,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 249
+    },
+    {
+      "source_record_id": "249",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 250
+    },
+    {
+      "source_record_id": "250",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 251
+    },
+    {
+      "source_record_id": "251",
+      "outcome": "imported",
+      "reference_id": 277,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 252
+    },
+    {
+      "source_record_id": "252",
+      "outcome": "imported",
+      "reference_id": 174,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 253
+    },
+    {
+      "source_record_id": "253",
+      "outcome": "imported",
+      "reference_id": 224,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 254
+    },
+    {
+      "source_record_id": "254",
+      "outcome": "imported",
+      "reference_id": 187,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 255
+    },
+    {
+      "source_record_id": "255",
+      "outcome": "imported",
+      "reference_id": 191,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 256
+    },
+    {
+      "source_record_id": "256",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 257
+    },
+    {
+      "source_record_id": "257",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 258
+    },
+    {
+      "source_record_id": "258",
+      "outcome": "imported",
+      "reference_id": 174,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 259
+    },
+    {
+      "source_record_id": "259",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 260
+    },
+    {
+      "source_record_id": "260",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 261
+    },
+    {
+      "source_record_id": "261",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 262
+    },
+    {
+      "source_record_id": "262",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 263
+    },
+    {
+      "source_record_id": "263",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 264
+    },
+    {
+      "source_record_id": "264",
+      "outcome": "imported",
+      "reference_id": 185,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 265
+    },
+    {
+      "source_record_id": "265",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 266
+    },
+    {
+      "source_record_id": "266",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 267
+    },
+    {
+      "source_record_id": "267",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 268
+    },
+    {
+      "source_record_id": "268",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 269
+    },
+    {
+      "source_record_id": "269",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 270
+    },
+    {
+      "source_record_id": "270",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 271
+    },
+    {
+      "source_record_id": "271",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 272
+    },
+    {
+      "source_record_id": "272",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 273
+    },
+    {
+      "source_record_id": "273",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 274
+    },
+    {
+      "source_record_id": "274",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 275
+    },
+    {
+      "source_record_id": "275",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 276
+    },
+    {
+      "source_record_id": "276",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 277
+    },
+    {
+      "source_record_id": "277",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 278
+    },
+    {
+      "source_record_id": "278",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 279
+    },
+    {
+      "source_record_id": "279",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 280
+    },
+    {
+      "source_record_id": "280",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 281
+    },
+    {
+      "source_record_id": "281",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 282
+    },
+    {
+      "source_record_id": "282",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 283
+    },
+    {
+      "source_record_id": "283",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 284
+    },
+    {
+      "source_record_id": "284",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 285
+    },
+    {
+      "source_record_id": "285",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 286
+    },
+    {
+      "source_record_id": "286",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 287
+    },
+    {
+      "source_record_id": "287",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 288
+    },
+    {
+      "source_record_id": "288",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 289
+    },
+    {
+      "source_record_id": "289",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 290
+    },
+    {
+      "source_record_id": "290",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 291
+    },
+    {
+      "source_record_id": "291",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 292
+    },
+    {
+      "source_record_id": "292",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 293
+    },
+    {
+      "source_record_id": "293",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 294
+    },
+    {
+      "source_record_id": "294",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 295
+    },
+    {
+      "source_record_id": "295",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 296
+    },
+    {
+      "source_record_id": "296",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 297
+    },
+    {
+      "source_record_id": "297",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 298
+    },
+    {
+      "source_record_id": "298",
+      "outcome": "imported",
+      "reference_id": 185,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 299
+    },
+    {
+      "source_record_id": "299",
+      "outcome": "imported",
+      "reference_id": 230,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 300
+    },
+    {
+      "source_record_id": "300",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 301
+    },
+    {
+      "source_record_id": "301",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 302
+    },
+    {
+      "source_record_id": "302",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 303
+    },
+    {
+      "source_record_id": "303",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 304
+    },
+    {
+      "source_record_id": "304",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 305
+    },
+    {
+      "source_record_id": "305",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 306
+    },
+    {
+      "source_record_id": "306",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 307
+    },
+    {
+      "source_record_id": "307",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 308
+    },
+    {
+      "source_record_id": "308",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 309
+    },
+    {
+      "source_record_id": "309",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 310
+    },
+    {
+      "source_record_id": "310",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 311
+    },
+    {
+      "source_record_id": "311",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 312
+    },
+    {
+      "source_record_id": "312",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 313
+    },
+    {
+      "source_record_id": "313",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 314
+    },
+    {
+      "source_record_id": "314",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 315
+    },
+    {
+      "source_record_id": "315",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 316
+    },
+    {
+      "source_record_id": "316",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 317
+    },
+    {
+      "source_record_id": "317",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 318
+    },
+    {
+      "source_record_id": "318",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 319
+    },
+    {
+      "source_record_id": "319",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 320
+    },
+    {
+      "source_record_id": "320",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 321
+    },
+    {
+      "source_record_id": "321",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 322
+    },
+    {
+      "source_record_id": "322",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 323
+    },
+    {
+      "source_record_id": "323",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 324
+    },
+    {
+      "source_record_id": "324",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 325
+    },
+    {
+      "source_record_id": "325",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 326
+    },
+    {
+      "source_record_id": "326",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 327
+    },
+    {
+      "source_record_id": "327",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 328
+    },
+    {
+      "source_record_id": "328",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 329
+    },
+    {
+      "source_record_id": "329",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 330
+    },
+    {
+      "source_record_id": "330",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 331
+    },
+    {
+      "source_record_id": "331",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 332
+    },
+    {
+      "source_record_id": "332",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 333
+    },
+    {
+      "source_record_id": "333",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 334
+    },
+    {
+      "source_record_id": "334",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 335
+    },
+    {
+      "source_record_id": "335",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 336
+    },
+    {
+      "source_record_id": "336",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 337
+    },
+    {
+      "source_record_id": "337",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 338
+    },
+    {
+      "source_record_id": "338",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 339
+    },
+    {
+      "source_record_id": "339",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 340
+    },
+    {
+      "source_record_id": "340",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 341
+    },
+    {
+      "source_record_id": "341",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 342
+    },
+    {
+      "source_record_id": "342",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 343
+    },
+    {
+      "source_record_id": "343",
+      "outcome": "imported",
+      "reference_id": 185,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 344
+    },
+    {
+      "source_record_id": "344",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 345
+    },
+    {
+      "source_record_id": "345",
+      "outcome": "imported",
+      "reference_id": 189,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 346
+    },
+    {
+      "source_record_id": "346",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 347
+    },
+    {
+      "source_record_id": "347",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 348
+    },
+    {
+      "source_record_id": "348",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 349
+    },
+    {
+      "source_record_id": "349",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 350
+    },
+    {
+      "source_record_id": "350",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 351
+    },
+    {
+      "source_record_id": "351",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 352
+    },
+    {
+      "source_record_id": "352",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 353
+    },
+    {
+      "source_record_id": "353",
+      "outcome": "imported",
+      "reference_id": 205,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 354
+    },
+    {
+      "source_record_id": "354",
+      "outcome": "imported",
+      "reference_id": 183,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 355
+    },
+    {
+      "source_record_id": "355",
+      "outcome": "imported",
+      "reference_id": 175,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 356
+    },
+    {
+      "source_record_id": "356",
+      "outcome": "imported",
+      "reference_id": 225,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 357
+    },
+    {
+      "source_record_id": "357",
+      "outcome": "imported",
+      "reference_id": 281,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 358
+    },
+    {
+      "source_record_id": "358",
+      "outcome": "imported",
+      "reference_id": 281,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 359
+    },
+    {
+      "source_record_id": "359",
+      "outcome": "imported",
+      "reference_id": 281,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 360
+    },
+    {
+      "source_record_id": "360",
+      "outcome": "imported",
+      "reference_id": 278,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 361
+    },
+    {
+      "source_record_id": "361",
+      "outcome": "imported",
+      "reference_id": 174,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 362
+    },
+    {
+      "source_record_id": "362",
+      "outcome": "imported",
+      "reference_id": 182,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 363
+    },
+    {
+      "source_record_id": "363",
+      "outcome": "imported",
+      "reference_id": 172,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "cpd_missing: excluded from CPD histogram",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 364
+    },
+    {
+      "source_record_id": "364",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 365
+    },
+    {
+      "source_record_id": "365",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 366
+    },
+    {
+      "source_record_id": "366",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 367
+    },
+    {
+      "source_record_id": "367",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 368
+    },
+    {
+      "source_record_id": "368",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 369
+    },
+    {
+      "source_record_id": "369",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 370
+    },
+    {
+      "source_record_id": "370",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 371
+    },
+    {
+      "source_record_id": "371",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 372
+    },
+    {
+      "source_record_id": "372",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 373
+    },
+    {
+      "source_record_id": "373",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 374
+    },
+    {
+      "source_record_id": "374",
+      "outcome": "imported",
+      "reference_id": 204,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 375
+    },
+    {
+      "source_record_id": "375",
+      "outcome": "imported",
+      "reference_id": 236,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 376
+    },
+    {
+      "source_record_id": "376",
+      "outcome": "imported",
+      "reference_id": 243,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 377
+    },
+    {
+      "source_record_id": "377",
+      "outcome": "imported",
+      "reference_id": 273,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 378
+    },
+    {
+      "source_record_id": "378",
+      "outcome": "imported",
+      "reference_id": 221,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 379
+    },
+    {
+      "source_record_id": "379",
+      "outcome": "imported",
+      "reference_id": 201,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 380
+    },
+    {
+      "source_record_id": "380",
+      "outcome": "imported",
+      "reference_id": 229,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 381
+    },
+    {
+      "source_record_id": "381",
+      "outcome": "imported",
+      "reference_id": 255,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 382
+    },
+    {
+      "source_record_id": "382",
+      "outcome": "imported",
+      "reference_id": 229,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 383
+    },
+    {
+      "source_record_id": "383",
+      "outcome": "imported",
+      "reference_id": 253,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 384
+    },
+    {
+      "source_record_id": "384",
+      "outcome": "imported",
+      "reference_id": 229,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 385
+    },
+    {
+      "source_record_id": "385",
+      "outcome": "imported",
+      "reference_id": 229,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 386
+    },
+    {
+      "source_record_id": "386",
+      "outcome": "imported",
+      "reference_id": 253,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 387
+    },
+    {
+      "source_record_id": "387",
+      "outcome": "imported",
+      "reference_id": 229,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 388
+    },
+    {
+      "source_record_id": "388",
+      "outcome": "imported",
+      "reference_id": 255,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 389
+    },
+    {
+      "source_record_id": "389",
+      "outcome": "imported",
+      "reference_id": 255,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 390
+    },
+    {
+      "source_record_id": "390",
+      "outcome": "imported",
+      "reference_id": 254,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 391
+    },
+    {
+      "source_record_id": "391",
+      "outcome": "imported",
+      "reference_id": 229,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 392
+    },
+    {
+      "source_record_id": "392",
+      "outcome": "imported",
+      "reference_id": 255,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 393
+    },
+    {
+      "source_record_id": "393",
+      "outcome": "imported",
+      "reference_id": 255,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 394
+    },
+    {
+      "source_record_id": "394",
+      "outcome": "imported",
+      "reference_id": 176,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 395
+    },
+    {
+      "source_record_id": "395",
+      "outcome": "imported",
+      "reference_id": 279,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 396
+    },
+    {
+      "source_record_id": "396",
+      "outcome": "imported",
+      "reference_id": 279,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 397
+    },
+    {
+      "source_record_id": "397",
+      "outcome": "imported",
+      "reference_id": 279,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 398
+    },
+    {
+      "source_record_id": "398",
+      "outcome": "imported",
+      "reference_id": 279,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 399
+    },
+    {
+      "source_record_id": "399",
+      "outcome": "imported",
+      "reference_id": 279,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 400
+    },
+    {
+      "source_record_id": "400",
+      "outcome": "imported",
+      "reference_id": 279,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 401
+    },
+    {
+      "source_record_id": "401",
+      "outcome": "imported",
+      "reference_id": 280,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 402
+    },
+    {
+      "source_record_id": "402",
+      "outcome": "imported",
+      "reference_id": 223,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 403
+    },
+    {
+      "source_record_id": "403",
+      "outcome": "imported",
+      "reference_id": 265,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 404
+    },
+    {
+      "source_record_id": "404",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 405
+    },
+    {
+      "source_record_id": "405",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 406
+    },
+    {
+      "source_record_id": "406",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 407
+    },
+    {
+      "source_record_id": "407",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 408
+    },
+    {
+      "source_record_id": "408",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 409
+    },
+    {
+      "source_record_id": "409",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 410
+    },
+    {
+      "source_record_id": "410",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 411
+    },
+    {
+      "source_record_id": "411",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 412
+    },
+    {
+      "source_record_id": "412",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 413
+    },
+    {
+      "source_record_id": "413",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 414
+    },
+    {
+      "source_record_id": "414",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 415
+    },
+    {
+      "source_record_id": "415",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 416
+    },
+    {
+      "source_record_id": "416",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 417
+    },
+    {
+      "source_record_id": "417",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 418
+    },
+    {
+      "source_record_id": "418",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 419
+    },
+    {
+      "source_record_id": "419",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 420
+    },
+    {
+      "source_record_id": "420",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 421
+    },
+    {
+      "source_record_id": "421",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 422
+    },
+    {
+      "source_record_id": "422",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 423
+    },
+    {
+      "source_record_id": "423",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 424
+    },
+    {
+      "source_record_id": "424",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 425
+    },
+    {
+      "source_record_id": "425",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 426
+    },
+    {
+      "source_record_id": "426",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 427
+    },
+    {
+      "source_record_id": "427",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 428
+    },
+    {
+      "source_record_id": "428",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 429
+    },
+    {
+      "source_record_id": "429",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 430
+    },
+    {
+      "source_record_id": "430",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 431
+    },
+    {
+      "source_record_id": "431",
+      "outcome": "imported",
+      "reference_id": 284,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 432
+    },
+    {
+      "source_record_id": "432",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 433
+    },
+    {
+      "source_record_id": "433",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 434
+    },
+    {
+      "source_record_id": "434",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 435
+    },
+    {
+      "source_record_id": "435",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 436
+    },
+    {
+      "source_record_id": "436",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 437
+    },
+    {
+      "source_record_id": "437",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 438
+    },
+    {
+      "source_record_id": "438",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 439
+    },
+    {
+      "source_record_id": "439",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 440
+    },
+    {
+      "source_record_id": "440",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 441
+    },
+    {
+      "source_record_id": "441",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 442
+    },
+    {
+      "source_record_id": "442",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 443
+    },
+    {
+      "source_record_id": "443",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 444
+    },
+    {
+      "source_record_id": "444",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 445
+    },
+    {
+      "source_record_id": "445",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 446
+    },
+    {
+      "source_record_id": "446",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 447
+    },
+    {
+      "source_record_id": "447",
+      "outcome": "imported",
+      "reference_id": 251,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 448
+    },
+    {
+      "source_record_id": "448",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 449
+    },
+    {
+      "source_record_id": "449",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 450
+    },
+    {
+      "source_record_id": "450",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 451
+    },
+    {
+      "source_record_id": "451",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 452
+    },
+    {
+      "source_record_id": "452",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 453
+    },
+    {
+      "source_record_id": "453",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 454
+    },
+    {
+      "source_record_id": "454",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 455
+    },
+    {
+      "source_record_id": "455",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 456
+    },
+    {
+      "source_record_id": "456",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 457
+    },
+    {
+      "source_record_id": "457",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 458
+    },
+    {
+      "source_record_id": "458",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 459
+    },
+    {
+      "source_record_id": "459",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 460
+    },
+    {
+      "source_record_id": "460",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 461
+    },
+    {
+      "source_record_id": "461",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 462
+    },
+    {
+      "source_record_id": "462",
+      "outcome": "imported",
+      "reference_id": 285,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 463
+    },
+    {
+      "source_record_id": "463",
+      "outcome": "imported",
+      "reference_id": 325,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 464
+    },
+    {
+      "source_record_id": "464",
+      "outcome": "imported",
+      "reference_id": 326,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 465
+    },
+    {
+      "source_record_id": "465",
+      "outcome": "imported",
+      "reference_id": 327,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 466
+    },
+    {
+      "source_record_id": "466",
+      "outcome": "imported",
+      "reference_id": 327,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 467
+    },
+    {
+      "source_record_id": "467",
+      "outcome": "imported",
+      "reference_id": 328,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 468
+    },
+    {
+      "source_record_id": "468",
+      "outcome": "imported",
+      "reference_id": 329,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 469
+    },
+    {
+      "source_record_id": "469",
+      "outcome": "imported",
+      "reference_id": 330,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 470
+    },
+    {
+      "source_record_id": "470",
+      "outcome": "imported",
+      "reference_id": 330,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 471
+    },
+    {
+      "source_record_id": "471",
+      "outcome": "imported",
+      "reference_id": 331,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 472
+    },
+    {
+      "source_record_id": "472",
+      "outcome": "imported",
+      "reference_id": 331,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 473
+    },
+    {
+      "source_record_id": "473",
+      "outcome": "imported",
+      "reference_id": 331,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 474
+    },
+    {
+      "source_record_id": "474",
+      "outcome": "imported",
+      "reference_id": 331,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 475
+    },
+    {
+      "source_record_id": "475",
+      "outcome": "imported",
+      "reference_id": 331,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 476
+    },
+    {
+      "source_record_id": "476",
+      "outcome": "imported",
+      "reference_id": 331,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 477
+    },
+    {
+      "source_record_id": "477",
+      "outcome": "imported",
+      "reference_id": 331,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 478
+    },
+    {
+      "source_record_id": "478",
+      "outcome": "imported",
+      "reference_id": 332,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 479
+    },
+    {
+      "source_record_id": "479",
+      "outcome": "imported",
+      "reference_id": 332,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 480
+    },
+    {
+      "source_record_id": "480",
+      "outcome": "imported",
+      "reference_id": 332,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 481
+    },
+    {
+      "source_record_id": "481",
+      "outcome": "imported",
+      "reference_id": 332,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 482
+    },
+    {
+      "source_record_id": "482",
+      "outcome": "imported",
+      "reference_id": 332,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 483
+    },
+    {
+      "source_record_id": "483",
+      "outcome": "imported",
+      "reference_id": 332,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 484
+    },
+    {
+      "source_record_id": "484",
+      "outcome": "imported",
+      "reference_id": 332,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 485
+    },
+    {
+      "source_record_id": "485",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 486
+    },
+    {
+      "source_record_id": "486",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 487
+    },
+    {
+      "source_record_id": "487",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 488
+    },
+    {
+      "source_record_id": "488",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 489
+    },
+    {
+      "source_record_id": "489",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 490
+    },
+    {
+      "source_record_id": "490",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 491
+    },
+    {
+      "source_record_id": "491",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 492
+    },
+    {
+      "source_record_id": "492",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 493
+    },
+    {
+      "source_record_id": "493",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 494
+    },
+    {
+      "source_record_id": "494",
+      "outcome": "imported",
+      "reference_id": 333,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 495
+    },
+    {
+      "source_record_id": "495",
+      "outcome": "imported",
+      "reference_id": 334,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 496
+    },
+    {
+      "source_record_id": "496",
+      "outcome": "imported",
+      "reference_id": 334,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 497
+    },
+    {
+      "source_record_id": "497",
+      "outcome": "imported",
+      "reference_id": 334,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 498
+    },
+    {
+      "source_record_id": "498",
+      "outcome": "imported",
+      "reference_id": 334,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 499
+    },
+    {
+      "source_record_id": "499",
+      "outcome": "imported",
+      "reference_id": 334,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 500
+    },
+    {
+      "source_record_id": "500",
+      "outcome": "imported",
+      "reference_id": 335,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 501
+    },
+    {
+      "source_record_id": "501",
+      "outcome": "imported",
+      "reference_id": 335,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 502
+    },
+    {
+      "source_record_id": "502",
+      "outcome": "imported",
+      "reference_id": 335,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 503
+    },
+    {
+      "source_record_id": "503",
+      "outcome": "imported",
+      "reference_id": 335,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 504
+    },
+    {
+      "source_record_id": "504",
+      "outcome": "imported",
+      "reference_id": 335,
+      "flags": [
+        "taxonomy_unresolved: inspect raw Genus/Species",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 505
+    },
+    {
+      "source_record_id": "505",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 506
+    },
+    {
+      "source_record_id": "506",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 507
+    },
+    {
+      "source_record_id": "507",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 508
+    },
+    {
+      "source_record_id": "508",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 509
+    },
+    {
+      "source_record_id": "509",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 510
+    },
+    {
+      "source_record_id": "510",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 511
+    },
+    {
+      "source_record_id": "511",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 512
+    },
+    {
+      "source_record_id": "512",
+      "outcome": "imported",
+      "reference_id": 336,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 513
+    },
+    {
+      "source_record_id": "513",
+      "outcome": "imported",
+      "reference_id": 337,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 514
+    },
+    {
+      "source_record_id": "514",
+      "outcome": "imported",
+      "reference_id": 337,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 515
+    },
+    {
+      "source_record_id": "515",
+      "outcome": "imported",
+      "reference_id": 338,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 516
+    },
+    {
+      "source_record_id": "516",
+      "outcome": "imported",
+      "reference_id": 338,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 517
+    },
+    {
+      "source_record_id": "517",
+      "outcome": "imported",
+      "reference_id": 339,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 518
+    },
+    {
+      "source_record_id": "518",
+      "outcome": "imported",
+      "reference_id": 339,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 519
+    },
+    {
+      "source_record_id": "519",
+      "outcome": "imported",
+      "reference_id": 339,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 520
+    },
+    {
+      "source_record_id": "520",
+      "outcome": "imported",
+      "reference_id": 339,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 521
+    },
+    {
+      "source_record_id": "521",
+      "outcome": "imported",
+      "reference_id": 339,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 522
+    },
+    {
+      "source_record_id": "522",
+      "outcome": "imported",
+      "reference_id": 340,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 523
+    },
+    {
+      "source_record_id": "523",
+      "outcome": "imported",
+      "reference_id": 341,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 524
+    },
+    {
+      "source_record_id": "524",
+      "outcome": "imported",
+      "reference_id": 342,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 525
+    },
+    {
+      "source_record_id": "525",
+      "outcome": "imported",
+      "reference_id": 343,
+      "flags": [
+        "taxonomy_unverified: supplied spelling retained",
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 526
+    },
+    {
+      "source_record_id": "526",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 527
+    },
+    {
+      "source_record_id": "527",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 528
+    },
+    {
+      "source_record_id": "528",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 529
+    },
+    {
+      "source_record_id": "529",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 530
+    },
+    {
+      "source_record_id": "530",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 531
+    },
+    {
+      "source_record_id": "531",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 532
+    },
+    {
+      "source_record_id": "532",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 533
+    },
+    {
+      "source_record_id": "533",
+      "outcome": "imported",
+      "reference_id": 345,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 534
+    },
+    {
+      "source_record_id": "534",
+      "outcome": "imported",
+      "reference_id": 345,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 535
+    },
+    {
+      "source_record_id": "535",
+      "outcome": "imported",
+      "reference_id": 345,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 536
+    },
+    {
+      "source_record_id": "536",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 537
+    },
+    {
+      "source_record_id": "537",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 538
+    },
+    {
+      "source_record_id": "538",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 539
+    },
+    {
+      "source_record_id": "539",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 540
+    },
+    {
+      "source_record_id": "540",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 541
+    },
+    {
+      "source_record_id": "541",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 542
+    },
+    {
+      "source_record_id": "542",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 543
+    },
+    {
+      "source_record_id": "543",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 544
+    },
+    {
+      "source_record_id": "544",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 545
+    },
+    {
+      "source_record_id": "545",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 546
+    },
+    {
+      "source_record_id": "546",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 547
+    },
+    {
+      "source_record_id": "547",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 548
+    },
+    {
+      "source_record_id": "548",
+      "outcome": "imported",
+      "reference_id": 344,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 549
+    },
+    {
+      "source_record_id": "549",
+      "outcome": "imported",
+      "reference_id": 345,
+      "flags": [
+        "measurement_protocol_unverified: source CPD retained; no angular conversion"
+      ],
+      "conflicts": [],
+      "line": 550
+    }
+  ],
+  "counts": {
+    "imported": 549
+  }
+}

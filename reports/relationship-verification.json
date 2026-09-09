@@ -1,0 +1,18 @@
+{
+  "core_opsin": {
+    "rows": 3460,
+    "identifiers_foreign_keys_statuses_unchanged": true
+  },
+  "core_heterologousdata": {
+    "rows": 1987,
+    "identifiers_foreign_keys_statuses_unchanged": true
+  },
+  "core_curatedscp": {
+    "rows": 3871,
+    "identifiers_foreign_keys_statuses_unchanged": true
+  },
+  "core_reference": {
+    "rows": 602,
+    "identifiers_foreign_keys_statuses_unchanged": true
+  }
+}

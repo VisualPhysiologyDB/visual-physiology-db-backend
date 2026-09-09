@@ -1,0 +1,33 @@
+{
+  "proposal_only": true,
+  "enabled": false,
+  "timezone": "America/Los_Angeles",
+  "schedule_description": "First day of month at 02:00 local time",
+  "mode": "output_only",
+  "overlap_days": 90,
+  "quarterly_backfill_days": 365,
+  "providers": ["europe_pmc", "crossref"],
+  "requests_per_second": 1,
+  "concurrent_requests": 1,
+  "connect_timeout_seconds": 5,
+  "read_timeout_seconds": 20,
+  "max_retries": 2,
+  "max_new_reviews_per_month": 40,
+  "queries": [
+    {"id": "opsin_spectral_v1", "query": "(opsin OR rhodopsin) AND (\"spectral tuning\" OR \"spectral sensitivity\")"},
+    {"id": "acuity_v1", "query": "(\"visual acuity\" OR \"interommatidial angle\" OR \"cycles per degree\") AND (eye OR photoreceptor OR optomotor)"}
+  ],
+  "agent": {
+    "enabled": false,
+    "provider": "deployment supplied",
+    "model": "pilot selection required",
+    "prompt_version": "proposal-v1",
+    "max_candidates": 100,
+    "max_input_tokens_per_candidate": 4000,
+    "max_output_tokens_per_candidate": 600,
+    "max_passage_reads_per_candidate": 2,
+    "max_invalid_output_retries": 1,
+    "currency_budget": null
+  },
+  "credentials_from_environment": ["DISCOVERY_SERVICE_TOKEN", "METADATA_MAILTO", "NCBI_API_KEY", "MODEL_API_KEY"]
+}

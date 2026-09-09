@@ -1,0 +1,116 @@
+{
+  "enabled": true,
+  "interval_days": 15,
+  "initial_lookback_days": 90,
+  "overlap_days": 30,
+  "window_days": 7,
+  "max_new_candidates": 40,
+  "max_unreviewed": 200,
+  "max_requests": 80,
+  "max_runtime_seconds": 600,
+  "page_size": 50,
+  "request_interval_seconds": 1.1,
+  "providers": [
+    "europepmc",
+    "crossref"
+  ],
+  "queries": [
+    {
+      "name": "opsin-spectral",
+      "category": "Opsin / spectral tuning",
+      "any_terms": [
+        "opsin",
+        "rhodopsin",
+        "visual pigment"
+      ],
+      "required_any": [
+        "spectral tuning",
+        "spectral sensitivity",
+        "lambda max",
+        "λmax",
+        "absorption maximum"
+      ],
+      "exclude_terms": [],
+      "crossref_query": "opsin"
+    },
+    {
+      "name": "heterologous",
+      "category": "Heterologous expression",
+      "any_terms": [
+        "opsin",
+        "rhodopsin",
+        "visual pigment"
+      ],
+      "required_any": [
+        "heterologous",
+        "reconstituted",
+        "reconstitution"
+      ],
+      "exclude_terms": [],
+      "crossref_query": "rhodopsin heterologous"
+    },
+    {
+      "name": "msp-scp",
+      "category": "MSP / SCP",
+      "any_terms": [
+        "microspectrophotometry",
+        "microspectrophotometric",
+        "single cell photometry",
+        "single-cell photometry"
+      ],
+      "required_any": [],
+      "exclude_terms": [],
+      "crossref_query": "microspectrophotometry"
+    },
+    {
+      "name": "erg",
+      "category": "ERG",
+      "any_terms": [
+        "electroretinography",
+        "electroretinogram",
+        "electroretinographic",
+        "ERG"
+      ],
+      "required_any": [
+        "spectral sensitivity",
+        "spectral tuning",
+        "spectral response",
+        "spectral responses",
+        "wavelength sensitivity"
+      ],
+      "exclude_terms": [],
+      "crossref_query": "electroretinography"
+    },
+    {
+      "name": "visual-acuity",
+      "category": "Visual acuity",
+      "any_terms": [
+        "visual acuity",
+        "spatial acuity",
+        "spatial resolving power",
+        "interommatidial angle"
+      ],
+      "required_any": [
+        "cycles per degree",
+        "cycles/degree",
+        "compound eye",
+        "visual ecology",
+        "fish",
+        "fishes",
+        "zebrafish",
+        "bird",
+        "birds",
+        "insect",
+        "insects",
+        "crustacean",
+        "cephalopod",
+        "mammal",
+        "reptile",
+        "amphibian",
+        "animal"
+      ],
+      "exclude_terms": [],
+      "crossref_query": "visual acuity"
+    }
+  ]
+}
