@@ -6,6 +6,7 @@ from collections import Counter
 from django.core.management.base import BaseCommand
 from django.core.management.color import no_style
 from django.db import connection
+from django.conf import settings
 from core.models import Reference, Opsin, HeterologousData, CuratedSCP
 from core.bibliography import classify_identifier, normalize_methods
 from core.source_references import CURATED_SCP_SOURCE_DATASET, ensure_source_publication_references
@@ -53,6 +54,26 @@ class Command(BaseCommand):
         with connection.cursor() as cursor:
             for sql in connection.ops.sequence_reset_sql(no_style(), [Reference, Opsin, HeterologousData, CuratedSCP]):
                 cursor.execute(sql)
+        # Imported mutant rows may carry the WT's base accession. Construct their
+        # own protein after all WT rows exist; never leave a mutant linked to WT.
+        new_mutants = [r['detail']['id'] for r in report['files'].get('heterologous.csv', {}).get('rows', [])
+                       if r['outcome'] == 'imported' and isinstance(r['detail'], dict)]
+        if new_mutants:
+            from core.tuning_mutations import repair_inventory, apply_source_corrections
+            from core.tuning_repairs import merge_duplicates, synchronize_merged_accessions
+            # Apply the shipped, fingerprint-guarded legacy repairs to NEW rows
+            # before a bare accession is split from WT. Reimports leave old rows alone.
+            patch = Path(settings.BASE_DIR) / 'data/tuning/source-corrections.json'
+            if patch.exists():
+                new_opsins = [r['detail']['id'] for r in report['files'].get('opsins.csv', {}).get('rows', [])
+                              if r['outcome'] == 'imported' and isinstance(r['detail'], dict)]
+                allowed = {('HeterologousData', pk) for pk in new_mutants} | {('Opsin', pk) for pk in new_opsins}
+                report['reviewed_source_corrections'] = apply_source_corrections(patch, apply=True, actor='import_csvs', only_ids=allowed)
+                report['reviewed_duplicate_merges'] = merge_duplicates(patch, apply=True, actor='import_csvs', only_source_ids=new_mutants)
+            built = repair_inventory(apply=True, assay_ids=new_mutants, actor='import_csvs')
+            synchronize_merged_accessions(actor='import_csvs')
+            report['mutation_construction'] = {'counts': built['counts'], 'rows': [
+                {k: p.get(k) for k in ('hetid', 'outcome', 'action', 'reason', 'numbering')} for p in built['rows']]}
         sources = ensure_source_publication_references()
         report['source_publications'] = {k: r.pk for k, r in sources.items()}
         Path(options['report']).write_text(json.dumps(report, indent=2, ensure_ascii=False))
@@ -99,9 +120,10 @@ class Command(BaseCommand):
             values = {k: row.get(v) or None for k, v in {'gene_family': 'GeneFamily', 'phylum': 'Phylum', 'genus': 'Genus', 'species': 'Species', 'accession': 'Accession', 'dna_sequence': 'DNA', 'protein_sequence': 'Protein'}.items()}
         elif name == 'heterologous.csv':
             model, key = HeterologousData, {'hetid': integer(row['hetid'])}
-            candidates = Opsin.objects.filter(genus=row.get('Genus'), species=row.get('Species'), accession=row.get('Accession'))
-            opsin = candidates.first() if candidates.count() == 1 else None
+            from core.tuning_repairs import source_protein
+            opsin, linkage = source_protein(row)
             details['opsin_unresolved'] = opsin is None
+            details['opsin_linkage'] = linkage
             values = {'opsin': opsin, 'mutations': row.get('Mutations') or None, 'lambda_max': number(row.get('LambdaMax')), 'error': number(row.get('error')), 'cell_culture': row.get('CellCulture') or None}
             if values['lambda_max'] is None:
                 raise ValueError('Missing lambda_max; no zero sentinel invented')

@@ -1,0 +1,184 @@
+{
+  "mode": "dry-run",
+  "release": "2026-10-beta1",
+  "created": [
+    {
+      "type": "Reference",
+      "key": "10.1016/j.ydbio.2022.10.014"
+    },
+    {
+      "type": "Reference",
+      "key": "10.1098/rstb.2021.0279"
+    },
+    {
+      "type": "Reference",
+      "key": "10.1017/s0952523812000223"
+    },
+    {
+      "type": "Reference",
+      "key": "10.1038/s42003-019-0409-3"
+    },
+    {
+      "type": "Reference",
+      "key": "10.1093/genetics/153.4.1839"
+    },
+    {
+      "type": "TuningProtein",
+      "key": "bovine"
+    },
+    {
+      "type": "TuningProtein",
+      "key": "squid"
+    },
+    {
+      "type": "TuningProtein",
+      "key": "spider"
+    },
+    {
+      "type": "TuningProtein",
+      "key": "human-lws"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-rh1-83"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-rh1-122"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-rh1-292"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-rh1-299"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-rh1-300"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-sws1-86"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-sws1-90"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-sws1-93"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-sws1-118"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-lws-mws-180"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-lws-mws-197"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-lws-mws-277"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-lws-mws-285"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "hagen-lws-mws-308"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "lienard-90"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "lienard-292"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "echidna-n83d"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "echidna-f169a"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "echidna-t158a"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "spider-e181d"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "spider-literature-113"
+    },
+    {
+      "type": "TuningEvidence",
+      "key": "spider-literature-186"
+    }
+  ],
+  "existing_preserved": [],
+  "conflicts": [],
+  "unavailable_assay_links": [
+    {
+      "key": "echidna-n83d",
+      "field": "wild_type_assay",
+      "expected_hetid": 1,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    },
+    {
+      "key": "echidna-n83d",
+      "field": "mutant_assay",
+      "expected_hetid": 2,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    },
+    {
+      "key": "echidna-f169a",
+      "field": "wild_type_assay",
+      "expected_hetid": 1,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    },
+    {
+      "key": "echidna-f169a",
+      "field": "mutant_assay",
+      "expected_hetid": 4,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    },
+    {
+      "key": "echidna-t158a",
+      "field": "wild_type_assay",
+      "expected_hetid": 1,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    },
+    {
+      "key": "echidna-t158a",
+      "field": "mutant_assay",
+      "expected_hetid": 3,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    },
+    {
+      "key": "spider-e181d",
+      "field": "wild_type_assay",
+      "expected_hetid": 1069,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    },
+    {
+      "key": "spider-e181d",
+      "field": "mutant_assay",
+      "expected_hetid": 1071,
+      "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+    }
+  ],
+  "inventory": [],
+  "inventory_counts": {}
+}

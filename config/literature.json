@@ -28,7 +28,10 @@
         "spectral sensitivity",
         "lambda max",
         "λmax",
-        "absorption maximum"
+        "absorption maximum",
+        "heterologous",
+        "decapods",
+        "non-visual"
       ],
       "exclude_terms": [],
       "crossref_query": "opsin"
@@ -47,7 +50,7 @@
         "reconstitution"
       ],
       "exclude_terms": [],
-      "crossref_query": "rhodopsin heterologous"
+      "crossref_query": "opsin heterologous expression"
     },
     {
       "name": "msp-scp",

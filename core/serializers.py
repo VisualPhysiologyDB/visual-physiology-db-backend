@@ -95,7 +95,7 @@ class SubmissionCreateSerializer(serializers.Serializer):
     phylum = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     genus = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     species = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
-    accession = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
+    accession = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=512)
     mutations = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=255)
     gene_family = serializers.CharField(required=False, allow_blank=True, allow_null=True, max_length=100)
     dna_sequence = serializers.CharField(required=False, allow_blank=True, allow_null=True)
@@ -146,6 +146,20 @@ class SubmissionCreateSerializer(serializers.Serializer):
             lmax = attrs['lambda_max']
             if not math.isfinite(lmax) or (lmax != 0 and not 300 <= lmax <= 800):
                 raise serializers.ValidationError({'lambda_max': 'Use 300–800 nm, or the legacy 0 sentinel.'})
+        if data_type == 'Heterologous':
+            from .mutation_accessions import normalized_mutations, split_accession, tagged_accession
+            label = normalized_mutations(attrs.get('mutations'))
+            if label:
+                accession = attrs.get('accession')
+                if not accession:
+                    raise serializers.ValidationError({'accession': 'Supply the base accession for this mutant; its mutation suffix is added automatically.'})
+                _, suffix = split_accession(accession)
+                if suffix and suffix != label:
+                    raise serializers.ValidationError({'accession': 'Accession mutation suffix and Mutations disagree. Correct them before submitting.'})
+                tagged = tagged_accession(accession, label)
+                if len(tagged) > 512:
+                    raise serializers.ValidationError({'accession': 'Accession including mutation suffix must fit 512 characters.'})
+                attrs['accession'] = tagged
         error = attrs.get('error')
         if error is not None and (not math.isfinite(error) or error < 0):
             raise serializers.ValidationError({'error': 'Use a finite nonnegative error.'})

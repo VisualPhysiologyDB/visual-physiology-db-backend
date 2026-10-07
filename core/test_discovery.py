@@ -44,7 +44,8 @@ class DiscoveryTests(TestCase):
         self.addCleanup(self.tmp.cleanup)
         self.folder = Path(self.tmp.name)
         self.config = json.loads((Path(settings.BASE_DIR) / 'config/literature.json').read_text())
-        self.config.update(providers=['europepmc'], queries=[QUERY], initial_lookback_days=1, window_days=1, page_size=2)
+        # Tests must not inherit a maintainer’s enabled timer or local frequency.
+        self.config.update(enabled=False, interval_days=7, providers=['europepmc'], queries=[QUERY], initial_lookback_days=1, window_days=1, page_size=2)
         self.config_path = self.folder / 'config.json'
         self.out = self.folder / 'preview.json'
         self.user = User.objects.create_superuser('curator', 'curator@example.org', 'test-password')

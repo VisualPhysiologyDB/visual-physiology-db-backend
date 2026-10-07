@@ -54,9 +54,22 @@ class OpsinAdmin(ApprovalModelAdmin):
 
 @admin.register(HeterologousData)
 class HeterologousDataAdmin(ApprovalModelAdmin):
-    list_display = ('hetid', 'get_opsin_organism', 'lambda_max', 'reference', 'status', 'is_inferred', 'source_dataset')
+    list_display = ('hetid', 'get_opsin_organism', 'lambda_max', 'reference', 'status', 'is_inferred', 'source_dataset', 'duplicate_of')
     search_fields = ('opsin__genus', 'opsin__species', 'opsin__accession', 'reference__doi', 'source_record_id', 'inference_source')
-    list_filter = ('status', 'is_inferred', 'source_dataset', 'opsin__gene_family')
+    list_filter = ('status', ('duplicate_of', admin.EmptyFieldListFilter), 'is_inferred', 'source_dataset', 'opsin__gene_family')
+    readonly_fields = ('mutation_build',)
+    autocomplete_fields = ('opsin', 'reference', 'duplicate_of')
+    actions = [approve_records, reject_records, 'repair_accessions']
+
+    @admin.action(description='Repair mutant accession labels / recheck corrected constructs')
+    def repair_accessions(self, request, queryset):
+        if not request.user.has_perms(['core.add_opsin', 'core.change_opsin']):
+            self.message_user(request, 'Repairing mutant proteins requires opsin-add and opsin-change permissions.', level='ERROR')
+            return
+        from .tuning_mutations import repair_inventory
+        report = repair_inventory(apply=True, assay_ids=list(queryset.values_list('pk', flat=True)),
+            actor=f'admin:{request.user.pk}', retry_unresolved=True)
+        self.message_user(request, f'Accession repair: {report["counts"]}. Rerun the tuning builder to refresh candidate evidence.')
 
     @admin.display(description='Organism', ordering='opsin__genus')
     def get_opsin_organism(self, obj):
@@ -121,3 +134,4 @@ class SubmissionReceiptAdmin(ImmutableAdmin):
 
 # Private literature inbox and run history; no public API registration.
 from . import discovery_admin
+from . import tuning_admin

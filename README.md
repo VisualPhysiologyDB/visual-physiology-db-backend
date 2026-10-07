@@ -4,10 +4,16 @@ VPOD connects animal opsin sequences, experimental and computational spectral me
 
 Cite **Frazer SA, Baghbanzadeh M, Rahnavard A, Crandall KA, Oakley TH. Discovering genotype–phenotype relationships with machine learning and the Visual Physiology Opsin Database (VPOD). GigaScience. 2024;13:giae073. [doi:10.1093/gigascience/giae073](https://doi.org/10.1093/gigascience/giae073)**, the source publications for measurements, and the dataset version/retrieval date used. The supplied `giae073.pdf` documents the research background. The [research/ML repository](https://github.com/VisualPhysiologyDB/visual-physiology-opsin-db/) is a separate environment: do not install its ML dependency stack into this web application.
 
+For browsing by site, selecting mutations and checking target residues, see the [site browser guide](docs/tuning-site-browser.md).
+
+For a step-by-step backup, restore or fresh database reconstruction, see [Back up and rebuild VPOD](docs/database-rebuild.md). Migrations recreate the schema; a complete database snapshot preserves the current data and curator decisions.
+
 ## Architecture and layout
 
+For extracting mutation accession repairs, WT matching and automatic/curator approval, see the [single-site catalogue guide](docs/tuning-single-sites.md).
+
 - `core/models.py`, `serializers.py`, `views.py`, `admin.py`: Django models, DRF API, validation, publication permissions and curator interface.
-- `core/migrations/`: schema and privacy migration files through `0011`. Review and commit migration files during development; apply those files during deployment.
+- `core/migrations/`: schema and privacy migration files through `0016`. Review and commit migration files during development; apply those files during deployment.
 - `core/bibliography.py`, `metadata_recovery.py`: conservative classification, partial dates, method vocabulary and cached external metadata access.
 - `core/management/commands/`: curated CSV imports, enrichment and existing compendium/MNM commands.
 - `templates/index.html`: active vanilla-JavaScript/Tailwind frontend; `static/core/explorer.js` handles DOM and interactions, `vpod-data.js` provides histogram/export functions. Lucide and Chart.js remain the existing CDN-based dependencies. CDN unavailability leaves readable tables and text histogram counts; a production asset-vendoring decision remains with the deployment maintainer.
@@ -16,6 +22,8 @@ Cite **Frazer SA, Baghbanzadeh M, Rahnavard A, Crandall KA, Oakley TH. Discoveri
 - `reports/`: enrichment artifact, curator report, row reconciliation and verification results. `docs/`: scientific policies and **unimplemented** follow-up proposals.
 
 No lookup occurs during a migration, an API request or a page render. The site works with missing bibliography fields and external-service failures.
+
+The **Tuning Site Mapper Beta** adds curated site mapping, reference/custom numbering and optional structure views. Start with the short [mapper guide](docs/tuning-mapper.md). Its isolated development checks used the existing `vpod_env` (Python 3.10.19 / Django 5.2.8), plus MAFFT 7.505. Apply migration `0012` and run `import_tuning_catalogue` separately; the migration alone does not load its evidence.
 
 ## Development setup
 
@@ -66,6 +74,8 @@ The deployed database cannot be determined from repository settings alone; inspe
 | `/api/heterologous/` | Approved heterologous/inferred measurements, with explicit inference flags. |
 | `/api/scp/` | Approved single-cell measurements. |
 | `/api/visual-acuity/` | Approved acuity observations, all measurements, source keys, raw columns and quality flags. |
+| `/api/tuning-sites/`, `/api/tuning-templates/` | Approved beta tuning evidence and frozen reference proteins. |
+| `/api/tuning-mappings/` | Stateless POST to map selected evidence; no records are created. |
 | `/api/submissions/` | Public POST for pending relational contributions or publication suggestions; legacy inbox actions require staff. |
 
 Public collection/detail routes are read-only for everyone, including staff. Curators edit and approve through admin. Pending and rejected records are excluded from collections even for logged-in submitters and staff browsing the public website. Nested pending/rejected reference or opsin details are also hidden. A curator reviews/approves a new reference and its related observation separately; approving one does not automatically publish the other. An approved observation with an unapproved reference remains visible with “Reference unavailable”.

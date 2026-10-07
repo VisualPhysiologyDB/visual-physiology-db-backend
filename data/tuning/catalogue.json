@@ -1,0 +1,876 @@
+{
+  "release": "2026-10-beta1",
+  "scope": "Curated starter catalogue, not exhaustive. Chimeras excluded. Literature sites are not claimed to exceed a measured threshold.",
+  "references": [
+    {
+      "doi": "10.1016/j.ydbio.2022.10.014",
+      "title": "The evolutionary history and spectral tuning of vertebrate visual opsins",
+      "publication_date": "2023",
+      "online_date": "2022-11-09",
+      "year_of_publication": 2023
+    },
+    {
+      "doi": "10.1098/rstb.2021.0279",
+      "title": "Molecular advances to study the function, evolution and spectral tuning of arthropod visual opsins",
+      "publication_date": "2022",
+      "year_of_publication": 2022
+    },
+    {
+      "doi": "10.1017/s0952523812000223",
+      "title": "Functional characterization of the rod visual pigment of the echidna (Tachyglossus aculeatus), a basal mammal",
+      "publication_date": "2012",
+      "year_of_publication": 2012
+    },
+    {
+      "doi": "10.1038/s42003-019-0409-3",
+      "title": "The counterion–retinylidene Schiff base interaction of an invertebrate rhodopsin rearranges upon light activation",
+      "publication_date": "2019",
+      "year_of_publication": 2019
+    },
+    {
+      "doi": "10.1093/genetics/153.4.1839",
+      "title": "Genetic analyses of visual pigments of the pigeon (Columba livia)",
+      "publication_date": "1999-12",
+      "year_of_publication": 1999
+    }
+  ],
+  "proteins": [
+    {
+      "key": "bovine",
+      "name": "Bovine rhodopsin",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "accession": "P02699",
+      "sequence": "MNGTEGPNFYVPFSNKTGVVRSPFEAPQYYLAEPWQFSMLAAYMFLLIMLGFPINFLTLYVTVQHKKLRTPLNYILLNLAVADLFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLGGEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLVGWSRYIPEGMQCSCGIDYYTPHEETNNESFVIYMFVVHFIIPLIVIFFCYGQLVFTVKEAAAQQQESATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYIFTHQGSDFGPIFMTIPAFFAKTSAVYNPVIYIMMNKQFRNCMVTTLCCGKNPLGDDEASTTVSKTETSQVAPA",
+      "numbering_note": "1-based positions in the complete UniProt sequence P02699. Published evidence explicitly using bovine-equivalent numbering is anchored to bovine.",
+      "provenance": {
+        "url": "https://rest.uniprot.org/uniprotkb/P02699",
+        "sequence_sha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+        "release": "2026-10-beta1"
+      },
+      "structure": {
+        "pdb_id": "1U19",
+        "file": "1u19.cif",
+        "chain": "A",
+        "ligand_note": "Experimental rhodopsin structure; inspect ligand/construct in PDB record",
+        "source_url": "https://www.rcsb.org/structure/1U19"
+      }
+    },
+    {
+      "key": "squid",
+      "name": "Squid rhodopsin",
+      "family": "R_OPSIN",
+      "subtype": "Rhabdomeric visual opsin",
+      "accession": "P31356",
+      "sequence": "MGRDLRDNETWWYNPSIVVHPHWREFDQVPDAVYYSLGIFIGICGIIGCGGNGIVIYLFTKTKSLQTPANMFIINLAFSDFTFSLVNGFPLMTISCFLKKWIFGFAACKVYGFIGGIFGFMSIMTMAMISIDRYNVIGRPMAASKKMSHRRAFIMIIFVWLWSVLWAIGPIFGWGAYTLEGVLCNCSFDYISRDSTTRSNILCMFILGFFGPILIIFFCYFNIVMSVSNHEKEMAAMAKRLNAKELRKAQAGANAEMRLAKISIVIVSQFLLSWSPYAVVALLAQFGPLEWVTPYAAQLPVMFAKASAIHNPMIYSVSHPKFREAISQTFPWVLTCCQFDDKETEDDKDAETEIPAGESSDAAPSADAAQMKEMMAMMQKMQQQQAAYPPQGYAPPPQGYPPQGYPPQGYPPQGYPPQGYPPPPQGAPPQGAPPAAPPQGVDNQAYQA",
+      "numbering_note": "1-based positions in the complete UniProt sequence P31356. Published evidence explicitly using bovine-equivalent numbering is anchored to bovine.",
+      "provenance": {
+        "url": "https://rest.uniprot.org/uniprotkb/P31356",
+        "sequence_sha256": "4fd245c4c7b6c0847fb90093d422f853e2bebadd5b3cb07691dfbdd43bda8579",
+        "release": "2026-10-beta1"
+      },
+      "structure": {
+        "pdb_id": "2Z73",
+        "file": "2z73.cif",
+        "chain": "A",
+        "ligand_note": "Experimental rhodopsin structure; inspect ligand/construct in PDB record",
+        "source_url": "https://www.rcsb.org/structure/2Z73"
+      }
+    },
+    {
+      "key": "spider",
+      "name": "Jumping spider rhodopsin-1",
+      "family": "R_OPSIN",
+      "subtype": "Rhabdomeric Rh1",
+      "accession": "B1B1U5",
+      "sequence": "MLPHAAKMAARVAGDHDGRNISIVDLLPEDMLPMIHEHWYKFPPMETSMHYILGMLIIVIGIISVSGNGVVMYLMMTVKNLRTPGNFLVLNLALSDFGMLFFMMPTMSINCFAETWVIGPFMCELYGMIGSLFGSASIWSLVMITLDRYNVIVKGMAGKPLTKVGALLRMLFVWIWSLGWTIAPMYGWSRYVPEGSMTSCTIDYIDTAINPMSYLIAYAIFVYFVPLFIIIYCYAFIVMQVAAHEKSLREQAKKMNIKSLRSNEDNKKASAEFRLAKVAFMTICCWFMAWTPYLTLSFLGIFSDRTWLTPMTSVWGAIFAKASACYNPIVYGISHPKYRAALHDKFPCLKCGSDSPKGDSASTVAESEKAGE",
+      "numbering_note": "1-based positions in the complete UniProt sequence B1B1U5. Published evidence explicitly using bovine-equivalent numbering is anchored to bovine.",
+      "provenance": {
+        "url": "https://rest.uniprot.org/uniprotkb/B1B1U5",
+        "sequence_sha256": "ba8fa863e837d8a9d2f25e2b0cae52f22ea2f32a046185d66ef8a83f862dc539",
+        "release": "2026-10-beta1"
+      },
+      "structure": {
+        "pdb_id": "6I9K",
+        "file": "6i9k.cif",
+        "chain": "A",
+        "ligand_note": "9-cis retinal; experimental structure",
+        "source_url": "https://www.rcsb.org/structure/6I9K"
+      }
+    },
+    {
+      "key": "human-lws",
+      "name": "Human LWS cone opsin",
+      "family": "C_OPSIN",
+      "subtype": "LWS/MWS",
+      "accession": "P04000",
+      "sequence": "MAQQWSLQRLAGRHPQDSYEDSTQSSIFTYTNSNSTRGPFEGPNYHIAPRWVYHLTSVWMIFVVTASVFTNGLVLAATMKFKKLRHPLNWILVNLAVADLAETVIASTISIVNQVSGYFVLGHPMCVLEGYTVSLCGITGLWSLAIISWERWMVVCKPFGNVRFDAKLAIVGIAFSWIWAAVWTAPPIFGWSRYWPHGLKTSCGPDVFSGSSYPGVQSYMIVLMVTCCIIPLAIIMLCYLQVWLAIRAVAKQQKESESTQKAEKEVTRMVVVMIFAYCVCWGPYTFFACFAAANPGYAFHPLMAALPAYFAKSATIYNPVIYVFMNRQFRNCILQLFGKKVDDGSELSSASKTEVSSVSSVSPA",
+      "numbering_note": "1-based human LWS numbering (UniProt P04000), distinct from bovine rhodopsin numbering.",
+      "provenance": {
+        "url": "https://rest.uniprot.org/uniprotkb/P04000",
+        "sequence_sha256": "9cd7d06792428ea0fbfc2297215790d5f0790cfa6561bcc6f15c5628580da32b",
+        "release": "2026-10-beta1"
+      },
+      "structure": {}
+    }
+  ],
+  "evidence": [
+    {
+      "key": "hagen-rh1-83",
+      "title": "RH1: review-supported site 83",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 83,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-rh1-122",
+      "title": "RH1: review-supported site 122",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 122,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-rh1-292",
+      "title": "RH1: review-supported site 292",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 292,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-rh1-299",
+      "title": "RH1: review-supported site 299",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 299,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-rh1-300",
+      "title": "RH1: review-supported site 300",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 300,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-sws1-86",
+      "title": "SWS1: review-supported site 86",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "SWS1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 86,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-sws1-90",
+      "title": "SWS1: review-supported site 90",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "SWS1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 90,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-sws1-93",
+      "title": "SWS1: review-supported site 93",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "SWS1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 93,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-sws1-118",
+      "title": "SWS1: review-supported site 118",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "SWS1",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 118,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Site-level review assertion. No quantitative effect or universal substitution is inferred. Consult the figure and primary studies for lineage and sequence background. Figure numbering is retained as published; it is not proof of a conserved residue identity.",
+      "source_locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        }
+      ]
+    },
+    {
+      "key": "hagen-lws-mws-180",
+      "title": "LWS/MWS: review-supported site 180",
+      "protein": "human-lws",
+      "family": "C_OPSIN",
+      "subtype": "LWS/MWS",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 180,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "180 (human LWS numbering)",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "The review figure caption broadly says bovine numbering, but these five LWS positions use human red/green opsin numbering. Kawamura et al. explicitly distinguish human positions 180/197/277/285/308 from RH1-aligned 164/181/261/269/292. Anchored to human LWS P04000; frozen alignment independently reproduces these correspondences. Site-level claim only; no universal substitution or effect magnitude inferred.",
+      "source_locator": "Hagen Figure 3B, PDF page 5; LWS numbering reconciled with Kawamura et al. 1999, p.1842 and Figure 3",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        },
+        {
+          "doi": "10.1093/genetics/153.4.1839",
+          "role": "PRIMARY",
+          "locator": "p.1842, numbering comparison; Figure 3 alignment (numbering evidence, not an additional measured effect)"
+        }
+      ]
+    },
+    {
+      "key": "hagen-lws-mws-197",
+      "title": "LWS/MWS: review-supported site 197",
+      "protein": "human-lws",
+      "family": "C_OPSIN",
+      "subtype": "LWS/MWS",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 197,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "197 (human LWS numbering)",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "The review figure caption broadly says bovine numbering, but these five LWS positions use human red/green opsin numbering. Kawamura et al. explicitly distinguish human positions 180/197/277/285/308 from RH1-aligned 164/181/261/269/292. Anchored to human LWS P04000; frozen alignment independently reproduces these correspondences. Site-level claim only; no universal substitution or effect magnitude inferred.",
+      "source_locator": "Hagen Figure 3B, PDF page 5; LWS numbering reconciled with Kawamura et al. 1999, p.1842 and Figure 3",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        },
+        {
+          "doi": "10.1093/genetics/153.4.1839",
+          "role": "PRIMARY",
+          "locator": "p.1842, numbering comparison; Figure 3 alignment (numbering evidence, not an additional measured effect)"
+        }
+      ]
+    },
+    {
+      "key": "hagen-lws-mws-277",
+      "title": "LWS/MWS: review-supported site 277",
+      "protein": "human-lws",
+      "family": "C_OPSIN",
+      "subtype": "LWS/MWS",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 277,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "277 (human LWS numbering)",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "The review figure caption broadly says bovine numbering, but these five LWS positions use human red/green opsin numbering. Kawamura et al. explicitly distinguish human positions 180/197/277/285/308 from RH1-aligned 164/181/261/269/292. Anchored to human LWS P04000; frozen alignment independently reproduces these correspondences. Site-level claim only; no universal substitution or effect magnitude inferred.",
+      "source_locator": "Hagen Figure 3B, PDF page 5; LWS numbering reconciled with Kawamura et al. 1999, p.1842 and Figure 3",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        },
+        {
+          "doi": "10.1093/genetics/153.4.1839",
+          "role": "PRIMARY",
+          "locator": "p.1842, numbering comparison; Figure 3 alignment (numbering evidence, not an additional measured effect)"
+        }
+      ]
+    },
+    {
+      "key": "hagen-lws-mws-285",
+      "title": "LWS/MWS: review-supported site 285",
+      "protein": "human-lws",
+      "family": "C_OPSIN",
+      "subtype": "LWS/MWS",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 285,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "285 (human LWS numbering)",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "The review figure caption broadly says bovine numbering, but these five LWS positions use human red/green opsin numbering. Kawamura et al. explicitly distinguish human positions 180/197/277/285/308 from RH1-aligned 164/181/261/269/292. Anchored to human LWS P04000; frozen alignment independently reproduces these correspondences. Site-level claim only; no universal substitution or effect magnitude inferred.",
+      "source_locator": "Hagen Figure 3B, PDF page 5; LWS numbering reconciled with Kawamura et al. 1999, p.1842 and Figure 3",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        },
+        {
+          "doi": "10.1093/genetics/153.4.1839",
+          "role": "PRIMARY",
+          "locator": "p.1842, numbering comparison; Figure 3 alignment (numbering evidence, not an additional measured effect)"
+        }
+      ]
+    },
+    {
+      "key": "hagen-lws-mws-308",
+      "title": "LWS/MWS: review-supported site 308",
+      "protein": "human-lws",
+      "family": "C_OPSIN",
+      "subtype": "LWS/MWS",
+      "organism": "Vertebrates; applicability varies among lineages",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 308,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "308 (human LWS numbering)",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "The review figure caption broadly says bovine numbering, but these five LWS positions use human red/green opsin numbering. Kawamura et al. explicitly distinguish human positions 180/197/277/285/308 from RH1-aligned 164/181/261/269/292. Anchored to human LWS P04000; frozen alignment independently reproduces these correspondences. Site-level claim only; no universal substitution or effect magnitude inferred.",
+      "source_locator": "Hagen Figure 3B, PDF page 5; LWS numbering reconciled with Kawamura et al. 1999, p.1842 and Figure 3",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1016/j.ydbio.2022.10.014",
+          "role": "REVIEW",
+          "locator": "Figure 3B, PDF page 5 (printed page 44); author-declared bovine numbering"
+        },
+        {
+          "doi": "10.1093/genetics/153.4.1839",
+          "role": "PRIMARY",
+          "locator": "p.1842, numbering comparison; Figure 3 alignment (numbering evidence, not an additional measured effect)"
+        }
+      ]
+    },
+    {
+      "key": "lienard-90",
+      "title": "Drosophila Rh1/Rh3: review-supported site 90",
+      "protein": "bovine",
+      "family": "R_OPSIN",
+      "subtype": "Drosophila Rh1/Rh3",
+      "organism": "Drosophila melanogaster",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 90,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Review of non-chimeric transgenic tuning studies. No shift magnitude is inferred from the review.",
+      "source_locator": "Section 3(a), PDF page 5; explicitly bovine-equivalent G90 / A292",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1098/rstb.2021.0279",
+          "role": "REVIEW",
+          "locator": "Section 3(a), PDF page 5; explicitly bovine-equivalent G90 / A292"
+        }
+      ]
+    },
+    {
+      "key": "lienard-292",
+      "title": "Drosophila Rh6: review-supported site 292",
+      "protein": "bovine",
+      "family": "R_OPSIN",
+      "subtype": "Drosophila Rh6",
+      "organism": "Drosophila melanogaster",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 292,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Review of non-chimeric transgenic tuning studies. No shift magnitude is inferred from the review.",
+      "source_locator": "Section 3(a), PDF page 5; explicitly bovine-equivalent G90 / A292",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1098/rstb.2021.0279",
+          "role": "REVIEW",
+          "locator": "Section 3(a), PDF page 5; explicitly bovine-equivalent G90 / A292"
+        }
+      ]
+    },
+    {
+      "key": "echidna-n83d",
+      "title": "Echidna N83D",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Tachyglossus aculeatus",
+      "category": "MEASURED",
+      "changes": [
+        {
+          "position": 83,
+          "from": "N",
+          "to": "D"
+        }
+      ],
+      "original_notation": "N83D",
+      "baseline_label": "Wild-type echidna rhodopsin JX103830",
+      "conditions": {
+        "method": "Heterologous pigment spectroscopy",
+        "cell_culture": "HEK293T (VPOD source)",
+        "baseline_reported_error_nm": 1.1,
+        "mutant_reported_error_nm": 1.5,
+        "error_definition": "Not established from abstract; see primary paper"
+      },
+      "notes": "Primary abstract reports a red shift. Error terms are preserved as reported, without assuming their statistical type.",
+      "source_locator": "Primary abstract and VPOD source rows 1–4; verified sequence substitutions",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1017/s0952523812000223",
+          "role": "PRIMARY",
+          "locator": "Primary abstract and VPOD source rows 1–4; verified sequence substitutions"
+        }
+      ],
+      "baseline_nm": 497.9,
+      "mutant_nm": 503.8,
+      "assay_ids": {
+        "wild_type_assay": 1,
+        "mutant_assay": 2
+      },
+      "assay_identity": {
+        "wild_type_assay": {
+          "mutations": "",
+          "lambda_max": 497.9,
+          "sequence_sha256": "0e4f1cb3575f12c78416ff066d1506fd59a7bd2c549a6b8c359a192a15e07c1e"
+        },
+        "mutant_assay": {
+          "mutations": "N83D",
+          "lambda_max": 503.8,
+          "sequence_sha256": "1acdb11e6ad04df6f087604503e3c122fde0c57efc1c52c0ef17b26678949f49"
+        }
+      }
+    },
+    {
+      "key": "echidna-f169a",
+      "title": "Echidna F169A",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Tachyglossus aculeatus",
+      "category": "MEASURED",
+      "changes": [
+        {
+          "position": 169,
+          "from": "F",
+          "to": "A"
+        }
+      ],
+      "original_notation": "F169A",
+      "baseline_label": "Wild-type echidna rhodopsin JX103830",
+      "conditions": {
+        "method": "Heterologous pigment spectroscopy",
+        "cell_culture": "HEK293T (VPOD source)",
+        "baseline_reported_error_nm": 1.1,
+        "mutant_reported_error_nm": 0.1,
+        "error_definition": "Not established from abstract; see primary paper"
+      },
+      "notes": "Passes the 1-nm numerical criterion, but the authors report no significant difference. This is not evidence of statistical significance.",
+      "source_locator": "Primary abstract and VPOD source rows 1–4; verified sequence substitutions",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1017/s0952523812000223",
+          "role": "PRIMARY",
+          "locator": "Primary abstract and VPOD source rows 1–4; verified sequence substitutions"
+        }
+      ],
+      "baseline_nm": 497.9,
+      "mutant_nm": 499.4,
+      "assay_ids": {
+        "wild_type_assay": 1,
+        "mutant_assay": 4
+      },
+      "assay_identity": {
+        "wild_type_assay": {
+          "mutations": "",
+          "lambda_max": 497.9,
+          "sequence_sha256": "0e4f1cb3575f12c78416ff066d1506fd59a7bd2c549a6b8c359a192a15e07c1e"
+        },
+        "mutant_assay": {
+          "mutations": "F169A",
+          "lambda_max": 499.4,
+          "sequence_sha256": "0d78b4632d61fb3981d06daa60e7e8799be652f1bf203b7545b7dbb8d97f80bc"
+        }
+      }
+    },
+    {
+      "key": "echidna-t158a",
+      "title": "Echidna T158A",
+      "protein": "bovine",
+      "family": "C_OPSIN",
+      "subtype": "RH1",
+      "organism": "Tachyglossus aculeatus",
+      "category": "MEASURED",
+      "changes": [
+        {
+          "position": 158,
+          "from": "T",
+          "to": "A"
+        }
+      ],
+      "original_notation": "T158A",
+      "baseline_label": "Wild-type echidna rhodopsin JX103830",
+      "conditions": {
+        "method": "Heterologous pigment spectroscopy",
+        "cell_culture": "HEK293T (VPOD source)",
+        "baseline_reported_error_nm": 1.1,
+        "mutant_reported_error_nm": 1.3,
+        "error_definition": "Not established from abstract; see primary paper"
+      },
+      "notes": "Subthreshold result retained for contextual comparison; not selectable under the default ≥1-nm rule.",
+      "source_locator": "Primary abstract and VPOD source rows 1–4; verified sequence substitutions",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1017/s0952523812000223",
+          "role": "PRIMARY",
+          "locator": "Primary abstract and VPOD source rows 1–4; verified sequence substitutions"
+        }
+      ],
+      "baseline_nm": 497.9,
+      "mutant_nm": 498.0,
+      "assay_ids": {
+        "wild_type_assay": 1,
+        "mutant_assay": 3
+      },
+      "assay_identity": {
+        "wild_type_assay": {
+          "mutations": "",
+          "lambda_max": 497.9,
+          "sequence_sha256": "0e4f1cb3575f12c78416ff066d1506fd59a7bd2c549a6b8c359a192a15e07c1e"
+        },
+        "mutant_assay": {
+          "mutations": "T158A",
+          "lambda_max": 498.0,
+          "sequence_sha256": "5428e354488cf0fb545832607d5d1b0542d2e025b9c44bc797893cd25744b9ad"
+        }
+      }
+    },
+    {
+      "key": "spider-e181d",
+      "title": "Jumping spider E181D",
+      "protein": "bovine",
+      "family": "R_OPSIN",
+      "subtype": "Rhabdomeric Rh1",
+      "organism": "Hasarius adansoni",
+      "category": "MEASURED",
+      "changes": [
+        {
+          "position": 181,
+          "from": "E",
+          "to": "D"
+        }
+      ],
+      "original_notation": "E181D (bovine-equivalent; spider sequence E194D)",
+      "baseline_label": "Wild-type spider Rh1, dark-state pigment",
+      "conditions": {
+        "chromophore": "11-cis-retinal",
+        "method": "UV-visible spectroscopy",
+        "state": "Dark state",
+        "source_sequence_position": 194
+      },
+      "notes": "The signed shift is explicitly reported in the primary text. Other pH-dependent counterion mutants require careful condition matching and are not assigned simple shifts here.",
+      "source_locator": "Results: Glu181 counterion, explicit 8-nm blue shift; Supplementary Figure 2",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1038/s42003-019-0409-3",
+          "role": "PRIMARY",
+          "locator": "Results: Glu181 counterion, explicit 8-nm blue shift; Supplementary Figure 2"
+        }
+      ],
+      "reported_shift_nm": -8,
+      "assay_ids": {
+        "wild_type_assay": 1069,
+        "mutant_assay": 1071
+      },
+      "assay_identity": {
+        "wild_type_assay": {
+          "mutations": "",
+          "lambda_max": 535.0,
+          "sequence_sha256": "ba8fa863e837d8a9d2f25e2b0cae52f22ea2f32a046185d66ef8a83f862dc539"
+        },
+        "mutant_assay": {
+          "mutations": "E181D",
+          "lambda_max": 527.0,
+          "sequence_sha256": "abc419c0e65a7b6bbdba875dace92e0ec5e37f766107ca337bbdb4276f40a93a"
+        }
+      }
+    },
+    {
+      "key": "spider-literature-113",
+      "title": "Spider Rh1: site 113",
+      "protein": "bovine",
+      "family": "R_OPSIN",
+      "subtype": "Rhabdomeric Rh1",
+      "organism": "Hasarius adansoni",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 113,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Primary literature supports spectral/Schiff-base effects. pH dependence prevents assigning a universal shift; inspect the original curves and photochemical state.",
+      "source_locator": "Results and Figures 1–2; bovine numbering explicitly defined in Introduction",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1038/s42003-019-0409-3",
+          "role": "PRIMARY",
+          "locator": "Results and Figures 1–2; bovine numbering explicitly defined in Introduction"
+        }
+      ]
+    },
+    {
+      "key": "spider-literature-186",
+      "title": "Spider Rh1: site 186",
+      "protein": "bovine",
+      "family": "R_OPSIN",
+      "subtype": "Rhabdomeric Rh1",
+      "organism": "Hasarius adansoni",
+      "category": "LITERATURE",
+      "changes": [
+        {
+          "position": 186,
+          "from": null,
+          "to": null
+        }
+      ],
+      "original_notation": "",
+      "baseline_label": "",
+      "conditions": {},
+      "notes": "Primary literature supports spectral/Schiff-base effects. pH dependence prevents assigning a universal shift; inspect the original curves and photochemical state.",
+      "source_locator": "Results and Figures 1–2; bovine numbering explicitly defined in Introduction",
+      "release": "2026-10-beta1",
+      "references": [
+        {
+          "doi": "10.1038/s42003-019-0409-3",
+          "role": "PRIMARY",
+          "locator": "Results and Figures 1–2; bovine numbering explicitly defined in Introduction"
+        }
+      ]
+    }
+  ]
+}

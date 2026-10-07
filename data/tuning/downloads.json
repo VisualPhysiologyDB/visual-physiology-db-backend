@@ -1,0 +1,128 @@
+[
+  {
+    "path": "data/tuning/bovine.fasta",
+    "url": "https://rest.uniprot.org/uniprotkb/P02699.fasta",
+    "sha256": "b1c064b2feb79695f408ac41e7ee5735e5123e0d1ab716b0a70f43015a4e5ac6",
+    "bytes": 425,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "static/core/tuning-structures/1u19.cif",
+    "url": "https://files.rcsb.org/download/1U19.cif",
+    "sha256": "f65bfb3a6f8943471219b6b6933385c45f98cbcd1d3f3e14fa2e0beb3603a78f",
+    "bytes": 708440,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/bovine-sifts.json",
+    "url": "https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/1u19",
+    "sha256": "43b5643470fa4933dd1b62328b8e46c59f2be9c2b9cc2e5a50ca952772a3f638",
+    "bytes": 644,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/squid.fasta",
+    "url": "https://rest.uniprot.org/uniprotkb/P31356.fasta",
+    "sha256": "359774e9bf5442dce6837e8afc03568ef9199d1d6233b15b007e836b25ed9d99",
+    "bytes": 536,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "static/core/tuning-structures/2z73.cif",
+    "url": "https://files.rcsb.org/download/2Z73.cif",
+    "sha256": "897d11d9ff16b72fefa4cf8ab5a129c486acf730f4cbf1d6a77bf870deb0b955",
+    "bytes": 671406,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/squid-sifts.json",
+    "url": "https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/2z73",
+    "sha256": "686b1bdcefde0a84ebdf980edbafaccb2ca6c7367e2e4f3bc833efa03761a046",
+    "bytes": 652,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/spider.fasta",
+    "url": "https://rest.uniprot.org/uniprotkb/B1B1U5.fasta",
+    "sha256": "5acae95e55cae9ffed721baaebed905b9d1a77e3986b4fcf6e4a72c88a5ee472",
+    "bytes": 463,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "static/core/tuning-structures/6i9k.cif",
+    "url": "https://files.rcsb.org/download/6I9K.cif",
+    "sha256": "4c031705635eb61ec042c3d3389695d31fbedd4c16c572d2861dc3e5997e3727",
+    "bytes": 340789,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/spider-sifts.json",
+    "url": "https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/6i9k",
+    "sha256": "4f6730c571909dcda72a159025cd976fe985ec92b084548fc15401a00564c402",
+    "bytes": 376,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/saito-2019.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6915953/fullTextXML",
+    "sha256": "baeaccca83abb3665c026024c4cf92ccceb06ece368fc8c4537b7c884219f76b",
+    "bytes": 91020,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "package": "molstar",
+    "version": "5.13.0",
+    "url": "https://registry.npmjs.org/molstar/-/molstar-5.13.0.tgz",
+    "sha256": "fa33b843306f3c0619b6bc6e165a2e9be95afbe32d63e9534c049a94fb44981e",
+    "license": "MIT",
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/human-lws.fasta",
+    "url": "https://rest.uniprot.org/uniprotkb/P04000.fasta",
+    "sha256": "927518555ef00ac3e380f43fa306804af92c3d712e4a7acec5e8c524fb496c70",
+    "bytes": 465,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "static/vendor/molstar/molstar.js",
+    "package": "molstar",
+    "version": "5.13.0",
+    "url": "https://registry.npmjs.org/molstar/-/molstar-5.13.0.tgz",
+    "archive_member": "package/build/viewer/molstar.js",
+    "sha256": "82d6d94ba8b7feafccaae7c9a8689b6c889abbf15d1558fb50e96230f7760e19",
+    "bytes": 5268649,
+    "retrieved_date": "2026-10-07",
+    "upstream_sha256": "13b85d8dd4e1f2722c1ce7045361ae5a4a1f5a4b6fedb967d021b2b72831a8b1",
+    "local_modification": "Removed sourceMappingURL directives; debug source maps are not distributed."
+  },
+  {
+    "path": "static/vendor/molstar/molstar.css",
+    "package": "molstar",
+    "version": "5.13.0",
+    "url": "https://registry.npmjs.org/molstar/-/molstar-5.13.0.tgz",
+    "archive_member": "package/build/viewer/molstar.css",
+    "sha256": "c00196c07c4fea80c828b98b40dc36d498f5392153ecd26a0089ee7dddd8311c",
+    "bytes": 72865,
+    "retrieved_date": "2026-10-07",
+    "upstream_sha256": "22fbf73b75c11ef57687d08437c95dbfe8430ea895264f6da2b9b01e28bacc49",
+    "local_modification": "Removed sourceMappingURL directives; debug source maps are not distributed."
+  },
+  {
+    "path": "static/vendor/molstar/LICENSE",
+    "package": "molstar",
+    "version": "5.13.0",
+    "url": "https://registry.npmjs.org/molstar/-/molstar-5.13.0.tgz",
+    "archive_member": "package/LICENSE",
+    "sha256": "aa42900c6ea7bfcf22d25a4c369025e01a526c66501fd9193f9a8aecee7a0753",
+    "bytes": 1088,
+    "retrieved_date": "2026-10-07"
+  },
+  {
+    "path": "data/tuning/spider-2019.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6513861/fullTextXML",
+    "sha256": "d0476e9dbf30240d3b7c1b2845d84e9b63a7f6779294b5a717fe287b8dc67973",
+    "bytes": 108171,
+    "retrieved_date": "2026-10-07"
+  }
+]

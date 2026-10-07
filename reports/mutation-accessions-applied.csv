@@ -1,0 +1,974 @@
+hetid,notation,original_accession,accession,outcome,action,needs_sequence_review,reason
+2,N83D,JX103830_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+3,T158A,JX103830_T158A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+4,F169A,JX103830_F169A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+6,D83G,NM_001014890_D83G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+7,D83N,NM_001014890_D83N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+8,M86E,NM_001014890_M86E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+9,E122Q,NM_001014890_E122Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+10,E122I,NM_001014890_E122I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+11,E134L,NM_001014890_E134L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+12,E134Q,NM_001014890_E134Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+13,R135L,NM_001014890_R135L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+14,H211C,NM_001014890_H211C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+15,H211F,NM_001014890_H211F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+16,"E122I,D83G",NM_001014890_E122I_D83G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+17,"E122I,M86E",NM_001014890_E122I_M86E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+18,"E134L,R135L",NM_001014890_E134L_R135L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+19,"E134R,R135E",NM_001014890_E134R_R135E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+20,A292S,pigmentc,pigmentc_A292S,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+21,A292S,pigmentd,pigmentd_A292S,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+22,A292S,pigmentg,pigmentg_A292S,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+23,D83N,pigmenta,pigmenta_D83N,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+24,D83N,pigmente,pigmente_D83N,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+25,"D83N,A292S",pigmenta,"pigmenta_D83N,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+26,"D83N,A292S",pigmentg,"pigmentg_D83N,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+27,"D83N,A292S",pigmenth,"pigmenth_D83N,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+28,"D83N,A292S",pigmenti,"pigmenti_D83N,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+29,"D83N,I214T",pigmenta,"pigmenta_D83N,I214T",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+30,"D83N,M183F,M253L,F261Y,T289G,A292I,M317I",pigmentf,"pigmentf_D83N,M183F,M253L,F261Y,T289G,A292I,M317I",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+31,E122I,pigmentb,pigmentb_E122I,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+32,"E122I,F261Y",pigmentb,"pigmentb_E122I,F261Y",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+33,"E122M,A292S",pigmentf,"pigmentf_E122M,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+34,"E122M,F261Y",pigmentf,"pigmentf_E122M,F261Y",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+35,"E122M,F261Y,A292S",pigmentf,"pigmentf_E122M,F261Y,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+36,E122Q,pigmentf,pigmentf_E122Q,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+37,"E122Q,A292S",pigmenta,"pigmenta_E122Q,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+38,F261Y,pigmentb,pigmentb_F261Y,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+39,F261Y,pigmenti,pigmenti_F261Y,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+40,"N195A,A292S",pigmentd,"pigmentd_N195A,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+41,N83D,DQ490124_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+42,N83D,EU407250.1_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+43,N83D,EU407253.1_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+44,"N83D,S292A",DQ490124_N83D_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+45,"N83D,S292A",EU407250.1_N83D_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+46,"N83D,S292A",EU407253.1_N83D_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+47,"P194R,A292S",pigmentd,"pigmentd_P194R,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+48,"P194R,N195A",pigmentd,"pigmentd_P194R,N195A",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+49,"P194R,N195A,A292S",pigmentd,"pigmentd_P194R,N195A,A292S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+50,Q122E,,,unresolved,unresolved,,No linked sequence/accession. Correct the source identity in admin; no taxonomy guessed.
+51,S292A,AB043817.1_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+52,S292A,DQ490124_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+53,S292A,EU407250.1_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+54,S292A,EU407253.1_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+55,Y261F,EU407252.1_Y261F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+56,"Y96V,Y102F",pigmenth,"pigmenth_Y96V,Y102F",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+81,T97S,NM_001014890_T97S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+82,F116S,NM_001014890_F116S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+83,E122M,NM_001014890_E122M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+84,A164G,NM_001014890_A164G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+113,S292A,AB084929_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+114,S292A,AB084945_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+115,A292S,AB084938_A292S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+116,N83D,AB185217_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+117,N83D,AB185229_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+118,N83D,AB185220_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+119,D83N,AB185225_D83N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+128,Q64K,NM_001397497.1_Q64K,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+129,"E122Q,Q64K,E150A",NM_001397497.1_E122Q_Q64K_E150A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+130,E150A,NM_001397497.1_E150A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+131,E122Q,NM_001397497.1_E122Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+132,E122I,NM_001397497.1_E122I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+133,E122D,NM_001397497.1_E122D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+135,Q122E,NM_205490.1_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+139,D83N,NM_001014890.2_D83N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+141,S292A,XM_019933644.2_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+142,A292S,U92557.1,U92557.1_A292S,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+143,A299S,U92557.1,U92557.1_A299S,tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+144,"D83N,A292S",U92557.1,"U92557.1_D83N,A292S",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+145,"D83N,A292S,A299S",U92557.1,"U92557.1_D83N,A292S,A299S",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+146,chimera,DQ490124.1_1_277-NM_001014890_278_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+147,"chimera,S292A",NM_001014890_1_277-DQ490124.1[S292A]_278_306-NM_001014890_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+148,chimera,NM_001014890_1_306-DQ490124.1_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+149,"chimera,S292A",DQ490124.1[S292A]_1_306-NM_001014890_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+150,chimera,DQ490124.1_1_277-NM_001014890_278_306-DQ490124.1_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+151,"chimera,S292A",NM_001014890_1_277-DQ490124.1[S292A]_278_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+152,"chimera,A292S",DQ490124.1_1_277-NM_001014890[A292S]_278_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+153,"chimera,S292A",DQ490124.1_S292A,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+154,chimera,NM_001014890_1_277-DQ490124.1_278_306-NM_001014890_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+155,"chimera,A292S",NM_001014890[A292S]_1_306-DQ490124.1_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+156,chimera,DQ490124.1_1_306-NM_001014890_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+157,"chimera,A292",DQ490124.1_1_277-NM_001014890[A292S]_278_306-DQ490124.1_307_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+158,chimera,NM_001014890_1_277-DQ490124.1_278_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+160,F49A,NM_001291394.1_F49A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+161,L52M,NM_001291394.1_L52M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+162,"F49A,L52M",NM_001291394.1_F49A_L52M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+163,D83N,NM_001291394.1_D83N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+164,M86T,NM_001291394.1_M86T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+165,T97A,NM_001291394.1_T97A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+166,"D83N,M86T,T97A",NM_001291394.1_D83N_M86T_T97A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+167,S164A,NM_001291394.1_S164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+168,Q122E,NM_001291394.1_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+169,"F49S,Q122E,S164A",NM_001291394.1_F49S_Q122E_S164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+170,A164S,M92035_A164S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+171,Q122E,M92035_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+173,S292A,AB223053.1_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+174,"Q122E,S292A",AB223053.1_Q122E_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+176,chimera,AH007735.2_1_33-M92035.1_34_64-AH007735.2_65_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+177,chimera,AH007735.2_1_70-M92035.1_71_100-AH007735.2_101_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+178,chimera,AH007735.2_1_105-M92035.1_106_139-AH007735.2_140_149-M92035.1_150_172-AH007735.2_173_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+179,chimera,AH007735.2_1_199-M92035.1_200_225-AH007735.2_226_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+180,chimera,AH007735.2_1_243-M92035.1_244_273-AH007735.2_274_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+181,chimera,AH007735.2_1_284-M92035.1_285_309-AH007735.2_310_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+182,chimera,AH007735.2_1_33-M92035.1_34_64-AH007735.2_65_70-M92035.1_71_100-AH007735.2_101_105-M92035.1_106_139-AH007735.2_140-149-M92035.1_150_172-AH007735.2_173_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+183,chimera,AH007735.2_1_199-M92035.1_200_225-AH007735.2_226_243-M92035.1_244_273-AH007735.2_274_284-M92035.1_285_309-AH007735.2_310_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+188,K36Q,AB087805.2_K36Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+189,L46F,AB087805.2_L46F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+190,I49C,AB087805.2_I49C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+191,V60L,AB087805.2_V60L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+192,S94T,AB087805.2_S94T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+193,L108T,AB087805.2_L108T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+194,V111A,AB087805.2_V111A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+195,M112I,AB087805.2_M112I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+196,"V111A,M112I",AB087805.2_V111A_M112I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+197,"S94T,V111A,M112I",AB087805.2_S94T_V111A_M112I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+198,"L46F,I49C,S94T,V111A,M112I",AB087805.2_L46F_I49C_S94T_V111A_M112I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+201,P164S,EU571209.1_P164S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+203,S164P,L11867.1_S164P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+205,T118A,AJ430489.1_T118A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+206,T118G,AJ430489.1_T118G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+207,P215G,AJ430489.1_P215G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+208,T269A,AJ430489.1_T269A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+209,E181A,NM_001014890_E181A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+210,E181N,NM_001014890_E181N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+211,E181D,NM_001014890_E181D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+212,E181C,NM_001014890_E181C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+213,E181Q,NM_001014890_E181Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+214,E181G,NM_001014890_E181G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+215,E181H,NM_001014890_E181H,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+216,E181I,NM_001014890_E181I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+217,E181L,NM_001014890_E181L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+218,E181M,NM_001014890_E181M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+219,E181F,NM_001014890_E181F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+220,E181S,NM_001014890_E181S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+221,E181T,NM_001014890_E181T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+222,E181W,NM_001014890_E181W,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+223,E181Y,NM_001014890_E181Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+224,E181V,NM_001014890_E181V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+225,E113Q,NM_001014890_E113Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+226,"E113Q,E181D",NM_001014890_E113Q_E181D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+249,P215G,AJ430489_P215G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+250,T269A,AJ430489_T269A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+251,T118G,AJ430489_T118G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+252,T118A,AJ430489_T118A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+255,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+256,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_91-AB007425.1_92_114-AB007423.1_115_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+257,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_91-AB007425.1_92_114-AB007423.1_115_129-AB007425.1_130_152-AB007423.1_153_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+258,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_91-AB007425.1_92_114-AB007423.1_115_129-AB007425.1_130_152-AB007423.1_153_173-AB007425.1_174_190-AB007423.1_191_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+259,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_91-AB007425.1_92_114-AB007423.1_115_129-AB007425.1_130_152-AB007423.1_153_173-AB007425.1_174_190-AB007423.1_191_217-AB007425.1_218_241-AB007423.1_242_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+260,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_91-AB007425.1_92_114-AB007423.1_115_129-AB007425.1_130_152-AB007423.1_153_173-AB007425.1_174_190-AB007423.1_191_217-AB007425.1_218_241-AB007423.1_242_280-AB007425.1_281_303-AB007423.1_304_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+261,chimera,AB007423.1_1_91-AB007425.1_92_114-AB007423.1_115_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+262,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_129-AB007425.1_130_152-AB007423.1_153_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+263,chimera,AB007423.1_1_91-AB007425.1_92_114-AB007423.1_115_129-AB007425.1_130_152-AB007423.1_153_173-AB007425.1_174_190-AB007423.1_191_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+264,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_129-AB007425.1_130_152-AB007423.1_153_173-AB007425.1_174_190-AB007423.1_191_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+265,chimera,AB007423.1_1_91-AB007425.1_92_114-AB007423.1_115_129-AB007425.1_130_152-AB007423.1_153_173-AB007425.1_174_190-AB007423.1_191_217-AB007425.1_218_241-AB007423.1_242_280-AB007425.1_281_303-AB007423.1_304_313-AB007425.1_314_339-AB007423.1_340_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+266,chimera,AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_91-AB007425.1_92_114-AB007423.1_115_173-AB007425.1_174_190-AB007423.1_191_217-AB007425.1_218_241-AB007423.1_242_280-AB007425.1_281_303-AB007423.1_304_313-AB007425.1_314_339-AB007423.1_340_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+267,chimera,AB007423.1_1_91-AB007425.1_92_114-AB007423.1_115_173-AB007425.1_174_190-AB007423.1_191_217-AB007425.1_218_241-AB007423.1_242_280-AB007425.1_281_303-AB007423.1_304_313-AB007425.1_314_339-AB007423.1_340_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+268,"chimera,A109F",AB007423.1_1_58-AB007425.1_59_83-AB007423.1[A109F]_84_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+269,"chimera,L112I",AB007423.1_1_58-AB007425.1_59_83-AB007423.1[L112I]_84-379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+270,"chimera,A115C",AB007423.1_1_58-AB007425.1_59_83-AB007423.1[A115C]_84_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+271,"chimera,A116G",AB007423.1_1_58-AB007425.1_59_83-AB007423.1[A116G]_84-379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+272,"chimera,F120Y",AB007423.1_1_58-AB007425.1_59_83-AB007423.1[F120Y]_84_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+273,"chimera,I123V",AB007423.1_1_58-AB007425.1_59_83-AB007423.1[I123V]_84_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+274,"chimera,M130A",AB007423.1_1_58-AB007425.1_59_83-AB007423.1[M130A]_84_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+275,"chimera,A116G,F120Y,I123V","AB007423.1_1_58-AB007425.1_59_83-AB007423.1[A116G,F120Y,I123V]_84_379",,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+276,"chimera,A109F,L122I,A115C","AB007423.1_1_58-AB007425.1_59_83-AB007423.1[A109F,L122I,A115C]_84_379",,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+277,"chimera,A116G,F120Y","AB007423.1_1_58-AB007425.1_59_83-AB007423.1[A116G,F120Y]_84_379",,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+278,"chimera,A109F,L112I,A115C,A116G,F120Y","AB007423.1_1_58-AB007425.1_59_83-AB007423.1[A109F,L112I,A115C,A116G,F120Y]_84_379",,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+279,"chimera,G116A",AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_129-AB007425.1[G116A]_130_152-AB007423.1_153_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+280,"chimera,Y120F",AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_129-AB007425.1[Y120F]_130_152-AB007423.1_153_379,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+281,"chimera,G116A,Y120F","AB007423.1_1_58-AB007425.1_59_83-AB007423.1_84_129-AB007425.1[G116A,Y120F]_130_152-AB007423.1_153_379",,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+287,A164S,NM_001014890.2_A164S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+288,F261Y,NM_001014890.2_F261Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+289,A269T,NM_001014890.2_A269T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+290,"F261Y,A269T",NM_001014890.2_F261Y_A269T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+291,"A164S,F216Y",NM_001014890.2_A164S_F261Y,"NM_001014890.2_A164S,F216Y",tag,tagged_needs_review,True,Accession suffix disagreed with the assay mutation. Sequence retained; verify the notation against the paper before tuning approval.
+292,"A164S,A269T",NM_001014890.2_A164S_A269T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+337,I85V,AF222331_I85V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+338,C84S,AF222331_C84S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+339,"C84S,I85V",AF222331_C84S_I85V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+340,C84G,AF222331_C84G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+341,"C84G,I85F",AF222331_C84G_I85F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+342,V85I,M92039_V85I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+343,S84C,M92039_S84C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+344,"S84C,V85I",M92039_S84C_V85I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+345,V85I,AH007798.2_V85I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+346,S84C,AH007798.2_S84C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+347,"S84C,V85I",AH007798.2_S84C_V85I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+353,"A116S,I120F",MN831881.1,"MN831881.1_A116S,I120F",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+354,A116S,MN831881.1,MN831881.1_A116S,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+355,I120F,MN831881.1,MN831881.1_I120F,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+356,G177S,MN831881.1_G177S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+357,Y179F,MN831881.1_Y179F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+358,"A116S,G177S",MN831881.1,"MN831881.1_A116S,G177S",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+359,"A116S,Y179F",MN831881.1,"MN831881.1_A116S,Y179F",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+360,"I207C,F208C",MN831881.1_I207C_F208C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+361,"A116S,I120F,Y179F",MN831881.1,"MN831881.1_A116S,I120F,Y179F",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+362,"A116S,G177S,Y179F",MN831881.1,"MN831881.1_A116S,G177S,Y179F",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+363,"I120F,I207C,F208C",MN831881.1,"MN831881.1_I120F,I207C,F208C",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+364,"Y179F,I207C,F208C",MN831881.1_Y179F_I207C_F208C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+365,"A116S,Y179F,I207C,F208C",MN831881.1,"MN831881.1_A116S,Y179F,I207C,F208C",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+366,"A116S,I120F,I207C,F208C",MN831881.1,"MN831881.1_A116S,I120F,I207C,F208C",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+367,"A116S,I120F,Y179F,I207C,F208C",MN831881.1,"MN831881.1_A116S,I120F,Y179F,I207C,F208C",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+383,F86S,D85863_F86S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+385,S86F,AJ238856_S86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+386,V116L,AJ238856_V116L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+387,V116M,AJ238856_V116M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+389,S86F,NM_205438.1_S86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+390,V116L,NM_205438.1_V116L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+392,C90S,NM_001311081_C90S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+393,A86S,NM_001311081_A86S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+400,S289A,DQ822478.1_S289A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+401,S87G,DQ822478.1_S87G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+402,Y262W,DQ822478.1_Y262W,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+404,K94T,AY692353.1_K94T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+405,K94A,AY692353.1_K94A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+406,K94S,AY692353.1_K94S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+407,K94V,AY692353.1_K94V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+408,K94D,AY692353.1_K94D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+409,K94E,AY692353.1_K94E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+410,K94H,AY692353.1_K94H,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+411,K94R,AY692353.1_K94R,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+413,D96N,NM_079687.3,NM_079687.3_D96N,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+414,D124N,NM_079687.3,NM_079687.3_D124N,tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+415,D147N,NM_079687.3,NM_079687.3_D147N,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+416,E194Q,NM_079687.3,NM_079687.3_E194Q,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+417,D203N,NM_079687.3,NM_079687.3_D203N,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+419,S117A,AB208675.1_S117A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+420,F177Y,AB208675.1_F177Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+421,"S117A,F177Y",AB208675.1_S117A_F177Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+423,A116S,AB208674.1_A116S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+434,M204L,KX550908.1_M204L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+435,Y211W,KX550908.1_Y211W,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+436,V216A,KX550908.1_V216A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+437,"M204L,V216A",KX550908.1_M204L_V216A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+438,"M204L,Y211W",KX550908.1_M204L_Y211W,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+439,"Y211W,V216A",KX550908.1_Y211W_V216A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+440,"M204L,Y211W,V216A",KX550908.1_M204L_Y211W_V216A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+442,L204M,XM_033877948.1_L204M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+443,W211Y,XM_033877948.1_W211Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+444,A216V,XM_033877948.1_A216V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+445,"L204M,A216V",XM_033877948.1_L204M_A216V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+446,"L204M,W211Y",XM_033877948.1_L204M_W211Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+447,"W211Y,A216V",XM_033877948.1_W211Y_A216V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+448,"L204M,W211Y,A216V",XM_033877948.1_L204M_W211Y_A216V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+449,F86Y,D85863.1_F86Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+450,F86L,D85863.1_F86L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+451,F86M,D85863.1_F86M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+454,I169F,AY918902.2_I169F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+455,K201R,AY918902.2_K201R,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+456,T273A,AY918902.2_T273A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+457,"I169F,K201R,T273A",AY918902.2_I169F_K201R_T273A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+458,Y179F,AY918902.2_Y179F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+479,"I95L,T96N,E122Q,V123I,I205M,V209C,F213C,G269A",AB223054_I95L_T96N_E122Q_V123I_I205M_V209C_F213C_G269A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+480,"L95I,N96T,Q122E,I123V,M205I,C209V,C213F,A269G",AB223055_L95I_N96T_Q122E_I123V_M205I_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+481,Q122E,AB223055_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+482,"L95I,Q122E",AB223055_L95I_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+483,"N96T,Q122E",AB223055_N96T_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+484,"Q122E,I123V",AB223055_Q122E_I123V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+485,"Q122E,M205I",AB223055_Q122E_M205I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+486,"Q122E,C209V",AB223055_Q122E_C209V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+487,"Q122E,C213F",AB223055_Q122E_C213F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+488,"Q122E,A270G",AB223055_Q122E_A269G,"AB223055_Q122E,A270G",tag,tagged_needs_review,True,Accession suffix disagreed with the assay mutation. Sequence retained; verify the notation against the paper before tuning approval.
+489,"L95I,N96T,Q122E,M205I,C209V,C213F,A269G",AB223055_L95I_N96T_Q122E_M205I_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+490,"N96T,Q122E,M205I,C209V,C213F,A269G",AB223055_N96T_Q122E_M205I_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+491,"L95I,Q122E,M205I,C209V,C213F,A269G",AB223055_L95I_Q122E_M205I_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+492,"L95I,N96T,Q122E,C209V,C213F,A269G",AB223055_L95I_N96T_Q122E_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+493,"L95I,N96T,Q122E,M205I,C209V,A269G",AB223055_L95I_N96T_Q122E_M205I_C209V_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+494,"L95I,N96T,Q122E,M205I,C209V,C213F",AB223055_L95I_N96T_Q122E_M205I_C209V_C213F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+495,"L95I,N96T,Q122E,I123V,C209V,C213F,A269G",AB223055_L95I_N96T_Q122E_I123V_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+496,"N96T,Q122E,C209V,C213F,A269G",AB223055_N96T_Q122E_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+497,"L95I,Q122E,C209V,C213F,A269G",AB223055_L95I_Q122E_C209V_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+498,"L95I,N96T,Q122E,C213F,A269G",AB223055_L95I_N96T_Q122E_C213F_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+499,"L95I,N96T,Q122E,C209V,A269G",AB223055_L95I_N96T_Q122E_C209V_A269G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+500,"L95I,N96T,Q122E,C209V,C213F",AB223055_L95I_N96T_Q122E_C209V_C213F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+501,"Y24F,I42L,C94T,V100M,L108I,L119I,S202T,F203Y,F255I,L309M",AB223053_Y24F_I42L_C94T_V100M_L108I_L119I_S202T_F203Y_F255I_L309M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+502,"Y24F,I42L,L108I,L119I,S202T,L309M",AB223053_Y24F_I42L_L108I_L119I_S202T_L309M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+503,"Y198F,R248K",LC260051_Y198F_R248K,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+504,"E33D,I130V,F203Y",LC260054_E33D_I130V_F203Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+518,S117A,AB087809.1_S117A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+519,S82A,AB087809.1_S82A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+520,W85L,AB087809.1_W85L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+521,V88I,AB087809.1_V88I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+522,A97S,AB087809.1_A97S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+523,Y99F,AB087809.1_Y99F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+524,K100N,AB087809.1_K100N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+525,I108T,AB087809.1_I108T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+526,G109A,AB087809.1_G109A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+527,I119L,AB087809.1_I119L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+528,C295S,AB087809.1_C295S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+529,A52T,L11864.1_A52T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+530,S80A,L11864.1_S80A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+531,A87S,L11864.1_A87S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+532,P92S,L11864.1_P92S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+533,S94A,L11864.1_S94A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+534,L116T,L11864.1_L116T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+535,G124S,L11864.1_G124S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+536,S163F,L11864.1_S163F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+537,G217S,L11864.1_G217S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+538,S272A,L11864.1_S272A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+539,G90S,NM_001014890.2_G90S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+540,T118A,NM_001014890.2_T118A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+541,E122D,NM_001014890.2_E122D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+542,A295S,NM_001014890.2_A295S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+543,"T118A,E122D,A292S",NM_001014890.2_T118A_E122D_A292S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+567,T213I,AF310191.1_T213I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+568,"T217A,",AF310191.1_T217A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+569,V218I,AF310191.1_V218I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+570,"T213I,T217A,V218I",AF310191.1_T213I_T217A_V218I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+585,Q122E,AH007712.2_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+586,S292A,AH007712.2_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+587,"Q122E,S292A",AH007712.2_Q122E_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+588,Q122E,AH007713.2_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+589,L207M,AH007713.2_L207M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+590,"Q122E,L207M",AH007713.2_Q122E_L207M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+598,F60I,swsanc1_F60I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+599,V63I,swsanc1_V63I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+600,"G82A,L85I,C86V,I87T,S92F,F96V,S98A,L99S,R100Q","swsanc1_G82A,L85I,C86V,I87T,S92F,F96V,S98A,L99S,R100Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+601,V104I,swsanc1_V104I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+602,"H107R,V109L,L112M,L116M,V119I,I137V","swsanc1_H107R,V109L,L112M,L116M,V119I,I137V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+603,"K147R,G149S","swsanc1_K147R,G149S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+604,"V49L,I60V,V63I","swsanc6_V49L,I60V,V63I",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+605,"F81V,I85M,I88V","swsanc6_F81V,I85M,I88V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+606,A118S,swsanc6_A118S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+607,N149S,swsanc6_N149S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+608,F49V,swsanc5_F49V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+609,F84S,swsanc5_F84S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+610,S118A,swsanc5_S118A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+611,"F49V,F84S","swsanc5_F49V,F84S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+612,"F49V,S118A","swsanc5_F49V,S118A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+613,"F84S,S118A","swsanc5_F84S,S118A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+614,"F49V,F84S,S118A","swsanc5_F49V,F84S,S118A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+615,"F49V,F84S,S118A,A82S","swsanc5_F49V,F84S,S118A,A82S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+616,"F49V,F84S,S118A,L85I","swsanc5_F49V,F84S,S118A,L85I",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+617,"F49V,F84S,S118A,R107K","swsanc5_F49V,F84S,S118A,R107K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+618,"F49V,F84S,S118A,V119T","swsanc5_F49V,F84S,S118A,V119T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+619,"F49V,F84S,S118A,A120G","swsanc5_F49V,F84S,S118A,A120G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+620,"A82S,L85I,R107K,V119T,A120G","swsanc5_A82S,L85I,R107K,V119T,A120G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+622,F46L,swsanc5'_F46L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+623,S84C,swsanc5'_S84C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+624,S89C,swsanc5'_S89C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+625,A114G,swsanc5'_A114G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+626,"S84C,S89C","swsanc5'_S84C,S89C",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+627,"F46L,C86S,S89C,A114G","swsanc5'_F46L,C86S,S89C,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+628,chimera,swsanc3_1_30-NM_001085652.1_31_66-swsanc3_67_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+629,chimera,swsanc3_1_66-NM_001085652.1_67_98-swsanc3_99_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+630,chimera,swsanc3_1_98-NM_001085652.1_99-151-swsanc3_152_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+631,chimera,swsanc3_1_30-NM_001085652.1_31_98-swsanc3_99_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+632,chimera,swsanc3_1_30-NM_001085652.1_31_66-swsanc3_67_98-NM_001085652.1_99_151-swsanc3_152_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+633,chimera,swsanc3_1_66-NM_001085652.1_67_151-swsanc3_152_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+634,chimera,swsanc3_1_30-NM_001085652.1_31_151-swsanc3_152_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+635,chimera,swsanc3_1_151-NM_001085652.1_152_311-swsanc3_312_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+636,chimera,swsanc3_1_30-NM_001085652.1_31_66-swsanc3_67_151-NM_001085652.1_152_311-swsanc3_312_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+637,chimera,swsanc3_1_66-NM_001085652.1_67_98-swsanc3_99_151-NM_001085652.1_152_311-swsanc3_312_350,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+638,chimera,NM_001085652.1_1_30-swsanc3_31_98-NM_001085652.1_99_347,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+639,chimera,NM_001085652.1_1_98-swsanc3_99_151-NM_001085652.1_152_347,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+640,chimera,NM_001085652.1_1_66-swsanc3_67_98-NM_001085652.1_99_347,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+641,chimera,NM_001085652.1_1_30-swsanc3_31_66-NM_001085652.1_67_347,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+642,"M86F,I91V,P93T,A109V,D113E,V116L,T118S","NM_001085652.1_M86F,I91V,P93T,A109V,D113E,V116L,T118S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+643,"F86M,V91I,T93P","swsanc3_F86M,V91I,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+644,"V109A,E113D,L116V,S118T","swsanc3_V109A,E113D,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+645,"F49L,F86M,V91I,T93P","swsanc3_F49L,F86M,V91I,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+646,"F49L,V109A,E113D,L116V,S118T","swsanc3_F49L,V109A,E113D,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+647,"F86M,V91I,T93P,V109A,E113D,L116V,S118T","swsanc3_F86M,V91I,T93P,V109A,E113D,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+648,"F49L,F86M,V91I,T93P,V109A,E113D,L116V,S118T","swsanc3_F49L,F86M,V91I,T93P,V109A,E113D,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+649,F86M,swsanc3_F86M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+650,T93P,swsanc3_T93P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+651,"F86M,T93P","swsanc3_F86M,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+652,V109A,swsanc3_V109A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+653,E113D,swsanc3_E113D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+654,L116V,swsanc3_L116V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+655,S118T,swsanc3_S118T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+656,"V109A,E113D","swsanc3_V109A,E113D",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+657,"V109A,L116V","swsanc3_V109A,L116V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+658,"V109A,S118T","swsanc3_V109A,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+659,"E113D,S118T","swsanc3_E113D,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+660,"L116V,S118T","swsanc3_L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+661,"V109A,E113D,L116V","swsanc3_V109A,E113D,L116V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+662,"V109A,E113D,S118T","swsanc3_V109A,E113D,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+663,"V109A,L116V,S118T","swsanc3_V109A,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+664,"E113D,L116V,S118T","swsanc3_E113D,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+665,"T108I,E113D,L116V,S118T","swsanc3_T108I,E113D,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+666,"E113D,L116V,S118T,V119L","swsanc3_E113D,L116V,S118T,V119L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+667,"E113D,L116V,S118T,A120T","swsanc3_E113D,L116V,S118T,A120T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+668,"A111S,L112I,E113D,L116V,S118T","swsanc3_A111S,L112I,E113D,L116V,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+669,"A111S,E113D,L116V,S118T,A120T","swsanc3_A111S,E113D,L116V,S118T,A120T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+670,"F46M,F86M,V91I,T93P","swsanc3_F46M,F86M,V91I,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+671,"F46M,F49L,F86M,V91I,T93P","swsanc3_F46M,F49L,F86M,V91I,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+672,"F46M,F49L,F86M,V91I,T93P,T108I,V109A,A111S,L112I,E113D,L116V,S118T,V119L,A120T","swsanc3_F46M,F49L,F86M,V91I,T93P,T108I,V109A,A111S,L112I,E113D,L116V,S118T,V119L,A120T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+673,chimera,NP_031564.1_1_92-AH003620.2_93_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+674,chimera,NP_031564.1_1_146-AH003620.2_147_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+675,chimera,NP_031564.1_1_253-AH003620.2_254_348,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+676,chimera,AH003620.2_1_92-NP_031564.1_93_346,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+677,chimera,AH003620.2_1_146-NP_031564.1_147_346,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+678,chimera,AH003620.2_1_253-NP_031564.1_254_346,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+679,chimera,NP_031564.1_1_55-AH003620.2_56_92-NP_031564.1_93_346,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+680,chimera,NP_031564.1_1_92-AH003620.2_93_146-NP_031564.1_147_346,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+681,chimera,NP_031564.1_1_55-AH003620.2_56_146-NP_031564.1_147_346,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.
+682,R38Y,NP_031564.1_R38Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+683,F46T,NP_031564.1_F46T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+684,F49L,NP_031564.1_F49L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+685,V50I,NP_031564.1_V50I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+686,T52F,NP_031564.1_T52F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+687,I57M,NP_031564.1_I57M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+688,H64R,NP_031564.1_H64R,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+689,L81F,NP_031564.1_L81F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+690,F85L,NP_031564.1_F85L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+691,T92P,NP_031564.1_T92P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+692,I95V,NP_031564.1_I95V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+693,H100N,NP_031564.1_H100N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+694,L104V,NP_031564.1_L104V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+695,A114G,NP_031564.1_A114G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+696,S118T,NP_031564.1_S118T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+697,V137I,NP_031564.1_V137I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+698,S145N,NP_031564.1_S145N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+699,I146F,NP_031564.1_I146F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+700,N149S,NP_031564.1_N149S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+701,"L81F,F85L,T92P","NP_031564.1_L81F,F85L,T92P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+702,"A114G,S118T","NP_031564.1_A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+703,"L81F,F85L,T92P,A114G,S118T","NP_031564.1_L81F,F85L,T92P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+704,"F46T,F49L,T52F,L81F,F85L,T92P","NP_031564.1_F46T,F49L,T52F,L81F,F85L,T92P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+705,"F46T,F49L,T52F,L81F,F85L,T92P,A114G,S118T","NP_031564.1_F46T,F49L,T52F,L81F,F85L,T92P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+706,"F46T,F49L,T52F,F85L,T92P,A114G,S118T","NP_031564.1_F46T,F49L,T52F,F85L,T92P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+707,E113Q,NP_031564.1_E113Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+708,"F46T,F49L,T52F,F85L,T92P,E113Q,A114G,S118T","NP_031564.1_F46T,F49L,T52F,F85L,T92P,E113Q,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+709,"T46F,L49F,F52T,L93F,P100T,G114A,T118S","AH003620.2_T46F,L49F,F52T,L93F,P100T,G114A,T118S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+710,"T46F,L49F,F52T,F88L,L93F,P100T,G114A,T118S","AH003620.2_T46F,L49F,F52T,F88L,L93F,P100T,G114A,T118S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+711,N83D,AY686753.1,AY686753.1_N83D,tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+712,S86F,AY686753.1_S86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+713,I93T,AY686753.1_I92T,AY686753.1_I93T,tag,tagged_needs_review,True,Accession suffix disagreed with the assay mutation. Sequence retained; verify the notation against the paper before tuning approval.
+714,V116L,AY686753.1_V116L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+715,"S86F,I93T","AY686753.1_S86F,I92T","AY686753.1_S86F,I93T",tag,tagged_needs_review,True,Accession suffix disagreed with the assay mutation. Sequence retained; verify the notation against the paper before tuning approval.
+716,"S86F,V116L","AY686753.1_S86F,V116L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+717,"I93T,V116L","AY686753.1_I92T,V116L","AY686753.1_I93T,V116L",tag,tagged_needs_review,True,Accession suffix disagreed with the assay mutation. Sequence retained; verify the notation against the paper before tuning approval.
+718,"S86F,I93T,V116L","AY686753.1_S86F,I92T,V116L","AY686753.1_S86F,I93T,V116L",tag,tagged_needs_review,True,Accession suffix disagreed with the assay mutation. Sequence retained; verify the notation against the paper before tuning approval.
+720,A180S,AY686754.1_A180S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+731,Q186A,OP722931.1_Q186A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+732,F261Y,OP722931.1_F261Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+733,"Q118A,F261Y",OP722931.1_Q186A_F261Y,"OP722931.1_Q118A,F261Y",tag,tagged_needs_review,True,Accession suffix disagreed with the assay mutation. Sequence retained; verify the notation against the paper before tuning approval.
+734,C122T,OP722948.1_C122T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+735,V211C,OP722948.1_V211C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+736,"C122T,V211C",OP722948.1_C122T_V211C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+748,A180S,lwsanc_pigmentx_A180S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+749,"A58T,V76A,H294N",lwsanc_pigmentx,"lwsanc_pigmentx_A58T,V76A,H294N",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+750,I274V,lwsanc_pigmenty_I274V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+751,I320V,lwsanc_pigmenty_I320V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+752,T58A,lwsanc_pigmentz_T58A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+753,"V115I,A180S",lwsanc_pigmentz,"lwsanc_pigmentz_V115I,A180S",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+754,H294N,lwsanc_pigmentz_H294N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+755,V76A,lwsanc_pigmentz_V76A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+756,T160A,NM_001014890.2_T160A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+757,I259M,NM_001014890.2_I259M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+759,F86Y,JQ036217_F86Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+760,S90A,JQ036217_S90A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+761,S90C,JQ036217_S90C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+762,F86Y,NP_031564.1_F86Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+763,"F86Y,T93I,A97T",NP_031564.1,"NP_031564.1_F86Y,T93I,A97T",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+764,E113A,NP_031564.1_E113A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+765,Y86F,U92557.1_Y86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+766,"Y86F,I93T,T97A",NM_001014890.2,"NM_001014890.2_Y86F,I93T,T97A",tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+767,S90C,U92557.1_S90C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+769,S90C,CNUCHCUSTOM_S90C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+770,C86S,CNUCHCUSTOM_C86S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+771,C86F,CNUCHCUSTOM_C86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+772,"C86F,S90C",CNUCHCUSTOM_C86F_S90C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+782,H195T,NM_001014890_H195T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+783,H195S,NM_001014890_H195S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+785,T195H,XM_007126220_T195H,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+786,T195K,XM_007126220_T195K,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+788,A86F,XM_004592516_A86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+789,N93T,XM_004592516_N93T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+790,"A86F,N93T",XM_004592516_A86F_N93T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+791,F86A,NP_031564.1_F86A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+792,T93N,NP_031564.1_T93N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+793,"F86A,T93N",NP_031564.1_F86A_T93N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+794,E114Q,NP_031564.1_E114Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+795,D114A,NM_001085652.1_D114A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+796,D114Q,NM_001085652.1_D114Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+797,D114E,NM_001085652.1_D114E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+798,D114G,NM_001085652.1_D114G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+799,D114N,NM_001085652.1_D114N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+800,D114H,NM_001085652.1,NM_001085652.1_D114H,tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+801,"D114A,G116D",NM_001085652.1_D114A_G116D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+802,G116A,NM_001085652.1_G116A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+803,G116D,NM_001085652.1_G116D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+811,I232F,AH006283_I232F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+812,S236G,AH006283_S236G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+813,"I232F,S236G",AH006283_I232F_S236G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+815,I232F,AH006282_I232F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+816,S236G,AH006282_S236G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+817,"I232F,S236G",AH006282_I232F_S236G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+819,F232I,AH006281_F232I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+820,G236S,AH006281_G236S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+821,"F232I,G236S",AH006281_F232I_G236S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+822,S180A,lwsanc_pigmentd_S180A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+823,H197Y,lwsanc_pigmentd_H197Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+824,Y277F,lwsanc_pigmentd_Y277F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+825,T285A,lwsanc_pigmentd_T285A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+826,A308S,lwsanc_pigmentd_A308S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+827,"S180A,H197Y",lwsanc_pigmentd_S180A_H197Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+828,"S180A,Y277F",lwsanc_pigmentd_S180A_Y277F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+829,"S180A,T285A",lwsanc_pigmentd_S180A_T285A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+830,"S180A,A308S",lwsanc_pigmentd_S180A_A308S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+831,"H197Y,T285A",lwsanc_pigmentd_H197Y_T285A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+832,"H197Y,A308S",lwsanc_pigmentd_H197Y_A308S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+833,"Y277F,T285A",lwsanc_pigmentd_Y277F_T285A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+834,"S180A,H197Y,A308S",lwsanc_pigmentd_S180A_H197Y_A308S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+835,"S180A,Y277F,T285A",lwsanc_pigmentd_S180A_Y277F_T285A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+836,I46F,AF133907_I46F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+837,V49I,AF133907_V49I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+838,G164A,AF133907_G164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+839,"I46F,V49I,G164A",AF133907_I46F_V49I_G164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+840,"I46L,V49I,G164A",AF133907_I46L_V49I_G164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+841,"I46F,G164A",AF133907_I46F_G164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+842,"I46A,V49I,G164A",AF133907_I46A_V49I_G164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+843,"I46F,V49I,V52A,G164A",AF133907_I46F_V49I_V52A_G164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+844,"I46F,V49I,G164A,A269S",AF133907_I46F_V49I_G164A_A269S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+845,"I46F,V49I,V52F,G164A",AF133907_I46F_V49I_V52F_G164A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+846,"I46F,V49I,G164A,A269C",AF133907_I46F_V49I_G164A_A269C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+847,"I46F,V49I,G164A,A269T",AF133907_I46F_V49I_G164A_A269T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+848,A269S,L11864_A269S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+849,A269C,L11864_A269C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+850,A269T,L11864_A269T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+851,S269A,AH007799.2_S269A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+852,S269C,AH007799.2_S269C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+853,S269T,AH007799.2_S269T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+860,Y126F,NM_079683.3_Y126F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+861,F133Y,NM_079687.3_F133Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+863,"H38P,R42L",U67905.1_H38P_R42L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+864,A53Y,U67905.1_A53Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+865,N104K,U67905.1_N104K,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+866,I110Y,U67905.1_I110Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+867,"D125Q,Y127F",U67905.1_D125Q_Y127F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+868,F147Y,U67905.1_F147Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+869,"T173I,W176Y",U67905.1_T173I_W176Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+870,R243F,U67905.1_R243F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+871,S325A,U67905.1_S325A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+872,K110N,NM_079687.3_K110N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+873,K110E,NM_079687.3_K110E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+874,Y126E,NM_079683.3_Y126E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+882,K168E,NM_079683.3,NM_079683.3_K168E,tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+885,F46T,AncBoreotheria_F46T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+886,F49L,AncBoreotheria_F49L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+887,T52F,AncBoreotheria_T52F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+888,F86L,AncBoreotheria_F86L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+889,T93P,AncBoreotheria_T93P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+890,A114G,AncBoreotheria_A114G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+891,S118T,AncBoreotheria_S118T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+892,"F46T,F49L","AncBoreotheria_F46T,F49L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+893,"F46T,T52F","AncBoreotheria_F46T,T52F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+894,"F46T,F86L","AncBoreotheria_F46T,F86L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+895,"F46T,T93P","AncBoreotheria_F46T,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+896,"F46T,A114G","AncBoreotheria_F46T,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+897,"F46T,S118T","AncBoreotheria_F46T,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+898,"F49L,T52F","AncBoreotheria_F49L,T52F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+899,"F49L,F86L","AncBoreotheria_F49L,F86L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+900,"F49L,T93P","AncBoreotheria_F49L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+901,"F49L,A114G","AncBoreotheria_F49L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+902,"F49L,S118T","AncBoreotheria_F49L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+903,"T52F,F86L","AncBoreotheria_T52F,F86L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+904,"T52F,T93P","AncBoreotheria_T52F,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+905,"T52F,A114G","AncBoreotheria_T52F,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+906,"T52F,S118T","AncBoreotheria_T52F,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+907,"F86L,T93P","AncBoreotheria_F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+908,"F86L,A114G","AncBoreotheria_F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+909,"F86L,S118T","AncBoreotheria_F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+910,"T93P,A114G","AncBoreotheria_T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+911,"T93P,S118T","AncBoreotheria_T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+912,"A114G,S118T","AncBoreotheria_A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+913,"F46T,F49L,T52F","AncBoreotheria_F46T,F49L,T52F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+914,"F46T,F49L,F86L","AncBoreotheria_F46T,F49L,F86L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+915,"F46T,F49L,T93P","AncBoreotheria_F46T,F49L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+916,"F46T,F49L,A114G","AncBoreotheria_F46T,F49L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+917,"F46T,F49L,S118T","AncBoreotheria_F46T,F49L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+918,"F46T,T52F,F86L","AncBoreotheria_F46T,T52F,F86L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+919,"F46T,T52F,T93P","AncBoreotheria_F46T,T52F,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+920,"F46T,T52F,A114G","AncBoreotheria_F46T,T52F,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+921,"F46T,T52F,S118T","AncBoreotheria_F46T,T52F,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+922,"F46T,F86L,T93P","AncBoreotheria_F46T,F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+923,"F46T,F86L,A114G","AncBoreotheria_F46T,F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+924,"F46T,F86L,S118T","AncBoreotheria_F46T,F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+925,"F46T,T93P,A114G","AncBoreotheria_F46T,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+926,"F46T,T93P,S118T","AncBoreotheria_F46T,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+927,"F46T,A114G,S118T","AncBoreotheria_F46T,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+928,"F49L,T52F,F86L","AncBoreotheria_F49L,T52F,F86L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+929,"F49L,T52F,T93P","AncBoreotheria_F49L,T52F,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+930,"F49L,T52F,A114G","AncBoreotheria_F49L,T52F,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+931,"F49L,T52F,S118T","AncBoreotheria_F49L,T52F,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+932,"F49L,F86L,T93P","AncBoreotheria_F49L,F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+933,"F49L,F86L,A114G","AncBoreotheria_F49L,F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+934,"F49L,F86L,S118T","AncBoreotheria_F49L,F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+935,"F49L,T93P,A114G","AncBoreotheria_F49L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+936,"F49L,T93P,S118T","AncBoreotheria_F49L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+937,"F49L,A114G,S118T","AncBoreotheria_F49L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+938,"T52F,F86L,T93P","AncBoreotheria_T52F,F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+939,"T52F,F86L,A114G","AncBoreotheria_T52F,F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+940,"T52F,F86L,S118T","AncBoreotheria_T52F,F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+941,"T52F,T93P,A114G","AncBoreotheria_T52F,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+942,"T52F,T93P,S118T","AncBoreotheria_T52F,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+943,"T52F,A114G,S118T","AncBoreotheria_T52F,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+944,"F86L,T93P,A114G","AncBoreotheria_F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+945,"F86L,T93P,S118T","AncBoreotheria_F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+946,"F86L,A114G,S118T","AncBoreotheria_F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+947,"T93P,A114G,S118T","AncBoreotheria_T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+948,"F46T,F49L,T52F,F86L","AncBoreotheria_F46T,F49L,T52F,F86L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+949,"F46T,F49L,T52F,T93P","AncBoreotheria_F46T,F49L,T52F,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+950,"F46T,F49L,T52F,A114G","AncBoreotheria_F46T,F49L,T52F,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+951,"F46T,F49L,T52F,S118T","AncBoreotheria_F46T,F49L,T52F,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+952,"F46T,F49L,F86L,T93P","AncBoreotheria_F46T,F49L,F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+953,"F46T,F49L,F86L,A114G","AncBoreotheria_F46T,F49L,F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+954,"F46T,F49L,F86L,S118T","AncBoreotheria_F46T,F49L,F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+955,"F46T,F49L,T93P,A114G","AncBoreotheria_F46T,F49L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+956,"F46T,F49L,T93P,S118T","AncBoreotheria_F46T,F49L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+957,"F46T,F49L,A114G,S118T","AncBoreotheria_F46T,F49L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+958,"F46T,T52F,F86L,T93P","AncBoreotheria_F46T,T52F,F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+959,"F46T,T52F,F86L,A114G","AncBoreotheria_F46T,T52F,F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+960,"F46T,T52F,F86L,S118T","AncBoreotheria_F46T,T52F,F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+961,"F46T,T52F,T93P,A114G","AncBoreotheria_F46T,T52F,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+962,"F46T,T52F,T93P,S118T","AncBoreotheria_F46T,T52F,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+963,"F46T,T52F,A114G,S118T","AncBoreotheria_F46T,T52F,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+964,"F46T,F86L,T93P,A114G","AncBoreotheria_F46T,F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+965,"F46T,F86L,T93P,S118T","AncBoreotheria_F46T,F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+966,"F46T,F86L,A114G,S118T","AncBoreotheria_F46T,F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+967,"F46T,T93P,A114G,S118T","AncBoreotheria_F46T,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+968,"F49L,T52F,F86L,T93P","AncBoreotheria_F49L,T52F,F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+969,"F49L,T52F,F86L,A114G","AncBoreotheria_F49L,T52F,F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+970,"F49L,T52F,F86L,S118T","AncBoreotheria_F49L,T52F,F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+971,"F49L,T52F,T93P,A114G","AncBoreotheria_F49L,T52F,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+972,"F49L,T52F,T93P,S118T","AncBoreotheria_F49L,T52F,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+973,"F49L,T52F,A114G,S118T","AncBoreotheria_F49L,T52F,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+974,"F49L,F86L,T93P,A114G","AncBoreotheria_F49L,F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+975,"F49L,F86L,T93P,S118T","AncBoreotheria_F49L,F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+976,"F49L,F86L,A114G,S118T","AncBoreotheria_F49L,F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+977,"F49L,T93P,A114G,S118T","AncBoreotheria_F49L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+978,"T52F,F86L,T93P,A114G","AncBoreotheria_T52F,F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+979,"T52F,F86L,T93P,S118T","AncBoreotheria_T52F,F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+980,"T52F,F86L,A114G,S118T","AncBoreotheria_T52F,F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+981,"T52F,T93P,A114G,S118T","AncBoreotheria_T52F,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+982,"F86L,T93P,A114G,S118T","AncBoreotheria_F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+983,"F46T,F49L,T52F,F86L,T93P","AncBoreotheria_F46T,F49L,T52F,F86L,T93P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+984,"F46T,F49L,T52F,F86L,A114G","AncBoreotheria_F46T,F49L,T52F,F86L,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+985,"F46T,F49L,T52F,F86L,S118T","AncBoreotheria_F46T,F49L,T52F,F86L,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+986,"F46T,F49L,T52F,T93P,A114G","AncBoreotheria_F46T,F49L,T52F,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+987,"F46T,F49L,T52F,T93P,S118T","AncBoreotheria_F46T,F49L,T52F,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+988,"F46T,F49L,T52F,A114G,S118T","AncBoreotheria_F46T,F49L,T52F,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+989,"F46T,F49L,F86L,T93P,A114G","AncBoreotheria_F46T,F49L,F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+990,"F46T,F49L,F86L,T93P,S118T","AncBoreotheria_F46T,F49L,F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+991,"F46T,F49L,F86L,A114G,S118T","AncBoreotheria_F46T,F49L,F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+992,"F46T,F49L,T93P,A114G,S118T","AncBoreotheria_F46T,F49L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+993,"F46T,T52F,F86L,T93P,A114G","AncBoreotheria_F46T,T52F,F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+994,"F46T,T52F,F86L,T93P,S118T","AncBoreotheria_F46T,T52F,F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+995,"F46T,T52F,F86L,A114G,S118T","AncBoreotheria_F46T,T52F,F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+996,"F46T,T52F,T93P,A114G,S118T","AncBoreotheria_F46T,T52F,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+997,"F46T,F86L,T93P,A114G,S118T","AncBoreotheria_F46T,F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+998,"F49L,T52F,F86L,T93P,A114G","AncBoreotheria_F49L,T52F,F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+999,"F49L,T52F,F86L,T93P,S118T","AncBoreotheria_F49L,T52F,F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1000,"T52F,F86L,A114G,S118T","AncBoreotheria_T52F,F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1001,"F49L,T52F,T93P,A114G,S118T","AncBoreotheria_F49L,T52F,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1002,"F49L,F86L,T93P,A114G,S118T","AncBoreotheria_F49L,F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1003,"T52F,F86L,T93P,A114G,S118T","AncBoreotheria_T52F,F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1004,"F46T,F49L,T52F,F86L,T93P,A114G","AncBoreotheria_F46T,F49L,T52F,F86L,T93P,A114G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1005,"F46T,F49L,T52F,F86L,T93P,S118T","AncBoreotheria_F46T,F49L,T52F,F86L,T93P,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1006,"F46T,F49L,T52F,F86L,A114G,S118T","AncBoreotheria_F46T,F49L,T52F,F86L,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1007,"F46T,F49L,T52F,T93P,A114G,S118T","AncBoreotheria_F46T,F49L,T52F,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1008,"F46T,F49L,F86L,T93P,A114G,S118T","AncBoreotheria_F46T,F49L,F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1009,"F46T,T52F,F86L,T93P,A114G,S118T","AncBoreotheria_F46T,T52F,F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1010,"F49L,T52F,F86L,T93P,A114G,S118T","AncBoreotheria_F49L,T52F,F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1011,"F46T,F49L,T52F,F86L,T93P,A114G,S118T","AncBoreotheria_F46T,F49L,T52F,F86L,T93P,A114G,S118T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1012,V91I,swsanc3_V91I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1013,"E113D,L116V","swsanc3_E113D,L116V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1017,F86S,AncEutheria_F86S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1018,T93I,AncEutheria_T93I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1019,L116V,AncEutheria_L116V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1020,"F86S,T93I","AncEutheria_F86S,T93I",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1021,"F86S,L116V","AncEutheria_F86S,L116V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1022,"T93I,L116V","AncEutheria_T93I,L116V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1023,"F86S,T93I,L116V","AncEutheria_F86S,T93I,L116V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1024,F86del,AncVertebrate_F86del,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1025,F86del,AncEuteleost_F86del,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1027,F86del,,,unresolved,unresolved,,No linked sequence/accession. Correct the source identity in admin; no taxonomy guessed.
+1029,F86del,,,unresolved,unresolved,,No linked sequence/accession. Correct the source identity in admin; no taxonomy guessed.
+1031,ins86F,FJ443126_ins86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1032,F86Y,AncBoreotheria_F86Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1033,T93I,AncBoreotheria_T93I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1034,F86Y,AncMammal_F86Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1035,Y86F,AY286017.1_Y86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1036,Y86F,DQ302163_Y86F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1037,F86Y,D85863_F86Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1038,C86S,AF222331.1_C86S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1039,C90S,AF222331.1_C90S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1040,C90S,Y11787.1_C90S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1041,F86Y,NP_031564.1_F86Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1042,S90C,NP_031564.1_S90C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1043,T93I,NP_031564.1_T93I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1044,A114G,NP_031564.1_A114G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1045,"F86Y,T93I","NP_031564.1_F86Y,T93I",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1046,I93T,U92557.1_I93T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1047,"I93T,T97S","U92557.1_I93T,T97S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1048,"Y86F,I93T","U92557.1_Y86F,I93T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1070,E181Q,AB251846.1_E181Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1071,E181D,AB251846.1_E181D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1072,Y113F,AB251846.1_Y113F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1073,S186A,AB251846.1_S186A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1074,S186C,AB251846.1_S186C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1075,S186T,AB251846.1_S186T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1076,S186N,AB251846.1_S186N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1077,S186G,AB251846.1_S186G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1079,N83D,AncCetacea_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1080,S292A,AncCetacea_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1081,"N83D,S292A","AncCetacea_N83D,S292A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1083,V300I,AncWhippomorpha_V300I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1085,A94T,XM_048606470.1_A94T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1086,F178Y,XM_048606470.1_F187Y,XM_048606470.1_F178Y,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1087,"A94T,F178Y","XM_048606470.1_A94T,F187Y","XM_048606470.1_A94T,F178Y",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1088,A94I,XM_048606470.1_A94I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1090,"T94A,Y178F","MT625929.1_T94A,Y187F","MT625929.1_T94A,Y178F",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1091,T94A,MT625929.1_T94A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1092,Y178F,MT625929.1_Y187F,MT625929.1_Y178F,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1093,E181R,NM_001014890_E181R,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1094,E181K,NM_001014890_E181K,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1095,E181P,NM_001014890_E181P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1096,"E113Q,E181H","NM_001014890_E113Q,E181H",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1097,"E113Q,E181Q","NM_001014890_E113Q,E181Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1098,"E113Q,E181F","NM_001014890_E113Q,E181F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1099,"E113Q,E181W","NM_001014890_E113Q,E181W",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1100,"A180S,F277Y,A285T","AH005296.2_A180S,F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1101,"A180S,F277Y,A285T,P298A,F309Y","AH005296.2_A180S,F277Y,A285T,P298A,F309Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1102,"A180S,T230I,S233A,V236M,V274I,L275F,F277Y,F279V,A285T","AH005296.2_A180S,T230I,S233A,V236M,V274I,L275F,F277Y,F279V,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1103,"A180S,V274I,L275F,F277Y,F279V,A285T","AH005296.2_A180S,V274I,L275F,F277Y,F279V,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1104,"A180S,T230I,S233A,V236M,F277Y,A285T","AH005296.2_A180S,T230I,S233A,V236M,F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1105,"A180S,S233A,V236M,F277Y,A285T","AH005296.2_A180S,S233A,V236M,F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1106,"A180S,T230I,V236M,F277Y,A285T","AH005296.2_A180S,T230I,V236M,F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1107,"A180S,T230I,F277Y,A285T","AH005296.2_A180S,T230I,F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1108,"A180S,T230I,S233A,F277Y,A285T","AH005296.2_A180S,T230I,S233A,F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1109,"Y116S,A180S,T230I,S233A,F277Y,A285T","AH005296.2_Y116S,A180S,T230I,S233A,F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1110,"A180S,T230I,S233A,F277Y,A285T,F309Y","AH005296.2_A180S,T230I,S233A,F277Y,A285T,F309Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1111,"A180S,T230I,F277Y,A285T,F309Y","AH005296.2_A180S,T230I,F277Y,A285T,F309Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1112,"Y116S,A180S,T230I,F277Y,A285T,F309Y","AH005296.2_Y116S,A180S,T230I,F277Y,A285T,F309Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1113,"Y116S,A180S,T230I,S233A,F277Y,A285T,F309Y","AH005296.2_Y116S,A180S,T230I,S233A,F277Y,A285T,F309Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1114,I65T,AH005296.2_I65T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1115,A180S,AH005296.2_A180S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1116,T230I,AH005296.2_T230I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1117,S233A,AH005296.2_S233A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1118,F277Y,AH005296.2_F277Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1119,A285T,AH005296.2_A285T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1120,F309Y,AH005296.2_F309Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1121,"A180S,F277Y","AH005296.2_A180S,F277Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1122,"A180S,A285T","AH005296.2_A180S,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1123,"F277Y,A285T","AH005296.2_F277Y,A285T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1124,T65I,AH005298.2_T65I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1125,S180A,AH005298.2_S180A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1126,I230T,AH005298.2_I230T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1127,A233S,AH005298.2_A233S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1128,Y277F,AH005298.2_Y277F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1129,T285A,AH005298.2_T285A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1130,Y309F,AH005298.2_Y309F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1131,"S180A,Y277F","AH005298.2_S180A,Y277F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1132,"S180A,T285A","AH005298.2_S180A,T285A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1133,"Y277F,T285A","AH005298.2_Y277F,T285A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1134,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1135,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1136,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1137,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1138,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1139,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1140,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1141,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1142,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T,A233S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1143,"T65I,I111V,S116Y,L153M,S180A,I230T","AH005298.2_T65I,I111V,S116Y,L153M,S180A,I230T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1144,"T65I,I111V,S116Y,L153M,S180A","AH005298.2_T65I,I111V,S116Y,L153M,S180A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1145,"T65I,I111V,S116Y,L153M","AH005298.2_T65I,I111V,S116Y,L153M",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1146,"T65I,I111V,S116Y","AH005298.2_T65I,I111V,S116Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1147,"T65I,I111V","AH005298.2_T65I,I111V",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1148,"I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1149,"S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1150,"L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1151,"S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1152,"I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1153,"A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1154,"M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1155,"I274V,F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1156,"F275L,Y277F,V279F,T285A,A298P,Y309F","AH005298.2_F275L,Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1157,"Y277F,V279F,T285A,A298P,Y309F","AH005298.2_Y277F,V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1158,"V279F,T285A,A298P,Y309F","AH005298.2_V279F,T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1159,"T285A,A298P,Y309F","AH005298.2_T285A,A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1160,"A298P,Y309F","AH005298.2_A298P,Y309F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1161,"R9A,R13A","AH005296.2_R9A,R13A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1162,R9A,AH005296.2_R9A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1163,R13A,AH005296.2_R13A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1164,R50A,AH005296.2_R50A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1165,"H46Y,H54S","AH005296.2_H46Y,H54S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1166,"K80Q,H86T","AH005296.2_K80Q,H86T",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1167,H123P,AH005296.2_H123P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1168,K167N,AH005296.2_K167N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1169,"H197E,K200Q","AH005296.2_H197E,K200Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1170,H197E,AH005296.2_H197E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1171,K200Q,AH005296.2_K200Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1172,H197A,AH005296.2_H197A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1173,K200A,AH005296.2_K200A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1174,"H197A,K200A","AH005296.2_H197A,K200A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1175,"K251A,K254Q","AH005296.2_K251A,K254Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1176,H300G,AH005296.2_H300G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1177,"K339C,K340G","AH005296.2_K339C,K340G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1178,K352T,AH005296.2_K352T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1179,F115A,NM_001014890_F115A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1180,A117F,NM_001014890_A117F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1181,E122D,NM_001014890_E122D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1182,E122A,NM_001014890_E122A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1183,W126F,NM_001014890_W126F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1184,W126L,NM_001014890_W126L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1185,W126A,NM_001014890_W126A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1186,W161L,NM_001014890_W161L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1187,W265Y,NM_001014890_W265Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1188,W265F,NM_001014890_W265F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1189,W265A,NM_001014890_W265A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1190,P267G,NM_001014890_P267G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1191,P267A,NM_001014890_P267A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1192,P267S,NM_001014890_P267S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1193,P267N,NM_001014890_P267N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1194,Y268F,NM_001014890_Y268F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1195,Y274F,NM_001014890_Y274F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1196,A292D,NM_001014890_A292D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1197,H211R,NM_001014890_H211R,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1201,A315S,NP_524407.1_A315S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1202,A315C,NP_524407.1_A315C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1204,S313A,NM_079644.3_S313A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1211,S308A,AF011389.1_S308A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1212,"Y277F,T285A,S308A","AF011389.1_Y277F,T285A,S308A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1213,"Y277F,T285A","AF011389.1_Y277F,T285A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1214,H197Y,AH005298.2_H197Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1215,"H197Y,A308S","AH005298.2_H197Y,A308S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1216,E122Q,AncAgnatha_E122Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1217,E122Q,AncCyprin2_E122Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1218,Q122E,AncTeleost_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1219,Q122E,AncCyprin1_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1220,Q122E,AncEutelo1_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1221,M207L,AncAgnatha_M207L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1222,M207L,AncTetrapod_M207L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1223,A292S,AncEutelo2_A292S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1224,M207L,AncEutelo1_M207L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1225,E122Q,AncEutelo4_E122Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1226,D83N,AncSquamat_D83N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1227,Q122E,AncEutelo2_Q122E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1228,"Y96T,Q122E,C213F","AncEutelo2_Y96T,Q122E,C213F",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1229,"V60F,F74Y,Y96T,Q122E,T209V,C213F,I255V,L259M,A273G","AncEutelo2_V60F,F74Y,Y96T,Q122E,T209V,C213F,I255V,L259M,A273G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1230,M44I,AncTetrapod_M44I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1231,"L40V,A42C,M44I,I50T,V87A,A166S,L214I,L309M","AncTetrapod_L40V,A42C,M44I,I50T,V87A,A166S,L214I,L309M",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1232,"N2C,D282C,K296G","NM_001014890.2_N2C,D282C,K296G",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1233,"N2C,D282C,K296G,G90K","NM_001014890.2_N2C,D282C,K296G,G90K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1234,"N2C,D282C,K296G,T94K","NM_001014890.2_N2C,D282C,K296G,T94K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1235,"N2C,D282C,K296G,A117K","NM_001014890.2_N2C,D282C,K296G,A117K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1236,"N2C,D282C,K296G,S186K","NM_001014890.2_N2C,D282C,K296G,S186K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1237,"N2C,D282C,K296G,F293K","NM_001014890.2_N2C,D282C,K296G,F293K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1238,"N2C,D282C,K296A","NM_001014890.2_N2C,D282C,K296A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1239,"N2C,D282C,K296A,G90K","NM_001014890.2_N2C,D282C,K296A,G90K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1240,"N2C,D282C,K296A,T94K","NM_001014890.2_N2C,D282C,K296A,T94K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1241,"N2C,D282C,K296A,A117K","NM_001014890.2_N2C,D282C,K296A,A117K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1242,"N2C,D282C,K296A,S186K","NM_001014890.2_N2C,D282C,K296A,S186K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1243,"N2C,D282C,K296A,F293K","NM_001014890.2_N2C,D282C,K296A,F293K",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1244,"N2C,D282C","NM_001014890.2_N2C,D282C",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1245,N2C,NM_001014890.2_N2C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1246,D282C,NM_001014890.2_D282C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1247,E113Q,NM_001014890.2_E113Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1248,"G90D,E113Q","NM_001014890.2_G90D,E113Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1249,"T94D,E113Q","NM_001014890.2_T94D,E113Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1250,G90D,NM_001014890.2_G90D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1251,A292E,NM_001014890.2_A292E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1252,M257A,NM_001014890.2_M257A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1253,M257C,NM_001014890.2_M257C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1254,M257D,NM_001014890.2_M257D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1255,M257E,NM_001014890.2_M257E,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1256,M257F,NM_001014890.2_M257F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1257,M257G,NM_001014890.2_M257G,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1258,M257H,NM_001014890.2_M257H,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1259,M257I,NM_001014890.2_M257I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1260,M257K,NM_001014890.2_M257K,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1261,M257L,NM_001014890.2_M257L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1262,M257N,NM_001014890.2_M257N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1263,M257P,NM_001014890.2_M257P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1264,M257Q,NM_001014890.2_M257Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1265,M257S,NM_001014890.2_M257S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1266,M257T,NM_001014890.2_M257T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1267,M257V,NM_001014890.2_M257V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1268,M257W,NM_001014890.2_M257W,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1269,M257Y,NM_001014890.2_M257Y,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1271,S85D,NM_001085652.1,NM_001085652.1_S85D,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1272,D108A,NM_001085652.1,NM_001085652.1_D108A,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1273,"S85D,D108A",NM_001085652.1,"NM_001085652.1_S85D,D108A",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1274,E113D,NM_001014890.2_E113D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1275,"G90E,E113Q","NM_001014890.2_G90E,E113Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1276,"G90D,E113Q","NM_001014890.2_G90D,E113Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1277,"G90E,E113A","NM_001014890.2_G90E,E113A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1278,"G90D,E113A","NM_001014890.2_G90D,E113A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1279,"T94E,E113Q","NM_001014890.2_T94E,E113Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1280,"T94D,E113Q","NM_001014890.2_T94D,E113Q",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1281,"T94E,E113A","NM_001014890.2_T94E,E113A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1282,"T94D,E113A","NM_001014890.2_T94D,E113A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1283,"E113A,A117E","NM_001014890.2_E113A,A117E",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1284,"E113A,A117D","NM_001014890.2_E113A,A117D",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1285,"E113Q,A292E","NM_001014890.2_E113Q,A292E",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1286,"E113Q,A292D","NM_001014890.2_E113Q,A292D",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1287,M44T,NM_001014890.2_M44T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1288,R135L,NM_001014890.2_R135L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1289,V137M,NM_001014890.2_V137M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1290,L328P,NM_001014890.2_L328P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1291,A346P,NM_001014890.2_A346P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1292,G114D,NM_001014890.2_G114D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1293,P171Q,NM_001014890.2_P171Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1294,H211P,NM_001014890.2_H211P,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1295,L119F,NM_001014890.2_L119F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1296,E122I,NM_001014890.2_E122I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1297,I123N,NM_001014890.2_I123N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1298,A124S,NM_001014890.2_A124S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1299,"L119F,E122I","NM_001014890.2_L119F,E122I",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1300,"E122I,I123N","NM_001014890.2_E122I,I123N",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1301,"E122I,A124S","NM_001014890.2_E122I,A124S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1302,"L119F,E122I,A124S","NM_001014890.2_L119F,E122I,A124S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1303,"L119F,E122I,I123N,A124S","NM_001014890.2_L119F,E122I,I123N,A124S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1305,"L119F,E122I,F261Y","NM_001014890.2_L119F,E122I,F261Y",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1307,N83D,CNUCHROD_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1308,A292S,CNUCHROD_A292S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1309,D83N,NM_001397497.1_D83N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1310,D83N,NM_001014890.2_D83N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1311,A292S,NM_001014890.2_A292S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1312,"D83N,A292S","NM_001014890.2_D83N,A292S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1313,D83C,NM_001014890.2_D83C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1315,"N2C,G188C,D282C","NM_001014890.2_N2C,G188C,D282C",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1316,G188C,NM_001014890.2_G188C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1317,G188A,NM_001014890.2_G188A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1318,G188D,NM_001014890.2_G188D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1319,G188M,NM_001014890.2_G188M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1320,G188N,NM_001014890.2_G188N,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1321,G188Q,NM_001014890.2_G188Q,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1322,G188S,NM_001014890.2_G188S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1323,G188T,NM_001014890.2_G188T,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1324,G188V,NM_001014890.2_G188V,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1327,N83D,ORCAROD_N83D,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1328,S292A,ORCAROD_S292A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1329,S299A,ORCAROD_S299A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1330,"N83D,S292A","ORCAROD_N83D,S292A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1331,"N83D,S299A","ORCAROD_N83D,S299A",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1336,P91S,AB040148.1_P91S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1337,S94A,AB040148.1_S94A,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1338,I122M,AB040148.1_I122M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1339,C127S,AB040148.1_C127S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1340,S211C,AB040148.1_S211C,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1341,Y261F,AB040148.1_Y261F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1342,A292S,AB040148.1_A292S,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1343,"P91S,S94A,I122M,C127S,S211C,Y261F,A292S","AB040148.1_P91S,S94A,I122M,C127S,S211C,Y261F,A292S",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1360,"L88F,P194L","XM_009283802_L88F,P194L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1361,L88F,XM_009283802_L88F,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1362,P194L,XM_009283802_P194L,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1363,"L88F,P194L","AF055316_L88F,P194L",,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1364,T217M,XM_009283802_T217M,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1365,T217I,AY228452_T217I,,already_tagged,already_tagged,False,Existing mutant sequence and accession preserved.
+1381,N94K,AH003620.2,AH003620.2_N94K,tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+1382,R330Q,AH003620.2,AH003620.2_R330Q,tag,tagged_needs_review,True,No stable numbering matches all WT starting residues. Check source notation; mutations are never reversed automatically.
+1383,N78K,AH003620.2,AH003620.2_N78K,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1385,A94T,MT625928,MT625928_A94T,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1386,F178Y,MT625928,MT625928_F178Y,tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1387,"A94T, F178Y",MT625928,"MT625928_A94T,F178Y",tag,tagged_verified_construct,False,Tagged construct checked against the base WT and forward substitutions; existing correctly tagged proteins are unchanged.
+1389,T94A,MT625929,,merged_duplicate,merged_duplicate,,Retained assay 1091.
+1390,Y178F,MT625929,,merged_duplicate,merged_duplicate,,Retained assay 1092.
+1391,"T94A, Y178F",MT625929,,merged_duplicate,merged_duplicate,,Retained assay 1090.
+1392,SWS2,ACD85826,,excluded_annotation,excluded_annotation,,Not an explicit mutation label; chimeras are outside scope.

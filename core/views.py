@@ -31,7 +31,7 @@ class OpsinViewSet(SubmissionModelViewSet):
 
 
 class HeterologousDataViewSet(SubmissionModelViewSet):
-    queryset = HeterologousData.objects.select_related('opsin', 'reference', 'opsin__reference').all()
+    queryset = HeterologousData.objects.select_related('opsin', 'reference', 'opsin__reference').filter(duplicate_of__isnull=True)
     serializer_class = HeterologousDataSerializer
     filterset_fields = ['opsin__gene_family', 'opsin__phylum', 'opsin__genus', 'opsin__species', 'opsin__accession', 'reference__doi']
 

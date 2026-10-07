@@ -7,7 +7,7 @@ let filteredData = [];
 let chart = null;
 let activeFetch = null;
 let requestNumber = 0;
-const tabs = ['opsins', 'heterologous', 'scp', 'visual-acuity', 'references'];
+const tabs = ['opsins', 'heterologous', 'scp', 'visual-acuity', 'references', 'tuning'];
 const acuityInputs = {cpd: 'subCpd', eye_type: 'subEyeType', body_length_cm: 'subBodyLength', interommatidial_angle_deg: 'subInterommatidial', acceptance_angle_deg: 'subAcceptance', lens_diameter_mm: 'subLensDiameter'};
 const measurementLabels = {body_length_cm: 'BL: body length (cm)', interommatidial_angle_deg: 'Δϕ: interommatidial angle (degrees)', acceptance_angle_deg: 'Δρ: acceptance angle (degrees)', lens_diameter_mm: 'Lens diameter (mm)', feller_ref_id: 'FellerRefID', source_dataset: 'Source dataset', source_record_id: 'Source record ID', notes: 'Notes', quality_flags: 'Quality flags', source_data: 'Original source columns'};
 
@@ -238,6 +238,15 @@ function showLoading(show) { $('loadingOverlay').classList.toggle('hidden', !sho
 function switchTab(tab) {
     currentTab = tab;
     for (const t of tabs) { $('tab-' + t).classList.toggle('tab-active', t === tab); $('tab-' + t).classList.toggle('tab-inactive', t !== tab); }
+    $('explorerSearchPanel').hidden = tab === 'tuning';
+    $('explorerPanels').hidden = tab === 'tuning';
+    $('tuningPanel').hidden = tab !== 'tuning';
+    if (tab === 'tuning') {
+        if (activeFetch) activeFetch.abort();
+        requestNumber++;
+        window.VpodTuning.open();
+        return;
+    }
     $('acuityFilters').classList.toggle('hidden', tab !== 'visual-acuity');
     $('lmaxFilters').classList.toggle('hidden', !['heterologous', 'scp'].includes(tab));
     for (const id of ['filterPhylum', 'filterFamily', 'filterGenus', 'filterSpecies', 'filterAccession']) {

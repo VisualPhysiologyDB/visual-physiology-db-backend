@@ -25,6 +25,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from core.views import ReferenceViewSet, OpsinViewSet, HeterologousDataViewSet, CuratedSCPViewSet, DataSubmissionViewSet, VisualAcuityViewSet
 from django.views.generic import TemplateView
+from core.tuning_views import TuningCatalogue, TuningTemplates, TuningMapping
 
 # Set up the API router
 router = DefaultRouter()
@@ -37,9 +38,11 @@ router.register(r'submissions', DataSubmissionViewSet) # New Submission Inbox
 
 
 urlpatterns = [
+    path('api/tuning-sites/', TuningCatalogue.as_view()),
+    path('api/tuning-templates/', TuningTemplates.as_view()),
+    path('api/tuning-mappings/', TuningMapping.as_view()),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)), # Expose the API under the /api/ path,
     path('', TemplateView.as_view(template_name='index.html'), name='home'), # Serve a simple homepage
 ]
-
 

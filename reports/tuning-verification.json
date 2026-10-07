@@ -1,0 +1,313 @@
+{
+  "verified_at": "2026-10-07T09:51:20.042399+00:00",
+  "release": "2026-10-beta1",
+  "environment": {
+    "python": "3.10.19",
+    "django": "5.2.8",
+    "runtime_environment": "vpod_env",
+    "mafft": "7.505",
+    "molstar": "5.13.0",
+    "playwright": "1.62.0",
+    "browser": "151.0.7922.34",
+    "browser_environment": "/tmp/vpod-tuning-browser-env"
+  },
+  "database_scope": {
+    "migrated_existing_copy": "/tmp/vpod-tuning-beta.sqlite3",
+    "migrated_fresh": "/tmp/vpod-tuning-fresh.sqlite3",
+    "original_database_has_beta_migration": false,
+    "original_latest_core_migration": "0011_literature_discovery",
+    "gunicorn_restarted": false,
+    "deployed": false
+  },
+  "tests": {
+    "django": {
+      "passed": 91,
+      "command": "python tools/test_tuning.py",
+      "migration_drift": "none",
+      "external_metadata_services": "mocked in existing tests; tuning tests make no metadata requests"
+    },
+    "browser": {
+      "passed": 42,
+      "checks": [
+        "Beta notice visible",
+        "Default family uses bovine numbering",
+        "Cross-family sites hidden by default",
+        "Invertebrate context defaults to squid",
+        "Bovine E181 / squid E180 / spider E194",
+        "Mapped CSV includes evidence and DOI",
+        "Evidence CSV includes citation roles",
+        "Selected site highlighted in alignment",
+        "bovine structure mapped",
+        "bovine marks exactly one residue, not the whole chain",
+        "bovine author numbering preserved",
+        "squid structure mapped",
+        "squid marks exactly one residue, not the whole chain",
+        "squid author numbering preserved",
+        "spider structure mapped",
+        "spider marks exactly one residue, not the whole chain",
+        "spider author numbering preserved",
+        "PNG saved",
+        "View session restores marked residues locally",
+        "Uploaded PDB preserves arbitrary author numbering",
+        "Uploaded mmCIF maps correctly",
+        "Only sequence JSON sent by mapper, never coordinates",
+        "Mobile layout has no page-wide overflow",
+        "Changed inputs hide stale results",
+        "Untrusted header rendered as text",
+        "Cross-family warning visible",
+        "Mapping session restores inputs without trusting cached output",
+        "references explorer retained",
+        "references histogram retained",
+        "visual-acuity explorer retained",
+        "visual-acuity histogram retained",
+        "scp explorer retained",
+        "scp histogram retained",
+        "heterologous explorer retained",
+        "heterologous histogram retained",
+        "opsins explorer retained",
+        "No uncaught browser errors",
+        "Frontend rejects DNA before mapping",
+        "Cross-family display-reference warning visible",
+        "Multiple targets map to custom reference numbering",
+        "Empty filter state removes hidden selections and disables mapping",
+        "No uncaught errors after final UI changes"
+      ],
+      "uncaught_errors": [],
+      "scripts": [
+        "tools/check_tuning_browser.py",
+        "tools/check_tuning_inputs.py"
+      ],
+      "screenshots": "/tmp/vpod-tuning-browser-check/"
+    },
+    "javascript": {
+      "syntax": "passed using Playwright-bundled Node 24.18.1",
+      "existing_data_checks": "passed: histogram ranges/counts/unknowns, safe URLs, CSV"
+    },
+    "static_assets": {
+      "collectstatic": "passed, isolated /tmp/vpod-tuning-static",
+      "production_mode_landing_status": 200,
+      "hashed_mapper_asset_status": 200,
+      "pinned_file_hashes_verified": 15
+    },
+    "admin": [
+      "Protein/evidence/audit lists, evidence add/change pages return 200 on isolated copy",
+      "Approval creates before/after audit; staff without change permission receives 403"
+    ]
+  },
+  "data": {
+    "catalogue_evidence_entries": 22,
+    "selectable_by_default_criterion": 21,
+    "measured_entries": 4,
+    "measured_at_least_1nm": 3,
+    "literature_entries": 18,
+    "sequence_anchors": 4,
+    "reference_structures": 3,
+    "copy_created": [
+      {
+        "type": "Reference",
+        "key": "10.1016/j.ydbio.2022.10.014"
+      },
+      {
+        "type": "Reference",
+        "key": "10.1093/genetics/153.4.1839"
+      },
+      {
+        "type": "TuningProtein",
+        "key": "bovine"
+      },
+      {
+        "type": "TuningProtein",
+        "key": "squid"
+      },
+      {
+        "type": "TuningProtein",
+        "key": "spider"
+      },
+      {
+        "type": "TuningProtein",
+        "key": "human-lws"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-rh1-83"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-rh1-122"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-rh1-292"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-rh1-299"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-rh1-300"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-sws1-86"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-sws1-90"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-sws1-93"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-sws1-118"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-lws-mws-180"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-lws-mws-197"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-lws-mws-277"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-lws-mws-285"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "hagen-lws-mws-308"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "lienard-90"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "lienard-292"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "echidna-n83d"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "echidna-f169a"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "echidna-t158a"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "spider-e181d"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "spider-literature-113"
+      },
+      {
+        "type": "TuningEvidence",
+        "key": "spider-literature-186"
+      }
+    ],
+    "copy_import_conflicts": [],
+    "reimport_created": [],
+    "reimport_conflicts": [],
+    "legacy_experimental_inventory_rows": 1398,
+    "inventory_counts": {
+      "included_or_comparator": 6,
+      "wild_type_record": 422,
+      "needs_primary_review": 898,
+      "out_of_scope_chimera": 71,
+      "not_public": 1
+    },
+    "fresh_created_count": 31,
+    "fresh_unavailable_source_assay_links": [
+      {
+        "key": "echidna-n83d",
+        "field": "wild_type_assay",
+        "expected_hetid": 1,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      },
+      {
+        "key": "echidna-n83d",
+        "field": "mutant_assay",
+        "expected_hetid": 2,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      },
+      {
+        "key": "echidna-f169a",
+        "field": "wild_type_assay",
+        "expected_hetid": 1,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      },
+      {
+        "key": "echidna-f169a",
+        "field": "mutant_assay",
+        "expected_hetid": 4,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      },
+      {
+        "key": "echidna-t158a",
+        "field": "wild_type_assay",
+        "expected_hetid": 1,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      },
+      {
+        "key": "echidna-t158a",
+        "field": "mutant_assay",
+        "expected_hetid": 3,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      },
+      {
+        "key": "spider-e181d",
+        "field": "wild_type_assay",
+        "expected_hetid": 1069,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      },
+      {
+        "key": "spider-e181d",
+        "field": "mutant_assay",
+        "expected_hetid": 1071,
+        "reason": "Missing source row or DOI/mutation/wavelength/sequence fingerprint differs"
+      }
+    ]
+  },
+  "scientific_checks": {
+    "spider_published_bovine_181": "spider B1B1U5 E194; squid P31356 E180",
+    "human_lws_to_bovine": {
+      "180": 164,
+      "197": 181,
+      "277": 261,
+      "285": 269,
+      "308": 292
+    },
+    "uploaded_renumbered_pdb": "spider E194 correctly shown as author residue 1194; no fixed numbering offset assumed",
+    "chimeras": "excluded",
+    "effects": "source experimental observations only; never predictions for a target"
+  },
+  "resolved_verification_findings": [
+    "Fixed Mol* schema selection and asserted exactly one physical residue, rather than a full-chain highlight.",
+    "Removed missing debug source-map directives from vendored assets; collectstatic now succeeds.",
+    "Discovery tests now fix enabled/frequency in their own fixture, preserving the user-edited literature configuration.",
+    "The old system Node could not parse modern JavaScript; checks passed with the already approved Playwright-bundled Node.",
+    "Inherited PIP_TARGET initially wrote one new greenlet dist-info directory outside the test environment. That directory was quarantined under /tmp; pre-existing shared package files were unchanged. Installation was repeated with pip target/config overrides disabled and the test-environment import path verified.",
+    "Refreshed only the isolated dev server after cached-template changes; no production services touched."
+  ],
+  "limits": [
+    "Starter evidence catalogue: 898 approved legacy mutation rows still need primary-source curation.",
+    "No experimental validation of transferred tuning effects or calibrated alignment-confidence probabilities.",
+    "No PostgreSQL, Safari/Firefox, physical-touch-device or production Gunicorn deployment verification.",
+    "Deployment requires reviewed migration 0012, explicit catalogue import and static collection in the intended environment."
+  ],
+  "artifact_sha256": {
+    "data/tuning/catalogue.json": "4da1461e5e2fedca0c7648bc84e200a955693d954cbedec251a5e37631e2a658",
+    "data/tuning/reference-profile.fasta": "fb95fd07eee465ca6b7d633b432940ca45aedbe9f8d1e9f19dd42b18bc5b3445"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-10-07T14:24:27.842253+00:00",
+  "feature": "Nested tuning sites, mutation selection and target-residue compatibility",
+  "environment": {
+    "python": "3.10.19",
+    "django": "5.2.8",
+    "python_executable": "/home/oakley/miniconda3/envs/vpod_env/bin/python",
+    "mafft": "7.505",
+    "database": "isolated SQLite copy /tmp/vpod-site-groups.sqlite3"
+  },
+  "database_changes": {
+    "new_migrations": false,
+    "serving_sqlite_unchanged": true,
+    "serving_sqlite_sha256": "29f042b9bcafd6402d695e4d8561faabbe8e0e0dc47d0959d4fa8059b76dd9e6",
+    "services_restarted": false,
+    "deployed": false
+  },
+  "catalogue": {
+    "public_evidence_count": 257,
+    "indexed_source_sequences": 94,
+    "index_alignment_failures": [],
+    "groups": {
+      "bovine": {
+        "total": 87,
+        "source_numbering_fallback": 4
+      },
+      "squid": {
+        "total": 87,
+        "source_numbering_fallback": 4
+      },
+      "spider": {
+        "total": 87,
+        "source_numbering_fallback": 2
+      },
+      "human-lws": {
+        "total": 87,
+        "source_numbering_fallback": 2
+      }
+    },
+    "index_sha256": "7d8aaf3543b4684c889bbe9d15001f150aafa710ec49f64f1ee9989e0b74912c",
+    "profile_sha256": "fb95fd07eee465ca6b7d633b432940ca45aedbe9f8d1e9f19dd42b18bc5b3445",
+    "algorithm": {
+      "version": "single-sites-2",
+      "profile_sha256": "fb95fd07eee465ca6b7d633b432940ca45aedbe9f8d1e9f19dd42b18bc5b3445",
+      "mafft_version": "v7.505",
+      "gap_penalties": [
+        "1.53",
+        "3.0"
+      ]
+    }
+  },
+  "backend": {
+    "command": "/home/oakley/miniconda3/envs/vpod_env/bin/python tools/test_tuning.py",
+    "passed": 146,
+    "failed": 0,
+    "migration_drift": "none",
+    "django_system_checks": "passed",
+    "external_network_needed": false
+  },
+  "browser": {
+    "engine": "Playwright Chromium, headless SwiftShader",
+    "total_checks": 59,
+    "reports": {
+      "regression": {
+        "checks": [
+          "Beta notice visible",
+          "Default family uses bovine numbering",
+          "Cross-family sites hidden by default",
+          "Invertebrate context defaults to squid",
+          "Bovine E181 / squid E180 / spider E194",
+          "Mapped CSV includes evidence and DOI",
+          "Evidence CSV includes citation roles",
+          "Selected site highlighted in alignment",
+          "bovine structure mapped",
+          "bovine marks exactly one residue, not the whole chain",
+          "bovine author numbering preserved",
+          "squid structure mapped",
+          "squid marks exactly one residue, not the whole chain",
+          "squid author numbering preserved",
+          "spider structure mapped",
+          "spider marks exactly one residue, not the whole chain",
+          "spider author numbering preserved",
+          "PNG saved",
+          "View session restores marked residues locally",
+          "Uploaded PDB preserves arbitrary author numbering",
+          "Uploaded mmCIF maps correctly",
+          "Only sequence JSON sent by mapper, never coordinates",
+          "Mobile layout has no page-wide overflow",
+          "Changed inputs hide stale results",
+          "Untrusted header rendered as text",
+          "Cross-family warning visible",
+          "Mapping session restores inputs without trusting cached output",
+          "references explorer retained",
+          "references histogram retained",
+          "visual-acuity explorer retained",
+          "visual-acuity histogram retained",
+          "scp explorer retained",
+          "scp histogram retained",
+          "heterologous explorer retained",
+          "heterologous histogram retained",
+          "opsins explorer retained",
+          "No uncaught browser errors"
+        ],
+        "errors": [],
+        "requests": [
+          {
+            "url": "http://127.0.0.1:8774/",
+            "method": "GET"
+          },
+          {
+            "url": "https://cdn.tailwindcss.com/",
+            "method": "GET"
+          },
+          {
+            "url": "https://unpkg.com/lucide@latest",
+            "method": "GET"
+          },
+          {
+            "url": "https://cdn.jsdelivr.net/npm/chart.js",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/tuning.css",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/vpod-data.js",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/explorer.js",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/tuning.js",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/tuning-structures.js",
+            "method": "GET"
+          },
+          {
+            "url": "https://cdn.tailwindcss.com/3.4.17",
+            "method": "GET"
+          },
+          {
+            "url": "https://unpkg.com/lucide@1.52.0/dist/umd/lucide.min.js",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/opsins/",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-sites/",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-templates/",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-mappings/",
+            "method": "POST"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/vendor/molstar/molstar.css",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/vendor/molstar/molstar.js",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/tuning-structures/1u19.cif",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-mappings/",
+            "method": "POST"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/tuning-structures/2z73.cif",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-mappings/",
+            "method": "POST"
+          },
+          {
+            "url": "http://127.0.0.1:8774/static/core/tuning-structures/6i9k.cif",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-mappings/",
+            "method": "POST"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-mappings/",
+            "method": "POST"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-mappings/",
+            "method": "POST"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/tuning-mappings/",
+            "method": "POST"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/references/",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/visual-acuity/",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/scp/",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/heterologous/",
+            "method": "GET"
+          },
+          {
+            "url": "http://127.0.0.1:8774/api/opsins/",
+            "method": "GET"
+          }
+        ],
+        "browser": "151.0.7922.34"
+      },
+      "site_browser": {
+        "checks": [
+          "Site catalogue visible by default",
+          "Numeric search matches displayed site only",
+          "Unknown site shows an empty catalogue",
+          "Site 83 collects multiple study assertions",
+          "Site opens from keyboard",
+          "Mutation group selects its study evidence",
+          "Partial mutation selection is shown",
+          "Site-only selection maps one row",
+          "Site-only selection prescribes no mutation or shift",
+          "Site-only mapping retains supporting studies",
+          "Site CSV preserves selection type and references",
+          "Site-only session restores selection, not saved result",
+          "Reference change clears old site-only coordinates",
+          "Catalogue labels use selected reference numbering",
+          "Search retains only matching site groups",
+          "Each sequence has its own compatibility assessment",
+          "Mismatch and already-present warnings are visible",
+          "Only matching residue receives a target mutation notation",
+          "Mutation compatibility is preserved in CSV",
+          "No horizontal page overflow on mobile",
+          "Site-only selection also marks structure residue",
+          "No browser exceptions"
+        ],
+        "errors": []
+      }
+    },
+    "commands": [
+      "PLAYWRIGHT_BROWSERS_PATH=/tmp/vpod-browsers /tmp/vpod-tuning-browser-env/bin/python tools/check_tuning_browser.py --url http://127.0.0.1:8774 --output /tmp/vpod-site-groups-browser-regression",
+      "PLAYWRIGHT_BROWSERS_PATH=/tmp/vpod-browsers /tmp/vpod-tuning-browser-env/bin/python tools/check_tuning_sites_browser.py --url http://127.0.0.1:8774 --output /tmp/vpod-site-groups-browser"
+    ],
+    "visual_review": [
+      "Desktop nested site/mutation/study controls inspected",
+      "390px mobile view inspected; no document overflow"
+    ]
+  },
+  "other_checks": [
+    "JavaScript syntax checks passed",
+    "git diff --check passed",
+    "Offline site indexing rerun completed: 94 sequences, no unresolved alignments"
+  ],
+  "limits": [
+    "No production deployment, collectstatic or Gunicorn restart performed",
+    "PostgreSQL and physical mobile devices not tested",
+    "Alignment agreement supports a coordinate correspondence, not biological equivalence or spectral-effect prediction",
+    "Unknown/stale source correspondences retain their own source numbering"
+  ]
+}
