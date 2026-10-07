@@ -1,0 +1,199 @@
+{
+  "verified_at": "2026-10-07T10:48:38.362663+00:00",
+  "environment": {
+    "python": "3.10.19",
+    "django": "5.2.8",
+    "environment": "vpod_env",
+    "mafft": "7.505",
+    "new_dependencies": []
+  },
+  "isolation": {
+    "development_database": "/tmp/vpod-single-sites.sqlite3",
+    "fresh_database": "/tmp/vpod-single-fresh.sqlite3",
+    "browser_database": "/tmp/vpod-single-browser.sqlite3",
+    "static_root": "/tmp/vpod-single-static",
+    "live_database_modified": false,
+    "live_latest_migration_read_only": "0012_tuning_mapper",
+    "production_service_restarted": false,
+    "temporary_server_stopped": true
+  },
+  "inventory": {
+    "total_assays": 1987,
+    "candidate_count": 482,
+    "mutation_types": {
+      "substitution": 477,
+      "deletion": 4,
+      "insertion": 1
+    },
+    "outcomes": {
+      "wild_type": 425,
+      "pair_ready_for_review": 143,
+      "below_cutoff": 32,
+      "ambiguous_comparator_or_numbering": 116,
+      "multiple": 419,
+      "sequence_or_numbering_disagreement": 82,
+      "conditions_need_review": 94,
+      "missing_or_invalid_sequence": 5,
+      "chimera": 71,
+      "no_same_species_wt_match": 5,
+      "indel_needs_review": 5,
+      "unparsed": 1,
+      "inferred_excluded": 589
+    },
+    "with_wt_sequence_options": 385,
+    "only_cross_publication_options": 196,
+    "with_accession_independent_options": 155,
+    "candidate_statuses": {
+      "PENDING": 482
+    },
+    "scientific_assertions_newly_approved": 0,
+    "existing_catalogue_assertions": 22
+  },
+  "repeatability": {
+    "artifact_replay": {
+      "unchanged": 482
+    },
+    "full_cached_reextraction": {
+      "unchanged": 482
+    },
+    "source_rows_modified": false,
+    "review_decisions_preserved_tests": true
+  },
+  "verification": {
+    "backend_command": "/home/oakley/miniconda3/envs/vpod_env/bin/python tools/test_tuning.py",
+    "backend_tests": 115,
+    "backend_result": "passed",
+    "migration_drift": "none",
+    "migrations_on_copy": "0013 applied",
+    "migrations_on_fresh": "0001 through 0013 applied",
+    "static_files_copied": 166,
+    "static_files_postprocessed": 480,
+    "pinned_assets_verified": 15,
+    "javascript_syntax_check": "passed",
+    "git_diff_check": "passed",
+    "browser": "151.0.7922.34",
+    "new_browser_checks": [
+      {
+        "name": "Pending extraction candidates absent from public catalogue",
+        "passed": true
+      },
+      {
+        "name": "Admin queue contains 482 candidates",
+        "passed": true
+      },
+      {
+        "name": "Admin outcome filter",
+        "passed": true
+      },
+      {
+        "name": "Numbering and source conditions readable",
+        "passed": true
+      },
+      {
+        "name": "Priority suggestion is bovine",
+        "passed": true
+      },
+      {
+        "name": "Approval without confirmation is blocked",
+        "passed": true
+      },
+      {
+        "name": "Confirmed test approval saved",
+        "passed": true
+      },
+      {
+        "name": "Approved test assertion publicly visible",
+        "passed": true
+      },
+      {
+        "name": "Beta banner retained",
+        "passed": true
+      },
+      {
+        "name": "Published and source numbering distinguished",
+        "passed": true
+      },
+      {
+        "name": "New source snapshot maps through real MAFFT",
+        "passed": true
+      },
+      {
+        "name": "CSV includes source reference and numbering",
+        "passed": true
+      },
+      {
+        "name": "Mobile layout avoids page-wide overflow",
+        "passed": true
+      },
+      {
+        "name": "No uncaught browser errors",
+        "passed": true
+      },
+      {
+        "name": "Searchable report contains full inventory",
+        "passed": true
+      },
+      {
+        "name": "Report filtering works",
+        "passed": true
+      }
+    ],
+    "existing_browser_checks": [
+      "Beta notice visible",
+      "Default family uses bovine numbering",
+      "Cross-family sites hidden by default",
+      "Invertebrate context defaults to squid",
+      "Bovine E181 / squid E180 / spider E194",
+      "Mapped CSV includes evidence and DOI",
+      "Evidence CSV includes citation roles",
+      "Selected site highlighted in alignment",
+      "bovine structure mapped",
+      "bovine marks exactly one residue, not the whole chain",
+      "bovine author numbering preserved",
+      "squid structure mapped",
+      "squid marks exactly one residue, not the whole chain",
+      "squid author numbering preserved",
+      "spider structure mapped",
+      "spider marks exactly one residue, not the whole chain",
+      "spider author numbering preserved",
+      "PNG saved",
+      "View session restores marked residues locally",
+      "Uploaded PDB preserves arbitrary author numbering",
+      "Uploaded mmCIF maps correctly",
+      "Only sequence JSON sent by mapper, never coordinates",
+      "Mobile layout has no page-wide overflow",
+      "Changed inputs hide stale results",
+      "Untrusted header rendered as text",
+      "Cross-family warning visible",
+      "Mapping session restores inputs without trusting cached output",
+      "references explorer retained",
+      "references histogram retained",
+      "visual-acuity explorer retained",
+      "visual-acuity histogram retained",
+      "scp explorer retained",
+      "scp histogram retained",
+      "heterologous explorer retained",
+      "heterologous histogram retained",
+      "opsins explorer retained",
+      "No uncaught browser errors"
+    ],
+    "browser_errors": []
+  },
+  "limits": [
+    "All newly extracted scientific claims remain pending primary-source review.",
+    "Browser approval was a workflow test on a disposable copy, not scientific verification.",
+    "PostgreSQL, physical touch devices and non-Chromium browsers were not tested.",
+    "No production migration, static collection, deployment or scheduler activation occurred."
+  ],
+  "sha256": {
+    "core/tuning_extraction.py": "c1061681a595c61922425cf693293214c03f1bc780694755aa072c8bd8811d9f",
+    "core/tuning_models.py": "f81584694d901804b4911331d5e958ea1805ed056123ff6361168cab72faf428",
+    "core/tuning_admin.py": "212fe632bb4d1af06f8a8d823e060457d30b2f8289366b873e2e68c7d70669d7",
+    "core/tuning_mapping.py": "5465a390ba2a7d567909f54825229bbfc8571b16d56045ab41ffd82fa9a47582",
+    "core/tuning_views.py": "e5d381193e549080dfdbab3664a8a58748cf818e9c29430d17736ba22a4e9c74",
+    "core/management/commands/build_tuning_candidates.py": "7375f63323a4b12c926567151899c6056ba44fad3f4cbac203a2eaed7735ab61",
+    "core/migrations/0013_tuning_single_site_candidates.py": "1e22e9b1e3ce85cc1e9e72fa8bed6dc5f1170a7e6a1e3be43163342f33d33074",
+    "core/test_tuning_extraction.py": "bb1caca3097cb69a554abfb1dfaa7437d3b28ae17350030dd5cb2ab0515d5f95",
+    "reports/tuning-single-sites.json": "a99f0f3d2331192a27623a9a9f68099004cff1b9888d3663d3adf699ed1c3ed4"
+  }
+}

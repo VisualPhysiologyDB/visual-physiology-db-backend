@@ -1,0 +1,1399 @@
+hetid,reference_id,mutations,status,outcome,reason
+1,116,,APPROVED,included_or_comparator,
+2,116,N83D,APPROVED,included_or_comparator,
+3,116,T158A,APPROVED,included_or_comparator,
+4,116,F169A,APPROVED,included_or_comparator,
+5,116,,APPROVED,wild_type_record,
+6,117,D83G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+7,117,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+8,117,M86E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+9,117,E122Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+10,117,E122I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+11,117,E134L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+12,117,E134Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+13,117,R135L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+14,117,H211C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+15,117,H211F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+16,117,"E122I,D83G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+17,117,"E122I,M86E",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+18,117,"E134L,R135L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+19,117,"E134R,R135E",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+20,127,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+21,127,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+22,127,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+23,127,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+24,127,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+25,127,"D83N,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+26,127,"D83N,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+27,127,"D83N,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+28,127,"D83N,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+29,127,"D83N,I214T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+30,127,"D83N,M183F,M253L,F261Y,T289G,A292I,M317I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+31,127,E122I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+32,127,"E122I,F261Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+33,127,"E122M,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+34,127,"E122M,F261Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+35,127,"E122M,F261Y,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+36,127,E122Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+37,127,"E122Q,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+38,127,F261Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+39,127,F261Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+40,127,"N195A,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+41,127,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+42,127,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+43,127,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+44,127,"N83D,S292A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+45,127,"N83D,S292A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+46,127,"N83D,S292A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+47,127,"P194R,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+48,127,"P194R,N195A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+49,127,"P194R,N195A,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+50,127,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+51,127,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+52,127,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+53,127,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+54,127,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+55,127,Y261F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+56,127,"Y96V,Y102F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+57,127,,APPROVED,wild_type_record,
+58,127,,APPROVED,wild_type_record,
+59,127,,APPROVED,wild_type_record,
+60,127,,APPROVED,wild_type_record,
+61,127,,APPROVED,wild_type_record,
+62,127,,APPROVED,wild_type_record,
+63,127,,APPROVED,wild_type_record,
+64,127,,APPROVED,wild_type_record,
+65,127,,APPROVED,wild_type_record,
+66,127,,APPROVED,wild_type_record,
+67,127,,APPROVED,wild_type_record,
+68,127,,APPROVED,wild_type_record,
+69,127,,APPROVED,wild_type_record,
+70,127,,APPROVED,wild_type_record,
+71,127,,APPROVED,wild_type_record,
+72,127,,APPROVED,wild_type_record,
+73,127,,APPROVED,wild_type_record,
+74,127,,APPROVED,wild_type_record,
+75,127,,APPROVED,wild_type_record,
+76,127,,APPROVED,wild_type_record,
+77,127,,APPROVED,wild_type_record,
+78,127,,APPROVED,wild_type_record,
+79,127,,APPROVED,wild_type_record,
+80,127,,APPROVED,wild_type_record,
+81,160,T97S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+82,160,F116S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+83,160,E122M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+84,160,A164G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+85,163,,APPROVED,wild_type_record,
+86,163,,APPROVED,wild_type_record,
+87,163,,APPROVED,wild_type_record,
+88,163,,APPROVED,wild_type_record,
+89,163,,APPROVED,wild_type_record,
+90,163,,APPROVED,wild_type_record,
+91,163,,APPROVED,wild_type_record,
+92,163,,APPROVED,wild_type_record,
+93,163,,APPROVED,wild_type_record,
+94,163,,APPROVED,wild_type_record,
+95,163,,APPROVED,wild_type_record,
+96,163,,APPROVED,wild_type_record,
+97,163,,APPROVED,wild_type_record,
+98,163,,APPROVED,wild_type_record,
+99,163,,APPROVED,wild_type_record,
+100,163,,APPROVED,wild_type_record,
+101,163,,APPROVED,wild_type_record,
+102,163,,APPROVED,wild_type_record,
+103,163,,APPROVED,wild_type_record,
+104,163,,APPROVED,wild_type_record,
+105,163,,APPROVED,wild_type_record,
+106,163,,APPROVED,wild_type_record,
+107,163,,APPROVED,wild_type_record,
+108,163,,APPROVED,wild_type_record,
+109,163,,APPROVED,wild_type_record,
+110,163,,APPROVED,wild_type_record,
+111,163,,APPROVED,wild_type_record,
+112,163,,APPROVED,wild_type_record,
+113,163,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+114,163,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+115,163,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+116,163,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+117,163,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+118,163,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+119,163,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+120,164,,APPROVED,wild_type_record,
+121,164,,APPROVED,wild_type_record,
+122,164,,APPROVED,wild_type_record,
+123,164,,APPROVED,wild_type_record,
+124,164,,APPROVED,wild_type_record,
+125,164,,APPROVED,wild_type_record,
+126,164,,APPROVED,wild_type_record,
+127,170,,APPROVED,wild_type_record,
+128,170,Q64K,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+129,170,"E122Q,Q64K,E150A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+130,170,E150A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+131,170,E122Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+132,170,E122I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+133,170,E122D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+134,170,,APPROVED,wild_type_record,
+135,170,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+136,120,,APPROVED,wild_type_record,
+137,120,,APPROVED,wild_type_record,
+138,286,,APPROVED,wild_type_record,
+139,286,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+140,286,,APPROVED,wild_type_record,
+141,286,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+142,286,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+143,286,A299S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+144,286,"D83N,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+145,286,"D83N,A292S,A299S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+146,120,chimera,APPROVED,out_of_scope_chimera,
+147,120,"chimera,S292A",APPROVED,out_of_scope_chimera,
+148,120,chimera,APPROVED,out_of_scope_chimera,
+149,120,"chimera,S292A",APPROVED,out_of_scope_chimera,
+150,120,chimera,APPROVED,out_of_scope_chimera,
+151,120,"chimera,S292A",APPROVED,out_of_scope_chimera,
+152,120,"chimera,A292S",APPROVED,out_of_scope_chimera,
+153,120,"chimera,S292A",APPROVED,out_of_scope_chimera,
+154,120,chimera,APPROVED,out_of_scope_chimera,
+155,120,"chimera,A292S",APPROVED,out_of_scope_chimera,
+156,120,chimera,APPROVED,out_of_scope_chimera,
+157,120,"chimera,A292",APPROVED,out_of_scope_chimera,
+158,120,chimera,APPROVED,out_of_scope_chimera,
+159,121,,APPROVED,wild_type_record,
+160,121,F49A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+161,121,L52M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+162,121,"F49A,L52M",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+163,121,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+164,121,M86T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+165,121,T97A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+166,121,"D83N,M86T,T97A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+167,121,S164A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+168,121,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+169,121,"F49S,Q122E,S164A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+170,121,A164S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+171,121,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+172,121,,APPROVED,wild_type_record,
+173,121,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+174,121,"Q122E,S292A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+175,121,,APPROVED,wild_type_record,
+176,121,chimera,APPROVED,out_of_scope_chimera,
+177,121,chimera,APPROVED,out_of_scope_chimera,
+178,121,chimera,APPROVED,out_of_scope_chimera,
+179,121,chimera,APPROVED,out_of_scope_chimera,
+180,121,chimera,APPROVED,out_of_scope_chimera,
+181,121,chimera,APPROVED,out_of_scope_chimera,
+182,121,chimera,APPROVED,out_of_scope_chimera,
+183,121,chimera,APPROVED,out_of_scope_chimera,
+184,138,,APPROVED,wild_type_record,
+185,138,,APPROVED,wild_type_record,
+186,138,,APPROVED,wild_type_record,
+187,138,,APPROVED,wild_type_record,
+188,138,K36Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+189,138,L46F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+190,138,I49C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+191,138,V60L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+192,138,S94T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+193,138,L108T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+194,138,V111A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+195,138,M112I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+196,138,"V111A,M112I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+197,138,"S94T,V111A,M112I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+198,138,"L46F,I49C,S94T,V111A,M112I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+199,133,,APPROVED,wild_type_record,
+200,133,,APPROVED,wild_type_record,
+201,133,P164S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+202,133,,APPROVED,wild_type_record,
+203,133,S164P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+204,129,,APPROVED,wild_type_record,
+205,129,T118A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+206,129,T118G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+207,129,P215G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+208,129,T269A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+209,124,E181A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+210,124,E181N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+211,124,E181D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+212,124,E181C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+213,124,E181Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+214,124,E181G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+215,124,E181H,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+216,124,E181I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+217,124,E181L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+218,124,E181M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+219,124,E181F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+220,124,E181S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+221,124,E181T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+222,124,E181W,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+223,124,E181Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+224,124,E181V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+225,124,E113Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+226,124,"E113Q,E181D",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+227,132,,APPROVED,wild_type_record,
+228,132,,APPROVED,wild_type_record,
+229,132,,APPROVED,wild_type_record,
+230,132,,APPROVED,wild_type_record,
+231,132,,APPROVED,wild_type_record,
+232,132,,APPROVED,wild_type_record,
+233,132,,APPROVED,wild_type_record,
+234,132,,APPROVED,wild_type_record,
+235,132,,APPROVED,wild_type_record,
+236,132,,APPROVED,wild_type_record,
+237,132,,APPROVED,wild_type_record,
+238,132,,APPROVED,wild_type_record,
+239,132,,APPROVED,wild_type_record,
+240,132,,APPROVED,wild_type_record,
+241,132,,APPROVED,wild_type_record,
+242,132,,APPROVED,wild_type_record,
+243,144,,APPROVED,wild_type_record,
+244,144,,APPROVED,wild_type_record,
+245,144,,APPROVED,wild_type_record,
+246,144,,APPROVED,wild_type_record,
+247,144,,APPROVED,wild_type_record,
+248,144,,APPROVED,wild_type_record,
+249,129,P215G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+250,129,T269A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+251,129,T118G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+252,129,T118A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+253,347,,APPROVED,wild_type_record,
+254,347,,APPROVED,wild_type_record,
+255,347,chimera,APPROVED,out_of_scope_chimera,
+256,347,chimera,APPROVED,out_of_scope_chimera,
+257,347,chimera,APPROVED,out_of_scope_chimera,
+258,347,chimera,APPROVED,out_of_scope_chimera,
+259,347,chimera,APPROVED,out_of_scope_chimera,
+260,347,chimera,APPROVED,out_of_scope_chimera,
+261,347,chimera,APPROVED,out_of_scope_chimera,
+262,347,chimera,APPROVED,out_of_scope_chimera,
+263,347,chimera,APPROVED,out_of_scope_chimera,
+264,347,chimera,APPROVED,out_of_scope_chimera,
+265,347,chimera,APPROVED,out_of_scope_chimera,
+266,347,chimera,APPROVED,out_of_scope_chimera,
+267,347,chimera,APPROVED,out_of_scope_chimera,
+268,347,"chimera,A109F",APPROVED,out_of_scope_chimera,
+269,347,"chimera,L112I",APPROVED,out_of_scope_chimera,
+270,347,"chimera,A115C",APPROVED,out_of_scope_chimera,
+271,347,"chimera,A116G",APPROVED,out_of_scope_chimera,
+272,347,"chimera,F120Y",APPROVED,out_of_scope_chimera,
+273,347,"chimera,I123V",APPROVED,out_of_scope_chimera,
+274,347,"chimera,M130A",APPROVED,out_of_scope_chimera,
+275,347,"chimera,A116G,F120Y,I123V",APPROVED,out_of_scope_chimera,
+276,347,"chimera,A109F,L122I,A115C",APPROVED,out_of_scope_chimera,
+277,347,"chimera,A116G,F120Y",APPROVED,out_of_scope_chimera,
+278,347,"chimera,A109F,L112I,A115C,A116G,F120Y",APPROVED,out_of_scope_chimera,
+279,347,"chimera,G116A",APPROVED,out_of_scope_chimera,
+280,347,"chimera,Y120F",APPROVED,out_of_scope_chimera,
+281,347,"chimera,G116A,Y120F",APPROVED,out_of_scope_chimera,
+282,129,,APPROVED,wild_type_record,
+283,346,,APPROVED,wild_type_record,
+284,346,,APPROVED,wild_type_record,
+285,346,,APPROVED,wild_type_record,
+286,346,,APPROVED,wild_type_record,
+287,349,A164S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+288,349,F261Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+289,349,A269T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+290,349,"F261Y,A269T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+291,349,"A164S,F216Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+292,349,"A164S,A269T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+293,155,,APPROVED,wild_type_record,
+294,155,,APPROVED,wild_type_record,
+295,155,,APPROVED,wild_type_record,
+296,155,,APPROVED,wild_type_record,
+297,155,,APPROVED,wild_type_record,
+298,155,,APPROVED,wild_type_record,
+299,155,,APPROVED,wild_type_record,
+300,155,,APPROVED,wild_type_record,
+301,155,,APPROVED,wild_type_record,
+302,155,,APPROVED,wild_type_record,
+303,155,,APPROVED,wild_type_record,
+304,155,,APPROVED,wild_type_record,
+305,155,,APPROVED,wild_type_record,
+306,155,,APPROVED,wild_type_record,
+307,155,,APPROVED,wild_type_record,
+308,155,,APPROVED,wild_type_record,
+309,155,,APPROVED,wild_type_record,
+310,155,,APPROVED,wild_type_record,
+311,155,,APPROVED,wild_type_record,
+312,155,,APPROVED,wild_type_record,
+313,155,,APPROVED,wild_type_record,
+314,155,,APPROVED,wild_type_record,
+315,155,,APPROVED,wild_type_record,
+316,155,,APPROVED,wild_type_record,
+317,155,,APPROVED,wild_type_record,
+318,155,,APPROVED,wild_type_record,
+319,155,,APPROVED,wild_type_record,
+320,155,,APPROVED,wild_type_record,
+321,155,,APPROVED,wild_type_record,
+322,155,,APPROVED,wild_type_record,
+323,155,,APPROVED,wild_type_record,
+324,155,,APPROVED,wild_type_record,
+325,155,,APPROVED,wild_type_record,
+326,155,,APPROVED,wild_type_record,
+327,155,,APPROVED,wild_type_record,
+328,155,,APPROVED,wild_type_record,
+329,155,,APPROVED,wild_type_record,
+330,155,,APPROVED,wild_type_record,
+331,155,,APPROVED,wild_type_record,
+332,155,,APPROVED,wild_type_record,
+333,155,,APPROVED,wild_type_record,
+334,155,,APPROVED,wild_type_record,
+335,155,,APPROVED,wild_type_record,
+336,155,,APPROVED,wild_type_record,
+337,155,I85V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+338,155,C84S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+339,155,"C84S,I85V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+340,155,C84G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+341,155,"C84G,I85F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+342,155,V85I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+343,155,S84C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+344,155,"S84C,V85I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+345,155,V85I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+346,155,S84C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+347,155,"S84C,V85I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+348,350,,APPROVED,wild_type_record,
+349,350,,APPROVED,wild_type_record,
+350,350,,APPROVED,wild_type_record,
+351,350,,APPROVED,wild_type_record,
+352,350,,APPROVED,wild_type_record,
+353,350,"A116S,I120F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+354,350,A116S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+355,350,I120F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+356,350,G177S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+357,350,Y179F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+358,350,"A116S,G177S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+359,350,"A116S,Y179F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+360,350,"I207C,F208C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+361,350,"A116S,I120F,Y179F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+362,350,"A116S,G177S,Y179F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+363,350,"I120F,I207C,F208C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+364,350,"Y179F,I207C,F208C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+365,350,"A116S,Y179F,I207C,F208C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+366,350,"A116S,I120F,I207C,F208C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+367,350,"A116S,I120F,Y179F,I207C,F208C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+368,353,,APPROVED,wild_type_record,
+369,353,,APPROVED,wild_type_record,
+370,353,,APPROVED,wild_type_record,
+371,353,,APPROVED,wild_type_record,
+372,353,,APPROVED,wild_type_record,
+373,353,,APPROVED,wild_type_record,
+374,353,,APPROVED,wild_type_record,
+375,353,,APPROVED,wild_type_record,
+376,353,,APPROVED,wild_type_record,
+377,353,,APPROVED,wild_type_record,
+378,137,,APPROVED,wild_type_record,
+379,137,,APPROVED,wild_type_record,
+380,137,,APPROVED,wild_type_record,
+381,137,,APPROVED,wild_type_record,
+382,355,,APPROVED,wild_type_record,
+383,379,F86S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+384,379,,APPROVED,wild_type_record,
+385,379,S86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+386,379,V116L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+387,379,V116M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+388,379,,APPROVED,wild_type_record,
+389,379,S86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+390,379,V116L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+391,379,,APPROVED,wild_type_record,
+392,379,C90S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+393,379,A86S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+394,379,,APPROVED,wild_type_record,
+395,361,,APPROVED,wild_type_record,
+396,361,,APPROVED,wild_type_record,
+397,361,,APPROVED,wild_type_record,
+398,361,,APPROVED,wild_type_record,
+399,358,,APPROVED,wild_type_record,
+400,358,S289A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+401,358,S87G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+402,358,Y262W,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+403,359,,APPROVED,wild_type_record,
+404,359,K94T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+405,359,K94A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+406,359,K94S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+407,359,K94V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+408,359,K94D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+409,359,K94E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+410,359,K94H,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+411,359,K94R,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+412,357,,APPROVED,wild_type_record,
+413,357,D96N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+414,357,D124N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+415,357,D147N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+416,357,E194Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+417,357,D203N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+418,360,,APPROVED,wild_type_record,
+419,360,S117A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+420,360,F177Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+421,360,"S117A,F177Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+422,360,,APPROVED,wild_type_record,
+423,360,A116S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+424,362,,APPROVED,wild_type_record,
+425,362,,APPROVED,wild_type_record,
+426,362,,APPROVED,wild_type_record,
+427,362,,APPROVED,wild_type_record,
+428,362,,APPROVED,wild_type_record,
+429,363,,APPROVED,wild_type_record,
+430,363,,APPROVED,wild_type_record,
+431,364,,APPROVED,wild_type_record,
+432,364,,APPROVED,wild_type_record,
+433,376,,APPROVED,wild_type_record,
+434,376,M204L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+435,376,Y211W,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+436,376,V216A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+437,376,"M204L,V216A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+438,376,"M204L,Y211W",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+439,376,"Y211W,V216A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+440,376,"M204L,Y211W,V216A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+441,376,,APPROVED,wild_type_record,
+442,376,L204M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+443,376,W211Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+444,376,A216V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+445,376,"L204M,A216V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+446,376,"L204M,W211Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+447,376,"W211Y,A216V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+448,376,"L204M,W211Y,A216V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+449,378,F86Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+450,378,F86L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+451,378,F86M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+452,378,,APPROVED,wild_type_record,
+453,380,,APPROVED,wild_type_record,
+454,380,I169F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+455,380,K201R,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+456,380,T273A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+457,380,"I169F,K201R,T273A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+458,380,Y179F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+459,380,,APPROVED,wild_type_record,
+460,380,,APPROVED,wild_type_record,
+461,367,,APPROVED,wild_type_record,
+462,367,,APPROVED,wild_type_record,
+463,367,,APPROVED,wild_type_record,
+464,367,,APPROVED,wild_type_record,
+465,367,,APPROVED,wild_type_record,
+466,367,,APPROVED,wild_type_record,
+467,367,,APPROVED,wild_type_record,
+468,367,,APPROVED,wild_type_record,
+469,367,,APPROVED,wild_type_record,
+470,367,,APPROVED,wild_type_record,
+471,367,,APPROVED,wild_type_record,
+472,367,,APPROVED,wild_type_record,
+473,367,,APPROVED,wild_type_record,
+474,367,,APPROVED,wild_type_record,
+475,367,,APPROVED,wild_type_record,
+476,367,,APPROVED,wild_type_record,
+477,367,,APPROVED,wild_type_record,
+478,367,,APPROVED,wild_type_record,
+479,367,"I95L,T96N,E122Q,V123I,I205M,V209C,F213C,G269A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+480,367,"L95I,N96T,Q122E,I123V,M205I,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+481,367,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+482,367,"L95I,Q122E",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+483,367,"N96T,Q122E",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+484,367,"Q122E,I123V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+485,367,"Q122E,M205I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+486,367,"Q122E,C209V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+487,367,"Q122E,C213F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+488,367,"Q122E,A270G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+489,367,"L95I,N96T,Q122E,M205I,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+490,367,"N96T,Q122E,M205I,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+491,367,"L95I,Q122E,M205I,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+492,367,"L95I,N96T,Q122E,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+493,367,"L95I,N96T,Q122E,M205I,C209V,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+494,367,"L95I,N96T,Q122E,M205I,C209V,C213F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+495,367,"L95I,N96T,Q122E,I123V,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+496,367,"N96T,Q122E,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+497,367,"L95I,Q122E,C209V,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+498,367,"L95I,N96T,Q122E,C213F,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+499,367,"L95I,N96T,Q122E,C209V,A269G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+500,367,"L95I,N96T,Q122E,C209V,C213F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+501,367,"Y24F,I42L,C94T,V100M,L108I,L119I,S202T,F203Y,F255I,L309M",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+502,367,"Y24F,I42L,L108I,L119I,S202T,L309M",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+503,367,"Y198F,R248K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+504,367,"E33D,I130V,F203Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+505,368,,APPROVED,wild_type_record,
+506,368,,APPROVED,wild_type_record,
+507,368,,APPROVED,wild_type_record,
+508,368,,APPROVED,wild_type_record,
+509,368,,APPROVED,wild_type_record,
+510,368,,APPROVED,wild_type_record,
+511,368,,APPROVED,wild_type_record,
+512,368,,APPROVED,wild_type_record,
+513,368,,APPROVED,wild_type_record,
+514,368,,APPROVED,wild_type_record,
+515,368,,APPROVED,wild_type_record,
+516,373,,APPROVED,wild_type_record,
+517,373,,APPROVED,wild_type_record,
+518,373,S117A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+519,373,S82A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+520,373,W85L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+521,373,V88I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+522,373,A97S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+523,373,Y99F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+524,373,K100N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+525,373,I108T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+526,373,G109A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+527,373,I119L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+528,373,C295S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+529,373,A52T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+530,373,S80A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+531,373,A87S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+532,373,P92S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+533,373,S94A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+534,373,L116T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+535,373,G124S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+536,373,S163F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+537,373,G217S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+538,373,S272A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+539,386,G90S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+540,386,T118A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+541,386,E122D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+542,386,A295S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+543,386,"T118A,E122D,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+544,371,,APPROVED,wild_type_record,
+545,371,,APPROVED,wild_type_record,
+546,371,,APPROVED,wild_type_record,
+547,371,,APPROVED,wild_type_record,
+548,387,,APPROVED,wild_type_record,
+549,387,,APPROVED,wild_type_record,
+550,387,,APPROVED,wild_type_record,
+551,387,,APPROVED,wild_type_record,
+552,387,,APPROVED,wild_type_record,
+553,54,,APPROVED,wild_type_record,
+554,54,,APPROVED,wild_type_record,
+555,160,,APPROVED,wild_type_record,
+556,160,,APPROVED,wild_type_record,
+557,160,,APPROVED,wild_type_record,
+558,160,,APPROVED,wild_type_record,
+559,160,,APPROVED,wild_type_record,
+560,160,,APPROVED,wild_type_record,
+561,160,,APPROVED,wild_type_record,
+562,160,,APPROVED,wild_type_record,
+563,160,,APPROVED,wild_type_record,
+564,160,,APPROVED,wild_type_record,
+565,160,,APPROVED,wild_type_record,
+566,167,,APPROVED,wild_type_record,
+567,167,T213I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+568,167,"T217A,",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+569,167,V218I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+570,167,"T213I,T217A,V218I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+571,159,,APPROVED,wild_type_record,
+572,159,,APPROVED,wild_type_record,
+573,159,,APPROVED,wild_type_record,
+574,159,,APPROVED,wild_type_record,
+575,159,,APPROVED,wild_type_record,
+576,159,,APPROVED,wild_type_record,
+577,159,,APPROVED,wild_type_record,
+578,159,,APPROVED,wild_type_record,
+579,159,,APPROVED,wild_type_record,
+580,159,,APPROVED,wild_type_record,
+581,159,,APPROVED,wild_type_record,
+582,159,,APPROVED,wild_type_record,
+583,159,,APPROVED,wild_type_record,
+584,389,,APPROVED,wild_type_record,
+585,389,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+586,389,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+587,389,"Q122E,S292A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+588,389,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+589,389,L207M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+590,389,"Q122E,L207M",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+591,410,,APPROVED,wild_type_record,
+592,410,,APPROVED,wild_type_record,
+593,410,,APPROVED,wild_type_record,
+594,410,,APPROVED,wild_type_record,
+595,410,,APPROVED,wild_type_record,
+596,410,,APPROVED,wild_type_record,
+597,410,,APPROVED,wild_type_record,
+598,410,F60I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+599,410,V63I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+600,410,"G82A,L85I,C86V,I87T,S92F,F96V,S98A,L99S,R100Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+601,410,V104I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+602,410,"H107R,V109L,L112M,L116M,V119I,I137V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+603,410,"K147R,G149S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+604,410,"V49L,I60V,V63I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+605,410,"F81V,I85M,I88V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+606,410,A118S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+607,410,N149S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+608,410,F49V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+609,410,F84S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+610,410,S118A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+611,410,"F49V,F84S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+612,410,"F49V,S118A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+613,410,"F84S,S118A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+614,410,"F49V,F84S,S118A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+615,410,"F49V,F84S,S118A,A82S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+616,410,"F49V,F84S,S118A,L85I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+617,410,"F49V,F84S,S118A,R107K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+618,410,"F49V,F84S,S118A,V119T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+619,410,"F49V,F84S,S118A,A120G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+620,410,"A82S,L85I,R107K,V119T,A120G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+621,410,,APPROVED,wild_type_record,
+622,410,F46L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+623,410,S84C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+624,410,S89C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+625,410,A114G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+626,410,"S84C,S89C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+627,410,"F46L,C86S,S89C,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+628,411,chimera,APPROVED,out_of_scope_chimera,
+629,411,chimera,APPROVED,out_of_scope_chimera,
+630,411,chimera,APPROVED,out_of_scope_chimera,
+631,411,chimera,APPROVED,out_of_scope_chimera,
+632,411,chimera,APPROVED,out_of_scope_chimera,
+633,411,chimera,APPROVED,out_of_scope_chimera,
+634,411,chimera,APPROVED,out_of_scope_chimera,
+635,411,chimera,APPROVED,out_of_scope_chimera,
+636,411,chimera,APPROVED,out_of_scope_chimera,
+637,411,chimera,APPROVED,out_of_scope_chimera,
+638,411,chimera,APPROVED,out_of_scope_chimera,
+639,411,chimera,APPROVED,out_of_scope_chimera,
+640,411,chimera,APPROVED,out_of_scope_chimera,
+641,411,chimera,APPROVED,out_of_scope_chimera,
+642,411,"M86F,I91V,P93T,A109V,D113E,V116L,T118S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+643,411,"F86M,V91I,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+644,411,"V109A,E113D,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+645,411,"F49L,F86M,V91I,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+646,411,"F49L,V109A,E113D,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+647,411,"F86M,V91I,T93P,V109A,E113D,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+648,411,"F49L,F86M,V91I,T93P,V109A,E113D,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+649,411,F86M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+650,411,T93P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+651,411,"F86M,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+652,411,V109A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+653,411,E113D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+654,411,L116V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+655,411,S118T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+656,411,"V109A,E113D",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+657,411,"V109A,L116V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+658,411,"V109A,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+659,411,"E113D,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+660,411,"L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+661,411,"V109A,E113D,L116V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+662,411,"V109A,E113D,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+663,411,"V109A,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+664,411,"E113D,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+665,411,"T108I,E113D,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+666,411,"E113D,L116V,S118T,V119L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+667,411,"E113D,L116V,S118T,A120T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+668,411,"A111S,L112I,E113D,L116V,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+669,411,"A111S,E113D,L116V,S118T,A120T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+670,411,"F46M,F86M,V91I,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+671,411,"F46M,F49L,F86M,V91I,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+672,411,"F46M,F49L,F86M,V91I,T93P,T108I,V109A,A111S,L112I,E113D,L116V,S118T,V119L,A120T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+673,413,chimera,APPROVED,out_of_scope_chimera,
+674,413,chimera,APPROVED,out_of_scope_chimera,
+675,413,chimera,APPROVED,out_of_scope_chimera,
+676,413,chimera,APPROVED,out_of_scope_chimera,
+677,413,chimera,APPROVED,out_of_scope_chimera,
+678,413,chimera,APPROVED,out_of_scope_chimera,
+679,413,chimera,APPROVED,out_of_scope_chimera,
+680,413,chimera,APPROVED,out_of_scope_chimera,
+681,413,chimera,APPROVED,out_of_scope_chimera,
+682,413,R38Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+683,413,F46T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+684,413,F49L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+685,413,V50I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+686,413,T52F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+687,413,I57M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+688,413,H64R,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+689,413,L81F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+690,413,F85L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+691,413,T92P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+692,413,I95V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+693,413,H100N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+694,413,L104V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+695,413,A114G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+696,413,S118T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+697,413,V137I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+698,413,S145N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+699,413,I146F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+700,413,N149S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+701,413,"L81F,F85L,T92P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+702,413,"A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+703,413,"L81F,F85L,T92P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+704,413,"F46T,F49L,T52F,L81F,F85L,T92P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+705,413,"F46T,F49L,T52F,L81F,F85L,T92P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+706,413,"F46T,F49L,T52F,F85L,T92P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+707,413,E113Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+708,413,"F46T,F49L,T52F,F85L,T92P,E113Q,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+709,413,"T46F,L49F,F52T,L93F,P100T,G114A,T118S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+710,413,"T46F,L49F,F52T,F88L,L93F,P100T,G114A,T118S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+711,415,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+712,415,S86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+713,415,I93T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+714,415,V116L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+715,415,"S86F,I93T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+716,415,"S86F,V116L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+717,415,"I93T,V116L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+718,415,"S86F,I93T,V116L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+719,415,,APPROVED,wild_type_record,
+720,415,A180S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+721,418,,APPROVED,wild_type_record,
+722,418,,APPROVED,wild_type_record,
+723,418,,APPROVED,wild_type_record,
+724,418,,APPROVED,wild_type_record,
+725,418,,APPROVED,wild_type_record,
+726,418,,APPROVED,wild_type_record,
+727,418,,APPROVED,wild_type_record,
+728,418,,APPROVED,wild_type_record,
+729,418,,APPROVED,wild_type_record,
+730,418,,APPROVED,wild_type_record,
+731,418,Q186A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+732,418,F261Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+733,418,"Q118A,F261Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+734,418,C122T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+735,418,V211C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+736,418,"C122T,V211C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+737,414,,APPROVED,wild_type_record,
+738,414,,APPROVED,wild_type_record,
+739,414,,APPROVED,wild_type_record,
+740,414,,APPROVED,wild_type_record,
+741,414,,APPROVED,wild_type_record,
+742,414,,APPROVED,wild_type_record,
+743,414,,APPROVED,wild_type_record,
+744,414,,APPROVED,wild_type_record,
+745,414,,APPROVED,wild_type_record,
+746,414,,APPROVED,wild_type_record,
+747,414,,APPROVED,wild_type_record,
+748,414,A180S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+749,414,"A58T,V76A,H294N",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+750,414,I274V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+751,414,I320V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+752,414,T58A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+753,414,"V115I,A180S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+754,414,H294N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+755,414,V76A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+756,420,T160A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+757,420,I259M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+758,421,,APPROVED,wild_type_record,
+759,421,F86Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+760,421,S90A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+761,421,S90C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+762,409,F86Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+763,409,"F86Y,T93I,A97T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+764,409,E113A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+765,409,Y86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+766,409,"Y86F,I93T,T97A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+767,409,S90C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+768,354,,APPROVED,wild_type_record,
+769,354,S90C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+770,354,C86S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+771,354,C86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+772,354,"C86F,S90C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+773,416,,APPROVED,wild_type_record,
+774,416,,APPROVED,wild_type_record,
+775,416,,APPROVED,wild_type_record,
+776,416,,APPROVED,wild_type_record,
+777,416,,APPROVED,wild_type_record,
+778,416,,APPROVED,wild_type_record,
+779,416,,APPROVED,wild_type_record,
+780,416,,APPROVED,wild_type_record,
+781,416,,APPROVED,wild_type_record,
+782,419,H195T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+783,419,H195S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+784,419,,APPROVED,wild_type_record,
+785,419,T195H,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+786,419,T195K,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+787,419,,APPROVED,wild_type_record,
+788,419,A86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+789,419,N93T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+790,419,"A86F,N93T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+791,419,F86A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+792,419,T93N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+793,419,"F86A,T93N",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+794,425,E114Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+795,425,D114A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+796,425,D114Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+797,425,D114E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+798,425,D114G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+799,425,D114N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+800,425,D114H,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+801,425,"D114A,G116D",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+802,425,G116A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+803,425,G116D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+804,424,,APPROVED,wild_type_record,
+805,424,,APPROVED,wild_type_record,
+806,424,,APPROVED,wild_type_record,
+807,424,,APPROVED,wild_type_record,
+808,424,,APPROVED,wild_type_record,
+809,384,,APPROVED,wild_type_record,
+810,384,,APPROVED,wild_type_record,
+811,384,I232F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+812,384,S236G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+813,384,"I232F,S236G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+814,384,,APPROVED,wild_type_record,
+815,384,I232F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+816,384,S236G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+817,384,"I232F,S236G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+818,384,,APPROVED,wild_type_record,
+819,384,F232I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+820,384,G236S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+821,384,"F232I,G236S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+822,427,S180A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+823,427,H197Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+824,427,Y277F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+825,427,T285A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+826,427,A308S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+827,427,"S180A,H197Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+828,427,"S180A,Y277F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+829,427,"S180A,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+830,427,"S180A,A308S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+831,427,"H197Y,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+832,427,"H197Y,A308S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+833,427,"Y277F,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+834,427,"S180A,H197Y,A308S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+835,427,"S180A,Y277F,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+836,426,I46F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+837,426,V49I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+838,426,G164A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+839,426,"I46F,V49I,G164A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+840,426,"I46L,V49I,G164A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+841,426,"I46F,G164A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+842,426,"I46A,V49I,G164A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+843,426,"I46F,V49I,V52A,G164A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+844,426,"I46F,V49I,G164A,A269S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+845,426,"I46F,V49I,V52F,G164A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+846,426,"I46F,V49I,G164A,A269C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+847,426,"I46F,V49I,G164A,A269T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+848,426,A269S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+849,426,A269C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+850,426,A269T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+851,426,S269A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+852,426,S269C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+853,426,S269T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+854,441,,APPROVED,wild_type_record,
+855,442,,APPROVED,wild_type_record,
+856,472,,APPROVED,wild_type_record,
+857,472,,APPROVED,wild_type_record,
+858,472,,APPROVED,wild_type_record,
+859,483,,APPROVED,wild_type_record,
+860,483,Y126F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+861,483,F133Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+862,483,,APPROVED,wild_type_record,
+863,483,"H38P,R42L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+864,483,A53Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+865,483,N104K,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+866,483,I110Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+867,483,"D125Q,Y127F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+868,483,F147Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+869,483,"T173I,W176Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+870,483,R243F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+871,483,S325A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+872,483,K110N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+873,483,K110E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+874,483,Y126E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+875,123,,APPROVED,wild_type_record,
+876,123,,APPROVED,wild_type_record,
+877,498,,APPROVED,wild_type_record,
+878,498,,APPROVED,wild_type_record,
+879,499,,APPROVED,wild_type_record,
+880,499,,APPROVED,wild_type_record,
+881,500,,APPROVED,wild_type_record,
+882,500,K168E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+883,504,,APPROVED,wild_type_record,
+884,520,,APPROVED,wild_type_record,
+885,520,F46T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+886,520,F49L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+887,520,T52F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+888,520,F86L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+889,520,T93P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+890,520,A114G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+891,520,S118T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+892,520,"F46T,F49L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+893,520,"F46T,T52F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+894,520,"F46T,F86L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+895,520,"F46T,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+896,520,"F46T,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+897,520,"F46T,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+898,520,"F49L,T52F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+899,520,"F49L,F86L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+900,520,"F49L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+901,520,"F49L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+902,520,"F49L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+903,520,"T52F,F86L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+904,520,"T52F,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+905,520,"T52F,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+906,520,"T52F,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+907,520,"F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+908,520,"F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+909,520,"F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+910,520,"T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+911,520,"T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+912,520,"A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+913,520,"F46T,F49L,T52F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+914,520,"F46T,F49L,F86L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+915,520,"F46T,F49L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+916,520,"F46T,F49L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+917,520,"F46T,F49L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+918,520,"F46T,T52F,F86L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+919,520,"F46T,T52F,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+920,520,"F46T,T52F,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+921,520,"F46T,T52F,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+922,520,"F46T,F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+923,520,"F46T,F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+924,520,"F46T,F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+925,520,"F46T,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+926,520,"F46T,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+927,520,"F46T,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+928,520,"F49L,T52F,F86L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+929,520,"F49L,T52F,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+930,520,"F49L,T52F,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+931,520,"F49L,T52F,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+932,520,"F49L,F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+933,520,"F49L,F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+934,520,"F49L,F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+935,520,"F49L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+936,520,"F49L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+937,520,"F49L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+938,520,"T52F,F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+939,520,"T52F,F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+940,520,"T52F,F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+941,520,"T52F,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+942,520,"T52F,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+943,520,"T52F,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+944,520,"F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+945,520,"F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+946,520,"F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+947,520,"T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+948,520,"F46T,F49L,T52F,F86L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+949,520,"F46T,F49L,T52F,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+950,520,"F46T,F49L,T52F,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+951,520,"F46T,F49L,T52F,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+952,520,"F46T,F49L,F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+953,520,"F46T,F49L,F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+954,520,"F46T,F49L,F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+955,520,"F46T,F49L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+956,520,"F46T,F49L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+957,520,"F46T,F49L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+958,520,"F46T,T52F,F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+959,520,"F46T,T52F,F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+960,520,"F46T,T52F,F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+961,520,"F46T,T52F,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+962,520,"F46T,T52F,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+963,520,"F46T,T52F,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+964,520,"F46T,F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+965,520,"F46T,F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+966,520,"F46T,F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+967,520,"F46T,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+968,520,"F49L,T52F,F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+969,520,"F49L,T52F,F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+970,520,"F49L,T52F,F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+971,520,"F49L,T52F,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+972,520,"F49L,T52F,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+973,520,"F49L,T52F,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+974,520,"F49L,F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+975,520,"F49L,F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+976,520,"F49L,F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+977,520,"F49L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+978,520,"T52F,F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+979,520,"T52F,F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+980,520,"T52F,F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+981,520,"T52F,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+982,520,"F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+983,520,"F46T,F49L,T52F,F86L,T93P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+984,520,"F46T,F49L,T52F,F86L,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+985,520,"F46T,F49L,T52F,F86L,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+986,520,"F46T,F49L,T52F,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+987,520,"F46T,F49L,T52F,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+988,520,"F46T,F49L,T52F,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+989,520,"F46T,F49L,F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+990,520,"F46T,F49L,F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+991,520,"F46T,F49L,F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+992,520,"F46T,F49L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+993,520,"F46T,T52F,F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+994,520,"F46T,T52F,F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+995,520,"F46T,T52F,F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+996,520,"F46T,T52F,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+997,520,"F46T,F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+998,520,"F49L,T52F,F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+999,520,"F49L,T52F,F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1000,520,"T52F,F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1001,520,"F49L,T52F,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1002,520,"F49L,F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1003,520,"T52F,F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1004,520,"F46T,F49L,T52F,F86L,T93P,A114G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1005,520,"F46T,F49L,T52F,F86L,T93P,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1006,520,"F46T,F49L,T52F,F86L,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1007,520,"F46T,F49L,T52F,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1008,520,"F46T,F49L,F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1009,520,"F46T,T52F,F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1010,520,"F49L,T52F,F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1011,520,"F46T,F49L,T52F,F86L,T93P,A114G,S118T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1012,519,V91I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1013,519,"E113D,L116V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1014,521,,APPROVED,wild_type_record,
+1015,521,,APPROVED,wild_type_record,
+1016,521,,APPROVED,wild_type_record,
+1017,520,F86S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1018,520,T93I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1019,520,L116V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1020,520,"F86S,T93I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1021,520,"F86S,L116V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1022,520,"T93I,L116V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1023,520,"F86S,T93I,L116V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1024,520,F86del,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1025,520,F86del,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1026,523,,APPROVED,wild_type_record,
+1027,520,F86del,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1028,523,,APPROVED,wild_type_record,
+1029,520,F86del,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1030,523,,APPROVED,wild_type_record,
+1031,520,ins86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1032,520,F86Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1033,520,T93I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1034,520,F86Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1035,520,Y86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1036,520,Y86F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1037,520,F86Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1038,520,C86S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1039,520,C90S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1040,520,C90S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1041,520,F86Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1042,520,S90C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1043,520,T93I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1044,520,A114G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1045,520,"F86Y,T93I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1046,520,I93T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1047,520,"I93T,T97S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1048,520,"Y86F,I93T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1049,526,,APPROVED,wild_type_record,
+1050,524,,APPROVED,wild_type_record,
+1051,524,,APPROVED,wild_type_record,
+1052,524,,APPROVED,wild_type_record,
+1053,524,,APPROVED,wild_type_record,
+1054,524,,APPROVED,wild_type_record,
+1055,524,,APPROVED,wild_type_record,
+1056,524,,APPROVED,wild_type_record,
+1057,527,,APPROVED,wild_type_record,
+1058,527,,APPROVED,wild_type_record,
+1059,527,,APPROVED,wild_type_record,
+1060,527,,APPROVED,wild_type_record,
+1061,528,,APPROVED,wild_type_record,
+1062,528,,APPROVED,wild_type_record,
+1063,529,,APPROVED,wild_type_record,
+1064,529,,APPROVED,wild_type_record,
+1065,529,,APPROVED,wild_type_record,
+1066,529,,APPROVED,wild_type_record,
+1067,100,,APPROVED,wild_type_record,
+1068,100,,APPROVED,wild_type_record,
+1069,536,,APPROVED,included_or_comparator,
+1070,536,E181Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1071,536,E181D,APPROVED,included_or_comparator,
+1072,536,Y113F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1073,536,S186A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1074,536,S186C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1075,536,S186T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1076,536,S186N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1077,536,S186G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1078,514,,APPROVED,wild_type_record,
+1079,514,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1080,514,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1081,514,"N83D,S292A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1082,514,,APPROVED,wild_type_record,
+1083,514,V300I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1084,538,,APPROVED,wild_type_record,
+1085,538,A94T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1086,538,F187Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1087,538,"A94T,F187Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1088,538,A94I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1089,538,,APPROVED,wild_type_record,
+1090,538,"T94A,Y187F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1091,538,T94A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1092,538,Y187F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1093,124,E181R,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1094,124,E181K,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1095,124,E181P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1096,124,"E113Q,E181H",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1097,124,"E113Q,E181Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1098,124,"E113Q,E181F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1099,124,"E113Q,E181W",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1100,516,"A180S,F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1101,516,"A180S,F277Y,A285T,P298A,F309Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1102,516,"A180S,T230I,S233A,V236M,V274I,L275F,F277Y,F279V,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1103,516,"A180S,V274I,L275F,F277Y,F279V,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1104,516,"A180S,T230I,S233A,V236M,F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1105,516,"A180S,S233A,V236M,F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1106,516,"A180S,T230I,V236M,F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1107,516,"A180S,T230I,F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1108,516,"A180S,T230I,S233A,F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1109,516,"Y116S,A180S,T230I,S233A,F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1110,516,"A180S,T230I,S233A,F277Y,A285T,F309Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1111,516,"A180S,T230I,F277Y,A285T,F309Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1112,516,"Y116S,A180S,T230I,F277Y,A285T,F309Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1113,516,"Y116S,A180S,T230I,S233A,F277Y,A285T,F309Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1114,516,I65T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1115,516,A180S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1116,516,T230I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1117,516,S233A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1118,516,F277Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1119,516,A285T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1120,516,F309Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1121,516,"A180S,F277Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1122,516,"A180S,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1123,516,"F277Y,A285T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1124,516,T65I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1125,516,S180A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1126,516,I230T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1127,516,A233S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1128,516,Y277F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1129,516,T285A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1130,516,Y309F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1131,516,"S180A,Y277F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1132,516,"S180A,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1133,516,"Y277F,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1134,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1135,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1136,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1137,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1138,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1139,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1140,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1141,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S,M236V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1142,516,"T65I,I111V,S116Y,L153M,S180A,I230T,A233S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1143,516,"T65I,I111V,S116Y,L153M,S180A,I230T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1144,516,"T65I,I111V,S116Y,L153M,S180A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1145,516,"T65I,I111V,S116Y,L153M",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1146,516,"T65I,I111V,S116Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1147,516,"T65I,I111V",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1148,516,"I111V,S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1149,516,"S116Y,L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1150,516,"L153M,S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1151,516,"S180A,I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1152,516,"I230T,A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1153,516,"A233S,M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1154,516,"M236V,I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1155,516,"I274V,F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1156,516,"F275L,Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1157,516,"Y277F,V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1158,516,"V279F,T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1159,516,"T285A,A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1160,516,"A298P,Y309F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1161,539,"R9A,R13A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1162,539,R9A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1163,539,R13A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1164,539,R50A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1165,539,"H46Y,H54S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1166,539,"K80Q,H86T",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1167,539,H123P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1168,539,K167N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1169,539,"H197E,K200Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1170,539,H197E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1171,539,K200Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1172,539,H197A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1173,539,K200A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1174,539,"H197A,K200A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1175,539,"K251A,K254Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1176,539,H300G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1177,539,"K339C,K340G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1178,539,K352T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1179,512,F115A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1180,512,A117F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1181,512,E122D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1182,512,E122A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1183,512,W126F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1184,512,W126L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1185,512,W126A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1186,512,W161L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1187,512,W265Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1188,512,W265F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1189,512,W265A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1190,512,P267G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1191,512,P267A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1192,512,P267S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1193,512,P267N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1194,512,Y268F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1195,512,Y274F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1196,512,A292D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1197,512,H211R,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1198,503,,APPROVED,wild_type_record,
+1199,503,,APPROVED,wild_type_record,
+1200,418,,APPROVED,wild_type_record,
+1201,513,A315S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1202,513,A315C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1203,513,,APPROVED,wild_type_record,
+1204,513,S313A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1205,517,,APPROVED,wild_type_record,
+1206,517,,APPROVED,wild_type_record,
+1207,517,,APPROVED,wild_type_record,
+1208,517,,APPROVED,wild_type_record,
+1209,517,,APPROVED,wild_type_record,
+1210,517,,APPROVED,wild_type_record,
+1211,534,S308A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1212,534,"Y277F,T285A,S308A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1213,534,"Y277F,T285A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1214,534,H197Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1215,534,"H197Y,A308S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1216,159,E122Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1217,159,E122Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1218,159,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1219,159,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1220,159,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1221,159,M207L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1222,159,M207L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1223,159,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1224,159,M207L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1225,159,E122Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1226,159,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1227,159,Q122E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1228,159,"Y96T,Q122E,C213F",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1229,159,"V60F,F74Y,Y96T,Q122E,T209V,C213F,I255V,L259M,A273G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1230,159,M44I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1231,159,"L40V,A42C,M44I,I50T,V87A,A166S,L214I,L309M",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1232,540,"N2C,D282C,K296G",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1233,540,"N2C,D282C,K296G,G90K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1234,540,"N2C,D282C,K296G,T94K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1235,540,"N2C,D282C,K296G,A117K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1236,540,"N2C,D282C,K296G,S186K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1237,540,"N2C,D282C,K296G,F293K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1238,540,"N2C,D282C,K296A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1239,540,"N2C,D282C,K296A,G90K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1240,540,"N2C,D282C,K296A,T94K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1241,540,"N2C,D282C,K296A,A117K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1242,540,"N2C,D282C,K296A,S186K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1243,540,"N2C,D282C,K296A,F293K",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1244,552,"N2C,D282C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1245,552,N2C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1246,552,D282C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1247,553,E113Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1248,553,"G90D,E113Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1249,553,"T94D,E113Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1250,556,G90D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1251,557,A292E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1252,559,M257A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1253,559,M257C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1254,559,M257D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1255,559,M257E,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1256,559,M257F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1257,559,M257G,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1258,559,M257H,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1259,559,M257I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1260,559,M257K,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1261,559,M257L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1262,559,M257N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1263,559,M257P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1264,559,M257Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1265,559,M257S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1266,559,M257T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1267,559,M257V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1268,559,M257W,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1269,559,M257Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1270,560,,APPROVED,wild_type_record,
+1271,560,S85D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1272,560,D108A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1273,560,"S85D,D108A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1274,561,E113D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1275,561,"G90E,E113Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1276,561,"G90D,E113Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1277,561,"G90E,E113A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1278,561,"G90D,E113A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1279,561,"T94E,E113Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1280,561,"T94D,E113Q",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1281,561,"T94E,E113A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1282,561,"T94D,E113A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1283,561,"E113A,A117E",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1284,561,"E113A,A117D",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1285,561,"E113Q,A292E",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1286,561,"E113Q,A292D",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1287,569,M44T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1288,569,R135L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1289,569,V137M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1290,569,L328P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1291,569,A346P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1292,569,G114D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1293,569,P171Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1294,569,H211P,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1295,572,L119F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1296,572,E122I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1297,572,I123N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1298,572,A124S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1299,572,"L119F,E122I",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1300,572,"E122I,I123N",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1301,572,"E122I,A124S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1302,572,"L119F,E122I,A124S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1303,572,"L119F,E122I,I123N,A124S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1304,572,,APPROVED,wild_type_record,
+1305,571,"L119F,E122I,F261Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1306,573,,APPROVED,wild_type_record,
+1307,573,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1308,573,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1309,573,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1310,573,D83N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1311,573,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1312,573,"D83N,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1313,574,D83C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1314,576,,APPROVED,wild_type_record,
+1315,577,"N2C,G188C,D282C",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1316,577,G188C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1317,577,G188A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1318,577,G188D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1319,577,G188M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1320,577,G188N,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1321,577,G188Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1322,577,G188S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1323,577,G188T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1324,577,G188V,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1325,578,,APPROVED,wild_type_record,
+1326,578,,APPROVED,wild_type_record,
+1327,578,N83D,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1328,578,S292A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1329,578,S299A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1330,578,"N83D,S292A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1331,578,"N83D,S299A",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1332,582,,APPROVED,wild_type_record,
+1333,584,,APPROVED,wild_type_record,
+1334,585,,APPROVED,wild_type_record,
+1335,585,,APPROVED,wild_type_record,
+1336,585,P91S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1337,585,S94A,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1338,585,I122M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1339,585,C127S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1340,585,S211C,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1341,585,Y261F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1342,585,A292S,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1343,585,"P91S,S94A,I122M,C127S,S211C,Y261F,A292S",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1344,586,,APPROVED,wild_type_record,
+1345,586,,APPROVED,wild_type_record,
+1346,586,,APPROVED,wild_type_record,
+1347,586,,APPROVED,wild_type_record,
+1348,586,,APPROVED,wild_type_record,
+1349,586,,APPROVED,wild_type_record,
+1350,586,,APPROVED,wild_type_record,
+1351,586,,APPROVED,wild_type_record,
+1352,586,,APPROVED,wild_type_record,
+1353,586,,APPROVED,wild_type_record,
+1354,586,,APPROVED,wild_type_record,
+1355,586,,APPROVED,wild_type_record,
+1356,586,,APPROVED,wild_type_record,
+1357,586,,APPROVED,wild_type_record,
+1358,586,,APPROVED,wild_type_record,
+1359,586,,APPROVED,wild_type_record,
+1360,586,"L88F,P194L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1361,586,L88F,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1362,586,P194L,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1363,586,"L88F,P194L",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1364,586,T217M,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1365,586,T217I,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1366,587,,APPROVED,wild_type_record,
+1367,587,,APPROVED,wild_type_record,
+1368,587,,APPROVED,wild_type_record,
+1369,587,,APPROVED,wild_type_record,
+1370,587,,APPROVED,wild_type_record,
+1371,587,,APPROVED,wild_type_record,
+1372,587,,APPROVED,wild_type_record,
+1373,587,,APPROVED,wild_type_record,
+1374,587,,APPROVED,wild_type_record,
+1375,587,,APPROVED,wild_type_record,
+1376,587,,APPROVED,wild_type_record,
+1377,587,,APPROVED,wild_type_record,
+1378,588,,APPROVED,wild_type_record,
+1379,588,,APPROVED,wild_type_record,
+1380,586,,APPROVED,wild_type_record,
+1381,602,N94K,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1382,602,R330Q,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1383,602,N78K,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1384,604,,APPROVED,wild_type_record,
+1385,604,A94T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1386,604,F178Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1387,604,"A94T, F178Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1388,604,,APPROVED,wild_type_record,
+1389,604,A94T,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1390,604,F178Y,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1391,604,"A94T, F178Y",APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1392,605,SWS2,APPROVED,needs_primary_review,"No spectral shift inferred without a verified comparator, source numbering and compatible conditions."
+1393,605,,APPROVED,wild_type_record,
+1394,605,,APPROVED,wild_type_record,
+1395,607,,APPROVED,wild_type_record,
+1396,607,,APPROVED,wild_type_record,
+1397,607,,APPROVED,wild_type_record,
+1987,558,,REJECTED,not_public,

@@ -1,0 +1,462 @@
+{
+  "generated_at": "2026-10-07T15:10:58.568852+00:00",
+  "purpose": "Verify database rebuild and consistent backup/restore guide; no serving database writes",
+  "environment": {
+    "python": "3.10.19",
+    "django": "5.2.8",
+    "python_executable": "/home/oakley/miniconda3/envs/vpod_env/bin/python",
+    "work_directory": "/tmp/vpod-rebuild-guide-j0rgi8et",
+    "git_base_commit": "13e68a26fcbb7f2dcaf90b6e2afb1b1196195145",
+    "working_tree_has_uncommitted_changes": true
+  },
+  "migrations_only_scientific_counts": {
+    "core_curatedscp": 0,
+    "core_datasubmission": 0,
+    "core_discoverycheckpoint": 0,
+    "core_discoveryevidence": 0,
+    "core_discoveryidentifier": 0,
+    "core_discoveryreviewevent": 0,
+    "core_discoveryrun": 0,
+    "core_heterologousdata": 0,
+    "core_literaturecandidate": 0,
+    "core_opsin": 0,
+    "core_reference": 0,
+    "core_referencemetadataaudit": 0,
+    "core_submissionreceipt": 0,
+    "core_tuningaudit": 0,
+    "core_tuningcandidate": 0,
+    "core_tuningcitation": 0,
+    "core_tuningevidence": 0,
+    "core_tuningprotein": 0,
+    "core_visualacuity": 0
+  },
+  "executed_commands": [
+    {
+      "step": "migrate",
+      "argv": [
+        "manage.py",
+        "migrate",
+        "--noinput"
+      ],
+      "exit_code": 0,
+      "seconds": 8.95,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/migrate.log"
+    },
+    {
+      "step": "seed",
+      "argv": [
+        "manage.py",
+        "enrich_references",
+        "--from-artifact",
+        "reports/reference-enrichment.json",
+        "--seed-inventory",
+        "--apply",
+        "--output",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/enrichment.json"
+      ],
+      "exit_code": 0,
+      "seconds": 13.73,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/seed.log"
+    },
+    {
+      "step": "legacy",
+      "argv": [
+        "manage.py",
+        "import_csvs",
+        ".",
+        "--report",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/legacy.json"
+      ],
+      "exit_code": 0,
+      "seconds": 686.51,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/legacy.log"
+    },
+    {
+      "step": "acuity",
+      "argv": [
+        "manage.py",
+        "import_visual_acuity",
+        "visual_acuity.csv",
+        "--report",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/acuity.json"
+      ],
+      "exit_code": 0,
+      "seconds": 11.39,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/acuity.log"
+    },
+    {
+      "step": "compendium",
+      "argv": [
+        "manage.py",
+        "import_scp_compendium",
+        "VPOD_in_vivo_1.0_2026-03-13_12-54-05.csv"
+      ],
+      "exit_code": 0,
+      "seconds": 2.69,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/compendium.log"
+    },
+    {
+      "step": "mnm",
+      "argv": [
+        "manage.py",
+        "import_mnm_data",
+        "mnm_on_vpod_in_vivo_results_fully_filtered.csv",
+        "--compendium-csv",
+        "VPOD_in_vivo_1.0_2026-03-13_12-54-05.csv"
+      ],
+      "exit_code": 0,
+      "seconds": 121.22,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/mnm.log"
+    },
+    {
+      "step": "repair_preview",
+      "argv": [
+        "manage.py",
+        "repair_mutation_accessions",
+        "--source-corrections",
+        "data/tuning/source-corrections.json",
+        "--output",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/repair-preview.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.66,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/repair_preview.log"
+    },
+    {
+      "step": "repair_apply",
+      "argv": [
+        "manage.py",
+        "repair_mutation_accessions",
+        "--source-corrections",
+        "data/tuning/source-corrections.json",
+        "--apply",
+        "--output",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/repair.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.26,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/repair_apply.log"
+    },
+    {
+      "step": "catalogue_preview",
+      "argv": [
+        "manage.py",
+        "import_tuning_catalogue",
+        "--output",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/catalogue-preview.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.41,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/catalogue_preview.log"
+    },
+    {
+      "step": "catalogue_apply",
+      "argv": [
+        "manage.py",
+        "import_tuning_catalogue",
+        "--apply",
+        "--output",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/catalogue.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.74,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/catalogue_apply.log"
+    },
+    {
+      "step": "candidates_preview",
+      "argv": [
+        "manage.py",
+        "build_tuning_candidates",
+        "--output",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/candidates-preview.json"
+      ],
+      "exit_code": 0,
+      "seconds": 14.56,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/candidates_preview.log"
+    },
+    {
+      "step": "candidates_apply",
+      "argv": [
+        "manage.py",
+        "build_tuning_candidates",
+        "--from-report",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/candidates-preview.json",
+        "--apply",
+        "--output",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/candidates.json"
+      ],
+      "exit_code": 0,
+      "seconds": 92.53,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/candidates_apply.log"
+    },
+    {
+      "step": "index",
+      "argv": [
+        "manage.py",
+        "index_tuning_sites"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/index.log"
+    },
+    {
+      "step": "check",
+      "argv": [
+        "manage.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/check.log"
+    },
+    {
+      "step": "migration_check",
+      "argv": [
+        "manage.py",
+        "migrate",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.97,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/migration_check.log"
+    },
+    {
+      "step": "drift",
+      "argv": [
+        "manage.py",
+        "makemigrations",
+        "--check",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "seconds": 0.92,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/drift.log"
+    },
+    {
+      "step": "backup",
+      "argv": [
+        "tools/backup_sqlite.py",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/fresh.sqlite3",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/snapshot.sqlite3"
+      ],
+      "exit_code": 0,
+      "seconds": 0.49,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/backup.log"
+    },
+    {
+      "step": "restore",
+      "argv": [
+        "tools/backup_sqlite.py",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/snapshot.sqlite3",
+        "/tmp/vpod-rebuild-guide-j0rgi8et/restored.sqlite3"
+      ],
+      "exit_code": 0,
+      "seconds": 0.49,
+      "log": "/tmp/vpod-rebuild-guide-j0rgi8et/restore.log"
+    }
+  ],
+  "reference_replay": {
+    "inventory_records": 602,
+    "replay_conflicts": 0,
+    "network_required": false
+  },
+  "legacy_import": {
+    "files": {
+      "references.csv": {
+        "unchanged": 597
+      },
+      "opsins.csv": {
+        "imported": 2986
+      },
+      "heterologous.csv": {
+        "imported": 1397
+      },
+      "curated_scp.csv": {
+        "imported": 1442,
+        "unresolved": 128
+      }
+    },
+    "scp_unresolved_reasons": {
+      "same_publication_duplicate": 118,
+      "numeric_range_requires_curation": 10
+    },
+    "mutation_construction": {
+      "already_tagged": 829,
+      "tagged_verified_construct": 41,
+      "unresolved": 13,
+      "excluded_annotation": 72,
+      "tagged_needs_review": 15,
+      "merged_duplicate": 3
+    }
+  },
+  "acuity_import": {
+    "total_source_rows": 549,
+    "counts": {
+      "imported": 549
+    }
+  },
+  "optional_compendium": {
+    "status": "partial_import_with_reported_error",
+    "added_rows": 1,
+    "output": "Importing SCP Compendium from VPOD_in_vivo_1.0_2026-03-13_12-54-05.csv...\nError importing SCP Data: {'lambda_max': ['SCP record 1326 already has this species and wavelength from the same publication. A different publication is allowed.']}\n",
+    "caution": "Exit code zero does not mean success. The existing importer stops at a duplicate and does not reconcile all 3810 rows."
+  },
+  "optional_mnm": {
+    "output": "Successfully imported 589 MNM records.\n2 MNM records matched compendium rows but no source Reference could be resolved.\n"
+  },
+  "repair": {
+    "counts": {
+      "already_tagged": 870,
+      "unresolved": 12,
+      "excluded_annotation": 72,
+      "already_tagged_needs_review": 15,
+      "tagged_needs_review": 1,
+      "merged_duplicate": 3
+    },
+    "unresolved_link_rows": [
+      50,
+      367,
+      695,
+      707,
+      762,
+      1027,
+      1029,
+      1041,
+      1044,
+      1381,
+      1382,
+      1383
+    ]
+  },
+  "catalogue": {
+    "creations": 28,
+    "conflicts": 0,
+    "unavailable_assay_links": []
+  },
+  "candidate_outcomes": {
+    "wild_type": 424,
+    "pair_ready_for_review": 240,
+    "below_cutoff": 55,
+    "ambiguous_comparator_or_numbering": 104,
+    "multiple": 419,
+    "missing_or_invalid_sequence": 9,
+    "sequence_or_numbering_disagreement": 48,
+    "chimera": 71,
+    "missing_measured_wavelength": 12,
+    "accession_repaired_sequence_needs_review": 2,
+    "no_same_species_wt_match": 5,
+    "indel_needs_review": 5,
+    "merged_duplicate": 2,
+    "unparsed": 1,
+    "inferred_excluded": 589
+  },
+  "site_index": {
+    "indexed_sequences": 96,
+    "unresolved": [],
+    "output": "/tmp/vpod-rebuild-guide-j0rgi8et/site-index.json"
+  },
+  "final_table_counts": {
+    "auth_group": 0,
+    "auth_group_permissions": 0,
+    "auth_permission": 100,
+    "auth_user": 0,
+    "auth_user_groups": 0,
+    "auth_user_user_permissions": 0,
+    "core_curatedscp": 1443,
+    "core_datasubmission": 0,
+    "core_discoverycheckpoint": 0,
+    "core_discoveryevidence": 0,
+    "core_discoveryidentifier": 0,
+    "core_discoveryreviewevent": 0,
+    "core_discoveryrun": 0,
+    "core_heterologousdata": 1986,
+    "core_literaturecandidate": 0,
+    "core_opsin": 3505,
+    "core_reference": 604,
+    "core_referencemetadataaudit": 3421,
+    "core_submissionreceipt": 0,
+    "core_tuningaudit": 1059,
+    "core_tuningcandidate": 482,
+    "core_tuningcitation": 329,
+    "core_tuningevidence": 259,
+    "core_tuningprotein": 99,
+    "core_visualacuity": 549,
+    "django_admin_log": 0,
+    "django_content_type": 25,
+    "django_migrations": 34,
+    "django_session": 0,
+    "sqlite_sequence": 18
+  },
+  "backup_restore": {
+    "row_counts_match": true,
+    "logical_sql_dump_sha256_before": "a3dde8f8507cf87e577916ce060942671fbf5b6ca971e50486d57fd9363afe2f",
+    "logical_sql_dump_sha256_after": "a3dde8f8507cf87e577916ce060942671fbf5b6ca971e50486d57fd9363afe2f",
+    "logical_data_matches": true,
+    "integrity_check": "ok",
+    "foreign_key_violations": [],
+    "backup_result": {
+      "source": "/tmp/vpod-rebuild-guide-j0rgi8et/fresh.sqlite3",
+      "backup": "/tmp/vpod-rebuild-guide-j0rgi8et/snapshot.sqlite3",
+      "bytes": 14446592,
+      "sha256": "806cc40f1e67c2ff060ca6d026c1fcccbf786d7abef8f38d248d6c8ad4db3be0",
+      "integrity_check": "ok"
+    },
+    "restore_result": {
+      "source": "/tmp/vpod-rebuild-guide-j0rgi8et/snapshot.sqlite3",
+      "backup": "/tmp/vpod-rebuild-guide-j0rgi8et/restored.sqlite3",
+      "bytes": 14446592,
+      "sha256": "806cc40f1e67c2ff060ca6d026c1fcccbf786d7abef8f38d248d6c8ad4db3be0",
+      "integrity_check": "ok"
+    }
+  },
+  "backup_helper_tests": {
+    "command": "python tools/test_backup_sqlite.py",
+    "passed": 5,
+    "failed": 0,
+    "coverage": [
+      "Committed WAL records retained",
+      "Backup mode 0600",
+      "Existing destination preserved",
+      "Missing source not created",
+      "Source cannot overwrite itself",
+      "Invalid source removes incomplete snapshot"
+    ]
+  },
+  "documentation_shell_blocks_syntax_checked": 10,
+  "migration_drift": "none",
+  "django_system_check": "passed",
+  "source_sha256": {
+    "references.csv": "c5275a642eb90981c11967cd1ccb7a2419a139f51cb087987bf71e6b342c88c8",
+    "opsins.csv": "63f740870db9b51fbec1c081ab5701fb56b3cebf08f0a73359ef866a762f0bb5",
+    "heterologous.csv": "7eba3aec10db8190d9b3e5cb66c8a82fac2abf4ecde070749a22eb4db65e75f7",
+    "curated_scp.csv": "3af6fbe10aebd2a36453c8d83ecfb2a0de3d4e87bbd16616fb56d1c0b3c1b839",
+    "visual_acuity.csv": "ce608a4d9968db315299c6aedc76b08dede5fd9ee0667a7a7477985b03b0ee09",
+    "VPOD_in_vivo_1.0_2026-03-13_12-54-05.csv": "e00b0a7712afec5d7ad3d76e8209a6ecaaab41386524888341712250301fd79d",
+    "mnm_on_vpod_in_vivo_results_fully_filtered.csv": "979a53e2a1135a03f280f886523ef22907a5f2b6620c02ecf83e3adf6184901a",
+    "reports/reference-enrichment.json": "08dd9d88367d19355b5b49a48a9cabc4a0027c148d2d70649d8515af8c9bf450",
+    "data/tuning/MT625928.1.fasta": "65abee491c52b2cc88d7a62b15c4a76e89a59d03a446c1be0c98cde74740313d",
+    "data/tuning/MT625929.1.fasta": "2e343a7d3c8b5a2f47e7db2229142c136aca90413338719ca817e20e0e3ea115",
+    "data/tuning/bovine.fasta": "b1c064b2feb79695f408ac41e7ee5735e5123e0d1ab716b0a70f43015a4e5ac6",
+    "data/tuning/human-lws.fasta": "927518555ef00ac3e380f43fa306804af92c3d712e4a7acec5e8c524fb496c70",
+    "data/tuning/reference-profile.fasta": "fb95fd07eee465ca6b7d633b432940ca45aedbe9f8d1e9f19dd42b18bc5b3445",
+    "data/tuning/reference-sequences.fasta": "b5b4d9d726d5615db74ffab6f83fd2b69c64ff04770abc1fe97dd3c39ca047b1",
+    "data/tuning/spider.fasta": "5acae95e55cae9ffed721baaebed905b9d1a77e3986b4fcf6e4a72c88a5ee472",
+    "data/tuning/squid.fasta": "359774e9bf5442dce6837e8afc03568ef9199d1d6233b15b007e836b25ed9d99",
+    "data/tuning/catalogue.json": "4da1461e5e2fedca0c7648bc84e200a955693d954cbedec251a5e37631e2a658",
+    "data/tuning/source-corrections.json": "7089a5d2100df2d7ef0bbb9f99655a9ba0c2f96a61fc7757ed0457a749b035aa"
+  },
+  "not_executed": [
+    "PostgreSQL pg_dump/pg_restore",
+    "Production cutover or service restart",
+    "Superuser creation",
+    "Encrypted GitHub backup upload",
+    "Browser UI checks in this documentation-only change"
+  ],
+  "limitations": [
+    "Fresh imports reconstruct supplied data and reviewed artifacts, not later curator edits, submissions or discovery history.",
+    "128 source SCP rows remain reported rather than imported: 118 same-publication duplicates and 10 numeric ranges.",
+    "Optional compendium import remains incomplete; this guide does not change its importer or scientific constraints.",
+    "Some raw mutation sequence relationships remain unresolved, as recorded above.",
+    "Only the matching full snapshot can reproduce an exact saved database state."
+  ]
+}

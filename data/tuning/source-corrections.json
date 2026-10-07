@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "checked_at": "2026-10-07T12:17:21.155560+00:00",
+  "corrections": [
+    {
+      "model": "Opsin",
+      "id": 2976,
+      "expected": {
+        "accession": "MT625928",
+        "genus": "Rhincodon",
+        "species": "typus",
+        "sequence_sha256": "6d0936ebb3a27d217902bc3bf3466ea7a1147c626a0610d7d1a28550b9b1958e"
+      },
+      "set": {
+        "protein_sequence": "MNGTEGENFYIPMSNKTGVVRSPFEYPQYYLAEPWKFSLLAAYMFFLIITGFPINFLTLYVTIQHKKLRQPLNYILLNLAVSDLFMVLGGFTTAIITAMNGYFIFGPAGCNFEGFFATLGGEISLWSLVVLAIERYVVVCKPMSNFRFGSQHAIMGVTFTWIMALACAFPPLVGWSRFIPEGMQCSCGIDYYTLKPEVYNESFVIYMFVVHFSIPLTVIFFCYGRLVCTVKEAAAQQQESETTQRAEREVTRMVIIMVFAFLICWLPYASVAIYIFTNQGSEFGPVFMTIPAFFAKSSALYNPLIYILMNKQFRNCMITTICCGKNPFEEDESASVSASKTEASSVSSSQVAPA"
+      },
+      "evidence": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MT625928.1&rettype=fasta_cds_aa&retmode=text",
+      "reason": "Replace the incorrectly copied zebra-shark sequence with the accession-specific whale-shark WT translation retrieved from GenBank; do not reverse mutant labels."
+    },
+    {
+      "model": "HeterologousData",
+      "id": 1389,
+      "expected": {
+        "mutations": "A94T",
+        "opsin_id": 2977,
+        "lambda_max": 481.0,
+        "reference_doi": "10.1101/2021.10.01.462724"
+      },
+      "set": {
+        "mutations": "T94A",
+        "mutation_numbering": "bovine"
+      },
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+      "reason": "Figure 1D and accompanying text specify zebra-shark T94A and Y178F. Correct the reversed direction / 187 transcription error while preserving source measurements and original notation in the audit."
+    },
+    {
+      "model": "HeterologousData",
+      "id": 1390,
+      "expected": {
+        "mutations": "F178Y",
+        "opsin_id": 2977,
+        "lambda_max": 497.0,
+        "reference_doi": "10.1101/2021.10.01.462724"
+      },
+      "set": {
+        "mutations": "Y178F",
+        "mutation_numbering": "bovine"
+      },
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+      "reason": "Figure 1D and accompanying text specify zebra-shark T94A and Y178F. Correct the reversed direction / 187 transcription error while preserving source measurements and original notation in the audit."
+    },
+    {
+      "model": "HeterologousData",
+      "id": 1391,
+      "expected": {
+        "mutations": "A94T, F178Y",
+        "opsin_id": 2977,
+        "lambda_max": 478.0,
+        "reference_doi": "10.1101/2021.10.01.462724"
+      },
+      "set": {
+        "mutations": "T94A, Y178F",
+        "mutation_numbering": "bovine"
+      },
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+      "reason": "Figure 1D and accompanying text specify zebra-shark T94A and Y178F. Correct the reversed direction / 187 transcription error while preserving source measurements and original notation in the audit."
+    },
+    {
+      "model": "HeterologousData",
+      "id": 1090,
+      "expected": {
+        "mutations": "T94A,Y187F",
+        "opsin_id": 2684,
+        "lambda_max": 478.0,
+        "reference_doi": "10.1073/pnas.2220728120"
+      },
+      "set": {
+        "mutations": "T94A,Y178F",
+        "mutation_numbering": "bovine"
+      },
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+      "reason": "Figure 1D and accompanying text specify zebra-shark T94A and Y178F. Correct the reversed direction / 187 transcription error while preserving source measurements and original notation in the audit."
+    },
+    {
+      "model": "HeterologousData",
+      "id": 1092,
+      "expected": {
+        "mutations": "Y187F",
+        "opsin_id": 2686,
+        "lambda_max": 497.0,
+        "reference_doi": "10.1073/pnas.2220728120"
+      },
+      "set": {
+        "mutations": "Y178F",
+        "mutation_numbering": "bovine"
+      },
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+      "reason": "Figure 1D and accompanying text specify zebra-shark T94A and Y178F. Correct the reversed direction / 187 transcription error while preserving source measurements and original notation in the audit."
+    },
+    {
+      "model": "HeterologousData",
+      "id": 1086,
+      "expected": {
+        "mutations": "F187Y",
+        "opsin_id": 2680,
+        "lambda_max": 481.0,
+        "reference_doi": "10.1073/pnas.2220728120"
+      },
+      "set": {
+        "mutations": "F178Y",
+        "mutation_numbering": "bovine"
+      },
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+      "reason": "The same paper Figure 1C specifies whale-shark F178Y, not F187Y; stored mutant sequence also changes at 178. Correct notation and accession, preserve protein sequence and measured wavelength."
+    },
+    {
+      "model": "HeterologousData",
+      "id": 1087,
+      "expected": {
+        "mutations": "A94T,F187Y",
+        "opsin_id": 2681,
+        "lambda_max": 500.0,
+        "reference_doi": "10.1073/pnas.2220728120"
+      },
+      "set": {
+        "mutations": "A94T,F178Y",
+        "mutation_numbering": "bovine"
+      },
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+      "reason": "The same paper Figure 1C specifies whale-shark F178Y, not F187Y; stored mutant sequence also changes at 178. Correct notation and accession, preserve protein sequence and measured wavelength."
+    }
+  ],
+  "pinned_genbank_files": {
+    "MT625928.1.fasta": "65abee491c52b2cc88d7a62b15c4a76e89a59d03a446c1be0c98cde74740313d",
+    "MT625929.1.fasta": "2e343a7d3c8b5a2f47e7db2229142c136aca90413338719ca817e20e0e3ea115"
+  },
+  "merges": [
+    {
+      "source": 1388,
+      "target": 1089,
+      "expected_source": {
+        "genus": "Stegostoma",
+        "species": "tigrinum",
+        "lambda_max": 500.0,
+        "mutations": "",
+        "doi": "10.1101/2021.10.01.462724",
+        "accession_base": "MT625929"
+      },
+      "expected_target": {
+        "genus": "Stegostoma ",
+        "species": "fasciatum",
+        "lambda_max": 500.0,
+        "mutations": "",
+        "doi": "10.1073/pnas.2220728120",
+        "accession_base": "MT625929"
+      },
+      "evidence": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+        "https://www.marinespecies.org/aphia.php?id=220032&p=taxdetails"
+      ],
+      "reason": "Same zebra-shark experiment entered from preprint and published paper under synonymous species names. Retain published ref 538, preserve preprint ref 604 and archived assay IDs."
+    },
+    {
+      "source": 1389,
+      "target": 1091,
+      "expected_source": {
+        "genus": "Stegostoma",
+        "species": "tigrinum",
+        "lambda_max": 481.0,
+        "mutations": "T94A",
+        "doi": "10.1101/2021.10.01.462724",
+        "accession_base": "MT625929"
+      },
+      "expected_target": {
+        "genus": "Stegostoma ",
+        "species": "fasciatum",
+        "lambda_max": 481.0,
+        "mutations": "T94A",
+        "doi": "10.1073/pnas.2220728120",
+        "accession_base": "MT625929"
+      },
+      "evidence": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+        "https://www.marinespecies.org/aphia.php?id=220032&p=taxdetails"
+      ],
+      "reason": "Same zebra-shark experiment entered from preprint and published paper under synonymous species names. Retain published ref 538, preserve preprint ref 604 and archived assay IDs."
+    },
+    {
+      "source": 1390,
+      "target": 1092,
+      "expected_source": {
+        "genus": "Stegostoma",
+        "species": "tigrinum",
+        "lambda_max": 497.0,
+        "mutations": "Y178F",
+        "doi": "10.1101/2021.10.01.462724",
+        "accession_base": "MT625929"
+      },
+      "expected_target": {
+        "genus": "Stegostoma ",
+        "species": "fasciatum",
+        "lambda_max": 497.0,
+        "mutations": "Y178F",
+        "doi": "10.1073/pnas.2220728120",
+        "accession_base": "MT625929"
+      },
+      "evidence": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+        "https://www.marinespecies.org/aphia.php?id=220032&p=taxdetails"
+      ],
+      "reason": "Same zebra-shark experiment entered from preprint and published paper under synonymous species names. Retain published ref 538, preserve preprint ref 604 and archived assay IDs."
+    },
+    {
+      "source": 1391,
+      "target": 1090,
+      "expected_source": {
+        "genus": "Stegostoma",
+        "species": "tigrinum",
+        "lambda_max": 478.0,
+        "mutations": "T94A, Y178F",
+        "doi": "10.1101/2021.10.01.462724",
+        "accession_base": "MT625929"
+      },
+      "expected_target": {
+        "genus": "Stegostoma ",
+        "species": "fasciatum",
+        "lambda_max": 478.0,
+        "mutations": "T94A,Y178F",
+        "doi": "10.1073/pnas.2220728120",
+        "accession_base": "MT625929"
+      },
+      "evidence": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068813/",
+        "https://www.marinespecies.org/aphia.php?id=220032&p=taxdetails"
+      ],
+      "reason": "Same zebra-shark experiment entered from preprint and published paper under synonymous species names. Retain published ref 538, preserve preprint ref 604 and archived assay IDs."
+    }
+  ]
+}

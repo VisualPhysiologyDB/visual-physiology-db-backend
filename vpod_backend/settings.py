@@ -196,3 +196,9 @@ LOGGING = {
         },
     },
 }
+
+# Tuning mapper: installed system aligner; no alignment packages are required in Python.
+VPOD_MAFFT_PATH = os.environ.get('VPOD_MAFFT_PATH', '/usr/local/bin/mafft')
+VPOD_TUNING_SITE_INDEX_PATH = os.environ.get('VPOD_TUNING_SITE_INDEX_PATH', str(BASE_DIR / 'data/tuning/site-index.json'))
+VPOD_TUNING_AUTO_APPROVE = os.environ.get('VPOD_TUNING_AUTO_APPROVE', 'true').lower() in {'1', 'true', 'yes'}
+VPOD_TUNING_STRICT_CONDITIONS = os.environ.get('VPOD_TUNING_STRICT_CONDITIONS', 'false').lower() in {'1', 'true', 'yes'}

@@ -1,0 +1,2259 @@
+{
+  "database": "isolated SQLite copy",
+  "reimport_preserved_all_opsins_assays_candidates_evidence_audits": true,
+  "reimport_counts": "{\"references.csv\": {\"updated\": 513, \"unresolved\": 84}, \"opsins.csv\": {\"unchanged\": 2986}, \"heterologous.csv\": {\"unchanged\": 1397}, \"curated_scp.csv\": {\"unchanged\": 1459, \"unresolved\": 107, \"imported\": 4}}\n",
+  "merged_rows": [
+    {
+      "hetid": 1388,
+      "duplicate_of_id": 1089,
+      "opsin_id": 2683,
+      "mutations": "",
+      "status": "REJECTED",
+      "reference_id": 604
+    },
+    {
+      "hetid": 1389,
+      "duplicate_of_id": 1091,
+      "opsin_id": 2685,
+      "mutations": "T94A",
+      "status": "REJECTED",
+      "reference_id": 604
+    },
+    {
+      "hetid": 1390,
+      "duplicate_of_id": 1092,
+      "opsin_id": 2686,
+      "mutations": "Y178F",
+      "status": "REJECTED",
+      "reference_id": 604
+    },
+    {
+      "hetid": 1391,
+      "duplicate_of_id": 1090,
+      "opsin_id": 2684,
+      "mutations": "T94A, Y178F",
+      "status": "REJECTED",
+      "reference_id": 604
+    }
+  ],
+  "accession_mismatches": [],
+  "missing_sequence_links": [
+    50,
+    80,
+    86,
+    87,
+    104,
+    120,
+    121,
+    123,
+    204,
+    378,
+    379,
+    380,
+    381,
+    856,
+    857,
+    858,
+    876,
+    1026,
+    1027,
+    1028,
+    1029
+  ],
+  "flagged_sequence_reviews": [
+    143,
+    144,
+    145,
+    291,
+    358,
+    359,
+    361,
+    362,
+    363,
+    365,
+    366,
+    367,
+    414,
+    488,
+    711,
+    713,
+    715,
+    717,
+    718,
+    733,
+    763,
+    766,
+    800,
+    882,
+    1381,
+    1382
+  ],
+  "tuning_decisions": {
+    "APPROVED": 237,
+    "PENDING": 243,
+    "REJECTED": 2
+  },
+  "public_evidence_count": 257,
+  "retained_zebra_1092": {
+    "shift_nm": -3.0,
+    "changes": [
+      {
+        "position": 178,
+        "from": "Y",
+        "to": "F"
+      }
+    ],
+    "key": "heterologous-single-1092",
+    "approval": {
+      "mode": "AUTO",
+      "strict_conditions": false,
+      "condition_warnings": [
+        "Purification lacks a matching source snapshot.",
+        "Spectrum lacks a matching source snapshot.",
+        "Legacy supplement identity differs from database; its condition labels were not used."
+      ],
+      "algorithm": {
+        "version": "single-sites-2",
+        "profile_sha256": "fb95fd07eee465ca6b7d633b432940ca45aedbe9f8d1e9f19dd42b18bc5b3445",
+        "mafft_version": "v7.505",
+        "gap_penalties": [
+          "1.53",
+          "3.0"
+        ]
+      },
+      "paper_review_claimed": false
+    }
+  },
+  "archived_duplicates_excluded_from_public_evidence": true,
+  "tested_environment": {
+    "python": "3.10.19",
+    "django": "5.2.8",
+    "environment": "/home/oakley/miniconda3/envs/vpod_env",
+    "mafft": "7.505"
+  },
+  "migrations": {
+    "isolated_serving_copy": "0014, 0015 and 0016 applied",
+    "fresh_database": "0001\u20130016 applied; full source import exercised; source discrepancies reported separately",
+    "drift": "makemigrations --check --dry-run: no changes"
+  },
+  "repair_counts": {
+    "already_tagged": 823,
+    "tagged_verified_construct": 46,
+    "unresolved": 3,
+    "tagged_needs_review": 26,
+    "excluded_annotation": 72,
+    "merged_duplicate": 3
+  },
+  "mutation_accessions": {
+    "recognized_mutation_assays": 901,
+    "linked": 898,
+    "all_linked_have_matching_suffix": true,
+    "unresolved_missing_protein_links": [
+      50,
+      1027,
+      1029
+    ],
+    "chimeras_excluded": 71,
+    "unparsed_label_excluded": 1
+  },
+  "repeatability": {
+    "digest": "56e94a082ab8f77fcb5055edb4a2558182e9bcc066865d63037adc930713bd86",
+    "preserved_models": [
+      "Opsin",
+      "HeterologousData",
+      "TuningCandidate",
+      "TuningAudit",
+      "TuningEvidence"
+    ],
+    "reimport": true,
+    "repair_rerun": true,
+    "builder_report_replay": {
+      "unchanged": 482
+    },
+    "dry_run_database_bytes_unchanged": true
+  },
+  "browser": {
+    "regression": {
+      "checks": [
+        "Beta notice visible",
+        "Default family uses bovine numbering",
+        "Cross-family sites hidden by default",
+        "Invertebrate context defaults to squid",
+        "Bovine E181 / squid E180 / spider E194",
+        "Mapped CSV includes evidence and DOI",
+        "Evidence CSV includes citation roles",
+        "Selected site highlighted in alignment",
+        "bovine structure mapped",
+        "bovine marks exactly one residue, not the whole chain",
+        "bovine author numbering preserved",
+        "squid structure mapped",
+        "squid marks exactly one residue, not the whole chain",
+        "squid author numbering preserved",
+        "spider structure mapped",
+        "spider marks exactly one residue, not the whole chain",
+        "spider author numbering preserved",
+        "PNG saved",
+        "View session restores marked residues locally",
+        "Uploaded PDB preserves arbitrary author numbering",
+        "Uploaded mmCIF maps correctly",
+        "Only sequence JSON sent by mapper, never coordinates",
+        "Mobile layout has no page-wide overflow",
+        "Changed inputs hide stale results",
+        "Untrusted header rendered as text",
+        "Cross-family warning visible",
+        "Mapping session restores inputs without trusting cached output",
+        "references explorer retained",
+        "references histogram retained",
+        "visual-acuity explorer retained",
+        "visual-acuity histogram retained",
+        "scp explorer retained",
+        "scp histogram retained",
+        "heterologous explorer retained",
+        "heterologous histogram retained",
+        "opsins explorer retained",
+        "No uncaught browser errors"
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8773/",
+          "method": "GET"
+        },
+        {
+          "url": "https://cdn.tailwindcss.com/",
+          "method": "GET"
+        },
+        {
+          "url": "https://unpkg.com/lucide@latest",
+          "method": "GET"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/npm/chart.js",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/tuning.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/vpod-data.js",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/explorer.js",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/tuning.js",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/tuning-structures.js",
+          "method": "GET"
+        },
+        {
+          "url": "https://cdn.tailwindcss.com/3.4.17",
+          "method": "GET"
+        },
+        {
+          "url": "https://unpkg.com/lucide@1.52.0/dist/umd/lucide.min.js",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/opsins/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-sites/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-templates/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-mappings/",
+          "method": "POST"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/vendor/molstar/molstar.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/vendor/molstar/molstar.js",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/tuning-structures/1u19.cif",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-mappings/",
+          "method": "POST"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/tuning-structures/2z73.cif",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-mappings/",
+          "method": "POST"
+        },
+        {
+          "url": "http://127.0.0.1:8773/static/core/tuning-structures/6i9k.cif",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-mappings/",
+          "method": "POST"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-mappings/",
+          "method": "POST"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-mappings/",
+          "method": "POST"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/tuning-mappings/",
+          "method": "POST"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/references/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/visual-acuity/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/scp/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/heterologous/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8773/api/opsins/",
+          "method": "GET"
+        }
+      ],
+      "browser": "151.0.7922.34"
+    },
+    "repair_admin": {
+      "checks": [
+        "Archived candidate links to retained assay 1092",
+        "Merged candidate remains rejected",
+        "Retained candidate is approved",
+        "Bovine WT comparison selected",
+        "Strict conditions disabled",
+        "Manual confirmations not falsely checked",
+        "Admin approval form saves successfully",
+        "Auto approval explanation visible",
+        "Merged mutation absent from catalogue",
+        "Merged assay 1388 excluded from API",
+        "Merged assay 1389 excluded from API",
+        "Merged assay 1390 excluded from API",
+        "Merged assay 1391 excluded from API",
+        "Repair report filters flagged rows"
+      ],
+      "count": 14
+    },
+    "engine": "Chromium, approved separate Playwright environment",
+    "database": "isolated localhost development server",
+    "total_passed": 51
+  },
+  "new_automatic_approvals": 235,
+  "preexisting_approved_candidates_preserved": 2,
+  "limits": [
+    "No serving-database changes, deployment, static collection to production or service restart.",
+    "PostgreSQL and non-Chromium browsers not tested.",
+    "Fresh CSV-only databases differ from existing curated databases; conflicting or missing source identities are reported, not guessed.",
+    "26 existing-database constructs still need source sequence/notation review despite repaired labels; three mutant assay relationships remain unresolved.",
+    "Automatic approval establishes sequence consistency and the numeric cutoff, not manual paper review, significance, matched experimental conditions or a transferable spectral effect.",
+    "Only explicitly documented zebra-shark same-experiment duplicates were merged; other repeated publications/measurements are unchanged.",
+    "One exploratory fresh import was interrupted for speed; an overlapping disposable import failed. Both were discarded. Final fresh-import verification used one process and temporary test-only SQLite synchronous=OFF; no production setting was changed.",
+    "Browser testing manually saved retained candidate 1092 in the isolated copy after the released automatic-approval artifact was generated."
+  ],
+  "serving_database_unchanged": true,
+  "serving_migration_unchanged": "0013_tuning_single_site_candidates",
+  "fresh_csv_import": {
+    "input_rows": {
+      "references.csv": 597,
+      "opsins.csv": 2986,
+      "heterologous.csv": 1397,
+      "curated_scp.csv": 1570
+    },
+    "initial_counts": {
+      "references.csv": {
+        "imported": 597
+      },
+      "opsins.csv": {
+        "imported": 2974,
+        "unresolved": 12
+      },
+      "heterologous.csv": {
+        "imported": 1397
+      },
+      "curated_scp.csv": {
+        "imported": 1442,
+        "unresolved": 128
+      }
+    },
+    "after_accession_length_migration_counts": {
+      "references.csv": {
+        "unchanged": 597
+      },
+      "opsins.csv": {
+        "unchanged": 2974,
+        "imported": 12
+      },
+      "heterologous.csv": {
+        "unchanged": 1397
+      },
+      "curated_scp.csv": {
+        "unchanged": 1442,
+        "unresolved": 128
+      }
+    },
+    "all_2986_source_opsin_rows_imported_after_0016": true,
+    "source_merges": [
+      {
+        "source": 1388,
+        "target": 1089,
+        "outcome": "merged"
+      },
+      {
+        "source": 1389,
+        "target": 1091,
+        "outcome": "merged"
+      },
+      {
+        "source": 1390,
+        "target": 1092,
+        "outcome": "merged"
+      },
+      {
+        "source": 1391,
+        "target": 1090,
+        "outcome": "merged"
+      }
+    ],
+    "corrections": [
+      {
+        "id": 2976,
+        "outcome": "unchanged"
+      },
+      {
+        "id": 1389,
+        "outcome": "unchanged"
+      },
+      {
+        "id": 1390,
+        "outcome": "unchanged"
+      },
+      {
+        "id": 1391,
+        "outcome": "unchanged"
+      },
+      {
+        "id": 1090,
+        "outcome": "unchanged"
+      },
+      {
+        "id": 1092,
+        "outcome": "unchanged"
+      },
+      {
+        "id": 1086,
+        "outcome": "unchanged"
+      },
+      {
+        "id": 1087,
+        "outcome": "unchanged"
+      }
+    ],
+    "remaining_construct_counts": {
+      "already_tagged": 870,
+      "unresolved": 12,
+      "excluded_annotation": 72,
+      "already_tagged_needs_review": 16,
+      "merged_duplicate": 3
+    },
+    "unresolved_mutant_links": [
+      {
+        "hetid": 50,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 367,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 695,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 707,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 762,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 1027,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 1029,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 1041,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 1044,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 1381,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 1382,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      },
+      {
+        "hetid": 1383,
+        "outcome": "unresolved",
+        "reason": "No unique accession/taxon/sequence match; identity not guessed."
+      }
+    ],
+    "scp_unresolved_rows": [
+      {
+        "line": 18,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 17
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 15 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 19,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 18
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 16 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 38,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 37
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 35 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 39,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 38
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 36 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 48,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 47
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 42 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 49,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 48
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 43 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 50,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 49
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 45 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 51,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 50
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 46 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 59,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 58
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 57 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 65,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 64
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 61 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 66,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 65
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 62 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 86,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 85
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 83 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 87,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 86
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 84 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 91,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 90
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 88 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 92,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 91
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 89 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 93,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 92
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 89 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 109,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 108
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 106 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 111,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 110
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 106 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 114,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 113
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 111 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 116,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 115
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 111 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 121,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 120
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 118 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 122,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 121
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 119 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 125,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 124
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 122 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 127,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 126
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 122 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 128,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 127
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 125 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 142,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 141
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 139 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 143,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 142
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 140 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 159,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 158
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 156 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 160,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 159
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 157 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 163,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 162
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 160 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 165,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 164
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 160 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 166,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 165
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 163 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 172,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 171
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 170 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 177,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 176
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 174 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 178,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 177
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 175 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 186,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 185
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 184 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 192,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 191
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 189 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 193,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 192
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 190 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 215,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 214
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 213 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 329,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 328
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 327 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 341,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 340
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 339 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 354,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 353
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 352 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 441,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 440
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 439 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 446,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 445
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 444 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 451,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 450
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 449 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 470,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 469
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 468 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 474,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 473
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 472 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 478,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 477
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 476 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 486,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 485
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 484 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 493,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 492
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 491 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 498,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 497
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 495 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 499,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 498
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 496 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 500,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 499
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 495 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 518,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 517
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 515 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 568,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 567
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 565 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 569,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 568
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 566 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 570,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 569
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 566 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 578,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 577
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 576 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 581,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 580
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 579 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 585,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 584
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 583 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 589,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 588
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 587 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 593,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 592
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 591 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 646,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 645
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 644 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 648,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 647
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 644 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 684,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 683
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 682 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 738,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 737
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 736 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 793,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 792
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 791 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 818,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 817
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 815 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 840,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 839
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 837 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 857,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 856
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 855 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 986,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 985
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 983 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 990,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 989
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 988 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1036,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1035
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1033 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1037,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1036
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1034 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1043,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1042
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1040 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1086,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1085
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1082 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1087,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1086
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1083 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1099,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1098
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1095 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1100,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1099
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1096 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1140,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1139
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1135 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1169,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1168
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1167 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1247,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1246
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 426 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1250,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1249
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 425 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1251,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1250
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 427 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1253,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1252
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 428 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1255,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1254
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 425 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1258,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1257
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 386 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1259,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1258
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 387 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1260,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1259
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 390 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1263,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1262
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 388 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1264,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1263
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 389 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1266,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1265
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 452 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1347,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1346
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1340 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1352,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1351
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1132 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1353,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1352
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1133 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1518,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1517
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1138 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1520,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1519
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 425 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1521,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1520
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 426 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1522,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1521
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1247 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1524,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1523
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 427 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1525,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1524
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1251 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1526,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1525
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 428 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1527,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1526
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1253 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1528,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1527
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 425 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1529,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1528
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1255 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1530,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1529
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1256 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1531,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1530
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 386 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1532,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1531
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 387 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1533,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1532
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 390 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1534,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1533
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1260 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1535,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1534
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1261 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1536,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1535
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 388 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1537,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1536
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 389 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1538,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1537
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1264 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1539,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1538
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 452 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1540,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1539
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1266 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1541,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1540
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1267 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1542,
+        "outcome": "unresolved",
+        "detail": {
+          "id": {
+            "scpid": 1541
+          },
+          "errors": {
+            "lambda_max": [
+              "SCP record 1268 already has this species and wavelength from the same publication. A different publication is allowed."
+            ]
+          }
+        }
+      },
+      {
+        "line": 1548,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '399-402'"
+      },
+      {
+        "line": 1549,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '399-402'"
+      },
+      {
+        "line": 1550,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '399-402'"
+      },
+      {
+        "line": 1551,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '399-402'"
+      },
+      {
+        "line": 1552,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '399-402'"
+      },
+      {
+        "line": 1553,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '399-402'"
+      },
+      {
+        "line": 1554,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '403-404'"
+      },
+      {
+        "line": 1555,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '403-404'"
+      },
+      {
+        "line": 1556,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '403-404'"
+      },
+      {
+        "line": 1557,
+        "outcome": "unresolved",
+        "detail": "could not convert string to float: '403-404'"
+      }
+    ],
+    "note": "All 1397 CSV assays imported. Their uncurated source relationships differ from the existing database; 12 mutant relationships remain unresolved in this fresh CSV-only database, versus 3 on the serving-database copy. SCP duplicate/invalid rows are reported under the pre-existing import rules. All four zebra-shark duplicates merged. No fresh-source data replaced curated values in the serving copy."
+  },
+  "backend_tests": {
+    "command": "/home/oakley/miniconda3/envs/vpod_env/bin/python tools/test_tuning.py",
+    "count": 133,
+    "passed": true,
+    "includes": "Mutation labels/forward construction, WT preservation, merges, long accessions, import linkage, retries, auto/manual approval, strict conditions, zero sentinels, public visibility/permissions and existing application regressions."
+  }
+}

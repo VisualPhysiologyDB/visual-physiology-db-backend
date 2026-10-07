@@ -46,7 +46,7 @@ class Opsin(ApprovalModel):
     phylum = models.CharField(max_length=100, blank=True, null=True)
     genus = models.CharField(max_length=100, blank=True, null=True)
     species = models.CharField(max_length=100, blank=True, null=True)
-    accession = models.CharField(max_length=100, blank=True, null=True)
+    accession = models.CharField(max_length=512, blank=True, null=True)
     dna_sequence = models.TextField(blank=True, null=True)
     protein_sequence = models.TextField(blank=True, null=True)
     reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='opsins')
@@ -62,6 +62,11 @@ class HeterologousData(ApprovalModel):
     error = models.FloatField(blank=True, null=True)
     cell_culture = models.CharField(max_length=100, blank=True, null=True)
     reference = models.ForeignKey(Reference, on_delete=models.SET_NULL, null=True, blank=True, related_name='heterologous_assays')
+
+    mutation_build = models.JSONField(default=dict, blank=True, help_text='WT-derived construct provenance and audited source corrections; never a predicted wavelength.')
+    mutation_numbering = models.CharField(max_length=10, blank=True, choices=[('bovine', 'Bovine'), ('human', 'Human (human opsins only)'), ('squid', 'Squid'), ('self', 'WT sequence'), ('spider', 'Spider')], help_text='Leave blank for bovine → human → squid → self → spider; set when the publication explicitly specifies numbering.')
+    duplicate_of = models.ForeignKey('self', null=True, blank=True, on_delete=models.PROTECT,
+        related_name='archived_duplicates', help_text='Retained measurement. Archived duplicates are excluded from public data and tuning extraction.')
 
     # NEW FIELDS for MNM integration:
     is_inferred = models.BooleanField(default=False, help_text="Computationally inferred via MNM pipeline")
@@ -245,3 +250,5 @@ class SubmissionReceipt(models.Model):
 # Register the private discovery models with Django while keeping their schema together.
 from .discovery_models import (DiscoveryRun, DiscoveryCheckpoint, LiteratureCandidate,
     DiscoveryIdentifier, DiscoveryEvidence, DiscoveryReviewEvent)
+
+from .tuning_models import TuningProtein, TuningEvidence, TuningCitation, TuningAudit, TuningCandidate

@@ -39,6 +39,7 @@
             pointer-events: none;
         }
     </style>
+    <link rel="stylesheet" href="{% static 'core/tuning.css' %}">
 </head>
 <body class="bg-slate-50 min-h-screen font-sans text-slate-800 relative">
 
@@ -65,7 +66,7 @@
     </nav>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+        <div id="explorerSearchPanel" class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
                     <h1 class="text-2xl font-bold text-slate-900 mb-1">Explore the Database</h1>
@@ -159,8 +160,11 @@
             <button onclick="switchTab('references')" id="tab-references" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap">
                 <i data-lucide="book-open" class="h-4 w-4"></i> References
             </button>
+            <button onclick="switchTab('tuning')" id="tab-tuning" class="py-3 px-6 tab-inactive flex items-center gap-2 whitespace-nowrap"><i data-lucide="dna" class="h-4 w-4"></i> Tuning Site Mapper <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">Beta</span></button>
         </div>
 
+        {% include "tuning_mapper.html" %}
+        <div id="explorerPanels">
         <div id="plotContainer" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6 relative overflow-hidden">
             <div class="absolute inset-0 spectrum-bg"></div>
             <div id="plotHeading" class="flex justify-between items-center mb-4 relative z-10">
@@ -201,6 +205,7 @@
                 <h3 class="text-lg font-medium text-slate-900">No records found</h3>
                 <p class="text-slate-500 mt-1 max-w-sm mx-auto">Try adjusting your search terms or clearing the advanced filters.</p>
             </div>
+        </div>
         </div>
     </main>
 
@@ -385,5 +390,7 @@
 
     <script src="{% static 'core/vpod-data.js' %}"></script>
     <script src="{% static 'core/explorer.js' %}"></script>
+    <script src="{% static 'core/tuning.js' %}"></script>
+    <script src="{% static 'core/tuning-structures.js' %}"></script>
 </body>
 </html>
