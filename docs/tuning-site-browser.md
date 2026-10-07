@@ -2,6 +2,8 @@
 
 The beta mapper now opens **by site**. Expand a site to see its mutations, then expand a mutation to see the individual studies and references.
 
+Each **experiment details** dropdown shows one table row per citation: source species, phylum, WT/mutant λmax in nm, published position, selected reference position, expression type, culture, HetIDs and DOI. Linked experimental records supply the metadata; WT and mutant values from separate publications remain in separate citation rows. Missing fields show “Not recorded”, and review-only citations do not acquire invented experiments. On small screens each row stacks into labelled fields. Automatic approvals retain the yellow manual-literature-review warning; matching diagnostics remain in the API/audit data rather than this dropdown.
+
 - **Map site only** locates the corresponding residue without prescribing a substitution. It returns one row per site and target, with all currently public supporting/contextual evidence at that site.
 - **Select a mutation** selects its visible studies. Expand the study list to select only particular observations. Partly selected lists show an indeterminate checkbox.
 - A **combined construct** remains one experiment: selecting it maps all its sites and preserves its combined shift. The tool does not assign that shift independently to each site.

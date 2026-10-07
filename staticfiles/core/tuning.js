@@ -16,15 +16,6 @@
             const a = node('a', text); a.href = parsed.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a;
         } catch (_) {return node('span', text);}
     }
-    function refs(e) {
-        const wrap = node('div'); const seen = new Set();
-        for (const r of e.references) {
-            const key = r.doi || String(r.refid); if (seen.has(key)) continue; seen.add(key);
-            const p = node('p'); p.append(safeLink(`Ref ${r.refid}: ${r.title || r.doi || 'Source'} (${r.role})`, r.link || r.source_url || (r.doi ? `https://doi.org/${r.doi}` : `/api/references/${r.refid}/`)));
-            if (r.locator) p.append(node('span', ` — ${r.locator}`)); wrap.append(p);
-        }
-        return wrap;
-    }
     function effect(e) {return e.shift_nm === null ? 'Not assigned' : `${e.shift_nm > 0 ? '+' : ''}${e.shift_nm} nm${e.changes.length > 1 ? ' (combined)' : ''}`;}
     function visible() {
         const term = $('tmSearch').value.toLowerCase().trim(), family = $('tmFamily').value;
@@ -82,15 +73,48 @@
             input.checked = n === input.members.length; input.indeterminate = n > 0 && n < input.members.length;
         }
     }
-    function evidenceDetails(e) {
-        const details = node('details'), content = node('div', undefined, 'tm-detail'); details.append(node('summary', `${e.references.length} citation(s) · experiment details`));
-        content.append(node('p', e.title), node('p', e.notes), node('p', e.numbering_note), node('p', `Source locator: ${e.source_locator}`));
-        if (e.conditions.approval?.mode === 'AUTO') content.append(node('p', 'Automatically approved from a sequence match. This does not claim a manual literature review. Measurement-condition equality: ' + (e.conditions.approval.strict_conditions ? 'required.' : 'not required.'), 'tm-warning'));
-        if (e.conditions.cross_publication_comparison) content.append(node('p', 'The WT and mutant measurements come from different publications. Inspect both cited sources and their conditions before using this difference.', 'tm-warning'));
-        if (e.baseline_label) content.append(node('p', `Comparator: ${e.baseline_label}`));
-        if (e.baseline_nm !== null) content.append(node('p', `Comparator ${e.baseline_nm} nm → mutant ${e.mutant_nm} nm`));
-        for (const [key, value] of Object.entries(e.conditions)) content.append(node('p', `${key.replaceAll('_', ' ')}: ${typeof value === 'object' ? JSON.stringify(value) : value}`));
-        content.append(refs(e)); details.append(content); return details;
+    function evidenceDetails(e, group) {
+        const details = node('details'), content = node('div', undefined, 'tm-citation-details'); details.append(node('summary', `${e.references.length} citation(s) · experiment details`));
+        if (e.conditions.approval?.mode === 'AUTO') content.append(node('p', 'Automatically approved from a sequence match. This tuning site still requires manual literature review.', 'tm-warning'));
+        const scroll = node('div', undefined, 'tm-citation-scroll'), table = node('table', undefined, 'tm-citation-table');
+        scroll.tabIndex = 0; scroll.setAttribute('role', 'region'); scroll.setAttribute('aria-label', 'Experimental details by citation');
+        const headings = ['Source species', 'Phylum', 'WT λmax (nm)', 'Mutant λmax (nm)', 'Published position', 'Reference position', 'Expression type', 'Culture', 'HetID', 'DOI'];
+        const thead = node('thead'), headingRow = node('tr'), tbody = node('tbody');
+        for (const heading of headings) {const th = node('th', heading); th.scope = 'col'; headingRow.append(th);}
+        thead.append(headingRow); table.append(thead, tbody);
+        const unknown = 'Not recorded', assays = e.assays || [];
+        const published = e.conditions.published_position ?? (e.original_notation || unknown);
+        const reference = group.reference_mapped ? `${group.position} (${group.numbering})` : 'Not resolved';
+        for (const citation of e.references) {
+            const sources = assays.filter(a => a.reference_id === citation.refid);
+            const byRole = role => sources.find(a => a.role === role);
+            const valuesFor = (field, fallback = unknown) => {
+                if (!sources.length) return fallback;
+                const values = sources.map(a => a[field] ?? '');
+                if (new Set(values).size === 1) return values[0] || unknown;
+                return sources.map(a => `${a.role}: ${a[field] || unknown}`).join('\n');
+            };
+            // An unlinked, single primary citation can carry curator-entered values.
+            // Never copy a measurement into another publication's row or a review row.
+            const unlinkedPrimary = !assays.length && e.references.length === 1 && citation.role === 'PRIMARY';
+            const wavelength = (role, fallback) => {
+                const value = byRole(role)?.lambda_max ?? (unlinkedPrimary ? fallback : null);
+                return typeof value === 'number' && Number.isFinite(value) && value > 0 ? String(value) : unknown;
+            };
+            const expression = sources.length || (unlinkedPrimary && /heterologous/i.test(e.conditions.method || '')) ? 'Heterologous' : unknown;
+            const cells = [valuesFor('species', e.organism || unknown), valuesFor('phylum', e.conditions.phylum || unknown),
+                wavelength('WT', e.baseline_nm), wavelength('Mutant', e.mutant_nm), String(published), reference, expression,
+                valuesFor('culture', unlinkedPrimary ? e.conditions.cell_culture || unknown : unknown),
+                sources.map(a => `${a.role}: ${a.hetid}`).join('\n') || unknown];
+            const row = node('tr'); row.dataset.refid = citation.refid;
+            cells.forEach((value, i) => {const td = node('td', value); td.dataset.label = headings[i]; row.append(td);});
+            const doi = node('td'); doi.dataset.label = 'DOI';
+            const citationBody = node('div'), link = safeLink(citation.doi || `Ref ${citation.refid} · DOI not recorded`, citation.link || citation.source_url || `/api/references/${citation.refid}/`);
+            if (citation.title) {link.title = citation.title; link.setAttribute('aria-label', `${citation.doi || 'Reference ' + citation.refid}: ${citation.title}`);}
+            citationBody.append(link, node('div', citation.role === 'REVIEW' ? 'Review' : citation.role === 'CONTRADICTS' ? 'Contradictory / no-effect evidence' : 'Primary source', 'tm-citation-role'));
+            doi.append(citationBody); row.append(doi); tbody.append(row);
+        }
+        scroll.append(table); content.append(scroll); details.append(content); return details;
     }
     function renderCatalogue() {
         const entries = visible(), allowed = new Set(entries.map(e => e.key)), byKey = new Map(entries.map(e => [e.key, e]));
@@ -137,7 +161,7 @@
                     const check = node('input'); check.type = 'checkbox'; check.dataset.key = evidence.key; check.setAttribute('aria-label', `Select study: ${evidence.title}`);
                     check.addEventListener('change', () => {check.checked ? state.selected.add(evidence.key) : state.selected.delete(evidence.key); invalidate(); updateCount();});
                     const choice = node('label', undefined, 'tm-check'); choice.append(check, node('span', `${evidence.organism} · ${evidence.subtype} · ${evidence.original_notation || 'Site assertion'}`));
-                    study.append(choice, node('p', `${evidence.category === 'LITERATURE' ? 'Literature supported' : evidence.category === 'PROPOSED' ? 'Proposed' : 'Measured'} · ${effect(evidence)} · source coordinate ${member.source_position}`, 'tm-hint'), evidenceDetails(evidence)); studies.append(study);
+                    study.append(choice, node('p', `${evidence.category === 'LITERATURE' ? 'Literature supported' : evidence.category === 'PROPOSED' ? 'Proposed' : 'Measured'} · ${effect(evidence)} · source coordinate ${member.source_position}`, 'tm-hint'), evidenceDetails(evidence, group)); studies.append(study);
                 }
                 container.append(studies); children.append(container);
             }

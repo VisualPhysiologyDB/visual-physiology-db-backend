@@ -83,6 +83,28 @@ class TuningTests(TestCase):
         lws=TuningEvidence.objects.get(key='hagen-lws-mws-180')
         self.assertEqual(lws.protein.key,'human-lws');self.assertEqual(lws.citations.count(),2)
 
+    def test_citation_assay_details_preserve_publication_and_measurement_identity(self):
+        wt_ref=Reference.objects.create(doi='10.1234/wt',status='APPROVED')
+        mutant_ref=Reference.objects.create(doi='10.1234/mutant',status='APPROVED')
+        opsin=Opsin.objects.create(genus='Test',species='species',phylum='Chordata',status='APPROVED')
+        wt=HeterologousData.objects.create(opsin=opsin,reference=wt_ref,lambda_max=500,cell_culture='WT culture',status='APPROVED')
+        mutant=HeterologousData.objects.create(opsin=opsin,reference=mutant_ref,lambda_max=503,cell_culture='Mutant culture',status='APPROVED')
+        self.entry.wild_type_assay=wt;self.entry.mutant_assay=mutant;self.entry.save()
+        data=evidence_json(self.entry)
+        self.assertEqual(data['assays'],[
+            {'role':'WT','hetid':wt.pk,'reference_id':wt_ref.pk,'species':'Test species','phylum':'Chordata','lambda_max':500,'culture':'WT culture','expression_type':'Heterologous'},
+            {'role':'Mutant','hetid':mutant.pk,'reference_id':mutant_ref.pk,'species':'Test species','phylum':'Chordata','lambda_max':503,'culture':'Mutant culture','expression_type':'Heterologous'}])
+        self.assertEqual(evidence_json(TuningEvidence.objects.get(key='hagen-rh1-83'))['assays'],[])
+        wt.status='PENDING';wt.save()
+        self.assertNotIn(self.entry.key,[e['key'] for e in self.client.get('/api/tuning-sites/').data['results']])
+
+    def test_citation_assay_details_keep_missing_taxonomy_and_culture_unknown(self):
+        assay=HeterologousData.objects.create(lambda_max=500,status='APPROVED')
+        self.entry.wild_type_assay=assay;self.entry.save()
+        row=evidence_json(self.entry)['assays'][0]
+        for field in ['species','phylum','culture','reference_id']:
+            self.assertIsNone(row[field])
+
     def test_dry_run_and_reimport_preserve_curator_changes_and_decisions(self):
         self.entry.status='PENDING';self.entry.notes='Curator checked this';self.entry.save()
         ref=self.entry.citations.first().reference;ref.title='Curated title';ref.status='REJECTED';ref.save()

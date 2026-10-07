@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-10-07T16:21:05.018599+00:00",
+  "change": "Citation experiment-details table only; additive public assay metadata",
+  "environment": {
+    "python": "3.10.19",
+    "django": "5.2.8",
+    "environment": "vpod_env",
+    "database": "isolated SQLite copy"
+  },
+  "backend": {
+    "command": "python tools/test_tuning.py core.test_tuning core.test_tuning_sites",
+    "passed": 43,
+    "failed": 0,
+    "migration_drift": "none",
+    "django_system_checks": "passed"
+  },
+  "browser": {
+    "engine": "Playwright Chromium",
+    "total_checks": 40,
+    "reports": {
+      "citation_details": {
+        "checks": [
+          "All requested columns present",
+          "One row per citation",
+          "Automatic warning uses requested wording",
+          "Both measurements retain units in headings and source values",
+          "Experimental record metadata displayed",
+          "Matching diagnostics removed from dropdown",
+          "Wide table supports keyboard scrolling",
+          "Mobile citation rows stack with field labels",
+          "No mobile document overflow",
+          "DOI remains reachable within the mobile catalogue",
+          "Review citations retain separate rows",
+          "Missing review measurements are not invented",
+          "Published and selected reference numbering remain distinct",
+          "Manual entries have no automatic-match warning",
+          "Cross-publication measurements stay in their own rows",
+          "Culture and HetID stay with their citation",
+          "Untrusted text stays text and unsafe DOI links are disabled",
+          "No browser exceptions"
+        ],
+        "errors": []
+      },
+      "site_browser_regression": {
+        "checks": [
+          "Site catalogue visible by default",
+          "Numeric search matches displayed site only",
+          "Unknown site shows an empty catalogue",
+          "Site 83 collects multiple study assertions",
+          "Site opens from keyboard",
+          "Mutation group selects its study evidence",
+          "Partial mutation selection is shown",
+          "Site-only selection maps one row",
+          "Site-only selection prescribes no mutation or shift",
+          "Site-only mapping retains supporting studies",
+          "Site CSV preserves selection type and references",
+          "Site-only session restores selection, not saved result",
+          "Reference change clears old site-only coordinates",
+          "Catalogue labels use selected reference numbering",
+          "Search retains only matching site groups",
+          "Each sequence has its own compatibility assessment",
+          "Mismatch and already-present warnings are visible",
+          "Only matching residue receives a target mutation notation",
+          "Mutation compatibility is preserved in CSV",
+          "No horizontal page overflow on mobile",
+          "Site-only selection also marks structure residue",
+          "No browser exceptions"
+        ],
+        "errors": []
+      }
+    },
+    "visual_review": [
+      "Desktop columns and warning inspected",
+      "Mobile labelled rows inspected; DOI reachable by scrolling"
+    ]
+  },
+  "other_checks": [
+    "JavaScript syntax passed",
+    "git diff --check passed"
+  ],
+  "live_database_unchanged": true,
+  "new_migrations": false,
+  "deployment_performed": false,
+  "notes": [
+    "Each citation receives only measurements/culture/HetIDs from its linked publication.",
+    "Unrecorded metadata is shown explicitly, including review-only records.",
+    "Algorithm/provenance text remains available in API/audits but is removed from the experimental-details dropdown.",
+    "No production collectstatic or Gunicorn restart was performed."
+  ],
+  "temporary_test_server_stopped": true
+}

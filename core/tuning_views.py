@@ -36,6 +36,12 @@ def evidence_json(e):
         'original_notation':e.original_notation,'baseline_label':e.baseline_label,'baseline_nm':e.baseline_nm,'mutant_nm':e.mutant_nm,
         'shift_nm':e.shift_nm,'conditions':e.conditions,'notes':e.notes,'source_locator':e.source_locator,'release':e.release,
         'wild_type_assay_id':e.wild_type_assay_id,'mutant_assay_id':e.mutant_assay_id,
+        'assays':[{'role':role, 'hetid':a.pk, 'reference_id':a.reference_id,
+            'species':' '.join(filter(None, (a.opsin.genus, a.opsin.species))) if a.opsin else None,
+            'phylum':a.opsin.phylum if a.opsin else None,
+            'lambda_max':a.lambda_max, 'culture':a.cell_culture, 'expression_type':'Heterologous'}
+            for role,a in [('WT',e.wild_type_assay),('Mutant',e.mutant_assay)]
+            if a is not None and a.status=='APPROVED' and not a.is_inferred and not a.duplicate_of_id],
         'qualifies':e.category!='MEASURED' or e.shift_nm is not None and abs(e.shift_nm)>=1,
         'references':[{'role':c.role,'locator':c.locator,**ReferenceSerializer(c.reference).data} for c in e.citations.all()]}
 
